@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfig>
+	<ModuleList>
+		<Module library="BaseTecDriver" name="HW">
+			<RealtimeSetup cycleTime="1000" priority="99" />
+			<GammaConnection PVNode="HardwareResources.BaseTecDriver"
+				SchedulerSlot=":BaseTecDriver.IOSync" />
+		</Module>
+		<Module library="AsymtecUnloader" name="Unloader">
+			<RealtimeSetup cycleTime="100000" priority="90" />
+			<GammaConnection PVNode="AsymtecUnloader.Data"
+				SchedulerSlot=":AsymtecUnloaderTask.UnloaderWork" />
+
+			<Timeout value="10" />
+			<ScannerNutzen portNumber="1" baudRate="115200"
+				numberOfScans="10" />
+			<ScannerMagazin portNumber="4" baudRate="115200"
+				numberOfScans="10" />
+
+			<IOConnection iniNutzen="1" iniPosition1="2"
+				iniPosition2="3" iniPosition3="4" iniPosition4="5" iniHoehe="6" />
+			<!-- MQTTConnection server="tcp://app-her-cspac01.ops.osp-light.com" topic="XLS_Asymtec/HER-XLS-DammDisp01/MagazinNutzen" 
+				defId1="MagazinId" defType1="Magazin" defId2="NutzenId" defType2="Nutzen" 
+				/ -->
+			<MQTTConnection server="tcp://aug-prod-334"
+				topic="XLS_Asymtec/HER-XLS-DammDisp01/MagazinNutzen" defId="MagazinNutzenId"
+				defType1="MagazinNutzen" />
+		</Module>
+		<Module library="KleberMqtt" name="Kleber">
+			<RealtimeSetup priority="95" cycleTime="20000" />
+			<GammaConnection SchedulerSlot=":KleberTask.KWork"
+				PVNode="KleberMqtt.data" />
+			<Mqtt name="HER-XLS-TiO2Disp102-Kleber" topicName="XLS-TiO2Disp102_Prematerial_Expiration"
+				mqttTimeout="30" mqttServerPort="1883"
+				mqttServer="tcp://app-her-cspac01.ops.osp-light.com" />
+			<Eiga use="true" no="1" function="Confirmation_Button" />
+			<Auga use="true" no="1" function="SignalTower_Green" />
+			<Auga use="true" no="2" function="SignalTower_Yellow" />
+			<Auga use="true" no="3" function="SignalTower_Red" />
+			<Auga use="true" no="4" function="SignalTower_Buzzer" />
+		</Module>
+	</ModuleList>
+</AppConfig>

@@ -1,0 +1,182 @@
+# the hole script use CMake Version 3.1
+cmake_minimum_required(VERSION 3.1 FATAL_ERROR)
+
+set(BUILD_SHARED_LIBS ON CACHE BOOL "Build shared libraries, otherwise precomipled verions are used")
+set(BUILD_BASIC_APPLICATION ON CACHE BOOL "Build basic application, otherwise precomipled verion is used")
+
+# default C-Flags
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++11 -Wall")
+
+
+# in the root of this drive should be the folder "scripts" including following files:
+#   - getVersion.bat
+set (ROOT_DRIVE "S")
+
+# add external libary "Gamma"
+set( GAMMA_INCLUDES "${ROOT_DRIVE}:/tools/gamma/include" )
+
+if (UNIX)
+set( GAMMA_LIBS "${ROOT_DRIVE}:/tools/gamma/target/linux/armhf/lib" )
+else (UNIX)
+set( GAMMA_LIBS "${ROOT_DRIVE}:/tools/gamma/target/windows/x86/lib" )
+endif (UNIX)
+
+find_library(GACUTIL_LIBRARY gaCUtil ${GAMMA_LIBS} )
+find_library(GACRPC_LIBRARY gaCRpc ${GAMMA_LIBS} )
+find_library(GACOMMON_LIBRARY gacommon ${GAMMA_LIBS} )
+find_library(GAAPI_LIBRARY gaapi ${GAMMA_LIBS} )
+find_library(GASCHED_LIBRARY gasched ${GAMMA_LIBS} )
+find_library(TLSF_LIBRARY TLSF ${GAMMA_LIBS} )
+
+
+# add external libary "Boost"
+set( BOOST_INCLUDES "${ROOT_DRIVE}:/tools/boost/1.58.0" )
+if (UNIX)
+set( BOOST_LIBS "${ROOT_DRIVE}:/tools/boost/1.58.0/bin/linux/armhf" )
+else (UNIX)
+set( BOOST_LIBS "${ROOT_DRIVE}:/tools/boost/1.58.0/bin/windows/x86" )
+endif (UNIX)
+
+find_library(BOOST_ATOMIC_LIBRARY              boost_atomic               ${BOOST_LIBS} )
+find_library(BOOST_CHRONO_LIBRARY              boost_chrono               ${BOOST_LIBS} )
+find_library(BOOST_CONTAINER_LIBRARY           boost_container            ${BOOST_LIBS} )
+find_library(BOOST_CONTECXT_LIBRARY            boost_context              ${BOOST_LIBS} )
+find_library(BOOST_COROUTINE_LIBRARY           boost_coroutine            ${BOOST_LIBS} )
+find_library(BOOST_DATE_TIME_LIBRARY           boost_date_time            ${BOOST_LIBS} )
+find_library(BOOST_EXCEPTION_LIBRARY           boost_exception            ${BOOST_LIBS} )
+find_library(BOOST_FILESYSTEM_LIBRARY          boost_filesystem           ${BOOST_LIBS} )
+find_library(BOOST_GRAPH_LIBRARY               boost_graph                ${BOOST_LIBS} )
+find_library(BOOST_LOCALE_LIBRARY              boost_locale               ${BOOST_LIBS} )
+find_library(BOOST_LOG_LIBRARY                 boost_log                  ${BOOST_LIBS} )
+find_library(BOOST_LOG_SETUP_LIBRARY           boost_log_setup            ${BOOST_LIBS} )
+find_library(BOOST_MATH_C99_LIBRARY            boost_math_c99             ${BOOST_LIBS} )
+find_library(BOOST_MATH_C99F_LIBRARY           boost_math_c99f            ${BOOST_LIBS} )
+find_library(BOOST_MATH_C99L_LIBRARY           boost_math_c99l            ${BOOST_LIBS} )
+find_library(BOOST_MATH_TR1_LIBRARY            boost_math_tr1             ${BOOST_LIBS} )
+find_library(BOOST_MATH_TR1F_LIBRARY           boost_math_tr1f            ${BOOST_LIBS} )
+find_library(BOOST_MATH_TR1L_LIBRARY           boost_math_tr1l            ${BOOST_LIBS} )
+find_library(BOOST_PRG_EXEC_MONITOR_LIBRARY    boost_prg_exec_monitor     ${BOOST_LIBS} )
+find_library(BOOST_PROGRAM_OPTIONS_LIBRARY     boost_program_options      ${BOOST_LIBS} )
+find_library(BOOST_RAMDOM_LIBRARY              boost_random               ${BOOST_LIBS} )
+find_library(BOOST_REGEX_LIBRARY               boost_regex                ${BOOST_LIBS} )
+find_library(BOOST_SERIALIZATION_LIBRARY       boost_serialization        ${BOOST_LIBS} )
+find_library(BOOST_SIGNALS_LIBRARY             boost_signals              ${BOOST_LIBS} )
+find_library(BOOST_SYSTEM_LIBRARY              boost_system               ${BOOST_LIBS} )
+find_library(BOOST_TEST_EXEC_MONITOR_LIBRARY   boost_test_exec_monitor    ${BOOST_LIBS} )
+find_library(BOOST_THREAD_LIBRARY              boost_thread               ${BOOST_LIBS} )
+find_library(BOOST_TIMER_LIBRARY               boost_timer                ${BOOST_LIBS} )
+find_library(BOOST_UNIT_TEST_FRAMEWORK_LIBRARY boost_unit_test_framework  ${BOOST_LIBS} )
+find_library(BOOST_WAVE_LIBRARY                boost_wave                 ${BOOST_LIBS} )
+find_library(BOOST_WSERIALIZATION_LIBRARY      boost_wserialization       ${BOOST_LIBS} )
+
+
+# add external libary "Phao MQTT"
+set( PHAO_INCLUDES "s:/tools/paho/include" )
+
+if (UNIX)
+set( PHAO_LIBS "s:/tools/paho/lib" )
+else (UNIX)
+set( PHAO_LIBS "s:/tools/paho/lib" )
+endif (UNIX)
+
+find_library(PHAO_MQT_3A  paho-mqtt3a  ${PHAO_LIBS} )
+find_library(PHAO_MQT_3AS paho-mqtt3as ${PHAO_LIBS} )
+find_library(PHAO_MQT_3C  paho-mqtt3c  ${PHAO_LIBS} )
+find_library(PHAO_MQT_3CS paho-mqtt3cs ${PHAO_LIBS} )
+
+
+# add external libary "Xenomai"
+if (UNIX)
+set( XENOMAI_INCLUDES "${ROOT_DRIVE}:/tools/xenomai/include" )
+set( XENOMAI_LIBS "${ROOT_DRIVE}:/tools/xenomai/lib" )
+
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -D__GNU_SOURCE -D_REENTRANT -D__XENO__ -L${XENOMAI_LIBS}")
+
+find_library(XENOMAI_BASE_LIBRARY      xenomai       ${XENOMAI_LIBS} )
+find_library(XENOMAI_NATIVE_LIBRARY    native        ${XENOMAI_LIBS} )
+endif (UNIX)
+
+# add external library "ncurses"
+if (UNIX)
+set( NCURSES_INCLUDES "${ROOT_DRIVE}:/tools/ncurses/include" )
+set( NCURSES_LIBS "${ROOT_DRIVE}:/tools/ncurses/lib" )
+
+find_library(NCURSES_BASE_LIBRARY       ncurses        ${NCURSES_LIBS} )
+find_library(NCURSES_FORM_LIBRARY       form           ${NCURSES_LIBS} )
+find_library(NCURSES_MENU_LIBRARY       menu           ${NCURSES_LIBS} )
+find_library(NCURSES_PANEL_LIBRARY      panel          ${NCURSES_LIBS} )
+find_library(NCURSES_TINFO_LIBRARY      tinfo          ${NCURSES_LIBS} )
+endif (UNIX)
+
+# add external library "jansson"
+if (UNIX)
+set( JANSSON_INCLUDES "${ROOT_DRIVE}:/tools/jansson/include" )
+set( JANSSON_LIBS "${ROOT_DRIVE}:/tools/jansson/lib" )
+
+find_library(JANSSON_BASE_LIBRARY       jansson        ${JANSSON_LIBS} )
+endif (UNIX)
+
+# add additional target to build documentation
+add_custom_target(documentation)
+
+if (BUILD_SHARED_LIBS)
+
+# build Libraries
+include_directories(AFTER
+                    ${XENOMAI_INCLUDES}
+                    ${BOOST_INCLUDES}
+                    ${GAMMA_INCLUDES})
+
+add_subdirectory(source/PugiXML)
+
+include_directories(AFTER
+                    ${PugiXML_SOURCE_DIR}/src)
+                    
+add_subdirectory(source/GaAppBaseLib)
+
+include_directories(AFTER
+                    ${GaAppBaseLib_SOURCE_DIR}/include)
+                    
+add_subdirectory(source/GaGCppAPI)
+
+include_directories(AFTER
+                    ${GaGCppAPI_SOURCE_DIR}/include)
+                    
+add_subdirectory(source/BeagleBoneResources)
+
+include_directories(AFTER
+                    ${BeagleBoneResources_SOURCE_DIR}/include)
+else (BUILD_SHARED_LIBS)
+
+link_directories(${CMAKE_INSTALL_PREFIX}/bin)
+                    
+include_directories(AFTER
+                    ${XENOMAI_INCLUDES}
+                    ${BOOST_INCLUDES}
+                    ${GAMMA_INCLUDES}
+                    ${CMAKE_INSTALL_PREFIX}/include/PugiXML
+                    ${CMAKE_INSTALL_PREFIX}/include/GaAppBaseLib
+                    ${CMAKE_INSTALL_PREFIX}/include/GaGCppAPI
+                    ${CMAKE_INSTALL_PREFIX}/include/BeagleBoneResources)
+
+set( STD_LIBS "${CMAKE_INSTALL_PREFIX}/bin" )
+
+find_library(PugiXML                 PugiXML                ${STD_LIBS} )
+find_library(GaAppBaseLib            GaAppBaseLib           ${STD_LIBS} )
+find_library(GaGCppAPI               GaGCppAPI              ${STD_LIBS} )
+find_library(BeagleBoneResources     BeagleBoneResources    ${STD_LIBS} )
+
+endif(BUILD_SHARED_LIBS)
+
+# build Applications
+if (BUILD_BASIC_APPLICATION)
+add_subdirectory(source/GaApp)
+endif (BUILD_BASIC_APPLICATION)
+
+# build Modules
+add_subdirectory(source/BaseTecDriver)
+ 
+# build application modules
+add_subdirectory(source/XLSDispenser)
+add_subdirectory(source/KleberMqtt)
+

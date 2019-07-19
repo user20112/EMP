@@ -1,0 +1,14 @@
+<map id="ExceptionBase.h" name="ExceptionBase.h">
+<area shape="rect" id="node3" href="$_exception_base_8cpp.html" title="contain declaration of class ExceptionBase methods" alt="" coords="5,80,139,107"/>
+<area shape="rect" id="node5" href="$_argument_fault_exception_8h.html" title="contain definition of class GaAppBaseLib::ArgumentFaultException " alt="" coords="164,80,340,107"/>
+<area shape="rect" id="node19" href="$_logic_fault_exception_8h.html" title="contain definition of class GaAppBaseLib::LogicFaultException " alt="" coords="365,80,515,107"/>
+<area shape="rect" id="node24" href="$_system_call_exception_8h.html" title="contain definition of class GaAppBaseLib::SystemCallException " alt="" coords="539,80,697,107"/>
+<area shape="rect" id="node7" href="$_argument_fault_exception_8cpp.html" title="contain declaration of class ArgumentFaultException methods" alt="" coords="66,155,256,181"/>
+<area shape="rect" id="node9" href="$_exceptions_macros_8h.html" title="contain macros for throwing several exceptions with predefined parameter" alt="" coords="281,155,423,181"/>
+<area shape="rect" id="node11" href="$_lib_instance_8cpp.html" title="contain declaration of class LibInstance methods" alt="" coords="63,229,176,256"/>
+<area shape="rect" id="node13" href="$_module_instance_8cpp.html" title="contain declaration of class ModuleInstance methods" alt="" coords="201,229,340,256"/>
+<area shape="rect" id="node15" href="$_u_d_p_connection_8cpp.html" title="contain declaration of class UDPConnection " alt="" coords="364,229,503,256"/>
+<area shape="rect" id="node17" href="$_ga_app_base_lib_8h.html" title="container for all library include files. Can be used by external programs or libraries" alt="" coords="527,229,647,256"/>
+<area shape="rect" id="node21" href="$_logic_fault_exception_8cpp.html" title="contain declaration of class LogicFaultException methods" alt="" coords="447,155,612,181"/>
+<area shape="rect" id="node26" href="$_system_call_exception_8cpp.html" title="contain declaration of class SystemCallException methods" alt="" coords="637,155,808,181"/>
+</map>

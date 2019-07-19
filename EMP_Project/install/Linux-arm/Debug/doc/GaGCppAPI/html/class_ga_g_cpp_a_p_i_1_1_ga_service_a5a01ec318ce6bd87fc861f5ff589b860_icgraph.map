@@ -1,0 +1,10 @@
+<map id="GaGCppAPI::GaService::getInstance" name="GaGCppAPI::GaService::getInstance">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a3d28d1096d37a439f3d0e62eba47916f" title="add a filter expression." alt="" coords="223,5,430,32"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a2abed5dd7273674206165c3f13efb98b" title="first call initialization before the PV is open" alt="" coords="213,56,440,83"/>
+<area shape="rect" id="node15" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aad4a2f802aee40a4143cb296531a2b1c" title="get some PV settings and prepare instance for dealing with the PV." alt="" coords="215,107,438,133"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a029a00ebd6d4af27a0ce231f4632b28e" title="create new instance for a gamma process variable, but will not connect" alt="" coords="504,5,699,32"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#afa39c6b0fa9b302b6a542a83192f52a8" title="connect to existing gamma process variable by alias name" alt="" coords="488,56,715,83"/>
+<area shape="rect" id="node11" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac56dd25ad2bd50be30a0ed6d0edec0b4" title="tries to attach to gamma service, when connection is lost." alt="" coords="497,107,706,133"/>
+<area shape="rect" id="node13" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a8d840730021e358487973025e6659914" title="event callback function. will be called, when a event is fired." alt="" coords="763,107,965,133"/>
+<area shape="rect" id="node17" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#acd8d88af0244f64adaf223297283a2d5" title="connect to existing gamma process variable by alias name" alt="" coords="504,157,699,184"/>
+</map>

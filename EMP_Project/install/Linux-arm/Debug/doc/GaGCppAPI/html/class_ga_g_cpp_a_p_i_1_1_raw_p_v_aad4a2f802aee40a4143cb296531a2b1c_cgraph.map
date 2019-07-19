@@ -1,0 +1,9 @@
+<map id="GaGCppAPI::RawPV::finalizeOpen" name="GaGCppAPI::RawPV::finalizeOpen">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a400242936947fcdda232a79e166ce2df" title="request the numeric address of PV." alt="" coords="277,5,496,32"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a5a01ec318ce6bd87fc861f5ff589b860" title="access to global instance" alt="" coords="307,57,467,98"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_event_handler.html#a4b1b5c099932df677f39cf3ebd8bed63" title="attach handler to event _event. _arg1 is stored and will be the first argument for function callBack ..." alt="" coords="298,122,475,163"/>
+<area shape="rect" id="node11" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#ae738de65c78c824a968e190bc6cdc882" title="access for attach event" alt="" coords="307,187,467,229"/>
+<area shape="rect" id="node13" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#abdf287c3b9cfa05e2db0aeaf39747bf8" title="access for detach event" alt="" coords="307,253,467,294"/>
+<area shape="rect" id="node15" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a244b30b9e7788ce83f50cade9dae85ca" title="access for connection lost event" alt="" coords="307,318,467,359"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_event.html#a009118bd038fcb25b28a332fee6f069b" title="add event handler to event handler list" alt="" coords="545,129,722,156"/>
+</map>

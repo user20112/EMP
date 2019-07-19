@@ -1,0 +1,6 @@
+<map id="ExceptionsMacros.h" name="ExceptionsMacros.h">
+<area shape="rect" id="node3" href="$_argument_fault_exception_8h.html" title="contain definition of class GaAppBaseLib::ArgumentFaultException " alt="" coords="5,81,179,122"/>
+<area shape="rect" id="node13" href="$_logic_fault_exception_8h.html" title="contain definition of class GaAppBaseLib::LogicFaultException " alt="" coords="204,88,423,115"/>
+<area shape="rect" id="node16" href="$_system_call_exception_8h.html" title="contain definition of class GaAppBaseLib::SystemCallException " alt="" coords="447,88,672,115"/>
+<area shape="rect" id="node5" href="$_exception_base_8h.html" title="contain definition of class GaAppBaseLib::ExceptionBase " alt="" coords="219,171,407,197"/>
+</map>

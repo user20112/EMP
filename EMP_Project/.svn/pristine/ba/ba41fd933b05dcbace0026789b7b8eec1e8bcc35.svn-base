@@ -1,0 +1,767 @@
+/**
+ * @file AsymtecUnloader
+ * @short contain declaration of class \c AsymtecUnloader methods
+ *
+ * @remark
+ * this file is a template file and could be used to create new GaApp - Modules. Do do so replace all "SkeletonModule" by your module name and add your code to all TODO comments
+ *
+ * Version Information
+ * -------------------
+ * $Revision: 29111 $
+ * $HeadURL: https://app-aug-svn01.aug.osram.de/svn/aug-sw/TASKS/SOFTWARE/LIBS/CPP/Gamma_IOPlugins/PlugInTemplate/trunk/src/PlugInVersionInfo.template.cpp $
+ * $Author: S.Hegemann $
+ * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
+ *
+ */
+// System header
+#include "AsymtecUnloader.h"
+
+// external library header
+#include <iostream>
+#include <string>
+
+// local library header
+#include "AsymtecUnloaderVersionInfo.h"
+
+using namespace std;
+
+/**
+ * @fn createModule
+ * @short create a new module instance
+ * @param _instanceName name of module instance
+ * @param _configNode pointer to XML configuration information
+ * @return pointer to new module instance
+ *
+ * @fn deleteModule
+ * @short destroy module instance
+ * @param _module pointer to instance
+ */
+EXPORT_FUNCTIONS(AsymtecUnloader, AsymtecUnloader)
+
+namespace AsymtecUnloader
+{
+    // **************************************************************************************************
+    // ** SkeletonModule
+    // **************************************************************************************************
+    AsymtecUnloader::AsymtecUnloader(const char* _instanceName,
+                                     pugi::xml_node* _configInfo)
+            : GaAppBaseLib::ModuleInterface(_instanceName, _configInfo),
+              startTime(0),
+              currentState(warteAufNutzen),
+              lastState(hatMagazinGescannt),
+              lastPosition(0),
+//              scannerNutzen(1, 115200, "NUTZEN"),
+//              scannerMagazin(4, 115200, "MAGAZIN"),
+              dmcString(string()),
+              lastDmcString(string()),
+              scanningActive(false)
+    {
+        el::Loggers::getLogger(mLoggerName);
+        CLOG(DEBUG, mLoggerName.c_str())<< "AsymtecUnloader constructor executed.";
+
+        mGammaPathBase = "AsymtecUnloader.Data";
+        mGammaSlot = ":AsymtecUnloaderTask.XLSWork";
+
+        pugi::xml_attribute attr;
+        pugi::xml_node gaSetup = getConfigNode().child("GammaConnection");
+
+        if (!gaSetup.empty())
+        {
+            attr = gaSetup.attribute("PVNode");
+            if (!attr.empty())
+            {
+                mGammaPathBase = attr.value();
+            }
+
+            attr = gaSetup.attribute("SchedulerSlot");
+            if (!attr.empty())
+            {
+                mGammaSlot = attr.value();
+            }
+        }
+
+        // -----------------------------------------
+        // timeout
+        // -----------------------------------------
+        gaSetup = getConfigNode().child("Timeout");
+        if (!gaSetup.empty())
+        {
+            attr = gaSetup.attribute("value");
+
+            if (!attr.empty())
+            {
+                timeout = atof(attr.value());
+            }
+        }
+
+        // -----------------------------------------
+        // our serial connection
+        // -----------------------------------------
+
+        // scannerNutzen
+        gaSetup = getConfigNode().child("ScannerNutzen");
+        if (!gaSetup.empty())
+        {
+            attr = gaSetup.attribute("portNumber");
+
+            if (!attr.empty())
+            {
+                portNumberScannerNutzen = atoi(attr.value());
+            }
+
+            attr = gaSetup.attribute("baudRate");
+
+            if (!attr.empty())
+            {
+                baudRateScannerNutzen = atoi(attr.value());
+            }
+
+            attr = gaSetup.attribute("numberOfScans");
+
+            if (!attr.empty())
+            {
+                numberOfScansScannerNutzen = atoi(attr.value());
+            }
+        }
+
+        scannerNutzen = new CognexSerial(portNumberScannerNutzen, baudRateScannerNutzen, "NUTZEN", numberOfScansScannerNutzen);
+
+        // scannerMagazin
+        gaSetup = getConfigNode().child("ScannerMagazin");
+        if (!gaSetup.empty())
+        {
+            attr = gaSetup.attribute("portNumber");
+
+            if (!attr.empty())
+            {
+                portNumberScannerMagazin = atoi(attr.value());
+            }
+
+            attr = gaSetup.attribute("baudRate");
+
+            if (!attr.empty())
+            {
+                baudRateScannerMagazin = atoi(attr.value());
+            }
+
+            attr = gaSetup.attribute("numberOfScans");
+
+            if (!attr.empty())
+            {
+                numberOfScansScannerMagazin = atoi(attr.value());
+            }
+
+        }
+
+        scannerMagazin = new CognexSerial(portNumberScannerMagazin, baudRateScannerMagazin, "MAGAZIN", numberOfScansScannerMagazin);
+
+        // -----------------------------------------
+        // our input configuration
+        // -----------------------------------------
+
+        gaSetup = getConfigNode().child("IOConnection");
+        if (!gaSetup.empty())
+        {
+            // iniNutzen
+            attr = gaSetup.attribute("iniNutzen");
+            if (!attr.empty())
+            {
+                iniN = attr.value();
+            }
+            // iniPosition1
+            attr = gaSetup.attribute("iniPosition1");
+            if (!attr.empty())
+            {
+                iniP1 = attr.value();
+            }
+            // iniPosition2
+            attr = gaSetup.attribute("iniPosition2");
+            if (!attr.empty())
+            {
+                iniP2 = attr.value();
+            }
+            // iniPosition3
+            attr = gaSetup.attribute("iniPosition3");
+            if (!attr.empty())
+            {
+                iniP3 = attr.value();
+            }
+            // iniPosition4
+            attr = gaSetup.attribute("iniPosition4");
+            if (!attr.empty())
+            {
+                iniP4 = attr.value();
+            }
+            // iniHoehe
+            attr = gaSetup.attribute("iniHoehe");
+            if (!attr.empty())
+            {
+                iniH = attr.value();
+            }
+        }
+
+        // -----------------------------------------
+        // our serial connection
+        // -----------------------------------------
+
+        // -----------------------------------------
+        // our input initialization
+        // -----------------------------------------
+
+        // convert the strings from the AppConfig to integer and decrease it by 1
+        int iniNInteger = atoi(iniN.c_str());
+        --iniNInteger;
+        int iniP1Integer = atoi(iniP1.c_str());
+        --iniP1Integer;
+        int iniP2Integer = atoi(iniP2.c_str());
+        --iniP2Integer;
+        int iniP3Integer = atoi(iniP3.c_str());
+        --iniP3Integer;
+        int iniP4Integer = atoi(iniP4.c_str());
+        --iniP4Integer;
+        int iniHInteger = atoi(iniH.c_str());
+        --iniHInteger;
+
+        iniNutzen.connectToPv(("HardwareResources.BaseTecDriver.DigitalInputs.Input_0" + to_string(iniNInteger) + ".actState").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING);
+        iniPosition1.connectToPv(("HardwareResources.BaseTecDriver.DigitalInputs.Input_0" + to_string(iniP1Integer) + ".actState").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING);
+        iniPosition2.connectToPv(("HardwareResources.BaseTecDriver.DigitalInputs.Input_0" + to_string(iniP2Integer) + ".actState").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING);
+        iniPosition3.connectToPv(("HardwareResources.BaseTecDriver.DigitalInputs.Input_0" + to_string(iniP3Integer) + ".actState").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING);
+        iniPosition4.connectToPv(("HardwareResources.BaseTecDriver.DigitalInputs.Input_0" + to_string(iniP4Integer) + ".actState").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING);
+        iniHoehe.connectToPv(("HardwareResources.BaseTecDriver.DigitalInputs.Input_0" + to_string(iniHInteger) + ".actState").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
+        // get gamma connection
+        connect(mGammaSlot);
+
+        // get the MQTT configuration
+        pugi::xml_node mqttSetup = getConfigNode().child("MQTTConnection");
+        if (!mqttSetup.empty())
+        {
+            // -----------------------------------------
+            // MQTT Server
+            attr = mqttSetup.attribute("server");
+            if (!attr.empty())
+                mqttServer = attr.value();
+            else
+                mqttServer = MQTT_DEFAULT_SERVER;
+
+            // -----------------------------------------
+            // MQTT Topic
+            attr = mqttSetup.attribute("topic");
+            if (!attr.empty())
+            {
+                mqttData.mqttTopic = attr.value();
+            }
+            else
+            {
+                mqttData.mqttTopic = MQTT_DEFAULT_TOPIC;
+            }
+            // -----------------------------------------
+            // MQTT Definition IDs
+            attr = mqttSetup.attribute("defId");
+            if (!attr.empty())
+                mqttData.mqttDefId = attr.value();
+            else
+                mqttData.mqttDefId = MQTT_DEFAULT_DEFID1;
+        }
+        else
+        {
+            mqttServer = MQTT_DEFAULT_SERVER;
+            mqttData.mqttTopic = MQTT_DEFAULT_TOPIC;
+            mqttData.mqttDefId = MQTT_DEFAULT_DEFID1;
+        }
+
+// instantiate mqtt client
+        mqttClient = new mqtt(mqttServer, mqttDeviceName);
+    }
+
+// **************************************************************************************************
+// ** ~AsymtecUnloader
+// **************************************************************************************************
+    AsymtecUnloader::~AsymtecUnloader()
+    {
+        CLOG(DEBUG, mLoggerName.c_str())<< "AsymtecUnloader destructor executed.";
+        el::Loggers::unregisterLogger(mLoggerName.c_str());
+        delete mqttClient;
+
+        delete scannerNutzen;
+        delete scannerMagazin;
+    }
+
+// **************************************************************************************************
+// ** prepareStart
+// **************************************************************************************************
+    void
+    AsymtecUnloader::prepareStart()
+    {
+        CLOG(DEBUG, mLoggerName.c_str())<< "AsymtecUnloader prepareStart done.";
+    }
+
+// **************************************************************************************************
+// ** cleanUp
+// **************************************************************************************************
+    void
+    AsymtecUnloader::cleanUp()
+    {
+    }
+
+// **************************************************************************************************
+// ** execCommand
+// **************************************************************************************************
+    void AsymtecUnloader::execCommand(std::string& cmdLine)
+    {
+        // extract given command
+        std::string cmd = cmdLine.substr(0, cmdLine.find(' '));
+
+        // extract module name
+        size_t delimitPos = cmd.find(':');
+
+        // -------------------------------------------------------------------------------------------------------
+        // command: "info"  => print version information
+        // -------------------------------------------------------------------------------------------------------
+        if (cmd == "info")
+        {
+            std::cout << "  " << getName() << " (Type:" << ModuleVersionInfo::getInstance().getName() << ")" << std::endl;
+            ModuleVersionInfo::getInstance().printInfo(4);
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // command: "test"  => a testing command. not really useful
+        // -------------------------------------------------------------------------------------------------------
+        else if (cmd == "lastDmcNutzen")
+        {
+            if (mqttData.dmcNutzen.length() == DMC_TELEGRAM_NUTZEN_LENGTH)
+            {
+                std::cout << "last dmc from scannerNutzen: " << std::endl
+                        << mqttData.dmcNutzen << " Timestamp: " << mqttData.mqttTimeStamp << std::endl;
+            }
+            else
+            {
+                std::cout << "no valid dmcNutzen available." << std::endl;
+            }
+        }
+        else if (cmd == "lastDmcMagazin")
+        {
+            if (mqttData.dmcMagazin.length() == DMC_TELEGRAM_NUTZEN_LENGTH)
+            {
+                std::cout << "last dmc from scannerMagazin: " << std::endl
+                        << mqttData.dmcMagazin << " Timestamp: " << mqttData.mqttTimeStamp << std::endl;
+            }
+            else
+            {
+                std::cout << "no valid dmcMagazin available." << std::endl;
+            }
+        }
+        else if (cmd == "mqttinfo")
+        {
+            std::cout << "MQTT info:" << std::endl
+                    << " Server:    " << mqttServer << std::endl
+                    << " DefID:  " << mqttData.mqttDefId << std::endl
+                    << " Topic:   " << mqttData.mqttTopic << std::endl
+                    << " dmcNutzen:   " << mqttData.dmcNutzen << std::endl
+                    << " magazinPosition:   " << mqttData.position << std::endl
+                    << " dmcMagazin:   " << mqttData.dmcMagazin << std::endl
+                    << " TimeStamp:   " << mqttData.mqttTimeStamp << std::endl;
+        }
+        else if (cmd == "mqttConnected")
+        {
+            if (mqttClient->isClientConnected() == true)
+            {
+                std::cout << "MQTT client is connected to server " << mqttServer << std::endl;
+            }
+            else
+            {
+                std::cout << "MQTT client is not connected." << std::endl;
+            }
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // submodule command
+        // -------------------------------------------------------------------------------------------------------
+        else if (delimitPos != std::string::npos)
+        {
+            std::string moduleName = cmd.substr(0, delimitPos);
+            std::string moduleCmd = cmdLine.substr(delimitPos + 1, std::string::npos);
+
+            // TODO: call submodule command interface
+            std::cout << "  " << getName() << ": command for submodule \"" << moduleName << "\": \"" << moduleCmd << "\"" << std::endl;
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // unknown command
+        // -------------------------------------------------------------------------------------------------------
+        else if (cmdLine.length() > 0)
+        {
+            std::cerr << "  " << getName() << ": unknown command \"" << cmd << "\"" << std::endl;
+        }
+    }
+
+// **************************************************************************************************
+// ** taskInit
+// **************************************************************************************************
+    int32_t AsymtecUnloader::taskInit() noexcept
+    {
+        return (0);
+    }
+
+// **************************************************************************************************
+// ** taskDeinit
+// **************************************************************************************************
+    int32_t AsymtecUnloader::taskDeinit() noexcept
+    {
+        return (0);
+    }
+
+// **************************************************************************************************
+// ** taskRun
+// **************************************************************************************************
+    int32_t AsymtecUnloader::taskRun(gs_Task taskHandle, const uint32_t* frameNumber) noexcept
+    {
+        scannerNutzen->scheduler();
+        scannerMagazin->scheduler();
+
+        if (lastState != currentState)
+        {
+            lastState = currentState;
+
+            switch (currentState)
+            {
+                case warteAufNutzen:
+                    {
+                    CLOG(INFO, mLoggerName.c_str())<< "UNLOADER_STATE = WARTE_AUF_NUTZEN";
+                    break;
+                }
+                case hatNutzen:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< "UNLOADER_STATE = HAT_NUTZEN";
+                    break;
+                }
+                case hatNutzenGescannt:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< "UNLOADER_STATE = HAT_NUTZEN_GESCANNT";
+                    break;
+                }
+                case hatDmcNutzenValidiert:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< "UNLOADER_STATE = HAT_NUTZEN_VALIDIERT";
+                    break;
+                }
+                case stehtVorMagazin:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< "UNLOADER_STATE = STEHT_VOR_MAGAZIN";
+                    break;
+                }
+                case dmcMagazinIstLesbar:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< "UNLOADER_STATE = MAGAZIN_DMC_IST_LESBAR";
+                    break;
+                }
+                case hatMagazinGescannt:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< "UNLOADER_STATE = HAT_MAGAZIN_GESCANNT";
+                    break;
+                }
+            }
+        }
+
+        switch (currentState)
+        {
+            case warteAufNutzen:
+                {
+                // -------------------------------------------------------------------------------------------------------
+                // Schlitten mit neuem Nutzen an Initialposition.
+                // -------------------------------------------------------------------------------------------------------
+                if (iniNutzen.get())
+                {
+                    mqttData.info = "triggerNewProduct";
+                    currentState = hatNutzen;
+                }
+                break;
+            }
+            case hatNutzen:
+                {
+                if (iniNutzen.get())
+                {
+                    if (!scanningActive)
+                    {
+                        mqttData.info += "+scanningProduct";
+                        scannerNutzen->scanDmc();
+                        scanningActive = true;
+                    }
+                }
+                else
+                {
+                    // Scanvorgang soll abgebrochen werden, wenn Nutzen unerwartet entfernt wird
+                    if (scanningActive)
+                    {
+                        mqttData.info += "+scanningProductCanceled";
+                        scannerNutzen->stopScanning();
+                    }
+                }
+
+                dmcString = scannerNutzen->getDmc();
+
+                if (!dmcString.empty())
+                {
+                    if (dmcString == "ERROR")
+                    {
+                        CLOG(INFO, mLoggerName.c_str())<< "ERROR: DMC_NUTZEN NICHT GELESEN";
+                        // Fehlercode: 99
+                        mqttData.info += "+scanningProductFailed";
+                        mqttData.dmcNutzen = "99";
+                    }
+                    else
+                    {
+                        // -------------------------------------------------------------------------------------------------------
+                        // Schlitten mit Nutzen in Initialposition. DMC vom Nutzen wurde erfolgreich gelesen.
+                        // -------------------------------------------------------------------------------------------------------
+                        mqttData.info += "+scanningProductSuccessful";
+                        CLOG(INFO, mLoggerName.c_str())<< "DMC_NUTZEN: " << dmcString;
+                        mqttData.dmcNutzen = dmcString;
+                    }
+                    scanningActive = false;
+                    currentState = hatNutzenGescannt;
+                }
+                break;
+            }
+            case hatNutzenGescannt:
+                {
+                // start our timer
+                startTime = time(0);
+
+                if (dmcString != lastDmcString)
+                {
+                    lastDmcString = dmcString;
+                    currentState = hatDmcNutzenValidiert;
+                }
+                // der jetzige und der zuletzt gescannte DMC vom Nutzen sind identisch
+                else
+                {
+                    mqttData.info += "+duplicateProductId";
+                    currentState = hatDmcNutzenValidiert;
+                }
+                break;
+            }
+            case hatDmcNutzenValidiert:
+                {
+                // -------------------------------------------------------------------------------------------------------
+                // Nutzen wird in Magazin geschoben. Deshalb Schlitten mit Nutzen vor einem Magazin stationär.
+                // Zusatz_1: Irgendein PositionsINI muss bedämpft sein.
+                // ToDo: Zusatz_2: Timeout < 5 Sekunden?
+                // -------------------------------------------------------------------------------------------------------
+
+                if (!iniNutzen.get() && (iniPosition1.get() || iniPosition2.get() || iniPosition3.get() || iniPosition4.get()))
+                {
+                    mqttData.info += "+CasettePositionReached";
+                    currentState = stehtVorMagazin;
+                }
+
+                else if (!iniNutzen.get() && time(0) - startTime >= timeout)
+                {
+                    mqttData.info += "+CasettePositionTimeout";
+                    currentState = stehtVorMagazin;
+                }
+                break;
+            }
+            case stehtVorMagazin:
+                {
+                if (iniPosition1.get() && !iniPosition2.get() && !iniPosition3.get() && !iniPosition4.get())
+                {
+                    mqttData.position = 1;
+                }
+                else if (!iniPosition1.get() && iniPosition2.get() && !iniPosition3.get() && !iniPosition4.get())
+                {
+                    mqttData.position = 2;
+                }
+                else if (!iniPosition1.get() && !iniPosition2.get() && iniPosition3.get() && !iniPosition4.get())
+                {
+                    mqttData.position = 3;
+                }
+                else if (!iniPosition1.get() && !iniPosition2.get() && !iniPosition3.get() && iniPosition4.get())
+                {
+                    mqttData.position = 4;
+                }
+                // kein einziger INI getriggert
+                else if (!iniPosition1.get() && !iniPosition2.get() && !iniPosition3.get() && !iniPosition4.get())
+                {
+                    mqttData.info += "+NoCasettePosition";
+                    CLOG(INFO, mLoggerName.c_str())<< "ERROR: INI_POSITION DEFEKT";
+                    // Fehlercode: 99
+                    mqttData.position = 99;
+                    mqttData.dmcMagazin = "99";
+                    currentState = hatMagazinGescannt;
+                    break;
+                }
+                else
+                {
+                    // mehrere INIs gleichzeitig getriggert
+                    mqttData.info += "+MultipleCasettePositions";
+                    CLOG(INFO, mLoggerName.c_str())<< "ERROR: MEHRERE INI_POSITION GETRIGGERT:";
+
+                    if (iniPosition1.get())
+                    {
+                        CLOG(INFO, mLoggerName.c_str())<< "INI_POSITION_1";
+                    }
+                    if (iniPosition2.get())
+                    {
+                        CLOG(INFO, mLoggerName.c_str())<< "INI_POSITION_2";
+                    }
+                    if (iniPosition3.get())
+                    {
+                        CLOG(INFO, mLoggerName.c_str())<< "INI_POSITION_3";
+                    }
+                    if (iniPosition4.get())
+                    {
+                        CLOG(INFO, mLoggerName.c_str())<< "INI_POSITION_4";
+                    }
+                    // Fehlercode: 99
+                    mqttData.position = 99;
+                    mqttData.dmcMagazin = "99";
+                    currentState = hatMagazinGescannt;
+                    break;
+                }
+
+                // -------------------------------------------------------------------------------------------------------
+                // DMC vom Magazin kann gelesen werden, weil die Magazinhöhe noch niedrig genug ist. Zu einem späteren
+                // Zeitpunkt löst der Höhen-INI nicht mehr aus, weil die Magazinhöhe zu hoch ist.
+                // -------------------------------------------------------------------------------------------------------
+                if (iniHoehe.get())
+                {
+                    mqttData.info += "+TriggerCasetteScanner";
+                    currentState = dmcMagazinIstLesbar;
+                }
+                else
+                {
+                    if (mqttData.position == lastPosition)
+                    {
+                        // -------------------------------------------------------------------------------------------------------
+                        // DMC vom Magazin ist nicht mehr lesbar, wurde vorher jedoch bereits gelesen.
+                        // -------------------------------------------------------------------------------------------------------
+                        mqttData.info += "+UseOldCasetteId";
+                        currentState = hatMagazinGescannt;
+                    }
+                    else
+                    {
+                        mqttData.info += "+NoTriggerButNewCasette";
+                        CLOG(INFO, mLoggerName.c_str())<< "ERROR: INI_HOEHE DEFEKT";
+                        // Fehlercode: 99
+                        mqttData.dmcMagazin = "99";
+                        currentState = hatMagazinGescannt;
+                    }
+                }
+                break;
+            }
+            case dmcMagazinIstLesbar:
+                {
+                if (iniHoehe.get())
+                {
+                    if (!scanningActive)
+                    {
+                        mqttData.info += "+scanningCasette";
+                        scannerMagazin->scanDmc();
+                        scanningActive = true;
+                    }
+                }
+                else
+                {
+                    // Scanvorgang soll abgebrochen werden, wenn Magazin? unerwartet entfernt wird
+                    if (scanningActive)
+                    {
+                        mqttData.info += "+scanningCasetteCanceled";
+                        scannerMagazin->stopScanning();
+                    }
+                }
+
+                dmcString = scannerMagazin->getDmc();
+
+                if (!dmcString.empty())
+                {
+                    if (dmcString == "ERROR")
+                    {
+                        mqttData.info += "+scanningCasetteFailed";
+                        CLOG(INFO, mLoggerName.c_str())<< "ERROR: DMC_MAGAZIN NICHT GELESEN";
+                        // Fehlercode: 99
+                        mqttData.dmcMagazin = "99";
+                    }
+                    else
+                    {
+                        // -------------------------------------------------------------------------------------------------------
+                        // DMC vom Magazin wurde erfolgreich gelesen.
+                        // -------------------------------------------------------------------------------------------------------
+                        mqttData.info += "+scanningCasetteSuccessful";
+                        CLOG(INFO, mLoggerName.c_str())<< "DMC_MAGAZIN: " << dmcString;
+
+                        mqttData.dmcMagazin = dmcString;
+                    }
+                    scanningActive = false;
+                    currentState = hatMagazinGescannt;
+                }
+                break;
+            }
+            case hatMagazinGescannt:
+                {
+                // -------------------------------------------------------------------------------------------------------
+                // Schickt die Magazin-Nutzen-Zuordnung an die Datenbank über MQTT.
+                // -------------------------------------------------------------------------------------------------------
+
+                sendMqttMessage(&mqttData, mqttClient);
+
+                lastPosition = mqttData.position;
+
+                currentState = warteAufNutzen;
+                break;
+            }
+        }
+        return (0);
+    }
+
+// **************************************************************************************************
+// ** XLSCreateMqttMessage
+// **************************************************************************************************
+    void AsymtecUnloader::sendMqttMessage(data* myMqttData, mqtt* mqttclt)
+    {
+        std::stringstream mqttInfo;
+        std::stringstream mqttTime;
+        time_t rawTime = time(NULL);
+
+        struct tm * currentTime = localtime(&rawTime);
+
+        // save timestamp into data struct
+        mqttTime << std::setfill('0') << std::setw(4) << currentTime->tm_year + 1900
+                << std::setfill('0') << std::setw(4) << currentTime->tm_mon
+                << std::setfill('0') << std::setw(2) << currentTime->tm_mday
+                << std::setfill('0') << std::setw(2) << currentTime->tm_hour
+                << std::setfill('0') << std::setw(2) << currentTime->tm_min
+                << std::setfill('0') << std::setw(2) << currentTime->tm_sec;
+        myMqttData->mqttTimeStamp = mqttTime.str();
+
+        // build mqtt telegram
+        mqttInfo << "{\"DefinitionsID\":\"" << myMqttData->mqttDefId << "\",";
+        mqttInfo << "\"Columns\":{";
+        mqttInfo << "\"DmcNutzen\":\"" << myMqttData->dmcNutzen << "\",";
+        mqttInfo << "\"MagazinNummer\":\"" << myMqttData->position << "\",";
+        mqttInfo << "\"DmcMagazin\":\"" << myMqttData->dmcMagazin << "\",";
+        mqttInfo << "\"TimeStamp\":\"" << myMqttData->mqttTimeStamp << "\"";
+        mqttInfo << "\"Info\":\"" << myMqttData->info << "\",";
+        mqttInfo << "}}";
+
+        CLOG(INFO, mLoggerName.c_str())<< "MQTT-TELEGRAMM: " << mqttInfo.str().c_str();
+
+        // print mqtt telegram in json format on the console
+        cout << "{" << endl;
+        cout << "\t\"DefinitionsID\":\"" << myMqttData->mqttDefId << "\"," << endl;
+        cout << "\t\"Columns\":" << endl;
+        cout << "\t{" << endl;
+        cout << "\t\t\"DmcNutzen\":\"" << myMqttData->dmcNutzen << "\"," << endl;
+        cout << "\t\t\"MagazinNummer\":\"" << myMqttData->position << "\"," << endl;
+        cout << "\t\t\"DmcMagazin\":\"" << myMqttData->dmcMagazin << "\"," << endl;
+        cout << "\t\t\"TimeStamp\":\"" << myMqttData->mqttTimeStamp << "\"," << endl;
+        cout << "\t\t\"Info\":\"" << myMqttData->info << "\"" << endl;
+        cout << "\t}" << endl;
+        cout << "}" << endl;
+
+        CLOG(INFO, mLoggerName.c_str())<<"MQTT-TELEGRAMM GESENDET";
+
+        if (!(mqttclt->sendMessage(myMqttData->mqttTopic, mqttInfo.str())))
+        {
+            CLOG(INFO, mLoggerName.c_str())<<"ERROR MQTT-TELEGRAMM: KEIN CLIENT VERBUNDEN";
+    }
+}
+}
+/* namespace AsymtecUnloader */

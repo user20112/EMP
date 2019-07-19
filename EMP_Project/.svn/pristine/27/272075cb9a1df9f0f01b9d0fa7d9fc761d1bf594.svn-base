@@ -1,0 +1,26 @@
+{
+  "DefinitionId": "XLS_Asymtec01_Prematerial_Expiration",
+  "Version": "1",
+  "Columns": {
+    "Headline_1": "Ich bin ein Ruestmaterial-Text :-)",
+    "Headline_2_1": "Ablaufzeit",
+    "Headline_2_2": "Restlaufzeit",
+    "Potlifetime_Absolute": "dd:hh:mm",
+    "Potlifetime_Remaining": "dd:hh:mm",
+    "Message": "Hinweistext fuer den Operator",
+    "ColorHeadline_1_Background": "COLOR_YELLOW",
+    "ColorHeadline_1_Textcolor": "COLOR_WHITE",
+    "ColorHeadline_2_1_Background": "COLOR_WHITE",
+    "ColorHeadline_2_1_Textcolor": "COLOR_BLACK",
+    "ColorHeadline_2_2_Background": "COLOR_WHITE",
+    "ColorHeadline_2_2_Textcolor": "COLOR_GREEN",
+    "ColorPotlifetime_Background": "COLOR_BLACK",
+    "ColorPotlifetime_Textcolor": "COLOR_WHITE",
+    "ColorMessage_Background": "COLOR_BLUE",
+    "ColorMessage_Textcolor": "COLOR_WHITE",
+    "ColorSignalTower_Green": "true",
+    "ColorSignalTower_Yellow": "false",
+    "ColorSignalTower_Red": "false",
+    "BuzzerActive": "false"
+  }
+}

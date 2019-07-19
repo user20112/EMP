@@ -1,0 +1,1000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.rst-automation.de/gamma" 
+        elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" 
+        xmlns:gamma="http://www.rst-automation.de/gamma">
+
+    <complexType name="project">
+    	<annotation>
+    		<documentation></documentation>
+    	</annotation>
+    	<sequence>
+    		<element name="system" type="gamma:system"
+    			maxOccurs="unbounded" minOccurs="1">
+    		</element>
+    	</sequence>
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="version" type="string"></attribute>
+    </complexType>
+
+    <complexType name="system">
+        <annotation>
+        	<documentation>Gamma system description.</documentation>
+        </annotation>
+        <sequence>
+        	<element name="time" type="gamma:time" minOccurs="0"></element>
+        	<element name="data" type="gamma:data" minOccurs="0"></element>
+        	<element name="actionMap" type="gamma:actionMap"
+        		minOccurs="0">
+        	</element>
+        	<element name="ioModel" type="gamma:ioModel"
+        		minOccurs="0">
+        	</element>
+        	<element name="ioMap" type="gamma:ioMap" minOccurs="0"></element>
+        	<element name="transfers" type="gamma:transfers" maxOccurs="1" minOccurs="0"></element>
+        </sequence>
+        <attribute name="name" use="required" type="gamma:objectName">
+    	</attribute>
+    </complexType>
+
+    <complexType name="time">
+        <annotation>
+        	<documentation>Root element for time configuration (loop, scheduler).</documentation>
+        </annotation>
+        <sequence>
+    		<element name="loop" type="gamma:loop" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="scheduler" type="gamma:scheduler" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="data">
+        <annotation>
+        	<documentation>The root element for the data model.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="action" type="gamma:action" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="node" type="gamma:node" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="alias" type="gamma:alias" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="actionMap">
+        <annotation>
+        	<documentation>This element contains all action to event mappings.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="map" type="gamma:actionMapping" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ioModel">
+    	<annotation>
+    		<documentation>
+    			The root element for all IO plugins.
+    		</documentation>
+    	</annotation>
+    	<sequence>
+    		<element name="io" type="gamma:io" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="ioMap">
+    	<annotation>
+    		<documentation>
+    			Root element for all IO to data model mappings.
+    		</documentation>
+    	</annotation>
+    	<sequence>
+    		<element name="map" type="gamma:ioUpdateMapping" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="input" type="gamma:inputMapping" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="output" type="gamma:outputMapping" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="loop">
+        <annotation>
+        	<documentation>Define a periodic event, which can be connected with the data model.</documentation>
+        </annotation>
+        <attribute name="name" use="required" type="gamma:objectName">
+            <annotation>
+            	<documentation>The name of the Loop.</documentation>
+            </annotation>
+    	</attribute>
+    	<attribute name="cycleTicks" type="positiveInteger" use="required">
+    		<annotation>
+    			<documentation>The interval in which the loop will run. The duration of a single tick can be 
+configured in a separate configuration file or on the gamma service command line.
+The value must not be 0.
+    			</documentation>
+    		</annotation></attribute>
+    </complexType>
+
+    <simpleType name="objectName">
+        <annotation>
+        	<documentation>This type is used to give all objects a name (eg. Node, Loop, ...)</documentation>
+        </annotation>
+        <restriction base="string">
+    	    <pattern value="[\w_]+"></pattern>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="scheduler">
+        <annotation>
+        	<documentation>Define a scheduler.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="slot" type="gamma:slot" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required"></attribute>
+    	<attribute name="cycleTicks" type="positiveInteger" use="required">
+    		<annotation>
+    			<documentation>
+    				The cyclic period the scheduler will run in multiple
+    				of ticks. The duration of a single tick can be
+    				configured in a separate configuration file or on
+    				the gamma service command line. The value must not
+    				be 0.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="initTimeoutUsec" type="unsignedInt"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				This is the timeout, the scheduler will wait at
+    				most, until all child slots are sucessfully
+    				initialized.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="cleanupTimeoutUsec" type="unsignedInt"
+    		use="optional">
+    		<annotation>
+    			<documentation>
+    				This is the timeout, the scheduler will wait at
+    				most, until all child slots are sucessfully cleaned
+    				up.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="expectedMinDurationUsec" type="unsignedInt"
+    		use="optional" default="0">
+    		<annotation>
+    			<documentation>
+    				This configures the scheulers minimum expected cycle
+    				time. If the actual cycle duration is below that
+    				time, the internal underrun counter is incremented.
+    				Depending on the value of the attribute
+    				abortOnNumUnderruns, the scheduler will stop
+    				execution.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="expectedMaxDurationUsec" type="unsignedInt"
+    		use="optional" default="0">
+    		<annotation>
+    			<documentation>
+    				This configures the scheulers maximum expected cycle
+    				time. If the actual cycle duration is above that
+    				time, the internal overrun counter is incremented.
+    				Depending on the value of the attribute
+    				abortOnNumOverrund, the scheduler will stop
+    				execution.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="abortOnNumUnderruns" type="unsignedInt"
+    		use="optional" default="0">
+    		<annotation>
+    			<documentation>
+    				The attribute configures behaviour for underrun
+    				cycles. If set to 0, the scheduler will continue for
+    				any amount of underruns, else it will stop if the
+    				current count of underrun cycles equals the
+    				attributes value.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="abortOnNumOverruns" type="unsignedInt"
+    		use="optional" default="0">
+    		<annotation>
+    			<documentation>
+    				The attribute configures behaviour for overrun
+    				cycles. If set to 0, the scheduler will continue for
+    				any amount of overruns, else it will stop if the
+    				current count of overrun cycles equals the
+    				attributes value.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    </complexType>
+
+    <complexType name="slot">
+        <annotation>
+        	<documentation>Slot event source invoked by the scheduler.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="next" type="gamma:next" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName"></attribute>
+    	<attribute name="initTimeoutUsec" type="unsignedInt"
+    		use="optional">
+    		<annotation>
+    			<documentation>
+    				This is the timeout, the scheduler will wait at
+    				most, until all child slots are sucessfully
+    				initialized.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="cleanupTimeoutUsec" type="unsignedInt"
+    		use="optional">
+    		<annotation>
+    			<documentation>
+    				This is the timeout, the scheduler will wait at
+    				most, until all child slots are sucessfully cleaned
+    				up.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="expectedMinDurationUsec" type="unsignedInt"
+    		use="optional">
+    		<annotation>
+    			<documentation>
+    				This configures the scheulers minimum expected cycle
+    				time. If the actual cycle duration is below that
+    				time, the internal underrun counter is incremented.
+    				Depending on the value of the attribute
+    				abortOnNumUnderruns, the scheduler will stop
+    				execution.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="expectedMaxDurationUsec" type="unsignedInt"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				This configures the scheulers maximum expected cycle
+    				time. If the actual cycle duration is above that
+    				time, the internal overrun counter is incremented.
+    				Depending on the value of the attribute
+    				abortOnNumOverrund, the scheduler will stop
+    				execution.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="abortOnNumUnderruns" type="unsignedInt"
+    		use="optional">
+    		<annotation>
+    			<documentation>
+    				The attribute configures behaviour for underrun
+    				cycles. If set to 0, the scheduler will continue for
+    				any amount of underruns, else it will stop if the
+    				current count of underrun cycles equals the
+    				attributes value.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="abortOnNumOverruns" type="unsignedInt"
+    		use="optional">
+    		<annotation>
+    			<documentation>
+    				The attribute configures behaviour for overrun
+    				cycles. If set to 0, the scheduler will continue for
+    				any amount of overruns, else it will stop if the
+    				current count of overrun cycles equals the
+    				attributes value.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    </complexType>
+
+    
+    <complexType name="next">
+        <annotation>
+        	<documentation>The succeeding slots name.</documentation>
+        </annotation>
+        <attribute name="name" type="gamma:objectName"></attribute>
+    </complexType>
+
+
+    <complexType name="action">
+        <annotation>
+        	<documentation>Action are hooks into the data model. Whenever an action is triggered, the connected observers will perform their tasks. 
+(eg. Signaling or logging). These action can be connected to events (loop, slot, interrupt).</documentation>
+        </annotation>
+        <attribute name="name" type="gamma:objectName" use="required"></attribute>
+    </complexType>
+
+    <complexType name="node">
+        <annotation>
+        	<documentation>Define a node in the data model.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="memory" type="gamma:memory"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required"></attribute>
+    	<attribute name="logging" type="gamma:logging"
+    		default="deactivated">
+    	</attribute>
+    	<attribute name="minimum" type="gamma:boundary"
+    		default="deactivated">
+    	</attribute>
+    	<attribute name="maximum" type="gamma:boundary"
+    		default="deactivated">
+    	</attribute>
+    	<attribute name="simulation" type="gamma:simulation"
+    		default="deactivated">
+    	</attribute>
+    </complexType>
+
+    <simpleType name="logging">
+        <annotation>
+        	<documentation>deactivated: Logging subsystem is not available.
+disabled: Logging is available, but disabled.
+synchronous: The client (gamma API application) will log changed values.
+asynchronousAlways: The gamma service will log the value everytime the associated action is triggered.
+asynchronousOnchange: The gamma service will log the value whenever the associated action is triggered and the value has changed</documentation>
+        </annotation>
+        <restriction base="string">
+    		<enumeration value="deactivated"></enumeration>
+    		<enumeration value="disabled"></enumeration>
+    		<enumeration value="synchronous"></enumeration>
+    		<enumeration value="asynchronousAlways"></enumeration>
+    		<enumeration value="asynchronousOnchange"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="boundary">
+        <annotation>
+        	<documentation>deactivated: Boundary checking is not available.
+disabled: Boundary values are available, but not checked.
+reject: The middleware will refuse the value and return an error.
+change: The middleare will set the value to the boundary
+</documentation>
+        </annotation>
+        <restriction base="string">
+    		<enumeration value="deactivated"></enumeration>
+    		<enumeration value="disabled"></enumeration>
+    		<enumeration value="reject"></enumeration>
+    		<enumeration value="change"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <simpleType name="simulation">
+        <annotation>
+        	<documentation>deactivated: Simulation is not available.
+disabled: Simulation is available, but disabled.
+enabled: Simulation is active.</documentation>
+        </annotation>
+        <restriction base="string">
+    		<enumeration value="deactivated"></enumeration>
+    		<enumeration value="disabled"></enumeration>
+    		<enumeration value="enabled"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="memory" abstract="true">
+        <annotation>
+        	<documentation>Base object for all memories used for PVs and FIFOs. Currently only shared memory is supported.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="access" type="gamma:access" minOccurs="0" maxOccurs="1"></element>
+    		<element name="group" type="gamma:group" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required"></attribute>
+    	<attribute name="size">
+    		<simpleType>
+    			<restriction base="unsignedInt">
+    				<minInclusive value="4096"></minInclusive>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    	       <attribute name="logging" type="gamma:logging">
+        </attribute>
+        <attribute name="minimum" type="gamma:boundary">
+        </attribute>
+        <attribute name="maximum" type="gamma:boundary">
+        </attribute>
+        <attribute name="simulation" type="gamma:simulation">
+        </attribute>
+    </complexType>
+    
+    <complexType name="access">
+        <annotation>
+        	<documentation>To control memory access. All memory objects can be owned by a user and a group and can have different access flags.
+</documentation>
+        </annotation>
+        <attribute name="group" type="string" use="required"></attribute>
+    	<attribute name="user" type="string" use="required"></attribute>
+    	<attribute name="permission" use="required">
+    		<simpleType>
+    			<restriction base="string">
+    				<pattern value="((r|-)(w|-)(x|-)){3}"></pattern>
+    			</restriction>
+    		</simpleType>
+    	</attribute>
+    </complexType>
+
+    <complexType name="group">
+        <annotation>
+        	<documentation>Groups are used to synchronize access to PVs and Fifos.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="array" type="gamma:array" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element name="variable" type="gamma:variable" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element name="fifo" type="gamma:fifo" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required"></attribute>
+    	<attribute name="isLocked" type="boolean" default="false">
+    		<annotation>
+    			<documentation>
+    				If true, access to all child PVs is synchronized
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="signalingAction" type="gamma:objectName"></attribute>
+    	<attribute name="loggingAction" type="gamma:objectName"></attribute>
+    	       <attribute name="logging" type="gamma:logging">
+        </attribute>
+        <attribute name="minimum" type="gamma:boundary">
+        </attribute>
+        <attribute name="maximum" type="gamma:boundary">
+        </attribute>
+        <attribute name="simulation" type="gamma:simulation">
+        </attribute>
+    </complexType>
+
+    <complexType name="shm">
+        <annotation>
+        	<documentation>Shared memory element.</documentation>
+        </annotation>
+        <complexContent>
+    		<extension base="gamma:memory"></extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="array">
+        <annotation>
+        	<documentation>Arrays can be used to logically organize the data model.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="array" type="gamma:array" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="variable" type="gamma:variable" minOccurs="0" maxOccurs="unbounded"></element>
+    		<element name="fifo" type="gamma:fifo" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required"></attribute>
+    </complexType>
+
+    <complexType name="variable">
+        <annotation>
+        	<documentation>Defines a gamma data model variable.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="value" type="gamma:value" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="min" type="gamma:value" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="max" type="gamma:value" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="sim" type="gamma:value" maxOccurs="unbounded" minOccurs="0"></element>
+    		<element name="property" type="gamma:property" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required"></attribute>
+    	<attribute name="type" type="gamma:dataType" use="required">
+    		<annotation>
+    			<documentation>
+    				The data type of the variable
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="dimension" type="positiveInteger"
+    		default="1">
+    		<annotation>
+    			<documentation>
+    				Internally a variable is split up into PVs. The
+    				dimension attribute specifices the number of PVs,
+    				the variable will have.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="logging" type="gamma:logging">
+    	</attribute>
+    	<attribute name="minimum" type="gamma:boundary">
+    	</attribute>
+    	<attribute name="maximum" type="gamma:boundary">
+    	</attribute>
+    	<attribute name="simulation" type="gamma:simulation">
+    	</attribute>
+    </complexType>
+
+    <complexType name="fifo">
+        <annotation>
+        	<documentation>Fifo element (First In First Out). If you don't know what that means, you propably want to read something else...</documentation>
+        </annotation>
+        <sequence>
+    		<element name="min" type="gamma:value" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="max" type="gamma:value" minOccurs="0"></element>
+    		<element name="sim" type="gamma:value" minOccurs="0"
+    			maxOccurs="1">
+    		</element>
+    		<element name="property" type="gamma:property" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required"></attribute>
+    	<attribute name="type" type="gamma:dataType" use="required"></attribute>
+    	<attribute name="maxLength" type="positiveInteger"
+    		default="1">
+    		<annotation>
+    			<documentation>
+    				The length of the data type for string and blob.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="length" type="positiveInteger"
+    		use="required">
+    		<annotation>
+    			<documentation>The size of the FIFO.</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="usesTimestamps" type="boolean"
+    		default="false">
+    	</attribute>
+    	<attribute name="addConvenienceAlias" type="boolean"
+    		default="true">
+    	</attribute>
+    	       <attribute name="logging" type="gamma:logging"
+            default="deactivated">
+        </attribute>
+        <attribute name="minimum" type="gamma:boundary"
+            default="deactivated">
+        </attribute>
+        <attribute name="maximum" type="gamma:boundary"
+            default="deactivated">
+        </attribute>
+        <attribute name="simulation" type="gamma:simulation"
+            default="deactivated">
+        </attribute>
+    </complexType>
+
+    <simpleType name="dataType">
+    	<restriction base="string">
+    		<enumeration value="sint8"></enumeration>
+    		<enumeration value="uint8"></enumeration>
+    		<enumeration value="sint16"></enumeration>
+    		<enumeration value="uint16"></enumeration>
+    		<enumeration value="sint32"></enumeration>
+    		<enumeration value="uint32"></enumeration>
+    		<enumeration value="sint64"></enumeration>
+    		<enumeration value="uint64"></enumeration>
+    		<enumeration value="float"></enumeration>
+    		<enumeration value="double"></enumeration>
+    		<enumeration value="string"></enumeration>
+    		<enumeration value="blob"></enumeration>
+    	</restriction>
+    </simpleType>
+    
+    <simpleType name="ioDataType">
+        <restriction base="string">
+            <enumeration value="sint8"></enumeration>
+            <enumeration value="uint8"></enumeration>
+            <enumeration value="sint16"></enumeration>
+            <enumeration value="uint16"></enumeration>
+            <enumeration value="sint32"></enumeration>
+            <enumeration value="uint32"></enumeration>
+            <enumeration value="sint64"></enumeration>
+            <enumeration value="uint64"></enumeration>
+            <enumeration value="float"></enumeration>
+            <enumeration value="double"></enumeration>
+        </restriction>
+    </simpleType>
+
+    <complexType name="value">
+        <annotation>
+        	<documentation>Define value used with variables, FIFOs and properties.</documentation>
+        </annotation>
+        <simpleContent>
+    		<extension base="string">
+    			<attribute name="length" type="positiveInteger"
+    				default="1">
+    				<annotation>
+    					<documentation>
+    						As string and blob types have variable
+    						length, we need an optional parameter.
+    					</documentation>
+    				</annotation>
+    			</attribute>
+		    	<attribute name="index" type="unsignedInt">
+		    		<annotation>
+		    			<documentation>
+		    				This attribute is used to initialize a variable
+		    				containing multiple PVs. If the index attribute is
+		    				omitted, the value is used to initialize all PVs.
+		    			</documentation>
+		    		</annotation>
+		    	</attribute>
+    		</extension>
+    	</simpleContent>
+    </complexType>
+
+    <complexType name="property">
+        <annotation>
+        	<documentation>Property elements define versatile properties, which can be used with variables and FIFOs.</documentation>
+        </annotation>
+        <simpleContent>
+    		<extension base="string">
+    			<attribute name="name" type="gamma:objectName"
+    				use="required">
+    			</attribute>
+    			<attribute name="type" type="gamma:dataType"></attribute>
+    		</extension>
+    	</simpleContent>
+    </complexType>
+
+    <simpleType name="aliasName">
+        <restriction base="string">
+            <pattern value="[\w_]+(.([\w_])+)*"></pattern>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="indexedAliasName">
+        <restriction base="string">
+            <pattern value=".+"></pattern>
+        </restriction>
+    </simpleType>
+
+    <complexType name="alias">
+        <annotation>
+        	<documentation>Variables and FIFOs can be addressed by different aliases, which are defined using the alias element.</documentation>
+        </annotation>
+        <attribute name="name" type="gamma:aliasName" use="required">
+        	<annotation>
+        		<documentation>A valid name following the gamma object naming conventions.</documentation>
+        	</annotation></attribute>
+    	<attribute name="target" type="gamma:aliasName" use="required">
+    		<annotation>
+    			<documentation>This alias must point to an existsing Variable or FIFO using the following convention.
+"Node.Memory.Group[.Array]+.Variable"</documentation>
+    		</annotation></attribute>
+    </complexType>
+
+    <complexType name="actionMapping" abstract="true">
+        <annotation>
+        	<documentation>Abstract base for all action to event mappings.</documentation>
+        </annotation>
+        <attribute name="action" type="gamma:objectName" use="required">
+        	<annotation>
+        		<documentation>Must be the name of an existing action defined in the data model.</documentation>
+        	</annotation></attribute>
+    </complexType>
+
+    <complexType name="loopMapping">
+        <annotation>
+        	<documentation>Map loop event to an action.</documentation>
+        </annotation>
+        <complexContent>
+    		<extension base="gamma:actionMapping">
+    			<attribute name="loop" type="gamma:objectName" use="required">
+    				<annotation>
+    					<documentation>Name of existing loop element.</documentation>
+    				</annotation></attribute>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="schedulerMapping">
+        <annotation>
+        	<documentation>Map slot event to an action.</documentation>
+        </annotation>
+        <complexContent>
+            <extension base="gamma:actionMapping">
+                <attribute name="slot" type="gamma:objectName" use="required">
+                	<annotation>
+                		<documentation>The name of a slot element of the selected scheduler.</documentation>
+                	</annotation></attribute>
+                <attribute name="scheduler" type="gamma:objectName" use="required">
+                	<annotation>
+                		<documentation>The name of an existing scheduler element.</documentation>
+                	</annotation></attribute>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="interruptMapping">
+        <annotation>
+        	<documentation>Map interrupt to an action.</documentation>
+        </annotation>
+        <complexContent>
+            <extension base="gamma:actionMapping">
+                <attribute name="io" type="gamma:objectName" use="required">
+                	<annotation>
+                		<documentation>Name of existing io element.</documentation>
+                	</annotation></attribute>
+                <attribute name="interrupt" type="string" use="required">
+                	<annotation>
+                		<documentation>Name of interrupt on selected IO.</documentation>
+                	</annotation></attribute>
+            </extension>
+        </complexContent>
+    </complexType>
+
+
+    <complexType name="io">
+        <annotation>
+        	<documentation>Define an IO plugin.</documentation>
+        </annotation>
+        <sequence>
+    		<element name="plugin" type="gamma:plugin"></element>
+    		<element name="input" type="gamma:input" maxOccurs="unbounded"
+    			minOccurs="0">
+    		</element>
+    		<element name="output" type="gamma:output" minOccurs="0"
+    			maxOccurs="unbounded">
+    		</element>
+    		<element name="interrupt" type="gamma:interrupt" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName"></attribute>
+    </complexType>
+    
+    <complexType name="input">
+        <annotation>
+        	<documentation>Definition of an input provided by an IO plugin.</documentation>
+        </annotation>
+        <attribute name="channel" type="string" use="required"></attribute>
+    	<attribute name="type" type="gamma:ioDataType" use="required"></attribute>
+    </complexType>
+
+    <complexType name="output">
+        <annotation>
+        	<documentation>Definition of an output provided by an IO plugin.</documentation>
+        </annotation>
+        <attribute name="channel" type="string" use="required"></attribute>
+    	<attribute name="type" type="gamma:ioDataType"></attribute>
+    </complexType>
+
+    <complexType name="plugin">
+        <annotation>
+        	<documentation>Description of a loadable shared object (*.dll, *.so).</documentation>
+        </annotation>
+        <sequence>
+    		<element name="library" type="string">
+    			<annotation>
+    				<documentation>Library name. This can be either an absolute path or a name. 
+If it is only a name, the library resolution is platform dependent.
+On linux the name is prefixed with 'lib' and suffixed with '.so' to search for the plugin.
+On windows '.dll' is appended to search for the plugin,
+</documentation>
+    			</annotation></element>
+    		<element name="parameters" type="string"></element>
+    	</sequence>
+    	<attribute name="vendor" type="string"></attribute>
+    	<attribute name="version" type="string"></attribute>
+    </complexType>
+
+    <complexType name="interrupt">
+        <annotation>
+        	<documentation>Definition of an interrupt provided by an IO plugin.</documentation>
+        </annotation>
+        <attribute name="name" type="string" use="required"></attribute>
+    </complexType>
+
+    <complexType name="ioUpdateMapping" abstract="true">
+    	<attribute name="io" type="gamma:objectName" use="required">
+    		<annotation>
+    			<documentation>Name of existing io element.</documentation>
+    		</annotation></attribute>
+    </complexType>
+    
+    <complexType name="loopUpdateMapping">
+    	<complexContent>
+    		<extension base="gamma:ioUpdateMapping">
+    			<attribute name="loop" type="gamma:objectName" use="required">
+    				<annotation>
+    					<documentation>Name of existing loop element.</documentation>
+    				</annotation></attribute>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="slotUpdateMapping">
+    	<complexContent>
+    		<extension base="gamma:ioUpdateMapping">
+    			<attribute name="slot" type="gamma:objectName">
+    				<annotation>
+    					<documentation>Existing slot name of the selected scheduler.</documentation>
+    				</annotation></attribute>
+    			<attribute name="scheduler" type="gamma:objectName">
+    				<annotation>
+    					<documentation>The name of an existing scheduler element.</documentation>
+    				</annotation></attribute>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="inputMapping">
+    	<annotation>
+    		<documentation>
+    			Map IO channel to variable or FIFO. Only one input
+    			channel can be mapped to such an object. But a single io
+    			channel can be mapped to multiple variable or FIFO
+    			objects.
+    		</documentation>
+    	</annotation>
+    	<sequence>
+    		<element name="filter" type="gamma:filter" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="action" type="gamma:objectName"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				Name of an existing action element.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="io" type="gamma:objectName" use="required">
+    		<annotation>
+    			<documentation>
+    				Name of an existing io element.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="channel" type="string" use="required">
+    		<annotation>
+    			<documentation>
+    				Name of an existing input channel of the selected
+    				IO.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="alias" type="gamma:indexedAliasName"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				Valid alias of Variable of FIFO.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="onChange" type="boolean" default="true">
+    		<annotation>
+    			<documentation>
+    				If set to true, IO will only be updated when
+    				necessary.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    </complexType>
+
+    <complexType name="outputMapping">
+    	<annotation>
+    		<documentation>
+    			Map IO channel to variable or FIFO. Only a single
+    			variable or FIFO can be mapped to an output. But a
+    			variable or FIFO can be mapped to multiple outputs.
+    		</documentation>
+    	</annotation>
+    	<sequence>
+    		<element name="filter" type="gamma:filter" minOccurs="0" maxOccurs="unbounded"></element>
+    	</sequence>
+    	<attribute name="action" type="gamma:objectName"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				Name of existing action element.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="io" type="gamma:objectName" use="required">
+    		<annotation>
+    			<documentation>
+    				Name of existing io element.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="channel" type="string" use="required">
+    		<annotation>
+    			<documentation>
+    				Name of output channel on selected IO.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="alias" type="gamma:indexedAliasName"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				Valid alias of Variable of FIFO.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="onChange" type="boolean" default="true"></attribute>
+    </complexType>
+
+    <complexType name="filter" abstract="true"></complexType>
+
+    <complexType name="offset">
+    	<complexContent>
+    		<extension base="gamma:filter">
+    			<attribute name="offset" type="double" use="required"></attribute>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="scale">
+    	<complexContent>
+    		<extension base="gamma:filter">
+    			<attribute name="scale" type="double" use="required"></attribute>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="filterPlugin">
+    	<complexContent>
+    		<extension base="gamma:filter">
+    			<sequence>
+    				<element name="plugin" type="gamma:plugin"></element>
+    			</sequence>
+    		</extension>
+    	</complexContent>
+    </complexType>
+
+    <complexType name="transfers">
+    	<sequence>
+    		<element name="system" type="gamma:transferSystem" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    </complexType>
+    
+    <complexType name="transferSystem">
+    	<sequence>
+    		<element name="variable" type="gamma:transferVariable"
+    			maxOccurs="unbounded" minOccurs="0">
+    		</element>
+    		<element name="action" type="gamma:transferAction" maxOccurs="unbounded" minOccurs="0"></element>
+    	</sequence>
+    	<attribute name="name" type="gamma:objectName" use="required">
+    		<annotation>
+    			<documentation>Name of gamma system.</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="action" type="gamma:objectName"
+    		use="required">
+    	</attribute>
+    	<attribute name="useReliableTransport" type="boolean"
+    		default="true">
+    		<annotation>
+    			<documentation>decision between TCP/UDP</documentation>
+    		</annotation>
+    	</attribute>
+    	<attribute name="errorTimeoutSec" type="unsignedInt"
+    		use="required">
+    		<annotation>
+    			<documentation>
+    				Time to wait until reconnect attept after an error
+    				has happened.
+    			</documentation>
+    		</annotation>
+    	</attribute>
+    </complexType>
+    
+    <complexType name="transferVariable">
+    	<attribute name="src" type="gamma:indexedAliasName"
+    		use="required">
+            <annotation>
+            	<documentation>Local alias name</documentation>
+            </annotation>
+    	</attribute>
+    	<attribute name="dest" type="gamma:indexedAliasName"
+    		use="required">
+    	</attribute>
+    	<attribute name="onChange" type="boolean" default="true"></attribute>
+    </complexType>
+
+    <complexType name="transferAction">
+    	<attribute name="dest" type="gamma:objectName" use="required"></attribute>
+    </complexType>
+</schema>

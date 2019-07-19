@@ -1,0 +1,1014 @@
+<gamma:project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.rst_automation.de/gamma" xmlns:gamma="http://www.rst_automation.de/gammaProject">
+	<system cycleTimeUsec="1000" name="GaApp">
+		<time>
+			<scheduler initTimeoutUsec="10000000"
+				expectedMaxDurationUsec="2500" cleanupTimeoutUsec="1000000"
+				expectedMinDurationUsec="0" abortOnNumOverruns="0"
+				abortOnNumUnderruns="0" cycleTicks="10" name="BaseTecDriver">
+				<slot initTimeoutUsec="10000000" expectedMaxDurationUsec="2500"
+					cleanupTimeoutUsec="1000000" expectedMinDurationUsec="496"
+					abortOnNumOverruns="0" abortOnNumUnderruns="0" name="IOSync" />
+			</scheduler>
+			<scheduler initTimeoutUsec="10000000"
+				expectedMaxDurationUsec="2500" cleanupTimeoutUsec="1000000"
+				expectedMinDurationUsec="0" abortOnNumOverruns="0"
+				abortOnNumUnderruns="0" cycleTicks="100" name="XLSDispenserTask">
+				<slot initTimeoutUsec="10000000" expectedMaxDurationUsec="2500"
+					cleanupTimeoutUsec="1000000" expectedMinDurationUsec="0"
+					abortOnNumOverruns="0" abortOnNumUnderruns="0" name="XLSWork" />
+			</scheduler>
+			<scheduler initTimeoutUsec="10000000"
+				expectedMaxDurationUsec="2500" cleanupTimeoutUsec="1000000"
+				expectedMinDurationUsec="0" abortOnNumOverruns="0"
+				abortOnNumUnderruns="0" cycleTicks="20" name="KleberTask">
+				<slot initTimeoutUsec="10000000" expectedMaxDurationUsec="2500"
+					cleanupTimeoutUsec="1000000" expectedMinDurationUsec="0"
+					abortOnNumOverruns="0" abortOnNumUnderruns="0" name="KWork" />
+			</scheduler>
+		</time>
+		<data>
+			<node name="XLSDispenser">
+				<memory size="4096" name="data" xsi:type="shm">
+					<group isLocked="false" name="dmc">
+						<variable type="string" dimension="1"	addConvenienceAlias="true" name="dmc1Id">
+							<value length="32">...</value>
+							<sim length="32">0</sim>						
+						</variable>
+						<variable type="string" dimension="1"	addConvenienceAlias="true" name="dmc1TimeStamp">
+							<value length="32">...</value>
+							<sim length="32">0</sim>						
+						</variable>
+						<variable type="string" dimension="1"	addConvenienceAlias="true" name="dmc2Id">
+							<value length="32">...</value>
+							<sim length="32">0</sim>
+						</variable>
+						<variable type="string" dimension="1"	addConvenienceAlias="true" name="dmc2TimeStamp">
+							<value length="32">...</value>
+							<sim length="32">0</sim>						
+						</variable>
+					</group>
+				</memory>
+			</node>
+			
+			<node name="KleberMqtt">
+				<memory size="4096" name="data" xsi:type="shm">
+					<group isLocked="false" name="signal">
+						<variable type="uint8" dimension="1" addConvenienceAlias="true" name="buzzer">
+							<value>0</value>					
+						</variable>
+					</group>
+				</memory>
+			</node>
+			
+			<node name="HardwareResources">
+				<memory size="32768" name="BaseTecDriver" xsi:type="shm">
+					<group isLocked="false" name="BaseSystem">
+						<array name="Config">
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="HostAliveTimer">
+								<value>5000</value>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="RequestedResources">
+								<value>31</value>
+							</variable>
+						</array>
+						<array name="Data">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="ActiveResources">
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="FirmwareStatus">
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="FirmwareVersion">
+							</variable>
+						</array>
+						<array name="Debug">
+							<variable type="ieee32" dimension="3"
+								addConvenienceAlias="true" name="CycleTimeInfo">
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="MinHostAliveTimer">
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="ProgramLoopCounter">
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="PruAliveTimer">
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="SleepCounter">
+							</variable>
+						</array>
+					</group>
+					<group isLocked="false" name="HardwareCtrl">
+						<array name="Config">
+							<variable minimum="reject" maximum="reject" type="uint16"
+								dimension="1" addConvenienceAlias="true" name="HardwareTriggerBit">
+								<value>4</value>
+								<max>31</max>
+							</variable>
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="reqCtrlUart_00">
+								<value>0</value>
+							</variable>
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="reqCtrlUart_01">
+								<value>0</value>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqStateLEDgr">
+								<value>0</value>
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqStateLEDrt">
+								<value>0</value>
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqStateTempCtrl">
+								<value>0</value>
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Data">
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="actCtrlUart_00">
+							</variable>
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="actCtrlUart_01">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actStateLEDgr">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actStateLEDrt">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actStateTempCtrl">
+							</variable>
+						</array>
+					</group>
+					<group isLocked="false" name="DigitalInputs">
+						<array name="Input_00">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">101</property>
+								<property type="string" name="Unit">Cnt</property>
+								<property type="ieee32" name="scaleFactor">0.014</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_01">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">102</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_02">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">103</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_03">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">104</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_04">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">105</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_05">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">106</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_06">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">107</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_07">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">108</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_08">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">109</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+						<array name="Input_09">
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="actState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<!-- possible values: 0: no counting 1: count on positive edges 2: 
+								count on negative edges 3: count on both edges -->
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="countMode">
+								<value>1</value>
+								<min>0</min>
+								<max>3</max>
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="counterValue">
+								<property type="uint64" name="EnMonExport_ChannelID">110</property>
+								<property type="string" name="Unit">0</property>
+								<property type="ieee32" name="scaleFactor">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawCounterValue">
+								<property type="uint8" name="DataStorage">1</property>
+							</variable>
+						</array>
+					</group>
+					<group isLocked="false" name="DigitalOutputs">
+						<array name="Debug">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+						</array>
+						<array name="Output_00">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Output_01">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Output_02">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Output_03">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Output_04">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Output_05">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Output_06">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+						<array name="Output_07">
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="StandartDiagnostic">
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="curState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqMode">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+							<variable minimum="reject" maximum="reject" type="uint8"
+								dimension="1" addConvenienceAlias="true" name="reqState">
+								<min>0</min>
+								<max>1</max>
+							</variable>
+						</array>
+					</group>
+					<group isLocked="false" name="AnalogInputs">
+						<array name="Analog_00">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: 0..100% 0..10V 0..20mA 4...20mA -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="uint64" name="EnMonExport_ChannelID">201</property>
+								<property type="string" name="Unit">V</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+								<property type="string" name="errorInfoLink">errorLevel</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="updateFreq">
+								<property type="string" name="Unit">Hz</property>
+							</variable>
+						</array>
+						<array name="Analog_01">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: 0..100% 0..10V 0..20mA 4...20mA -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="uint64" name="EnMonExport_ChannelID">202</property>
+								<property type="string" name="Unit">V</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+								<property type="string" name="errorInfoLink">errorLevel</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="updateFreq">
+								<property type="string" name="Unit">Hz</property>
+							</variable>
+						</array>
+						<array name="Analog_02">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: 0..100% 0..10V 0..20mA 4...20mA -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="uint64" name="EnMonExport_ChannelID">203</property>
+								<property type="string" name="Unit">V</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+								<property type="string" name="errorInfoLink">errorLevel</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="updateFreq">
+								<property type="string" name="Unit">Hz</property>
+							</variable>
+						</array>
+						<array name="Analog_03">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: 0..100% 0..10V 0..20mA 4...20mA -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="uint64" name="EnMonExport_ChannelID">204</property>
+								<property type="string" name="Unit">V</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+								<property type="string" name="errorInfoLink">errorLevel</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="updateFreq">
+								<property type="string" name="Unit">Hz</property>
+							</variable>
+						</array>
+						<array name="Analog_04">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: 0..100% 0..10V 0..20mA 4...20mA -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="uint64" name="EnMonExport_ChannelID">205</property>
+								<property type="string" name="Unit">V</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+								<property type="string" name="errorInfoLink">errorLevel</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="updateFreq">
+								<property type="string" name="Unit">Hz</property>
+							</variable>
+						</array>
+						<array name="Analog_05">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: 0..100% 0..10V 0..20mA 4...20mA -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="uint64" name="EnMonExport_ChannelID">206</property>
+								<property type="string" name="Unit">V</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+								<property type="string" name="errorInfoLink">errorLevel</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="updateFreq">
+								<property type="string" name="Unit">Hz</property>
+							</variable>
+						</array>
+						<array name="Analog_06">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: 0..100% 0..10V 0..20mA 4...20mA -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="uint64" name="EnMonExport_ChannelID">207</property>
+								<property type="string" name="Unit">V</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+								<property type="string" name="errorInfoLink">errorLevel</property>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="updateFreq">
+								<property type="string" name="Unit">Hz</property>
+							</variable>
+						</array>
+					</group>
+					<group isLocked="false" name="TemperatureInputs">
+						<array name="Temperature_00">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: ???? -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint32" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<!-- <max>0x800000</max> <max>0x7FFFFF</max> -->
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="string" name="Unit">°C</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<property type="sint32" name="mfifty_reading">90</property>
+								<property type="sint32" name="zero_reading">100</property>
+								<property type="sint32" name="fifty_reading">110</property>
+
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+							</variable>
+						</array>
+						<array name="Temperature_01">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: ???? -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="string" name="Unit">°C</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+							</variable>
+						</array>
+						<array name="Temperature_02">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: ???? -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="string" name="Unit">°C</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+							</variable>
+						</array>
+						<array name="Temperature_03">
+							<!-- possible settings: 0 = value is valid 1 = status not set 2 = 
+								Overrun 3 = Underrun -->
+							<variable type="uint8" dimension="1"
+								addConvenienceAlias="true" name="errorLevel">
+								<value>1</value>
+							</variable>
+							<!--normalized value (0.0 to 1.0) -->
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="normValue">
+								<max>0</max>
+								<max>1</max>
+								<!-- possible settings: ???? -->
+								<property type="string" name="normMode">0</property>
+							</variable>
+							<variable type="uint16" dimension="1"
+								addConvenienceAlias="true" name="rawValue">
+								<max>0</max>
+								<max>4096</max>
+							</variable>
+							<variable type="ieee32" dimension="1"
+								addConvenienceAlias="true" name="value">
+								<property type="string" name="Unit">°C</property>
+								<property type="sint8" name="factor_0">0</property>
+								<property type="sint8" name="factor_1">1</property>
+								<!-- possible settings: linear ==> factor_0 = offset; factor_1 = 
+									scaling factor polynomial ==> factoc_X = factor for exponential value -->
+								<property type="string" name="scaleMode">linear</property>
+							</variable>
+						</array>
+					</group>
+				</memory>
+			</node>
+
+		</data>
+		<actionMap />
+		<ioModel />
+		<ioMap />
+	</system>
+</gamma:project>

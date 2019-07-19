@@ -1,0 +1,15 @@
+// the configured options and settings for Tutorial
+#define APPLICATION_NAME        "@APPLICATIN_NAME@"
+#define BUILD_DESC              "@BUILD_DESCRIPTION@"
+#define VERSION_MAJOR           @PROJECT_VERSION_MAJOR@
+#define VERSION_MINOR           @PROJECT_VERSION_MINOR@
+#define VERSION_PATCH           @PROJECT_VERSION_PATCH@
+#define VERSION_TWEAK           @PROJECT_VERSION_TWEAK@
+
+#ifdef NDEBUG
+#define _BUILD_TYPE	""
+#else
+#define _BUILD_TYPE	"- [Debug Version]"
+#endif
+
+#define $WCREV$                                 -1

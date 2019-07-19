@@ -1,0 +1,6 @@
+<map id="GaGCppAPI::GaLogger::endl" name="GaGCppAPI::GaLogger::endl">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a87e6f6573b988d06699e39c8f8d79df8" title="start a gamma scheduler" alt="" coords="211,5,371,46"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a904abaa6d25d8f3edc46aa217500d81a" title="GaGCppAPI::GaService\l::stopScheduler" alt="" coords="211,70,371,111"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a7916fef198afb06eccacd2e09d5594d8" title="start all connected gamma scheduler" alt="" coords="419,5,579,46"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a60c38b6b8f2c308ef83e27ea17944994" title="GaGCppAPI::GaService\l::stopSchedulerAll" alt="" coords="419,70,579,111"/>
+</map>

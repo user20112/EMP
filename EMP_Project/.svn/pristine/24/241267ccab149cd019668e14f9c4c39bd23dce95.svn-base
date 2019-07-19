@@ -1,0 +1,182 @@
+/*
+ * UART.cpp
+ *
+ *  Created on: 14.09.2017
+ *      Author: mario.richter
+ */
+
+#include "UartInterface.h"
+
+
+namespace XLSDispenser
+{
+  // **************************************************************************************************
+  // ** UartInterface()
+  // **************************************************************************************************
+  UartInterface::UartInterface(const unsigned int _portNo, const unsigned int _baud)
+  {
+    fHandle = 0;
+    loggerName = "UartInterface";
+    el::Loggers::getLogger(loggerName.c_str());
+
+    // initialize circular buffers
+    recv_buf.read = 0;
+    recv_buf.writ = 0;
+    send_buf.read = 0;
+    send_buf.writ = 0;
+
+    char device[] = "/dev/ttyO0";
+    if((_portNo > 0) && (_portNo <= 5))
+    {
+      device[9]= _portNo + '0';
+    }
+
+    try
+    {
+      UartOpen(device, _baud);
+      CLOG(INFO, loggerName.c_str()) << "UART successfully opened: " << device;
+    }
+    catch (std::exception &e)
+    {
+      CLOG(ERROR, loggerName.c_str()) << "UART open failed (" << device << "): " << e.what();
+    }
+  }
+
+  // **************************************************************************************************
+  // ** ~UartInterface()
+  // **************************************************************************************************
+  UartInterface::~UartInterface()
+  {
+    UartClose();
+  }
+
+  // **************************************************************************************************
+  // ** UartInterface::UartOpen()
+  // **************************************************************************************************
+  int UartInterface::UartOpen(const char* _device, const unsigned int _baud)
+  {
+    struct termios options;
+
+    // open device
+    fHandle = open(_device, O_RDWR | O_NOCTTY | O_NDELAY);        // open port
+    if(fHandle == -1) return -1;                                  // check if handle okay
+    fcntl(fHandle, F_SETFL, FNDELAY);                             // set non-blocking mode
+
+    // set parameters
+    tcgetattr(fHandle, &options);                                 // Get the current options of the port
+    bzero(&options, (unsigned long int)sizeof(options));          // Clear all the options
+
+    speed_t Speed;
+    switch (_baud)                                                // Set the speed (Bauds)
+    {
+      case 110  :     Speed=B110;     break;
+      case 300  :     Speed=B300;     break;
+      case 600  :     Speed=B600;     break;
+      case 1200 :     Speed=B1200;    break;
+      case 2400 :     Speed=B2400;    break;
+      case 4800 :     Speed=B4800;    break;
+      case 9600 :     Speed=B9600;    break;
+      case 19200 :    Speed=B19200;   break;
+      case 38400 :    Speed=B38400;   break;
+      case 57600 :    Speed=B57600;   break;
+      case 115200 :   Speed=B115200;  break;
+      default :       return -2;
+    }
+
+    cfsetispeed(&options, Speed);                                 // Set the baud rate
+    cfsetospeed(&options, Speed);
+
+    options.c_cflag |= ( CLOCAL | CREAD |  CS8);                  // Configure the device : 8 bits, no parity, no control
+    options.c_iflag |= ( IGNPAR | IGNBRK );
+    options.c_cc[VTIME]=0;                                        // Timer unused
+    options.c_cc[VMIN]=0;                                         // At least on character before satisfy reading
+    tcsetattr(fHandle, TCSANOW, &options);                        // Activate the settings
+
+    return (0);                                                   // Success
+  }
+
+  // **************************************************************************************************
+  // ** UartInterface::UartClose()
+  // **************************************************************************************************
+  void UartInterface::UartClose(void)
+  {
+    close(fHandle);
+  }
+
+  // **************************************************************************************************
+  // ** UartInterface::UartScheduler()
+  // **************************************************************************************************
+  void UartInterface::UartScheduler(void)
+  {
+    unsigned char buf[MAX_READ_AT_ONCE];
+    unsigned int  readBytes = 0, i = 0;
+
+    // --------------------------------------------------------------------
+    // Read new data from the interface and store them into the buffer
+
+    readBytes = read(fHandle, buf, MAX_READ_AT_ONCE);
+
+    while(readBytes > 0)
+    {
+      recv_buf.buf[recv_buf.writ] = (unsigned char)buf[i++];
+      if(++recv_buf.writ >= CIRBUFLEN)
+        recv_buf.writ = 0;
+
+      readBytes--;
+    }
+
+    // --------------------------------------------------------------------
+    // Send new data from the buffer to the interface
+
+    i = 0;
+    while((send_buf.writ != send_buf.read) && (i < MAX_READ_AT_ONCE))
+    {
+      buf[i++] = send_buf.buf[send_buf.read];     // get data from buffer
+      if(++send_buf.read >= CIRBUFLEN)
+        send_buf.read = 0;
+    }
+
+    if(i > 0)
+    {
+      write(fHandle, buf, i);                     // write data to interface
+    }
+  }
+
+  // **************************************************************************************************
+  // ** UartInterface::UartGetByte()
+  // **************************************************************************************************
+  unsigned char UartInterface::UartGetByte(void)
+  {
+    unsigned char byte = 0;
+
+    if(recv_buf.writ != recv_buf.read)            // check if there is new data in the receive buffer
+    {
+      byte = recv_buf.buf[recv_buf.read];         // get byte from receive buffer
+      if(++recv_buf.read >= CIRBUFLEN)            // increment buffer
+        recv_buf.read = 0;
+    }
+
+    return byte;
+  }
+
+  // **************************************************************************************************
+  // ** UartInterface::UartPutByte()
+  // **************************************************************************************************
+  int UartInterface::UartPutByte(const unsigned char data)
+  {
+    // Check if send buffer is full: write pointer is 1 position behind read pointer
+    // (special case: read pointer = 0, then write pointer is at maximum)
+    if(((send_buf.read == 0) && (send_buf.writ == CIRBUFLEN-1)) || (send_buf.writ == send_buf.read-1))
+    {
+      return -1;
+    }
+    else
+    {
+      send_buf.buf[send_buf.writ] = data;         // place data into send buffer
+      if(++send_buf.writ >= CIRBUFLEN)            // increment buffer
+        send_buf.writ = 0;
+
+      return 0;
+    }
+  }
+}

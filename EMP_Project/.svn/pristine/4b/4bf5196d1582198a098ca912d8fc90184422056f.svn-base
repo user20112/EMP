@@ -1,0 +1,86 @@
+#ifndef SOURCE_COGNEXSERIAL_H_
+#define SOURCE_COGNEXSERIAL_H_
+
+#include "UartInterface.h"
+
+// length of DMC telegram buffer
+#define DMC_TELEGRAM_BUFLEN     32
+
+// length of default DMC telegram Nutzen (w/o tilde, CR, LF)
+#define DMC_TELEGRAM_NUTZEN_LENGTH     23
+// length of default DMC telegram Magazin (w/o tilde, CR, LF)
+#define DMC_TELEGRAM_MAGAZIN_LENGTH    23
+
+#define CR                      0x0d
+#define LF                      0x0a
+
+// standard logger name
+#define COGNEX_SERIAL_LOGGER_NAME             "CognexSerial"
+
+enum statesCognexSerial
+{
+    warteAufScanBefehl,
+    scanVorgangStarten,
+    scanVorgangLaeuft,
+    scanVorgangErfolgreich,
+    scanVorgangNichtErfolgreich
+};
+
+namespace AsymtecUnloader
+{
+    class CognexSerial
+    {
+        public:
+            CognexSerial(const unsigned int _portNo, const unsigned int _baud, std::string _objectToBeScanned);
+            ~CognexSerial();
+
+            /**
+             * @short Main method for handling the scanning process
+             * @param None
+             * @return None
+             */
+            void scheduler(void);
+            /**
+             * @short Telegram parser for DMC scanner telegrams (start with '~', end with '\r\n').
+             * @param c New char received from serial interface
+             * @return None
+             */
+            int parseTelegram(const unsigned char c);
+            /**
+             * @short Start the scanning process
+             * @param None
+             * @return None
+             */
+            void scanDmc(void);
+            /**
+             * @short Stop the scanning process
+             * @param None
+             * @return None
+             */
+            void stopScanning(void);
+            /**
+             * @short Returns the current dmc string
+             * @param None
+             * @return string
+             */
+            std::string getDmc(void);
+
+        protected:
+
+        private:
+            UartInterface uart;
+            statesCognexSerial currentState;
+            statesCognexSerial lastState;
+            unsigned int triggerScannerCounter;
+            unsigned int numberOfScans;
+            unsigned int schedulerCounter;
+            bool dmcValid;
+            unsigned char dmc[DMC_TELEGRAM_BUFLEN];
+            unsigned int dmcTelegramLength;
+            unsigned int index;
+            std::string dmcString;
+            const std::string mLoggerName = COGNEX_SERIAL_LOGGER_NAME;
+    };
+}
+
+#endif /* SOURCE_COGNEXSERIAL_H_ */

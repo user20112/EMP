@@ -1,0 +1,6 @@
+<map id="GaGCppAPI::GaService::stopSchedulerAll" name="GaGCppAPI::GaService::stopSchedulerAll">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a904abaa6d25d8f3edc46aa217500d81a" title="GaGCppAPI::GaService\l::stopScheduler" alt="" coords="213,70,373,111"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a9c1c70b882ec4ed181a3d9897b04aab2" title="logger for warning messages. just pipe messages to the logger." alt="" coords="421,5,581,46"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_ga_logger.html#ae0039a3c443b1da62d111d163a0aea16" title="manipulator endl . Is used to send message to gamma service" alt="" coords="423,70,580,111"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#ad7149fd99dbd42793968c5eb61d32f19" title="logger for info messages. just pipe messages to the logger." alt="" coords="421,135,581,177"/>
+</map>

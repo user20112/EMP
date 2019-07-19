@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.rst-automation.de/gammaProject"
+	    elementFormDefault="qualified"
+	    xmlns="http://www.w3.org/2001/XMLSchema"
+	    xmlns:gammaProject="http://www.rst-automation.de/gammaProject"
+	    xmlns:gamma="http://www.rst-automation.de/gamma">
+
+	<import schemaLocation="gamma.xsd" namespace="http://www.rst-automation.de/gamma" />
+
+	<element name="project" type="gamma:project"></element>
+</schema>

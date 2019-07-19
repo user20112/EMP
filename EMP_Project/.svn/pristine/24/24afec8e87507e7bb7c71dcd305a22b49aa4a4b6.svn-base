@@ -1,0 +1,395 @@
+/**
+ * @file XLSDispenser
+ * @short contain declaration of class \c XLSDispenser methods
+ *
+ * @remark
+ * this file is a template file and could be used to create new GaApp - Modules. Do do so replace all "SkeletonModule" by your module name and add your code to all TODO comments
+ *
+ * Version Information
+ * -------------------
+ * $Revision: 29111 $
+ * $HeadURL: https://app-aug-svn01.aug.osram.de/svn/aug-sw/TASKS/SOFTWARE/LIBS/CPP/Gamma_IOPlugins/PlugInTemplate/trunk/src/PlugInVersionInfo.template.cpp $
+ * $Author: S.Hegemann $
+ * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
+ *
+ */
+// System header
+#include "../include/XLSDispenser.h"
+
+#include <iostream>
+
+// external library header
+
+// local library header
+#include "../include/XLSDispenserVersionInfo.h"
+
+/**
+ * @fn createModule
+ * @short create a new module instance
+ * @param _instanceName name of module instance
+ * @param _configNode pointer to XML configuration information
+ * @return pointer to new module instance
+ *
+ * @fn deleteModule
+ * @short destroy module instance
+ * @param _module pointer to instance
+ */
+EXPORT_FUNCTIONS(XLSDispenser, XLSDispenser)
+
+namespace XLSDispenser {
+
+  // **************************************************************************************************
+  // ** SkeletonModule
+  // **************************************************************************************************
+  XLSDispenser::XLSDispenser(const char* _instanceName,
+      pugi::xml_node* _configInfo)
+  : GaAppBaseLib::ModuleInterface (_instanceName, _configInfo),
+    isMqttConfBad(false),
+    Uart1(1, 115200),
+    Uart2(4, 115200) /*,
+    dmc1Id        ((gammaBaseVar + ".dmc.dmc1Id").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
+    dmc2Id        ((gammaBaseVar + ".dmc.dmc2Id").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
+    dmc1TimeStamp ((gammaBaseVar + ".dmc.dmc1TimeStamp").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
+    dmc2TimeStamp ((gammaBaseVar + ".dmc.dmc2TimeStamp").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING)*/
+  {
+    el::Loggers::getLogger(mLoggerName);
+
+    mGammaPathBase = "XLSDispenser.Data";
+    mGammaSlot = ":XLSDispenserTask.XLSWork";
+
+    pugi::xml_attribute attr;
+    pugi::xml_node gaSetup = getConfigNode().child("GammaConnection");
+    if (!gaSetup.empty()) {
+      attr = gaSetup.attribute("PVNode");
+      if (!attr.empty()) {
+        mGammaPathBase = attr.value();
+      }
+
+      attr = gaSetup.attribute("SchedulerSlot");
+      if (!attr.empty()) {
+        mGammaSlot = attr.value();
+      }
+    }
+
+    // get gamma connection
+    connect(mGammaSlot);
+
+    // get the MQTT configuration
+    pugi::xml_node mqttSetup = getConfigNode().child("MQTTConnection");
+    if(!mqttSetup.empty())
+    {
+      // -----------------------------------------
+      // MQTT Server
+
+      attr = mqttSetup.attribute("server");
+      if(!attr.empty())
+        mqttServer = attr.value();
+      else
+        isMqttConfBad = true;
+
+      // -----------------------------------------
+      // MQTT Device Name
+
+      attr = mqttSetup.attribute("deviceName");
+      if(!attr.empty())
+        mqttDeviceName = attr.value();
+      else
+        isMqttConfBad = true;
+
+      // -----------------------------------------
+      // MQTT Topic
+
+      attr = mqttSetup.attribute("topic");
+      if(!attr.empty())
+      {
+        dmc1.mqttTopic = attr.value();
+        dmc2.mqttTopic = attr.value();
+      }
+      else
+      {
+        isMqttConfBad = true;
+      }
+
+      // -----------------------------------------
+      // MQTT Definition IDs
+
+      attr = mqttSetup.attribute("defId1");
+      if(!attr.empty())
+        dmc1.mqttDefId = attr.value();
+      else
+        isMqttConfBad = true;
+
+      attr = mqttSetup.attribute("defId2");
+      if(!attr.empty())
+        dmc2.mqttDefId = attr.value();
+      else
+        isMqttConfBad = true;
+
+      // -----------------------------------------
+      // MQTT Definition Types
+
+      attr = mqttSetup.attribute("defType1");
+      if(!attr.empty())
+        dmc1.mqttDmcType = attr.value();
+      else
+        isMqttConfBad = true;
+
+      attr = mqttSetup.attribute("defType2");
+      if(!attr.empty())
+        dmc2.mqttDmcType = attr.value();
+      else
+        isMqttConfBad = true;
+    }
+    else
+    {
+      isMqttConfBad = true;
+    }
+
+    // instantiate mqtt client only if configuration is okay
+    if(!isMqttConfBad)
+    {
+      // instantiate mqtt client
+      mqttClient = new mqtt(mqttServer, mqttDeviceName);
+      CLOG(INFO, mLoggerName.c_str()) << "MQTT configuration successful.";
+    }
+    else
+    {
+      CLOG(ERROR, mLoggerName.c_str()) << "BAD MQTT CONFIGURATION! MQTT is now disabled.";
+    }
+  }
+
+  // **************************************************************************************************
+  // ** ~XLSDispenser
+  // **************************************************************************************************
+  XLSDispenser::~XLSDispenser()
+  {
+    el::Loggers::unregisterLogger("XLSDispenser");
+    //delete mqttClient;
+  }
+
+  // **************************************************************************************************
+  // ** prepareStart
+  // **************************************************************************************************
+  void
+  XLSDispenser::prepareStart()
+  {
+    CLOG(DEBUG, mLoggerName.c_str()) << "XLSDispenser prepareStart done.";
+  }
+
+  // **************************************************************************************************
+  // ** cleanUp
+  // **************************************************************************************************
+  void
+  XLSDispenser::cleanUp()
+  {
+  }
+
+  // **************************************************************************************************
+  // ** execCommand
+  // **************************************************************************************************
+  void XLSDispenser::execCommand (std::string& _cmdLine)
+  {
+    // extract given command
+    std::string cmd = _cmdLine.substr(0, _cmdLine .find(' '));
+
+    // extract module name
+    size_t delimitPos = cmd.find(':');
+
+    // -------------------------------------------------------------------------------------------------------
+    // command: "info"  => print version information
+    // -------------------------------------------------------------------------------------------------------
+    if (cmd == "info") {
+      std::cout << "  " << getName() << " (Type:" << ModuleVersionInfo::getInstance().getName() << ")" << std::endl;
+      ModuleVersionInfo::getInstance().printInfo(4);
+    }
+    // -------------------------------------------------------------------------------------------------------
+    // command: "test"  => a testing command. not really useful
+    // -------------------------------------------------------------------------------------------------------
+    else if(cmd == "lastDMC1")
+    {
+      if(strlen((const char *)dmc1.tele) >= DMC_TELEGRAM_MIN_LENGTH)
+        std::cout << "last DMC telegram from scanner 1: " << std::endl
+        << dmc1.tele << " Timestamp: " << dmc1.mqttTimeStamp << std::endl;
+      else
+        std::cout << "no valid telegram available." << std::endl;
+    }
+    else if(cmd == "lastDMC2")
+    {
+      if(strlen((const char *)dmc2.tele) >= DMC_TELEGRAM_MIN_LENGTH)
+        std::cout << "last DMC telegram from scanner 2: " << std::endl
+        << dmc2.tele << " Timestamp: " << dmc2.mqttTimeStamp << std::endl;
+      else
+        std::cout << "no valid telegram available." << std::endl;
+    }
+    else if(cmd == "mqttinfo")
+    {
+      std::cout << "MQTT info:" << std::endl
+          << " Server:    " << mqttServer << std::endl
+          << " Topic 1:   " << dmc1.mqttTopic << std::endl
+          << " Topic 2:   " << dmc2.mqttTopic << std::endl
+          << " Def ID 1:  " << dmc1.mqttDefId << std::endl
+          << " Def ID 2:  " << dmc2.mqttDefId << std::endl
+          << " Type 1:    " << dmc1.mqttDmcType << std::endl
+          << " Type 2:    " << dmc2.mqttDmcType << std::endl;
+    }
+    else if(cmd == "mqttConnected")
+    {
+      if(isMqttConfBad)
+        std::cout << "MQTT configuration is bad." << std::endl;
+      else if(mqttClient->isClientConnected() == true)
+        std::cout << "MQTT client is connected to server " << mqttServer << std::endl;
+      else
+        std::cout << "MQTT client is not connected." << std::endl;
+    }
+    // -------------------------------------------------------------------------------------------------------
+    // submodule command
+    // -------------------------------------------------------------------------------------------------------
+    else if (delimitPos != std::string::npos) {
+      std::string moduleName = cmd.substr(0, delimitPos);
+      std::string moduleCmd = _cmdLine.substr(delimitPos+1, std::string::npos);
+
+      // TODO: call submodule command interface
+      std::cout << "  " << getName() << ": command for submodule \"" << moduleName << "\": \"" << moduleCmd << "\"" << std::endl;
+    }
+    // -------------------------------------------------------------------------------------------------------
+    // unknown command
+    // -------------------------------------------------------------------------------------------------------
+    else if (_cmdLine .length() > 0) {
+      std::cerr << "  " << getName() << ": unknown command \"" << cmd << "\"" << std::endl;
+    }
+  }
+
+  // **************************************************************************************************
+  // ** taskInit
+  // **************************************************************************************************
+  int32_t XLSDispenser::taskInit() noexcept
+  {
+    return (0);
+  }
+
+  // **************************************************************************************************
+  // ** taskDeinit
+  // **************************************************************************************************
+  int32_t XLSDispenser::taskDeinit() noexcept
+  {
+    return (0);
+  }
+
+  // **************************************************************************************************
+  // ** taskRun
+  // **************************************************************************************************
+  int32_t XLSDispenser::taskRun(gs_Task taskHandle, const uint32_t* frameNumber) noexcept
+  {
+    unsigned char c;
+
+    Uart1.UartScheduler();
+    Uart2.UartScheduler();
+
+    while((c = Uart1.UartGetByte()) != 0)
+    {
+      // insert new character into telegram; if telegram is finished, forward it
+      if(XLSParseTelegram(&dmc1, c) == 1)
+      {
+        if(strlen((const char *)dmc1.tele) >= DMC_TELEGRAM_MIN_LENGTH)
+        {
+          CLOG(INFO, mLoggerName.c_str()) << "new telegram DMC 1: " << dmc1.tele;
+          XLSSendMqttMessage(&dmc1, mqttClient);
+
+          // copy data to gamma variables
+          //dmc1Id = std::string((const char*)dmc1.tele);
+          //dmc1TimeStamp = dmc1.mqttTimeStamp;
+        }
+        else
+          CLOG(INFO, mLoggerName.c_str()) << "invalid telegram from DMC 1";
+      }
+    }
+
+    while((c = Uart2.UartGetByte()) != 0)
+    {
+      // insert new character into telegram; if telegram is finished, forward it
+      if(XLSParseTelegram(&dmc2, c) == 1)
+      {
+        if(strlen((const char *)dmc2.tele) >= DMC_TELEGRAM_MIN_LENGTH)
+        {
+          CLOG(INFO, mLoggerName.c_str()) << "new telegram DMC 2: " << dmc2.tele;
+          XLSSendMqttMessage(&dmc2, mqttClient);
+
+          // copy data to gamma variables
+          //dmc2Id = std::string((const char*)dmc2.tele);
+          //dmc2TimeStamp = dmc2.mqttTimeStamp;
+        }
+        else
+          CLOG(INFO, mLoggerName.c_str()) << "invalid telegram from DMC 2";
+      }
+    }
+
+    return (0);
+  }
+
+  // **************************************************************************************************
+  // ** XLSParseTelegram
+  // **************************************************************************************************
+  int XLSDispenser::XLSParseTelegram(dmcData * dmc, const unsigned char c)
+  {
+    // a line feed is the last character of a DMC string
+    if(c == LF)
+    {
+      return 1;                             // return 1 to signalize new available telegram
+    }
+    // a tilde starts a new telegram (ignore and set buffer pointer to start)
+    else if(c == '~')
+    {
+      dmc->pos = 0;                         // start with new telegram (reset buffer position)
+      dmc->tele[dmc->pos] = '\0';           // mark end of string
+    }
+    // all characters between ! and } are printable characters, use them only.
+    else if((c >= '!') && (c <= '}'))
+    {
+      dmc->tele[dmc->pos] = c;              // put character to buffer
+      if(dmc->pos < DMC_TELEGRAM_BUFLEN-1)  // increment buffer position
+        (dmc->pos)++;
+
+      dmc->tele[dmc->pos] = '\0';           // mark end of string (so that telegram string is always valid)
+    }
+
+    return 0;
+  }
+
+  // **************************************************************************************************
+  // ** XLSCreateMqttMessage
+  // **************************************************************************************************
+  void XLSDispenser::XLSSendMqttMessage(dmcData* dmc, mqtt* mqttclt)
+  {
+    std::stringstream mqttInfo;
+    std::stringstream mqttTime;
+
+    if(!isMqttConfBad)
+    {
+      time_t rawTime = time(NULL);
+      struct tm * currentTime = localtime ( &rawTime );
+
+      // save timestamp into dmc struct
+      mqttTime  << std::setfill('0') << std::setw(4) << currentTime->tm_year + 1900
+                << std::setfill('0') << std::setw(4) << currentTime->tm_mon
+                << std::setfill('0') << std::setw(2) << currentTime->tm_mday
+                << std::setfill('0') << std::setw(2) << currentTime->tm_hour
+                << std::setfill('0') << std::setw(2) << currentTime->tm_min
+                << std::setfill('0') << std::setw(2) << currentTime->tm_sec << "\"}}";
+      dmc->mqttTimeStamp = mqttTime.str();
+
+      // build mqtt telegram
+      mqttInfo << "{\"DefinitionsID\":\"" << dmc->mqttDefId << "\",";
+      mqttInfo <<  "\"Columns\":{";
+      mqttInfo <<      "\"Type\":\""      << dmc->mqttDmcType << "\",";
+      mqttInfo <<      "\"Id\":\""        << dmc->tele << "\",";
+      mqttInfo <<      "\"TimeStamp\":\"" << dmc->mqttTimeStamp;
+
+      if(!(mqttclt->sendMessage(dmc->mqttTopic, mqttInfo.str())))
+      {
+        CLOG(INFO, mLoggerName.c_str()) << "error sending mqtt telegram: no client connected.";
+      }
+    }
+  }
+
+
+} /* namespace XLSDispenser */

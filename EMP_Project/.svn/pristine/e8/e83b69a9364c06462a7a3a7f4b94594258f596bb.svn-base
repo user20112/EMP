@@ -1,0 +1,249 @@
+/**
+ * @file AsymtecUnloader
+ * @short contain definition of class \c AsymtecUnloader::AsymtecUnloader
+ *
+ * @remark
+ * this file is a template file and could be used to create new GaApp - Modules. Do do so replace all "SkeletonModule" by your module name and add your code to all TODO comments
+ *
+ * Version Information
+ * -------------------
+ * $Revision: 29111 $
+ * $HeadURL: https://app-aug-svn01.aug.osram.de/svn/aug-sw/TASKS/SOFTWARE/LIBS/CPP/Gamma_IOPlugins/PlugInTemplate/trunk/src/PlugInVersionInfo.template.cpp $
+ * $Author: S.Hegemann $
+ * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
+ *
+ */
+#ifndef SOURCE_ASYMTECUNLOADER_H_
+#define SOURCE_ASYMTECUNLOADER_H_
+
+// System header
+#include <string>
+
+#include "mqtt.h"
+#include "UartInterface.h"
+// external library header
+#include "GaGCppAPI.h"
+#include "GaAppBaseLib.h"
+
+#include "CognexSerial.h"
+
+// standard logger name
+#define ASYMTEC_UNLOADER_LOGGER_NAME   	"AsymtecUnloader"
+#define GAMMA_BASE_VAR          		"AsymtecUnloader.data"
+
+// mqtt definitons
+#define MQTT_DEFAULT_SERVER     		"aug-prod-334"
+#define MQTT_DEFAULT_TOPIC      		"AsymtecUnloader.MagazinNutzen"
+#define MQTT_DEFAULT_TOPIC_SECSGEM  	"XLS_MagazinNutzen.SECS.HER-XLS-Maschine"
+#define MQTT_DEFAULT_DEVICE     		"mqttDeviceNameNotConfiguredFixImmediately"
+#define MQTT_DEFAULT_DEFID1     		"DefId1"
+#define MQTT_DEFAULT_TYPE1      		"Type1"
+#define MQTT_DEFAULT_RESOURCE			"mqttResourceNotConfiguredFixImmediately"
+#define MQTT_DEFAULT_DEVICE_EXTENSION 	"-BaseTec"
+
+enum statesAsymtecUnloader
+{
+    warteAufNutzen,
+	delayState,
+	fahreZuMagazin,
+	NutzenInMagazin,
+	WartenAufNutzenID,
+};
+
+typedef struct data
+{
+        std::string mqttDefId;                           ///< @short definition ID for the mqtt telegram
+        std::string mqttTopic;                           ///< @short mqtt topic
+        std::string mqttTopicSecsGem;
+        std::string mqttTimeStamp;                       ///< @short timestamp for the mqtt transmission
+        std::string dmcNutzen;
+        unsigned int position;
+        std::string dmcMagazin;
+        std::string info;
+        std::string mqttResource;
+        bool mqttInitMagazin[5];
+} data;
+
+// library header
+
+namespace AsymtecUnloader
+{
+    /**
+     * @short TODO: add your module description here
+     */
+    class AsymtecUnloader: public GaAppBaseLib::ModuleInterface, public GaGCppAPI::GaTask
+    {
+        public:
+            /**
+             * @short constructor
+             *
+             * @remark
+             * don't add more input parameter, because the calling function wouldn't know them!
+             *
+             * __actual situation__
+             *
+             * the constructor is called during all modules will be loaded. There is no guarantee witch modules are active now.
+             * During the construction the module is only for its own and should not try to connect to other modules.
+             *
+             * __jobs to do here__
+             *  - parse xml configuration and setup this instance
+             *  - create and connect to own gamma variables and scheduler slots
+             *
+             * @param _instanceName name of this instance
+             * @param _configInfo pointer to xml configuration node
+             */
+            AsymtecUnloader(const char* _instanceName,
+                            pugi::xml_node* _configInfo);
+
+            /**
+             * @short destructor
+             *
+             * __actual situation__
+             *
+             * the application is shutting down and unload all modules.
+             *
+             * __jobs to do here__
+             *  - Clean up your stuff
+             */
+            ~AsymtecUnloader();
+
+            /**
+             * @short method will be called by application before cycle task will be started
+             *
+             * __actual situation__
+             *
+             * all modules are loaded and the gamma middleware contain all needed variables, but the values do not necessarily have to be valid!
+             *
+             * __jobs to do here__
+             *  - browse gamma variables
+             *  - connect to other modules
+             *
+             */
+            virtual void prepareStart();
+
+            /**
+             * @short method will be called by application after cycle task is stopped
+             *
+             * __actual situation__
+             *
+             * all cyclic task and scheduler are stopped. This is the last chance to get values from gamma. During this call no values should be changed anymore.
+             *
+             * __jobs to do here__
+             *  - make needed backups
+             *  - disconnect from gamma
+             */
+            virtual void cleanUp();
+
+            /**
+             * @short general command interface
+             *
+             * the application has a user terminal. Commands can be forwarded to a module by using the syntax [moduleName]:[command] [args...]
+             * This function will be called, when a command for this module is given to the terminal.
+             *
+             * @param _cmdLine command as string including all arguments
+             */
+            virtual void execCommand(std::string& _cmdLine);
+
+            /**
+             * @short Generate MQTT message and send new DMC to MQTT server
+             * @param dmc Pointer to the dmc structure containing the new DMC
+             * @param client Pointer to the mqtt client
+             * @return None
+             */
+            void sendMqttMessage(data* myMqttData, UnloaderMqtt::mqtt* mqttclt);
+
+        protected:
+            /**
+             *
+             * @return
+             */
+            virtual int32_t taskInit() noexcept;
+
+            /**
+             *
+             * @return
+             */
+            virtual int32_t taskDeinit() noexcept;
+
+            /**
+             *
+             * @param taskHandle
+             * @param frameNumber
+             * @return
+             */
+            virtual int32_t taskRun(gs_Task taskHandle, const uint32_t* frameNumber) noexcept;
+
+        private:
+
+            std::string mGammaPathBase;                     ///< @short path base to gamma PV's
+            std::string mGammaSlot;                         ///< @short name of gamma scheduler slot
+
+            double startTime;
+            double timeout;
+            unsigned int portNumberScannerNutzen;
+            unsigned int portNumberScannerMagazin;
+
+            unsigned int baudRateScannerNutzen;
+            unsigned int baudRateScannerMagazin;
+
+            unsigned int numberOfScansScannerNutzen;
+            unsigned int numberOfScansScannerMagazin;
+
+            std::string iniN;
+            std::string iniP1;
+            std::string iniP2;
+            std::string iniP3;
+            std::string iniP4;
+            std::string iniH;
+            std::string iniU;
+
+            UnloaderMqtt::mqtt* mqttClient;                               ///< @short mqtt client
+            std::string mqttMessage;                        ///< @short mqtt message string
+
+            std::string mqttServer = MQTT_DEFAULT_SERVER;
+            std::string mqttDeviceName = MQTT_DEFAULT_DEVICE;
+
+            const std::string mLoggerName = ASYMTEC_UNLOADER_LOGGER_NAME;
+            const std::string gammaBaseVar = GAMMA_BASE_VAR;
+
+            statesAsymtecUnloader currentState;
+            statesAsymtecUnloader lastState;
+            statesAsymtecUnloader nextState;
+
+            GaGCppAPI::TypedPV<uint8_t> iniNutzen;
+            GaGCppAPI::TypedPV<uint8_t> iniPosition1;
+            GaGCppAPI::TypedPV<uint8_t> iniPosition2;
+            GaGCppAPI::TypedPV<uint8_t> iniPosition3;
+            GaGCppAPI::TypedPV<uint8_t> iniPosition4;
+            GaGCppAPI::TypedPV<uint8_t> iniHoehe;
+
+            unsigned int lastPosition;
+            std::string lastMagazinDmc;
+            bool currentIniHoehe;
+            bool currentIniNutzen;
+            bool currentIniPosition1;
+            bool currentIniPosition2;
+            bool currentIniPosition3;
+            bool currentIniPosition4;
+            int shuttlePos;
+            int lastShuttlePos;
+            bool lastIniHoehe;
+            bool lastIniNutzen;
+            bool newNutzen;
+
+            data mqttData;
+
+            CognexSerial* scannerNutzen, *scannerMagazin;
+
+            std::string dmcString;
+            std::string lastDmcString;
+            unsigned int errCnt;
+            unsigned int sameStateCnt;
+            std::string dmcPosString[5];
+
+            bool scanningActive;
+    };
+
+} /* namespace SkeletonModule */
+
+#endif /* SOURCE_ASYMTECUNLOADER_H_ */

@@ -1,0 +1,13 @@
+<map id="GaGCppAPI::RawPV::callBack" name="GaGCppAPI::RawPV::callBack">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac56dd25ad2bd50be30a0ed6d0edec0b4" title="tries to attach to gamma service, when connection is lost." alt="" coords="257,136,466,163"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a2abed5dd7273674206165c3f13efb98b" title="first call initialization before the PV is open" alt="" coords="515,77,741,104"/>
+<area shape="rect" id="node11" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aad4a2f802aee40a4143cb296531a2b1c" title="get some PV settings and prepare instance for dealing with the PV." alt="" coords="517,195,739,221"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a5a01ec318ce6bd87fc861f5ff589b860" title="access to global instance" alt="" coords="819,70,979,111"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a33b9c566f6e8d8825592862dbcfa3c18" title="examine the current connection state" alt="" coords="819,5,979,46"/>
+<area shape="rect" id="node13" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a400242936947fcdda232a79e166ce2df" title="request the numeric address of PV." alt="" coords="789,136,1008,163"/>
+<area shape="rect" id="node16" href="$class_ga_g_cpp_a_p_i_1_1_event_handler.html#a4b1b5c099932df677f39cf3ebd8bed63" title="attach handler to event _event. _arg1 is stored and will be the first argument for function callBack ..." alt="" coords="810,187,987,229"/>
+<area shape="rect" id="node20" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#ae738de65c78c824a968e190bc6cdc882" title="access for attach event" alt="" coords="819,253,979,294"/>
+<area shape="rect" id="node22" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#abdf287c3b9cfa05e2db0aeaf39747bf8" title="access for detach event" alt="" coords="819,318,979,359"/>
+<area shape="rect" id="node24" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a244b30b9e7788ce83f50cade9dae85ca" title="access for connection lost event" alt="" coords="819,383,979,425"/>
+<area shape="rect" id="node18" href="$class_ga_g_cpp_a_p_i_1_1_event.html#a009118bd038fcb25b28a332fee6f069b" title="add event handler to event handler list" alt="" coords="1057,195,1234,221"/>
+</map>

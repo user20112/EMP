@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfig>
+	<ModuleList>
+		<Module library="BaseTecDriver" name="HW">
+			<RealtimeSetup cycleTime="1000" priority="99" />
+			<GammaConnection PVNode="HardwareResources.BaseTecDriver"
+				SchedulerSlot=":BaseTecDriver.IOSync" />
+		</Module>
+		<Module library="EMP" name="EMP">
+			<MQTTConnection server="tcp://10.197.10.32:61616"
+				topic="SNP.Inbound" defId="MagazinNutzenId"
+				defType1="MagazinNutzen" />
+		</Module>
+		<Module library="KleberMqtt" name="Kleber">
+			<RealtimeSetup priority="95" cycleTime="20000" />
+			<GammaConnection SchedulerSlot=":KleberTask.KWork"
+				PVNode="KleberMqtt.data" />
+			<Mqtt name="EMP" topicName="SNP.Inbound"
+				mqttTimeout="30" mqttServerPort="61616"
+				mqttServer="tcp://10.197.10.32" />
+			<Input use="true" no="1" function="Confirmation_Button" />
+			<Output use="true" no="1" function="SignalTower_Green" />
+			<Output use="true" no="2" function="SignalTower_Yellow" />
+			<Output use="true" no="3" function="SignalTower_Red" />
+			<Output use="true" no="4" function="SignalTower_Buzzer" />
+		</Module>
+	</ModuleList>
+</AppConfig>

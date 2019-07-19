@@ -1,0 +1,12 @@
+<map id="logger.h" name="logger.h">
+<area shape="rect" id="node3" href="$_u_d_p_connection_8cpp.html" title="contain declaration of class UDPConnection " alt="" coords="5,80,144,107"/>
+<area shape="rect" id="node5" href="$_ga_app_base_lib_8h.html" title="container for all library include files. Can be used by external programs or libraries" alt="" coords="172,379,292,405"/>
+<area shape="rect" id="node7" href="$_module_interface_8h.html" title="contain definition of class GaAppBaseLib::ModuleInterface " alt="" coords="349,80,472,107"/>
+<area shape="rect" id="node9" href="$_lib_container_8cpp.html" title="contain declaration of class LibContainer methods" alt="" coords="547,379,665,405"/>
+<area shape="rect" id="node11" href="$_module_interface_8cpp.html" title="contain declaration of class ModuleInterface methods" alt="" coords="269,155,408,181"/>
+<area shape="rect" id="node14" href="$_lib_instance_8h.html" title="contain definition of class GaAppBaseLib::LibInstance " alt="" coords="432,155,531,181"/>
+<area shape="rect" id="node22" href="$_module_instance_8h.html" title="contain definition of class GaAppBaseLib::ModuleInstance " alt="" coords="501,229,624,256"/>
+<area shape="rect" id="node16" href="$_lib_instance_8cpp.html" title="contain declaration of class LibInstance methods" alt="" coords="363,229,476,256"/>
+<area shape="rect" id="node18" href="$_lib_container_8h.html" title="contain definition of class GaAppBaseLib::LibContainer " alt="" coords="290,304,395,331"/>
+<area shape="rect" id="node25" href="$_module_instance_8cpp.html" title="contain declaration of class ModuleInstance methods" alt="" coords="431,304,569,331"/>
+</map>

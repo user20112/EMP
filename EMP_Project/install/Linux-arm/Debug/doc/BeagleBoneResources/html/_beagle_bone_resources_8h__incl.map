@@ -1,0 +1,8 @@
+<map id="BeagleBoneResources.h" name="BeagleBoneResources.h">
+<area shape="rect" id="node3" href="$_beagle_bone_resources_version_info_8h.html" title="contain definition of class BeagleBoneResources::LibVersionInfo " alt="" coords="5,81,203,122"/>
+<area shape="rect" id="node13" href="$_g_p_i_o_8h_source.html" title="GPIO.h" alt="" coords="141,171,205,197"/>
+<area shape="rect" id="node18" href="$_s_p_i_bus_8h_source.html" title="SPIBus.h" alt="" coords="429,171,507,197"/>
+<area shape="rect" id="node33" href="$_s_p_i_device_8h_source.html" title="SPIDevice.h" alt="" coords="286,88,377,115"/>
+<area shape="rect" id="node37" href="$_pru_driver_8h.html" title="contain definition of class PruDriver " alt="" coords="504,88,611,115"/>
+<area shape="rect" id="node42" href="$_pru_interface_8h.html" title="contain definition of class PruInterface " alt="" coords="230,171,353,197"/>
+</map>

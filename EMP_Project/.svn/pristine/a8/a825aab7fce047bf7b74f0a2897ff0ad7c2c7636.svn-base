@@ -1,0 +1,155 @@
+/*
+ * mqtt.h
+ *
+ *  Created on: 18.09.2017
+ *      Author: mario.richter
+ */
+
+#ifndef SOURCE_INCLUDE_MQTT_H_
+#define SOURCE_INCLUDE_MQTT_H_
+
+#include <MQTTClient.h>
+#include "log/logger.h"
+
+namespace XLSDispenser
+{
+  void delivered(void *context, MQTTClient_deliveryToken dt);
+  int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *message);
+  void connlost(void *context, char *cause);
+
+  void* startThread(void *ptr);
+
+  class mqtt
+  {
+    public:
+      /**
+       * @short Constructor for the mqtt class used to publish data to a MQTT server.
+       * @param _server Name of the MQTT server
+       * @param _clientName Name of the client (= own name)
+       */
+      mqtt(std::string _server, std::string _clientName);
+
+      /**
+       * @short Destructor for the mqtt class used to publish data to a MQTT server.
+       */
+      virtual ~mqtt();
+
+      /**
+       * @short gamma service watchdog
+       * task done in this thread:
+       *  - attach application to gamma service
+       *  - check for lost connections
+       *  - reconnect, when service is available
+       */
+      void watchDog();
+
+      /**
+       * @short send a message to a mqtt server
+       * @param _topic the topic of the new message
+       * @param _message the message itself
+       * @return true, if message was published
+       * @return false, if no mqtt connection is established
+       */
+      bool sendMessage(std::string _topic, std::string _message);
+
+      /**
+       * @short Check if client is connected
+       * @return true, if connection is established
+       * @return false, if client is disconnected
+       */
+      bool isClientConnected(void);
+
+      /**
+       * @short Callback function signalizes mqtt packet is delivered.
+       * @param context the message context
+       * @param dt MQTT Client delivery token
+       * @return None
+       */
+      //static void delivered(void *context, MQTTClient_deliveryToken dt);
+
+      /**
+       * @short Callback function signalizes arrival of new message.
+       * @param context the message context
+       * @param topicName the topic name of the arrived message
+       * @param topicLen length of the topic
+       * @param message the mqtt message that just arrived
+       * @return 1, if message was handled (default).
+       */
+      //static int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *message);
+
+      /**
+       * @short Callback function signalizes connection loss.
+       * @param context the message context
+       * @param cause the cause for the connection loss
+       * @return None
+       */
+      //static void connlost(void *context, char *cause);
+
+    private:
+      /**
+       * @short Start the watchdog function which creates a thread to supervise the MQTT connection.
+       * @return None.
+       */
+      void startWatchDog();
+
+      /**
+       * @short Start the watchdog thread.
+       * @param ptr pointer to thread (passed from pthread_create)
+       * @return None.
+       */
+      //void* startThread(void *ptr);
+
+      /**
+       * @short Reset (to 0) a thread pointer.
+       * @param _pt Thread pointer to set to zero.
+       * @return None
+       */
+      void resetThreadPT(pthread_t& _pt);
+
+      /**
+       * @short Check if thread pointer is 0.
+       * @return false, if pointer is not zero.
+       * @return true, if pointer is zero.
+       */
+      bool threatPTisNull (pthread_t& _pt);
+
+      /**
+       * @short Token to check if the MQTT message was delivered
+       */
+      volatile MQTTClient_deliveryToken deliveredtoken;
+
+      /**
+       * @short the MQTT client
+       */
+      MQTTClient client;
+
+      /**
+       * @short MQTT server name
+       */
+      std::string server;
+
+      /**
+       * @short MQTT client name (= own name)
+       */
+      std::string clientName;
+
+      /**
+       * @short watch dog task handle
+       */
+      pthread_t mWatchDogTask;
+
+      /**
+       * @short mutex to wake watch dog up
+       */
+      pthread_mutex_t mWatchDogWakeUp;
+
+      /**
+       * @short signal to watch dog thread => terminate thread
+       */
+      bool mWatchDocAbbort;
+
+      std::string loggerName;
+  };
+}
+
+#endif /* SOURCE_INCLUDE_MQTT_H_ */

@@ -1,0 +1,939 @@
+<toc label="GaGCppAPI" topic="index.html">
+  <topic label="Classes">
+    <topic label="Class List" href="annotated.html">
+      <topic label="GaGCppAPI">
+        <topic label="Browser" href="class_ga_g_cpp_a_p_i_1_1_browser.html">
+          <topic label="Browser" href="class_ga_g_cpp_a_p_i_1_1_browser.html#aa94498815b7e07bb764f5a15ce096f52"/>
+          <topic label="~Browser" href="class_ga_g_cpp_a_p_i_1_1_browser.html#a81a5a4c541a7327432317ab39aced1d6"/>
+          <topic label="browseInfo" href="class_ga_g_cpp_a_p_i_1_1_browser.html#aaef46ba9f40fcfd939f00868c5794104"/>
+          <topic label="findPVs" href="class_ga_g_cpp_a_p_i_1_1_browser.html#a4f79c65b9b2202b7dac68035d44a65be"/>
+        </topic>
+        <topic label="BrowserFilter" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html">
+          <topic label="FilterType" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62">
+            <topic label="System" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a4f49497efada5b082296dce72372d4bf"/>
+            <topic label="Node" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a1b96db5bc67b5af7ac228e7b16dfa6e8"/>
+            <topic label="Memory" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a08da5de7282fffb1fc94c84f8da49bb0"/>
+            <topic label="Group" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62ad872454197bb02f82e01682cf4b91cc1"/>
+            <topic label="PV_Name" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a96a47b579d47dd7c2344ac8d3e4f4be4"/>
+            <topic label="PV_Type" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a476a6e82c785acb05ee58d0a6fccfac6"/>
+            <topic label="Property_Type" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a41dcb97d135754fd905c4902da0ef7c1"/>
+            <topic label="Property_Name" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62aed21dc68fee15680f2d04a6f74483d60"/>
+            <topic label="Property_Name_And_Value" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a24bc108f9844a671851a2caf7146364f"/>
+            <topic label="FILTER_TYPE_COUNT" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a9c9aa3ad1da3cf97c519f7cd259f6a57"/>
+          </topic>
+          <topic label="BrowserFilter" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a9aa68dc301a7c61dad465f329379d3a8"/>
+          <topic label="~BrowserFilter" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#aa4e874f1a38e45c6943010b9523ed802"/>
+          <topic label="add" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a3d28d1096d37a439f3d0e62eba47916f"/>
+          <topic label="clear" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a13850c7dfb5efa2a16a6063a7d390a4f"/>
+          <topic label="fit" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a136c0fa2fb3d55dcc7793855313195b6"/>
+          <topic label="fit" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a56ddd1d5a016220a7ce7aa45106b62db"/>
+          <topic label="fit" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a24379dc6aa15f973c46a094cbcc865ad"/>
+          <topic label="getFilterExpression" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a5756b8a23abbf081f7edbadd8c8f360d"/>
+          <topic label="remove" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#ac7ed6a07d7a6fad22442152eba774848"/>
+          <topic label="mFilterExpression" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a66c2c7f53d9a07819fe285aeab0c12d4"/>
+          <topic label="mFilterUsed" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a9eec2bcdc2a7e801290c8a1cd1a14d46"/>
+        </topic>
+        <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html">
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#ab0ad7dbc5feb992acd4cee7f3d94d1ed"/>
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#a841afb5217bcf926fc66702dbb08f701"/>
+          <topic label="~Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#a61028839d9f4a1e5a61348a9333b088d"/>
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#a1298e221c4537e68d1ada042b98bcb84"/>
+          <topic label="attach" href="class_ga_g_cpp_a_p_i_1_1_event.html#a009118bd038fcb25b28a332fee6f069b"/>
+          <topic label="detach" href="class_ga_g_cpp_a_p_i_1_1_event.html#a85684b03754587b52ded6797309d4a1a"/>
+          <topic label="fire" href="class_ga_g_cpp_a_p_i_1_1_event.html#a76f4506c87e3ebba7a835a0e670104e5"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event.html#aa861039a70ee042425813f5ff2d5dfeb"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event.html#a0a79fbb92976fe5645721ad5bc9f8b35"/>
+          <topic label="mHandlerList" href="class_ga_g_cpp_a_p_i_1_1_event.html#ada763dff49a94c7b9b95e8df502e57d4"/>
+          <topic label="mLastIndex" href="class_ga_g_cpp_a_p_i_1_1_event.html#a8ea6ab98227847788a1c872b1f73f811"/>
+        </topic>
+        <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html">
+          <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#accbb05fa392b3bc1850a5186b2c3ccd1"/>
+          <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a68e8d3fa6f6aeb914ae6d5bc7b63c1c4"/>
+          <topic label="~EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#adfba6736c27b93393a5ce9a6069f55f5"/>
+          <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a1202c1700ba1b940a8de6daf612f9cbf"/>
+          <topic label="attachToEvent" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a4b1b5c099932df677f39cf3ebd8bed63"/>
+          <topic label="callBack" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a6f6500d19d153e257ed2c5c0e4ef39e2"/>
+          <topic label="destroyConnection" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a5b2f565eed9a0d3257e20248b99474ce"/>
+          <topic label="detachFromEvent" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a7f4bca8995d7c9924142b8dc8c44221f"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a496324edd374499f43fd7420fc832f38"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a0d3d9221bf1c328367a6f75516445e69"/>
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a3c7b3c89bf96f51e80a919b3a82a3915"/>
+          <topic label="mHandlerList" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a322f61f26c313da26b2368b6423b3f5e"/>
+        </topic>
+        <topic label="GaLogger" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html">
+          <topic label="GaLoggerManipulator" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a9d5a206deadf727e150f02ef2447969a"/>
+          <topic label="GaLogger" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#ac9c198e502fa9cb4056a7f7c0f187363"/>
+          <topic label="~GaLogger" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a97fea7630f79d31dc747780afa5ae574"/>
+          <topic label="endl" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#ae0039a3c443b1da62d111d163a0aea16"/>
+          <topic label="operator&lt;&lt;" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a9dbe2cc35ac8ea0237bcac7a2526764b"/>
+          <topic label="operator&lt;&lt;" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a5eba9e1b0f0f7808a5a7045a03e407dc"/>
+          <topic label="mBuffer" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#ab115776140fa2e5228d0610629881f26"/>
+          <topic label="mLevel" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a4a7b72fa8d9d2413f94acf95f8cfb05a"/>
+        </topic>
+        <topic label="GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html">
+          <topic label="~GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a374a60d30198d111f6b4adcb236fd3ff"/>
+          <topic label="GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a493e29ffc35d9fc3a61034277eb9e927"/>
+          <topic label="GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a34e11fa5cfb809aa7d256d171afb2797"/>
+          <topic label="addScheduler" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a109c9ef9b5395e410f8d447895eb39d7"/>
+          <topic label="attach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a776c3a61f007ffb2229c626838286e7a"/>
+          <topic label="detach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a8934e2e20eb9e8b735160e5a5f9c9478"/>
+          <topic label="error" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa8752086bee50bc286cde6d358f96607"/>
+          <topic label="GetConnectTimeout" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ac090ced067d4c11abd6b0ba234bf818f"/>
+          <topic label="getInstance" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a5a01ec318ce6bd87fc861f5ff589b860"/>
+          <topic label="GetServicePort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a439da661cacad25cf8145e7261c347a5"/>
+          <topic label="getSystemName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ac3b8ae2717e4dda7e536f573151c2e60"/>
+          <topic label="getTaskName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aebffa22a8876a1732121c45f16b00e77"/>
+          <topic label="info" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ad7149fd99dbd42793968c5eb61d32f19"/>
+          <topic label="isAttached" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a33b9c566f6e8d8825592862dbcfa3c18"/>
+          <topic label="isInitializing" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a1fffc1893fb2f874e0193dca71eaf568"/>
+          <topic label="isOperating" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a12b1228ddf4b1a299dced3389821944b"/>
+          <topic label="onAttach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ae738de65c78c824a968e190bc6cdc882"/>
+          <topic label="onConnectionLost" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a244b30b9e7788ce83f50cade9dae85ca"/>
+          <topic label="onDetach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#abdf287c3b9cfa05e2db0aeaf39747bf8"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#af22af61ae8bcec5ce2e7728ea4366c02"/>
+          <topic label="setConnectTimeout" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa44be8bf634e898b091419bf4378fb50"/>
+          <topic label="setServicePort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#af3ecfd752bd95b2aa91dd4549f567e32"/>
+          <topic label="setTaskInitializing" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#af00b54bd7fe967f27be5ccafbd98147e"/>
+          <topic label="setTaskName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a1f090c4fda5938321c8fa429b8149ad0"/>
+          <topic label="setTaskOperating" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa1cb818bd846cadcf4da18f6baef5aa7"/>
+          <topic label="setTaskState" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a075e11579c2d48383dd4664ea7dade9b"/>
+          <topic label="startScheduler" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a87e6f6573b988d06699e39c8f8d79df8"/>
+          <topic label="startSchedulerAll" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a7916fef198afb06eccacd2e09d5594d8"/>
+          <topic label="startWatchDog" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a486dc52893ba637dfd868acfcc04e284"/>
+          <topic label="stopScheduler" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a904abaa6d25d8f3edc46aa217500d81a"/>
+          <topic label="stopSchedulerAll" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a60c38b6b8f2c308ef83e27ea17944994"/>
+          <topic label="stopWatchDog" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a155711111e45a5225f2605492f5f68be"/>
+          <topic label="warning" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a9c1c70b882ec4ed181a3d9897b04aab2"/>
+          <topic label="watchDog" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ac1b46bb2415dab8ee7236f39b5054b9b"/>
+          <topic label="startThread" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a0ee5f6dd3d1b2e7d6caa70723e1d383a"/>
+          <topic label="mConnectTimeout" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a3d293e44bf51fb1989eaac9f5423b622"/>
+          <topic label="mIsAttached" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a146b0ed391dac087bcea92dcd31f9e58"/>
+          <topic label="mLogError" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a60693fc7b09b31a33a8a43eee8d0bfec"/>
+          <topic label="mLogInfo" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a583afc10a591cd1e42e112291811a5f4"/>
+          <topic label="mLogWarning" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a23785755475811e64dcfb77594a9c571"/>
+          <topic label="mNameIsSet" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a5cdcceea4928227f43dc5a7c01db59a7"/>
+          <topic label="mOnAttach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a9e63a843563685aa9764cb4e212c456f"/>
+          <topic label="mOnConnectionLost" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a0251354c6da31121d0cd953197bbc67d"/>
+          <topic label="mOnDetach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a559ef22b6d37025c7d5e42b8897d7387"/>
+          <topic label="mSchedulerList" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a262fe4ff463191f98cb29486cc26e944"/>
+          <topic label="mServicePort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a2d672f6c22975afdcb83adecbaa0773b"/>
+          <topic label="mSystemInfo" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ab7627ef47ea34080e437331bec00ad90"/>
+          <topic label="mSystemName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa692f46fb94fca724d10122a2e854abd"/>
+          <topic label="mTaskName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ada072d245e14d3c8f433d7abc7e40566"/>
+          <topic label="mTaskState" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#afe9bbacc9059297094a71c1a1e4bb328"/>
+          <topic label="mWatchDocAbbort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa3a9c909382d037ce95116f5431864d8"/>
+          <topic label="mWatchDogTask" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a386b9fca1ec0258cbfeec35f3e63d124"/>
+          <topic label="mWatchDogWakeUp" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a0cde6058190baee0c1808536caed7c2b"/>
+        </topic>
+        <topic label="GammaFaultException" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html">
+          <topic label="GammaFaultException" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#aed4ddbd0013865c141ec1097e0cd12ec"/>
+          <topic label="~GammaFaultException" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a60105931e3dc8022e9411b54bc3a582d"/>
+          <topic label="getMessage" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a74fdd97fc63994d2d64f0c8a5877582d"/>
+          <topic label="operator&lt;&lt;" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a197003690e896881a37751bc4f1f3d15"/>
+          <topic label="mCode" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a8fc051769a46169f5cf3d95ca60e5733"/>
+        </topic>
+        <topic label="LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html">
+          <topic label="~LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a430ce1b7b3ede9194bbaad55af45d10a"/>
+          <topic label="LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a02c2d1e7c6e1f7102eb3ac4c80cf9186"/>
+          <topic label="LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a7310c97f73f369c5ef34e1078de94dd7"/>
+          <topic label="getBuildDescription" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac608e0cb7b53c0a2b737986a26b63744"/>
+          <topic label="getBuildTime" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aa404ba220da22a43cb3798007055589c"/>
+          <topic label="getInstance" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a80efccd24a5096b2a683ad59ac864bbc"/>
+          <topic label="getMajorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a64ebd31d0cfe58adc266fac9181d1d98"/>
+          <topic label="getMinorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a55c1b07f311df28d6cebf463bf292347"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a97022545e907d711eb2a3cce1cfa62b5"/>
+          <topic label="getPatchVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a692265579043f5d07480ffc24f5dc616"/>
+          <topic label="getSvnBuildDate" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ae38b2e9e0ac29d54125dbde7e5602eca"/>
+          <topic label="getSvnCommitDate" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ae39f851f44c9bed9af4f996b4cc88eca"/>
+          <topic label="getSvnRevision" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#af36c8d8eea2620d8faced393d0cf43bb"/>
+          <topic label="getSvnRevisionRange" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aef4080d8ca3da18bbadb2f2b971a8db7"/>
+          <topic label="getSvnUrl" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#abc4071c8d887aa9d8d5cfeb89e40e064"/>
+          <topic label="getTweakVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a57df267f4a98bdd7382f3bade60c0864"/>
+          <topic label="getVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a73c6aa4f8b5b3a6631f731744aec52f6"/>
+          <topic label="getVersionText" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a36feed1cd0a255022a7295473beaf720"/>
+          <topic label="hasLocalModifications" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a8baa1acac9ca4d2c77dc10823778c93f"/>
+          <topic label="hasSvnInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a161d6859431466820b4192715691c2c7"/>
+          <topic label="hasUnversionedFiles" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac2c7f5fe3f5ebef181a279022c3254ce"/>
+          <topic label="isDebugVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a66b7df08535e6bfa6b61b7235a5e73e3"/>
+          <topic label="isTaggedVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac2432dcee8f987f8e901967e3ded06a1"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a3d7a4f2bd725465bc687b9cdb9439c7e"/>
+          <topic label="printInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a478eefbcee3b29c09af750c1a1831d08"/>
+          <topic label="mBuildDescription" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a113b40e87fb01b5d81564171be9be7b4"/>
+          <topic label="mBuildTime" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a5409f71895d69c349461896203b4fd90"/>
+          <topic label="mHasSvnInformations" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a472ed18ebef67ac081e0f6be1f7b5eb3"/>
+          <topic label="mInternalVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ae034717a35790830cbdc79bf87186c35"/>
+          <topic label="mIsDebugVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a384a3f1fa597d6e192860152631cc528"/>
+          <topic label="mLibName" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ad3b1e3ade29e09032ae49ad470bb8176"/>
+          <topic label="mMajorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a95ba860d135fb80f6f2d6dbf07e4b326"/>
+          <topic label="mMinorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac0ceefab6d7c04fcafbcb5aceea9be16"/>
+          <topic label="mSvnBuildDate" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a680404802134effb89476226e21a47a5"/>
+          <topic label="mSvnDateCommit" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ab20f8050a4be1a74cc669d9b0f9b295d"/>
+          <topic label="mSvnHasLocalModifications" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a18f40fffa33557566d5b8f8e1cd18e47"/>
+          <topic label="mSvnHasUnversionedFiles" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#af294058f0caaf305120e53c209f12907"/>
+          <topic label="mSvnIsTaggedVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aa436f549217e2c00bdd7b4edd89255a9"/>
+          <topic label="mSvnRevision" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aad4e313320e502c7a83755171a295648"/>
+          <topic label="mSvnRevisionRange" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a60dac6df8e3771aea4cb2b50dd2617e9"/>
+          <topic label="mSvnURL" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aa800e458914456645ae3d78e7dcb162c"/>
+          <topic label="mVersionPatch" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a509393a20a256ae36b07a945f62c385e"/>
+          <topic label="mVersionTweak" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a64bb9a119bd4fcadbd86b4562cf272ef"/>
+        </topic>
+        <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html">
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a029a00ebd6d4af27a0ce231f4632b28e"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#acd8d88af0244f64adaf223297283a2d5"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a25fc4593c098bd5dad7094e3a05eb934"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a8ce3e9e8e0eec721cbf0d01e268e4284"/>
+          <topic label="~RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0d01181dea16eb144ab69fad1214f34d"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aedb7de68f02223c0796593559c8abd52"/>
+          <topic label="attachToEvent" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a4b1b5c099932df677f39cf3ebd8bed63"/>
+          <topic label="callBack" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a8d840730021e358487973025e6659914"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#afa39c6b0fa9b302b6a542a83192f52a8"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#accbb021877549c38075244e09227a3cd"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ae073d26b4b88c73bc1de41f770a8d318"/>
+          <topic label="detachFromEvent" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a7f4bca8995d7c9924142b8dc8c44221f"/>
+          <topic label="finalizeOpen" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aad4a2f802aee40a4143cb296531a2b1c"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a400242936947fcdda232a79e166ce2df"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac63be2679638d763a6630f4f61eeaf74"/>
+          <topic label="getBinarySize" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac1218e22a5610b382f1ee5c3925e29bb"/>
+          <topic label="getBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a9cbbdaa7faeaaf7a7e3f7b35192aa27c"/>
+          <topic label="getDataType" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a4d2b274d3b67af954a9aa97bc1029946"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ae2eb4de028079637c2067132d600f75f"/>
+          <topic label="getNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a73cf127a7931d698825f276563790db2"/>
+          <topic label="getProperty" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a65d3a6b6836696256af0a22d515669d6"/>
+          <topic label="getPropertyList" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a1039c8c5e2e6e3fe1ec360c5ac9e5968"/>
+          <topic label="getUsedBuffer" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#afad1165630cf9d326f5c417ce8bbb7ad"/>
+          <topic label="getValueAsString" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a09a2fe1c698a63856c09eccfd384ab8b"/>
+          <topic label="hasProperty" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0a41d95c46809e0c71b7d4bbc6a357b5"/>
+          <topic label="isBinaryData" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ab127fa00871d98fadd84585e971450ec"/>
+          <topic label="isFifo" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0c01087c8a380e88b3a93db3c0d50d31"/>
+          <topic label="isNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a7addb74e873e854203c937881c7ae9dc"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aec69961858a3c7270b041d9ffbba435e"/>
+          <topic label="prepareOpen" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a2abed5dd7273674206165c3f13efb98b"/>
+          <topic label="putBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0281897c197ce6ae6d3e62adc25eecfe"/>
+          <topic label="putNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a11f2dcbee8ace5bae8e5e037db330efb"/>
+          <topic label="putValueFromString" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a4715c07ad78d8c96bec7dff2a5f8b780"/>
+          <topic label="readProperties" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ab6817d2a6d9ecf5fb269c8bb90cc413d"/>
+          <topic label="reconnect" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac56dd25ad2bd50be30a0ed6d0edec0b4"/>
+          <topic label="mDataType" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ada58af2e65bfada2857b6b0b7d005480"/>
+          <topic label="mIsConnected" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aa1229442bc8a71e74fbfa151b2490e1f"/>
+          <topic label="mIsFifo" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#acc55f95e51229c8cbe4b2ac5a580993e"/>
+          <topic label="mIsNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#adda8434a96346050751caa706a08a2e9"/>
+          <topic label="mPropertyList" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ab718173a078112b27cc3462a148e0236"/>
+          <topic label="mPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aaf4251281466af267c4b2da0e89c18c5"/>
+          <topic label="mPvAddress" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aae8db24791e8b96197fd9429578b2d74"/>
+          <topic label="mPvName" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a51c46379d699df9e79f084b296d06d39"/>
+          <topic label="mPvProperty" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a32c4317a2bf3d75c8668aff11f3b699a"/>
+          <topic label="mPVType" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a850f7af280f5da013d3d84ee4027de41"/>
+        </topic>
+        <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html">
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ada98743b139eb58c082ea000d968018f"/>
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad074aad8d824309a540dd71f6e201436"/>
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a2a75f1beaec00b067a1640f7578312aa"/>
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac4e57a8999135ff49154ad076d80db39"/>
+          <topic label="~SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad5822580d4d306a46233e9a03a538e80"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad709621dcfaf3647d58cfee852147645"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#aadbc3068e6f2d4dd7c558c811df2426b"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#af5ba8ace1b0af0629948687393eacb14"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac1674774ab6ba6fe944325bc54e3e5c1"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac53532a4b0a8d01d0fc89af96d87f73b"/>
+          <topic label="getBinarySize" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a37f72e24ac969f97c0b0a5507a23063b"/>
+          <topic label="getBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a29c6ef74661a39fdb9a46040ecd41e41"/>
+          <topic label="getDataType" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ada16b2c5a46c8205778a0a529ee2a0f5"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ab55234f09cae94ac878e3d0e4ae2867b"/>
+          <topic label="getNumericValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a398ec2e0c3dea80347dd4a4444de7855"/>
+          <topic label="getProperty" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad6beb1638ae15a25557bbfc2af22f6e3"/>
+          <topic label="getPropertyList" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a4cc2fd1466691094fc8f7b3b9f3d14e1"/>
+          <topic label="getUsedBuffer" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a28c124c3c869d6906d1849fd002bceef"/>
+          <topic label="getValueAsString" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#aa154a018b7f74acfcbb08efcacb4ee56"/>
+          <topic label="hasProperty" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a9afe2a2b72c68a150990b6dbaadf19b5"/>
+          <topic label="isBinaryData" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#accd05b48c85074d4059e0cbd70b3fb4b"/>
+          <topic label="isFifo" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a6d7b28167e13cec91a58bbe7262a7fed"/>
+          <topic label="isNumericValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac7611edf35bd8a34d0d7960d8ff7a07c"/>
+          <topic label="putBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a348ba24a7619d1b94fb6e97e4c0cd305"/>
+          <topic label="putNumericValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a69e4e8d0c84df8f532387344207d049e"/>
+          <topic label="putValueFromString" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#aa3d4d18037fab1e34df8d8a5c4125834"/>
+          <topic label="mPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a3a85ddeb345c44d714eb4740590387f3"/>
+        </topic>
+        <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html">
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a7ea6a6360d6abf0bde497254e070d701"/>
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a42119a4bcc2433db7a5c7cae38369baf"/>
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4595347914c5313671887642b4c1cd3b"/>
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#abf614b20758ea442a5b9d1340da828ff"/>
+          <topic label="~TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aec7b3a0b1d71e9d3f615e0f56bf15dbb"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a7bbb0e4393cf735ca196997e71105a6b"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#adde070a56f93f88e363f53037082310b"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aeffc9844c237dc51bd2fe5c2a1316813"/>
+          <topic label="get" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac9dce1de05ada2cc7ed607646ead198c"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac1674774ab6ba6fe944325bc54e3e5c1"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac53532a4b0a8d01d0fc89af96d87f73b"/>
+          <topic label="getBinarySize" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a37f72e24ac969f97c0b0a5507a23063b"/>
+          <topic label="getBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a29c6ef74661a39fdb9a46040ecd41e41"/>
+          <topic label="getDataType" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ada16b2c5a46c8205778a0a529ee2a0f5"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ab55234f09cae94ac878e3d0e4ae2867b"/>
+          <topic label="getNumericValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a398ec2e0c3dea80347dd4a4444de7855"/>
+          <topic label="getProperty" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ad6beb1638ae15a25557bbfc2af22f6e3"/>
+          <topic label="getPropertyList" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4cc2fd1466691094fc8f7b3b9f3d14e1"/>
+          <topic label="getUsedBuffer" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a28c124c3c869d6906d1849fd002bceef"/>
+          <topic label="getValueAsString" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aa154a018b7f74acfcbb08efcacb4ee56"/>
+          <topic label="hasProperty" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a9afe2a2b72c68a150990b6dbaadf19b5"/>
+          <topic label="isBinaryData" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#accd05b48c85074d4059e0cbd70b3fb4b"/>
+          <topic label="isFifo" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a6d7b28167e13cec91a58bbe7262a7fed"/>
+          <topic label="isNumericValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac7611edf35bd8a34d0d7960d8ff7a07c"/>
+          <topic label="operator T" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a15986f71322842e909e36bbad0fa4e2a"/>
+          <topic label="operator*=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#abf83b43586b3d53a0991bbf3e4f5f92c"/>
+          <topic label="operator++" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a462ce64e61a4034daa121d94f62b9ebb"/>
+          <topic label="operator++" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a142be8d611cff76b6f62161d60f76ed0"/>
+          <topic label="operator+=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a240875f4ae3ed8aa59332f9838409c9c"/>
+          <topic label="operator--" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a0500283f2778b42be8cdc5ada5dc7c92"/>
+          <topic label="operator--" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5e09780e689d6c5e77c767bb92c8da89"/>
+          <topic label="operator-=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5b237c63679a3f5c802a3f3d1bd96f8e"/>
+          <topic label="operator/=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a1aa2fd577ded15db2777bffa35357e89"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4b2f8973ad2db66d0ea771e44d0938db"/>
+          <topic label="put" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a9a37ad6fa3f0929d33e6c51ccdbfff23"/>
+          <topic label="putBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a348ba24a7619d1b94fb6e97e4c0cd305"/>
+          <topic label="putNumericValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a69e4e8d0c84df8f532387344207d049e"/>
+          <topic label="putValueFromString" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aa3d4d18037fab1e34df8d8a5c4125834"/>
+          <topic label="operator!=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ab2f608ed5514c44f720e91056a3d1b99"/>
+          <topic label="operator!=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4f567cf4b11a6108d12b6fb986f9109d"/>
+          <topic label="operator!=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a0c9f4edcf0c11e6a1492ba915c2af08d"/>
+          <topic label="operator&lt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a44c4ef24006bff64b0c175ef4c002994"/>
+          <topic label="operator&lt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a438bb2cf42be00010f6d0db47dcd4c1a"/>
+          <topic label="operator&lt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#abfbe627d8fd6b58e3efb8b31996f85a6"/>
+          <topic label="operator&lt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a2630b275ee39bc5d6faaa168fec72472"/>
+          <topic label="operator&lt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5159e67a791452f68a5de30f0d6f405f"/>
+          <topic label="operator&lt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a6dc6ce52e3a408ad78150bb8d449a3be"/>
+          <topic label="operator==" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#af4cd0c3088e28464c901c7627a86f8d0"/>
+          <topic label="operator==" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ad952a752ad236b15ed35c001af50d14e"/>
+          <topic label="operator==" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#acb108fc9c33eeb0f0ac3fb87480ba2b0"/>
+          <topic label="operator&gt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aefb47fba17845001fc1c51b26282105f"/>
+          <topic label="operator&gt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aaecff28d6cfec3dcb434b34fa027248e"/>
+          <topic label="operator&gt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5d4a8a272a3ff95416684be0b16a30a7"/>
+          <topic label="operator&gt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a9b25f35494c7d00c91efe64b923d4fc3"/>
+          <topic label="operator&gt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a321f2d29d09cf1d843c02d5d3c45c26c"/>
+          <topic label="operator&gt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac6459967f8ffe22c620cb81d858572ac"/>
+        </topic>
+        <topic label="PVConverter" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html#afc721ef77990e27aef7063098830f869"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html#a5ba5875e86f67f0415f468a83c49cd73"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html#a9fdd641f0bbb10ccb3954ed7d8ff8559"/>
+        </topic>
+        <topic label="PVConverter&lt; bool &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html#a272ecd3b9698efc8326fbc41bd8beae0"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html#a27a7cbfc4b6db7ceb0b204ab2c47b9e3"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html#a3490a71ef000662213946c4422778d24"/>
+        </topic>
+        <topic label="PVConverter&lt; int8_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html#aabd0e2b9ed561662adeaf69f62f08eac"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html#aa0081dae7df47cf4001cb3a5549e19bd"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html#aed207aad4f8d31e874a3a97d828edcc8"/>
+        </topic>
+        <topic label="PVConverter&lt; int16_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html#ae93ecd4acb47ba9eaabb9b24921aa043"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html#a60f6640122d3c3924b12077d8f0e036e"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html#a2d36a67c60f6b23207b65c96a9c1b461"/>
+        </topic>
+        <topic label="PVConverter&lt; int32_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html#a0a582d208a5ae5467f3260f2aa7cf8e8"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html#a26c828e87a4c866c6cc4b114895969ad"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html#a36575a0c69ba06f8cc7b2304f7d529ab"/>
+        </topic>
+        <topic label="PVConverter&lt; int64_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html#af8141522d0ff6da23a77085d3c525a7f"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html#aded7391408f88fa7f45b5d3c257caa89"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html#ab642fcbfe7a1dd0f8b9acc54da3168c5"/>
+        </topic>
+        <topic label="PVConverter&lt; uint8_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html#ae473a3acee7c1c3e7b9c9e91f2e24d18"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html#a8b7518f8de5e8bd8ddf0721323a2b6c3"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html#abe366f4d631e439ea26d233d9dec6ae4"/>
+        </topic>
+        <topic label="PVConverter&lt; uint16_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html#a618cf83f3cb93f89c9fbf06d062546c9"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html#a6ca1e7cf3ff6cb15eb8e3b0b7ac341e4"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html#a3974209fa29c1ee83f3c9809f8f4ae1d"/>
+        </topic>
+        <topic label="PVConverter&lt; uint32_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html#a327138022e9eba323e292fa1f7e4e0b8"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html#a78c0ab889623ac4f4101ee82ae28dc73"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html#a595f58ef761e1b165af29a73833cb0fe"/>
+        </topic>
+        <topic label="PVConverter&lt; uint64_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html#a5ea0077e7cd42c94816a02f238c3d953"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html#a73344ef4ecccd38c3735ac2fe6b53a87"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html#aeda108a3b13756b6cca07287051f21d6"/>
+        </topic>
+        <topic label="PVConverter&lt; float &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html#a52abed7fca5f352ffd2a112d60c195fd"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html#a5f8408ae59cb23eb2cdeae7333e9d8c7"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html#a763af9947ef5b53c4c7dbfcfaaf098d7"/>
+        </topic>
+        <topic label="PVConverter&lt; double &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html#abc574c84dfb618d2881da3f90cdec03d"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html#ae03bfd203d757fcadc9f343c1fb3767f"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html#a3e3af953a2cceb8b9a63af6222ee1684"/>
+        </topic>
+        <topic label="GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html">
+          <topic label="GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#ab8429d36ff151b05caf0e9ccc171f71b"/>
+          <topic label="GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a07c83402b25a7b17a820e7834913e2b5"/>
+          <topic label="~GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a5055b8988e0216309c6993fe7016679c"/>
+          <topic label="connect" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a9a1439d41ec12117f12734d22afd559a"/>
+          <topic label="taskDeinit" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a781033986499be7196270ec21701b6ac"/>
+          <topic label="taskInit" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a0811a5e7afaf21d7092751dec3af3383"/>
+          <topic label="taskRun" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#adecd99501f574e2c491bc778d4d4e415"/>
+          <topic label="updateStatistics" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a8844fed177d7bfc48d08e69ead77509d"/>
+          <topic label="waitNextFrame" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a303bd384204be1974d355cc30b107eb9"/>
+          <topic label="ga_task_deinit" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a71942e7bd7c3162abf6709905f105b40"/>
+          <topic label="ga_task_init" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#ab51ad7e1864676f7f1d111936675995c"/>
+          <topic label="ga_task_run" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#aa58f89c6fd01e99ece89d9f5c27d8071"/>
+          <topic label="mConnected" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a5696b1ab8b48a547330550b520237669"/>
+          <topic label="mName" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#ae84bed1cc041629386a2455ce4fba679"/>
+          <topic label="mStatistics" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a9392ddd477fd510d38475497db2ba791"/>
+          <topic label="mTaskHandler" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#aa7983c5dd93908a63181b3b073de30d4"/>
+        </topic>
+      </topic>
+      <topic label="TypedPV" href="class_typed_p_v.html"/>
+    </topic>
+    <topic label="Class Index" href="classes.html"/>
+    <topic label="Class Hierarchy" href="hierarchy.html">
+      <topic label="GaGCppAPI::Browser" href="class_ga_g_cpp_a_p_i_1_1_browser.html"/>
+      <topic label="GaGCppAPI::BrowserFilter" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html"/>
+      <topic label="GaGCppAPI::Event" href="class_ga_g_cpp_a_p_i_1_1_event.html"/>
+      <topic label="GaGCppAPI::EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html">
+        <topic label="GaGCppAPI::RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html"/>
+      </topic>
+      <topic label="ExceptionBase">
+        <topic label="GaGCppAPI::GammaFaultException" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html"/>
+      </topic>
+      <topic label="GaGCppAPI::GaLogger" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html"/>
+      <topic label="GaGCppAPI::GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html"/>
+      <topic label="GaGCppAPI::GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html"/>
+      <topic label="GaGCppAPI::LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; T &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; bool &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; double &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; float &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; int16_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; int32_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; int64_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; int8_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; uint16_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; uint32_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; uint64_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html"/>
+      <topic label="GaGCppAPI::PVConverter&lt; uint8_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html"/>
+      <topic label="GaGCppAPI::SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html">
+        <topic label="GaGCppAPI::TypedPV&lt; T &gt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html"/>
+      </topic>
+      <topic label="TypedPV&lt; T &gt;" href="class_typed_p_v.html"/>
+    </topic>
+    <topic label="Class Members" href="functions.html">
+      <topic label="All" href="functions.html">
+        <topic label="a" href="functions.html"/>
+        <topic label="b" href="functions_0x62.html"/>
+        <topic label="c" href="functions_0x63.html"/>
+        <topic label="d" href="functions_0x64.html"/>
+        <topic label="e" href="functions_0x65.html"/>
+        <topic label="f" href="functions_0x66.html"/>
+        <topic label="g" href="functions_0x67.html"/>
+        <topic label="h" href="functions_0x68.html"/>
+        <topic label="i" href="functions_0x69.html"/>
+        <topic label="l" href="functions_0x6c.html"/>
+        <topic label="m" href="functions_0x6d.html"/>
+        <topic label="n" href="functions_0x6e.html"/>
+        <topic label="o" href="functions_0x6f.html"/>
+        <topic label="p" href="functions_0x70.html"/>
+        <topic label="r" href="functions_0x72.html"/>
+        <topic label="s" href="functions_0x73.html"/>
+        <topic label="t" href="functions_0x74.html"/>
+        <topic label="w" href="functions_0x77.html"/>
+        <topic label="~" href="functions_0x7e.html"/>
+      </topic>
+      <topic label="Functions" href="functions_func.html">
+        <topic label="a" href="functions_func.html"/>
+        <topic label="b" href="functions_func_0x62.html"/>
+        <topic label="c" href="functions_func_0x63.html"/>
+        <topic label="d" href="functions_func_0x64.html"/>
+        <topic label="e" href="functions_func_0x65.html"/>
+        <topic label="f" href="functions_func_0x66.html"/>
+        <topic label="g" href="functions_func_0x67.html"/>
+        <topic label="h" href="functions_func_0x68.html"/>
+        <topic label="i" href="functions_func_0x69.html"/>
+        <topic label="l" href="functions_func_0x6c.html"/>
+        <topic label="o" href="functions_func_0x6f.html"/>
+        <topic label="p" href="functions_func_0x70.html"/>
+        <topic label="r" href="functions_func_0x72.html"/>
+        <topic label="s" href="functions_func_0x73.html"/>
+        <topic label="t" href="functions_func_0x74.html"/>
+        <topic label="w" href="functions_func_0x77.html"/>
+        <topic label="~" href="functions_func_0x7e.html"/>
+      </topic>
+      <topic label="Variables" href="functions_vars.html"/>
+      <topic label="Typedefs" href="functions_type.html"/>
+      <topic label="Enumerations" href="functions_enum.html"/>
+      <topic label="Enumerator" href="functions_eval.html"/>
+      <topic label="Related Functions" href="functions_rela.html"/>
+    </topic>
+  </topic>
+  <topic label="Files">
+    <topic label="File List" href="files.html">
+      <topic label="Browser.h" href="_browser_8h.html">
+        <topic label="Browser" href="class_ga_g_cpp_a_p_i_1_1_browser.html">
+          <topic label="Browser" href="class_ga_g_cpp_a_p_i_1_1_browser.html#aa94498815b7e07bb764f5a15ce096f52"/>
+          <topic label="~Browser" href="class_ga_g_cpp_a_p_i_1_1_browser.html#a81a5a4c541a7327432317ab39aced1d6"/>
+          <topic label="browseInfo" href="class_ga_g_cpp_a_p_i_1_1_browser.html#aaef46ba9f40fcfd939f00868c5794104"/>
+          <topic label="findPVs" href="class_ga_g_cpp_a_p_i_1_1_browser.html#a4f79c65b9b2202b7dac68035d44a65be"/>
+        </topic>
+      </topic>
+      <topic label="BrowserFilter.h" href="_browser_filter_8h.html">
+        <topic label="BrowserFilter" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html">
+          <topic label="FilterType" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62">
+            <topic label="System" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a4f49497efada5b082296dce72372d4bf"/>
+            <topic label="Node" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a1b96db5bc67b5af7ac228e7b16dfa6e8"/>
+            <topic label="Memory" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a08da5de7282fffb1fc94c84f8da49bb0"/>
+            <topic label="Group" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62ad872454197bb02f82e01682cf4b91cc1"/>
+            <topic label="PV_Name" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a96a47b579d47dd7c2344ac8d3e4f4be4"/>
+            <topic label="PV_Type" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a476a6e82c785acb05ee58d0a6fccfac6"/>
+            <topic label="Property_Type" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a41dcb97d135754fd905c4902da0ef7c1"/>
+            <topic label="Property_Name" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62aed21dc68fee15680f2d04a6f74483d60"/>
+            <topic label="Property_Name_And_Value" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a24bc108f9844a671851a2caf7146364f"/>
+            <topic label="FILTER_TYPE_COUNT" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#acf9b79641e889a965e7cab241c704d62a9c9aa3ad1da3cf97c519f7cd259f6a57"/>
+          </topic>
+          <topic label="BrowserFilter" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a9aa68dc301a7c61dad465f329379d3a8"/>
+          <topic label="~BrowserFilter" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#aa4e874f1a38e45c6943010b9523ed802"/>
+          <topic label="add" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a3d28d1096d37a439f3d0e62eba47916f"/>
+          <topic label="clear" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a13850c7dfb5efa2a16a6063a7d390a4f"/>
+          <topic label="fit" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a136c0fa2fb3d55dcc7793855313195b6"/>
+          <topic label="fit" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a56ddd1d5a016220a7ce7aa45106b62db"/>
+          <topic label="fit" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a24379dc6aa15f973c46a094cbcc865ad"/>
+          <topic label="getFilterExpression" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a5756b8a23abbf081f7edbadd8c8f360d"/>
+          <topic label="remove" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#ac7ed6a07d7a6fad22442152eba774848"/>
+          <topic label="mFilterExpression" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a66c2c7f53d9a07819fe285aeab0c12d4"/>
+          <topic label="mFilterUsed" href="class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a9eec2bcdc2a7e801290c8a1cd1a14d46"/>
+        </topic>
+      </topic>
+      <topic label="Event.h" href="_event_8h.html">
+        <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html">
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#ab0ad7dbc5feb992acd4cee7f3d94d1ed"/>
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#a841afb5217bcf926fc66702dbb08f701"/>
+          <topic label="~Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#a61028839d9f4a1e5a61348a9333b088d"/>
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event.html#a1298e221c4537e68d1ada042b98bcb84"/>
+          <topic label="attach" href="class_ga_g_cpp_a_p_i_1_1_event.html#a009118bd038fcb25b28a332fee6f069b"/>
+          <topic label="detach" href="class_ga_g_cpp_a_p_i_1_1_event.html#a85684b03754587b52ded6797309d4a1a"/>
+          <topic label="fire" href="class_ga_g_cpp_a_p_i_1_1_event.html#a76f4506c87e3ebba7a835a0e670104e5"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event.html#aa861039a70ee042425813f5ff2d5dfeb"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event.html#a0a79fbb92976fe5645721ad5bc9f8b35"/>
+          <topic label="mHandlerList" href="class_ga_g_cpp_a_p_i_1_1_event.html#ada763dff49a94c7b9b95e8df502e57d4"/>
+          <topic label="mLastIndex" href="class_ga_g_cpp_a_p_i_1_1_event.html#a8ea6ab98227847788a1c872b1f73f811"/>
+        </topic>
+      </topic>
+      <topic label="EventHandler.h" href="_event_handler_8h.html">
+        <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html">
+          <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#accbb05fa392b3bc1850a5186b2c3ccd1"/>
+          <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a68e8d3fa6f6aeb914ae6d5bc7b63c1c4"/>
+          <topic label="~EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#adfba6736c27b93393a5ce9a6069f55f5"/>
+          <topic label="EventHandler" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a1202c1700ba1b940a8de6daf612f9cbf"/>
+          <topic label="attachToEvent" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a4b1b5c099932df677f39cf3ebd8bed63"/>
+          <topic label="callBack" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a6f6500d19d153e257ed2c5c0e4ef39e2"/>
+          <topic label="destroyConnection" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a5b2f565eed9a0d3257e20248b99474ce"/>
+          <topic label="detachFromEvent" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a7f4bca8995d7c9924142b8dc8c44221f"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a496324edd374499f43fd7420fc832f38"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a0d3d9221bf1c328367a6f75516445e69"/>
+          <topic label="Event" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a3c7b3c89bf96f51e80a919b3a82a3915"/>
+          <topic label="mHandlerList" href="class_ga_g_cpp_a_p_i_1_1_event_handler.html#a322f61f26c313da26b2368b6423b3f5e"/>
+        </topic>
+        <topic label="tCallBackInfo" href="_event_handler_8h.html#a8215f7bacb24caf713078ee906a827b4"/>
+        <topic label="arg1" href="_event_handler_8h.html#a6b59bebb7f97aad3e2554bc83632cd98"/>
+        <topic label="event" href="_event_handler_8h.html#af938ab5c3aec0378822af520c155bf55"/>
+        <topic label="ptClass" href="_event_handler_8h.html#a26411afe84d5cfe9ffd89c4ef069c6b6"/>
+      </topic>
+      <topic label="GaGCppAPI.h" href="_ga_g_cpp_a_p_i_8h.html"/>
+      <topic label="GaGCppAPIVersionInfo.h" href="_ga_g_cpp_a_p_i_version_info_8h.html">
+        <topic label="LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html">
+          <topic label="~LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a430ce1b7b3ede9194bbaad55af45d10a"/>
+          <topic label="LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a02c2d1e7c6e1f7102eb3ac4c80cf9186"/>
+          <topic label="LibVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a7310c97f73f369c5ef34e1078de94dd7"/>
+          <topic label="getBuildDescription" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac608e0cb7b53c0a2b737986a26b63744"/>
+          <topic label="getBuildTime" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aa404ba220da22a43cb3798007055589c"/>
+          <topic label="getInstance" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a80efccd24a5096b2a683ad59ac864bbc"/>
+          <topic label="getMajorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a64ebd31d0cfe58adc266fac9181d1d98"/>
+          <topic label="getMinorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a55c1b07f311df28d6cebf463bf292347"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a97022545e907d711eb2a3cce1cfa62b5"/>
+          <topic label="getPatchVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a692265579043f5d07480ffc24f5dc616"/>
+          <topic label="getSvnBuildDate" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ae38b2e9e0ac29d54125dbde7e5602eca"/>
+          <topic label="getSvnCommitDate" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ae39f851f44c9bed9af4f996b4cc88eca"/>
+          <topic label="getSvnRevision" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#af36c8d8eea2620d8faced393d0cf43bb"/>
+          <topic label="getSvnRevisionRange" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aef4080d8ca3da18bbadb2f2b971a8db7"/>
+          <topic label="getSvnUrl" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#abc4071c8d887aa9d8d5cfeb89e40e064"/>
+          <topic label="getTweakVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a57df267f4a98bdd7382f3bade60c0864"/>
+          <topic label="getVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a73c6aa4f8b5b3a6631f731744aec52f6"/>
+          <topic label="getVersionText" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a36feed1cd0a255022a7295473beaf720"/>
+          <topic label="hasLocalModifications" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a8baa1acac9ca4d2c77dc10823778c93f"/>
+          <topic label="hasSvnInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a161d6859431466820b4192715691c2c7"/>
+          <topic label="hasUnversionedFiles" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac2c7f5fe3f5ebef181a279022c3254ce"/>
+          <topic label="isDebugVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a66b7df08535e6bfa6b61b7235a5e73e3"/>
+          <topic label="isTaggedVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac2432dcee8f987f8e901967e3ded06a1"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a3d7a4f2bd725465bc687b9cdb9439c7e"/>
+          <topic label="printInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a478eefbcee3b29c09af750c1a1831d08"/>
+          <topic label="mBuildDescription" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a113b40e87fb01b5d81564171be9be7b4"/>
+          <topic label="mBuildTime" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a5409f71895d69c349461896203b4fd90"/>
+          <topic label="mHasSvnInformations" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a472ed18ebef67ac081e0f6be1f7b5eb3"/>
+          <topic label="mInternalVersionInfo" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ae034717a35790830cbdc79bf87186c35"/>
+          <topic label="mIsDebugVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a384a3f1fa597d6e192860152631cc528"/>
+          <topic label="mLibName" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ad3b1e3ade29e09032ae49ad470bb8176"/>
+          <topic label="mMajorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a95ba860d135fb80f6f2d6dbf07e4b326"/>
+          <topic label="mMinorVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ac0ceefab6d7c04fcafbcb5aceea9be16"/>
+          <topic label="mSvnBuildDate" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a680404802134effb89476226e21a47a5"/>
+          <topic label="mSvnDateCommit" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#ab20f8050a4be1a74cc669d9b0f9b295d"/>
+          <topic label="mSvnHasLocalModifications" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a18f40fffa33557566d5b8f8e1cd18e47"/>
+          <topic label="mSvnHasUnversionedFiles" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#af294058f0caaf305120e53c209f12907"/>
+          <topic label="mSvnIsTaggedVersion" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aa436f549217e2c00bdd7b4edd89255a9"/>
+          <topic label="mSvnRevision" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aad4e313320e502c7a83755171a295648"/>
+          <topic label="mSvnRevisionRange" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a60dac6df8e3771aea4cb2b50dd2617e9"/>
+          <topic label="mSvnURL" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#aa800e458914456645ae3d78e7dcb162c"/>
+          <topic label="mVersionPatch" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a509393a20a256ae36b07a945f62c385e"/>
+          <topic label="mVersionTweak" href="class_ga_g_cpp_a_p_i_1_1_lib_version_info.html#a64bb9a119bd4fcadbd86b4562cf272ef"/>
+        </topic>
+      </topic>
+      <topic label="GaLogger.h" href="_ga_logger_8h.html">
+        <topic label="GaLogger" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html">
+          <topic label="GaLoggerManipulator" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a9d5a206deadf727e150f02ef2447969a"/>
+          <topic label="GaLogger" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#ac9c198e502fa9cb4056a7f7c0f187363"/>
+          <topic label="~GaLogger" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a97fea7630f79d31dc747780afa5ae574"/>
+          <topic label="endl" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#ae0039a3c443b1da62d111d163a0aea16"/>
+          <topic label="operator&lt;&lt;" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a9dbe2cc35ac8ea0237bcac7a2526764b"/>
+          <topic label="operator&lt;&lt;" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a5eba9e1b0f0f7808a5a7045a03e407dc"/>
+          <topic label="mBuffer" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#ab115776140fa2e5228d0610629881f26"/>
+          <topic label="mLevel" href="class_ga_g_cpp_a_p_i_1_1_ga_logger.html#a4a7b72fa8d9d2413f94acf95f8cfb05a"/>
+        </topic>
+      </topic>
+      <topic label="GammaFaultException.h" href="_gamma_fault_exception_8h.html">
+        <topic label="GammaFaultException" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html">
+          <topic label="GammaFaultException" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#aed4ddbd0013865c141ec1097e0cd12ec"/>
+          <topic label="~GammaFaultException" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a60105931e3dc8022e9411b54bc3a582d"/>
+          <topic label="getMessage" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a74fdd97fc63994d2d64f0c8a5877582d"/>
+          <topic label="operator&lt;&lt;" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a197003690e896881a37751bc4f1f3d15"/>
+          <topic label="mCode" href="class_ga_g_cpp_a_p_i_1_1_gamma_fault_exception.html#a8fc051769a46169f5cf3d95ca60e5733"/>
+        </topic>
+        <topic label="THROW_GAMMA_FAULT" href="_gamma_fault_exception_8h.html#a60db048647acca7f19eae944e67eab9b"/>
+      </topic>
+      <topic label="GaService.h" href="_ga_service_8h.html">
+        <topic label="GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html">
+          <topic label="~GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a374a60d30198d111f6b4adcb236fd3ff"/>
+          <topic label="GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a493e29ffc35d9fc3a61034277eb9e927"/>
+          <topic label="GaService" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a34e11fa5cfb809aa7d256d171afb2797"/>
+          <topic label="addScheduler" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a109c9ef9b5395e410f8d447895eb39d7"/>
+          <topic label="attach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a776c3a61f007ffb2229c626838286e7a"/>
+          <topic label="detach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a8934e2e20eb9e8b735160e5a5f9c9478"/>
+          <topic label="error" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa8752086bee50bc286cde6d358f96607"/>
+          <topic label="GetConnectTimeout" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ac090ced067d4c11abd6b0ba234bf818f"/>
+          <topic label="getInstance" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a5a01ec318ce6bd87fc861f5ff589b860"/>
+          <topic label="GetServicePort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a439da661cacad25cf8145e7261c347a5"/>
+          <topic label="getSystemName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ac3b8ae2717e4dda7e536f573151c2e60"/>
+          <topic label="getTaskName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aebffa22a8876a1732121c45f16b00e77"/>
+          <topic label="info" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ad7149fd99dbd42793968c5eb61d32f19"/>
+          <topic label="isAttached" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a33b9c566f6e8d8825592862dbcfa3c18"/>
+          <topic label="isInitializing" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a1fffc1893fb2f874e0193dca71eaf568"/>
+          <topic label="isOperating" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a12b1228ddf4b1a299dced3389821944b"/>
+          <topic label="onAttach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ae738de65c78c824a968e190bc6cdc882"/>
+          <topic label="onConnectionLost" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a244b30b9e7788ce83f50cade9dae85ca"/>
+          <topic label="onDetach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#abdf287c3b9cfa05e2db0aeaf39747bf8"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#af22af61ae8bcec5ce2e7728ea4366c02"/>
+          <topic label="setConnectTimeout" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa44be8bf634e898b091419bf4378fb50"/>
+          <topic label="setServicePort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#af3ecfd752bd95b2aa91dd4549f567e32"/>
+          <topic label="setTaskInitializing" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#af00b54bd7fe967f27be5ccafbd98147e"/>
+          <topic label="setTaskName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a1f090c4fda5938321c8fa429b8149ad0"/>
+          <topic label="setTaskOperating" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa1cb818bd846cadcf4da18f6baef5aa7"/>
+          <topic label="setTaskState" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a075e11579c2d48383dd4664ea7dade9b"/>
+          <topic label="startScheduler" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a87e6f6573b988d06699e39c8f8d79df8"/>
+          <topic label="startSchedulerAll" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a7916fef198afb06eccacd2e09d5594d8"/>
+          <topic label="startWatchDog" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a486dc52893ba637dfd868acfcc04e284"/>
+          <topic label="stopScheduler" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a904abaa6d25d8f3edc46aa217500d81a"/>
+          <topic label="stopSchedulerAll" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a60c38b6b8f2c308ef83e27ea17944994"/>
+          <topic label="stopWatchDog" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a155711111e45a5225f2605492f5f68be"/>
+          <topic label="warning" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a9c1c70b882ec4ed181a3d9897b04aab2"/>
+          <topic label="watchDog" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ac1b46bb2415dab8ee7236f39b5054b9b"/>
+          <topic label="startThread" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a0ee5f6dd3d1b2e7d6caa70723e1d383a"/>
+          <topic label="mConnectTimeout" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a3d293e44bf51fb1989eaac9f5423b622"/>
+          <topic label="mIsAttached" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a146b0ed391dac087bcea92dcd31f9e58"/>
+          <topic label="mLogError" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a60693fc7b09b31a33a8a43eee8d0bfec"/>
+          <topic label="mLogInfo" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a583afc10a591cd1e42e112291811a5f4"/>
+          <topic label="mLogWarning" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a23785755475811e64dcfb77594a9c571"/>
+          <topic label="mNameIsSet" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a5cdcceea4928227f43dc5a7c01db59a7"/>
+          <topic label="mOnAttach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a9e63a843563685aa9764cb4e212c456f"/>
+          <topic label="mOnConnectionLost" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a0251354c6da31121d0cd953197bbc67d"/>
+          <topic label="mOnDetach" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a559ef22b6d37025c7d5e42b8897d7387"/>
+          <topic label="mSchedulerList" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a262fe4ff463191f98cb29486cc26e944"/>
+          <topic label="mServicePort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a2d672f6c22975afdcb83adecbaa0773b"/>
+          <topic label="mSystemInfo" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ab7627ef47ea34080e437331bec00ad90"/>
+          <topic label="mSystemName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa692f46fb94fca724d10122a2e854abd"/>
+          <topic label="mTaskName" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#ada072d245e14d3c8f433d7abc7e40566"/>
+          <topic label="mTaskState" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#afe9bbacc9059297094a71c1a1e4bb328"/>
+          <topic label="mWatchDocAbbort" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa3a9c909382d037ce95116f5431864d8"/>
+          <topic label="mWatchDogTask" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a386b9fca1ec0258cbfeec35f3e63d124"/>
+          <topic label="mWatchDogWakeUp" href="class_ga_g_cpp_a_p_i_1_1_ga_service.html#a0cde6058190baee0c1808536caed7c2b"/>
+        </topic>
+      </topic>
+      <topic label="GaTask.h" href="_ga_task_8h.html">
+        <topic label="GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html">
+          <topic label="GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#ab8429d36ff151b05caf0e9ccc171f71b"/>
+          <topic label="GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a07c83402b25a7b17a820e7834913e2b5"/>
+          <topic label="~GaTask" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a5055b8988e0216309c6993fe7016679c"/>
+          <topic label="connect" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a9a1439d41ec12117f12734d22afd559a"/>
+          <topic label="taskDeinit" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a781033986499be7196270ec21701b6ac"/>
+          <topic label="taskInit" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a0811a5e7afaf21d7092751dec3af3383"/>
+          <topic label="taskRun" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#adecd99501f574e2c491bc778d4d4e415"/>
+          <topic label="updateStatistics" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a8844fed177d7bfc48d08e69ead77509d"/>
+          <topic label="waitNextFrame" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a303bd384204be1974d355cc30b107eb9"/>
+          <topic label="ga_task_deinit" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a71942e7bd7c3162abf6709905f105b40"/>
+          <topic label="ga_task_init" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#ab51ad7e1864676f7f1d111936675995c"/>
+          <topic label="ga_task_run" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#aa58f89c6fd01e99ece89d9f5c27d8071"/>
+          <topic label="mConnected" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a5696b1ab8b48a547330550b520237669"/>
+          <topic label="mName" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#ae84bed1cc041629386a2455ce4fba679"/>
+          <topic label="mStatistics" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#a9392ddd477fd510d38475497db2ba791"/>
+          <topic label="mTaskHandler" href="class_ga_g_cpp_a_p_i_1_1_ga_task.html#aa7983c5dd93908a63181b3b073de30d4"/>
+        </topic>
+        <topic label="ga_task_deinit" href="_ga_task_8h.html#ac099fea533509471432fceb30227789c"/>
+        <topic label="ga_task_init" href="_ga_task_8h.html#a8e77c6f5ebda7a71419a35bb416cb246"/>
+        <topic label="ga_task_run" href="_ga_task_8h.html#a49be9a78e6992ede72c1d3032d2a1ea9"/>
+      </topic>
+      <topic label="LibVersionInfo.template.cpp" href="_lib_version_info_8template_8cpp.html">
+        <topic label="SNV_REVISION" href="_lib_version_info_8template_8cpp.html#a1481bbbf4577aa971b906bb2bf43bb03"/>
+        <topic label="SVN_BUILD_DATE" href="_lib_version_info_8template_8cpp.html#afd3093da0834b43623c97b2ad529d69c"/>
+        <topic label="SVN_COMMIT_DATE" href="_lib_version_info_8template_8cpp.html#a31cd4513ca87918cdc54fa54361429f6"/>
+        <topic label="SVN_LOCAL_MODIFICATIONS" href="_lib_version_info_8template_8cpp.html#a0d0582c8417da1634bee7e245842f572"/>
+        <topic label="SVN_REVISION_NO" href="_lib_version_info_8template_8cpp.html#af8d50188f1d37db3b82349731e06d8a1"/>
+        <topic label="SVN_REVISION_RANGE" href="_lib_version_info_8template_8cpp.html#a75fa13ad9a8e84778bde250789a1b39a"/>
+        <topic label="SVN_TAGGED_VERSION" href="_lib_version_info_8template_8cpp.html#a7638f982b9b5a2bcc657cefca803d2ed"/>
+        <topic label="SVN_UNVERSIOND_FILES" href="_lib_version_info_8template_8cpp.html#ad99c38c45e8ee570f2e6022666ace9ff"/>
+        <topic label="SVN_URL" href="_lib_version_info_8template_8cpp.html#ace8893bcca6db0339b9ad4e66575833c"/>
+        <topic label="SVN_VERSION_AVAILABLE" href="_lib_version_info_8template_8cpp.html#ac858331b73b9f7d0f5559b17a124cf28"/>
+      </topic>
+      <topic label="RawPV.h" href="_raw_p_v_8h.html">
+        <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html">
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a029a00ebd6d4af27a0ce231f4632b28e"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#acd8d88af0244f64adaf223297283a2d5"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a25fc4593c098bd5dad7094e3a05eb934"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a8ce3e9e8e0eec721cbf0d01e268e4284"/>
+          <topic label="~RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0d01181dea16eb144ab69fad1214f34d"/>
+          <topic label="RawPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aedb7de68f02223c0796593559c8abd52"/>
+          <topic label="attachToEvent" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a4b1b5c099932df677f39cf3ebd8bed63"/>
+          <topic label="callBack" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a8d840730021e358487973025e6659914"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#afa39c6b0fa9b302b6a542a83192f52a8"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#accbb021877549c38075244e09227a3cd"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ae073d26b4b88c73bc1de41f770a8d318"/>
+          <topic label="detachFromEvent" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a7f4bca8995d7c9924142b8dc8c44221f"/>
+          <topic label="finalizeOpen" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aad4a2f802aee40a4143cb296531a2b1c"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a400242936947fcdda232a79e166ce2df"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac63be2679638d763a6630f4f61eeaf74"/>
+          <topic label="getBinarySize" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac1218e22a5610b382f1ee5c3925e29bb"/>
+          <topic label="getBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a9cbbdaa7faeaaf7a7e3f7b35192aa27c"/>
+          <topic label="getDataType" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a4d2b274d3b67af954a9aa97bc1029946"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ae2eb4de028079637c2067132d600f75f"/>
+          <topic label="getNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a73cf127a7931d698825f276563790db2"/>
+          <topic label="getProperty" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a65d3a6b6836696256af0a22d515669d6"/>
+          <topic label="getPropertyList" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a1039c8c5e2e6e3fe1ec360c5ac9e5968"/>
+          <topic label="getUsedBuffer" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#afad1165630cf9d326f5c417ce8bbb7ad"/>
+          <topic label="getValueAsString" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a09a2fe1c698a63856c09eccfd384ab8b"/>
+          <topic label="hasProperty" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0a41d95c46809e0c71b7d4bbc6a357b5"/>
+          <topic label="isBinaryData" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ab127fa00871d98fadd84585e971450ec"/>
+          <topic label="isFifo" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0c01087c8a380e88b3a93db3c0d50d31"/>
+          <topic label="isNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a7addb74e873e854203c937881c7ae9dc"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aec69961858a3c7270b041d9ffbba435e"/>
+          <topic label="prepareOpen" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a2abed5dd7273674206165c3f13efb98b"/>
+          <topic label="putBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a0281897c197ce6ae6d3e62adc25eecfe"/>
+          <topic label="putNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a11f2dcbee8ace5bae8e5e037db330efb"/>
+          <topic label="putValueFromString" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a4715c07ad78d8c96bec7dff2a5f8b780"/>
+          <topic label="readProperties" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ab6817d2a6d9ecf5fb269c8bb90cc413d"/>
+          <topic label="reconnect" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac56dd25ad2bd50be30a0ed6d0edec0b4"/>
+          <topic label="mDataType" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ada58af2e65bfada2857b6b0b7d005480"/>
+          <topic label="mIsConnected" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aa1229442bc8a71e74fbfa151b2490e1f"/>
+          <topic label="mIsFifo" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#acc55f95e51229c8cbe4b2ac5a580993e"/>
+          <topic label="mIsNumericValue" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#adda8434a96346050751caa706a08a2e9"/>
+          <topic label="mPropertyList" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ab718173a078112b27cc3462a148e0236"/>
+          <topic label="mPV" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aaf4251281466af267c4b2da0e89c18c5"/>
+          <topic label="mPvAddress" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aae8db24791e8b96197fd9429578b2d74"/>
+          <topic label="mPvName" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a51c46379d699df9e79f084b296d06d39"/>
+          <topic label="mPvProperty" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a32c4317a2bf3d75c8668aff11f3b699a"/>
+          <topic label="mPVType" href="class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a850f7af280f5da013d3d84ee4027de41"/>
+        </topic>
+        <topic label="pvPropertyList" href="_raw_p_v_8h.html#a93231c4c0f7b83a5262fcc627fdb4616"/>
+        <topic label="pvPropertyListEntry" href="_raw_p_v_8h.html#a6b9fc8765f6c0d52d07b1041abaec60b"/>
+        <topic label="eventType" href="_raw_p_v_8h.html#ae73a516e8dd2c457d4f374e6f4fd63e2"/>
+      </topic>
+      <topic label="SharedPV.h" href="_shared_p_v_8h.html">
+        <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html">
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ada98743b139eb58c082ea000d968018f"/>
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad074aad8d824309a540dd71f6e201436"/>
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a2a75f1beaec00b067a1640f7578312aa"/>
+          <topic label="SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac4e57a8999135ff49154ad076d80db39"/>
+          <topic label="~SharedPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad5822580d4d306a46233e9a03a538e80"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad709621dcfaf3647d58cfee852147645"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#aadbc3068e6f2d4dd7c558c811df2426b"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#af5ba8ace1b0af0629948687393eacb14"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac1674774ab6ba6fe944325bc54e3e5c1"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac53532a4b0a8d01d0fc89af96d87f73b"/>
+          <topic label="getBinarySize" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a37f72e24ac969f97c0b0a5507a23063b"/>
+          <topic label="getBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a29c6ef74661a39fdb9a46040ecd41e41"/>
+          <topic label="getDataType" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ada16b2c5a46c8205778a0a529ee2a0f5"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ab55234f09cae94ac878e3d0e4ae2867b"/>
+          <topic label="getNumericValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a398ec2e0c3dea80347dd4a4444de7855"/>
+          <topic label="getProperty" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ad6beb1638ae15a25557bbfc2af22f6e3"/>
+          <topic label="getPropertyList" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a4cc2fd1466691094fc8f7b3b9f3d14e1"/>
+          <topic label="getUsedBuffer" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a28c124c3c869d6906d1849fd002bceef"/>
+          <topic label="getValueAsString" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#aa154a018b7f74acfcbb08efcacb4ee56"/>
+          <topic label="hasProperty" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a9afe2a2b72c68a150990b6dbaadf19b5"/>
+          <topic label="isBinaryData" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#accd05b48c85074d4059e0cbd70b3fb4b"/>
+          <topic label="isFifo" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a6d7b28167e13cec91a58bbe7262a7fed"/>
+          <topic label="isNumericValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ac7611edf35bd8a34d0d7960d8ff7a07c"/>
+          <topic label="putBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a348ba24a7619d1b94fb6e97e4c0cd305"/>
+          <topic label="putNumericValue" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a69e4e8d0c84df8f532387344207d049e"/>
+          <topic label="putValueFromString" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#aa3d4d18037fab1e34df8d8a5c4125834"/>
+          <topic label="mPV" href="class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#a3a85ddeb345c44d714eb4740590387f3"/>
+        </topic>
+      </topic>
+      <topic label="TypedPV.h" href="_typed_p_v_8h.html">
+        <topic label="TypedPV" href="class_typed_p_v.html"/>
+        <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html">
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a7ea6a6360d6abf0bde497254e070d701"/>
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a42119a4bcc2433db7a5c7cae38369baf"/>
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4595347914c5313671887642b4c1cd3b"/>
+          <topic label="TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#abf614b20758ea442a5b9d1340da828ff"/>
+          <topic label="~TypedPV" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aec7b3a0b1d71e9d3f615e0f56bf15dbb"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a7bbb0e4393cf735ca196997e71105a6b"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#adde070a56f93f88e363f53037082310b"/>
+          <topic label="connectToPv" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aeffc9844c237dc51bd2fe5c2a1316813"/>
+          <topic label="get" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac9dce1de05ada2cc7ed607646ead198c"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac1674774ab6ba6fe944325bc54e3e5c1"/>
+          <topic label="getAddress" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac53532a4b0a8d01d0fc89af96d87f73b"/>
+          <topic label="getBinarySize" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a37f72e24ac969f97c0b0a5507a23063b"/>
+          <topic label="getBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a29c6ef74661a39fdb9a46040ecd41e41"/>
+          <topic label="getDataType" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ada16b2c5a46c8205778a0a529ee2a0f5"/>
+          <topic label="getName" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ab55234f09cae94ac878e3d0e4ae2867b"/>
+          <topic label="getNumericValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a398ec2e0c3dea80347dd4a4444de7855"/>
+          <topic label="getProperty" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ad6beb1638ae15a25557bbfc2af22f6e3"/>
+          <topic label="getPropertyList" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4cc2fd1466691094fc8f7b3b9f3d14e1"/>
+          <topic label="getUsedBuffer" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a28c124c3c869d6906d1849fd002bceef"/>
+          <topic label="getValueAsString" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aa154a018b7f74acfcbb08efcacb4ee56"/>
+          <topic label="hasProperty" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a9afe2a2b72c68a150990b6dbaadf19b5"/>
+          <topic label="isBinaryData" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#accd05b48c85074d4059e0cbd70b3fb4b"/>
+          <topic label="isFifo" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a6d7b28167e13cec91a58bbe7262a7fed"/>
+          <topic label="isNumericValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac7611edf35bd8a34d0d7960d8ff7a07c"/>
+          <topic label="operator T" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a15986f71322842e909e36bbad0fa4e2a"/>
+          <topic label="operator*=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#abf83b43586b3d53a0991bbf3e4f5f92c"/>
+          <topic label="operator++" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a462ce64e61a4034daa121d94f62b9ebb"/>
+          <topic label="operator++" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a142be8d611cff76b6f62161d60f76ed0"/>
+          <topic label="operator+=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a240875f4ae3ed8aa59332f9838409c9c"/>
+          <topic label="operator--" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a0500283f2778b42be8cdc5ada5dc7c92"/>
+          <topic label="operator--" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5e09780e689d6c5e77c767bb92c8da89"/>
+          <topic label="operator-=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5b237c63679a3f5c802a3f3d1bd96f8e"/>
+          <topic label="operator/=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a1aa2fd577ded15db2777bffa35357e89"/>
+          <topic label="operator=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4b2f8973ad2db66d0ea771e44d0938db"/>
+          <topic label="put" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a9a37ad6fa3f0929d33e6c51ccdbfff23"/>
+          <topic label="putBinaryValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a348ba24a7619d1b94fb6e97e4c0cd305"/>
+          <topic label="putNumericValue" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a69e4e8d0c84df8f532387344207d049e"/>
+          <topic label="putValueFromString" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aa3d4d18037fab1e34df8d8a5c4125834"/>
+          <topic label="operator!=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ab2f608ed5514c44f720e91056a3d1b99"/>
+          <topic label="operator!=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a4f567cf4b11a6108d12b6fb986f9109d"/>
+          <topic label="operator!=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a0c9f4edcf0c11e6a1492ba915c2af08d"/>
+          <topic label="operator&lt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a44c4ef24006bff64b0c175ef4c002994"/>
+          <topic label="operator&lt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a438bb2cf42be00010f6d0db47dcd4c1a"/>
+          <topic label="operator&lt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#abfbe627d8fd6b58e3efb8b31996f85a6"/>
+          <topic label="operator&lt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a2630b275ee39bc5d6faaa168fec72472"/>
+          <topic label="operator&lt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5159e67a791452f68a5de30f0d6f405f"/>
+          <topic label="operator&lt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a6dc6ce52e3a408ad78150bb8d449a3be"/>
+          <topic label="operator==" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#af4cd0c3088e28464c901c7627a86f8d0"/>
+          <topic label="operator==" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ad952a752ad236b15ed35c001af50d14e"/>
+          <topic label="operator==" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#acb108fc9c33eeb0f0ac3fb87480ba2b0"/>
+          <topic label="operator&gt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aefb47fba17845001fc1c51b26282105f"/>
+          <topic label="operator&gt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#aaecff28d6cfec3dcb434b34fa027248e"/>
+          <topic label="operator&gt;" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a5d4a8a272a3ff95416684be0b16a30a7"/>
+          <topic label="operator&gt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a9b25f35494c7d00c91efe64b923d4fc3"/>
+          <topic label="operator&gt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#a321f2d29d09cf1d843c02d5d3c45c26c"/>
+          <topic label="operator&gt;=" href="class_ga_g_cpp_a_p_i_1_1_typed_p_v.html#ac6459967f8ffe22c620cb81d858572ac"/>
+        </topic>
+        <topic label="operator!=" href="_typed_p_v_8h.html#a7ff0f83a2c29ba132ad908e272d9afb1"/>
+        <topic label="operator!=" href="_typed_p_v_8h.html#a7fada432103b8a1ca13ba3fe5c63dbf4"/>
+        <topic label="operator!=" href="_typed_p_v_8h.html#a24bc727fa294616049242d05af0ea991"/>
+        <topic label="operator&lt;" href="_typed_p_v_8h.html#a5f4e65c0e395bc8b2784db8230986133"/>
+        <topic label="operator&lt;" href="_typed_p_v_8h.html#ab6d3a164e27e8c52a4a18e1e80a2b4f2"/>
+        <topic label="operator&lt;" href="_typed_p_v_8h.html#ac36da9f04cd87dec129a121955b7f30e"/>
+        <topic label="operator&lt;=" href="_typed_p_v_8h.html#a741037ef2fbd36af505546b26d7bbad9"/>
+        <topic label="operator&lt;=" href="_typed_p_v_8h.html#a7531bf6df87995583a8f8ed441ee8cbc"/>
+        <topic label="operator&lt;=" href="_typed_p_v_8h.html#a9733fb95ed3b0d0b76c1140e31db967b"/>
+        <topic label="operator==" href="_typed_p_v_8h.html#a5298e84d697b1d977c916f47381e9833"/>
+        <topic label="operator==" href="_typed_p_v_8h.html#ab465029e52f926a01b78a1e41ff90f81"/>
+        <topic label="operator==" href="_typed_p_v_8h.html#a20ea1793a61a5bcdbb121707925ca1ce"/>
+        <topic label="operator&gt;" href="_typed_p_v_8h.html#a8acd013307c61b51cf8d1ddcd8b117e2"/>
+        <topic label="operator&gt;" href="_typed_p_v_8h.html#a9864c3104dee07676ec4a743dff4b443"/>
+        <topic label="operator&gt;" href="_typed_p_v_8h.html#ae89fe029686d6f7edd22a0df7504c5ff"/>
+        <topic label="operator&gt;=" href="_typed_p_v_8h.html#aa426199c6b87b3f0d9c5643bf6c14136"/>
+        <topic label="operator&gt;=" href="_typed_p_v_8h.html#a728565d4ce0a848859c0e98437fcc25f"/>
+        <topic label="operator&gt;=" href="_typed_p_v_8h.html#ad5b1411e88c6f976606ab4f83603c9b2"/>
+      </topic>
+      <topic label="TypedPVMapping.h" href="_typed_p_v_mapping_8h.html">
+        <topic label="PVConverter" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html#afc721ef77990e27aef7063098830f869"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html#a5ba5875e86f67f0415f468a83c49cd73"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter.html#a9fdd641f0bbb10ccb3954ed7d8ff8559"/>
+        </topic>
+        <topic label="PVConverter&lt; bool &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html#a272ecd3b9698efc8326fbc41bd8beae0"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html#a27a7cbfc4b6db7ceb0b204ab2c47b9e3"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01bool_01_4.html#a3490a71ef000662213946c4422778d24"/>
+        </topic>
+        <topic label="PVConverter&lt; int8_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html#aabd0e2b9ed561662adeaf69f62f08eac"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html#aa0081dae7df47cf4001cb3a5549e19bd"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int8__t_01_4.html#aed207aad4f8d31e874a3a97d828edcc8"/>
+        </topic>
+        <topic label="PVConverter&lt; int16_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html#ae93ecd4acb47ba9eaabb9b24921aa043"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html#a60f6640122d3c3924b12077d8f0e036e"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int16__t_01_4.html#a2d36a67c60f6b23207b65c96a9c1b461"/>
+        </topic>
+        <topic label="PVConverter&lt; int32_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html#a0a582d208a5ae5467f3260f2aa7cf8e8"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html#a26c828e87a4c866c6cc4b114895969ad"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int32__t_01_4.html#a36575a0c69ba06f8cc7b2304f7d529ab"/>
+        </topic>
+        <topic label="PVConverter&lt; int64_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html#af8141522d0ff6da23a77085d3c525a7f"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html#aded7391408f88fa7f45b5d3c257caa89"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01int64__t_01_4.html#ab642fcbfe7a1dd0f8b9acc54da3168c5"/>
+        </topic>
+        <topic label="PVConverter&lt; uint8_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html#ae473a3acee7c1c3e7b9c9e91f2e24d18"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html#a8b7518f8de5e8bd8ddf0721323a2b6c3"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint8__t_01_4.html#abe366f4d631e439ea26d233d9dec6ae4"/>
+        </topic>
+        <topic label="PVConverter&lt; uint16_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html#a618cf83f3cb93f89c9fbf06d062546c9"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html#a6ca1e7cf3ff6cb15eb8e3b0b7ac341e4"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint16__t_01_4.html#a3974209fa29c1ee83f3c9809f8f4ae1d"/>
+        </topic>
+        <topic label="PVConverter&lt; uint32_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html#a327138022e9eba323e292fa1f7e4e0b8"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html#a78c0ab889623ac4f4101ee82ae28dc73"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint32__t_01_4.html#a595f58ef761e1b165af29a73833cb0fe"/>
+        </topic>
+        <topic label="PVConverter&lt; uint64_t &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html#a5ea0077e7cd42c94816a02f238c3d953"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html#a73344ef4ecccd38c3735ac2fe6b53a87"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01uint64__t_01_4.html#aeda108a3b13756b6cca07287051f21d6"/>
+        </topic>
+        <topic label="PVConverter&lt; float &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html#a52abed7fca5f352ffd2a112d60c195fd"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html#a5f8408ae59cb23eb2cdeae7333e9d8c7"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01float_01_4.html#a763af9947ef5b53c4c7dbfcfaaf098d7"/>
+        </topic>
+        <topic label="PVConverter&lt; double &gt;" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html">
+          <topic label="getValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html#abc574c84dfb618d2881da3f90cdec03d"/>
+          <topic label="putValue" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html#ae03bfd203d757fcadc9f343c1fb3767f"/>
+          <topic label="mType" href="class_ga_g_cpp_a_p_i_1_1_p_v_converter_3_01double_01_4.html#a3e3af953a2cceb8b9a63af6222ee1684"/>
+        </topic>
+      </topic>
+    </topic>
+    <topic label="File Members" href="globals.html">
+      <topic label="All" href="globals.html"/>
+      <topic label="Macros" href="globals_defs.html"/>
+    </topic>
+  </topic>
+</toc>

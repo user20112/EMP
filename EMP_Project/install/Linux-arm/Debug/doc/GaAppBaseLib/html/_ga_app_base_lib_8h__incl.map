@@ -1,0 +1,16 @@
+<map id="GaAppBaseLib.h" name="GaAppBaseLib.h">
+<area shape="rect" id="node3" href="$_exceptions_macros_8h.html" title="contain macros for throwing several exceptions with predefined parameter" alt="" coords="421,304,629,331"/>
+<area shape="rect" id="node21" href="$_ga_app_base_lib_version_info_8h.html" title="contain definition of class GaAppBaseLib::LibVersionInfo " alt="" coords="1609,229,1793,256"/>
+<area shape="rect" id="node24" href="$logger_8h.html" title="wrapping external source easylogging++.h" alt="" coords="977,387,1065,413"/>
+<area shape="rect" id="node64" href="$_lib_container_8h.html" title="contain definition of class GaAppBaseLib::LibContainer " alt="" coords="1371,80,1571,107"/>
+<area shape="rect" id="node71" href="$_module_interface_8h.html" title="contain definition of class GaAppBaseLib::ModuleInterface " alt="" coords="1059,304,1277,331"/>
+<area shape="rect" id="node83" href="$_network_helper_8h.html" title="contain definition of class GaAppBaseLib::NetworkHelper " alt="" coords="1818,229,1984,256"/>
+<area shape="rect" id="node86" href="$_u_d_p_connection_8h.html" title="contain definition of class UDPConnection " alt="" coords="1838,80,2012,107"/>
+<area shape="rect" id="node5" href="$_argument_fault_exception_8h.html" title="contain definition of class GaAppBaseLib::ArgumentFaultException " alt="" coords="93,379,267,421"/>
+<area shape="rect" id="node15" href="$_logic_fault_exception_8h.html" title="contain definition of class GaAppBaseLib::LogicFaultException " alt="" coords="292,387,511,413"/>
+<area shape="rect" id="node18" href="$_system_call_exception_8h.html" title="contain definition of class GaAppBaseLib::SystemCallException " alt="" coords="535,387,760,413"/>
+<area shape="rect" id="node7" href="$_exception_base_8h.html" title="contain definition of class GaAppBaseLib::ExceptionBase " alt="" coords="197,469,384,496"/>
+<area shape="rect" id="node26" href="$easylogging_09_09_8h_source.html" title="log/easylogging++.h" alt="" coords="895,469,1033,496"/>
+<area shape="rect" id="node68" href="$_lib_instance_8h.html" title="contain definition of class GaAppBaseLib::LibInstance " alt="" coords="1188,229,1383,256"/>
+<area shape="rect" id="node76" href="$_module_instance_8h.html" title="contain definition of class GaAppBaseLib::ModuleInstance " alt="" coords="1164,155,1383,181"/>
+</map>

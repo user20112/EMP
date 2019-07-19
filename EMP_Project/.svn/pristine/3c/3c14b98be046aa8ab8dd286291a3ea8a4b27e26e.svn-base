@@ -1,0 +1,198 @@
+/*
+ * mqtt.cpp
+ *
+ *  Created on: 18.09.2017
+ *      Author: mario.richter
+ */
+
+#include <time.h>
+#include <stdexcept>
+#include <iostream>
+
+#include "mqtt.h"
+
+namespace XLSDispenser
+{
+  // **************************************************************************************************
+  // ** mqtt constructor
+  // **************************************************************************************************
+  mqtt::mqtt(std::string _server, std::string _clientName)
+  :server (_server),
+   clientName (_clientName)
+  {
+    int result = 0;
+    loggerName = "mqtt";
+    el::Loggers::getLogger(loggerName.c_str());
+
+    CLOG(INFO, loggerName.c_str()) << "create MQTT client "<< clientName << " (connect to server: " << server << ")";
+
+    result = MQTTClient_create(&client, server.append(":1883").c_str(), clientName.c_str(), MQTTCLIENT_PERSISTENCE_NONE, nullptr);
+    result = MQTTClient_setCallbacks(client, NULL, connlost, msgarrvd, delivered);
+
+    resetThreadPT(mWatchDogTask);
+    mWatchDogWakeUp = PTHREAD_MUTEX_INITIALIZER;
+    mWatchDocAbbort = false;
+
+    pthread_mutex_lock(&mWatchDogWakeUp);
+    result = pthread_create(&mWatchDogTask, NULL, startThread, (void*)this);
+    if (result)
+    {
+      throw std::logic_error("create watchdog thread failed");
+    }
+  }
+
+  // **************************************************************************************************
+  // ** mqtt destructor
+  // **************************************************************************************************
+  mqtt::~mqtt()
+  {
+    CLOG(INFO, loggerName.c_str()) << "destroy MQTT client "<< clientName;
+    pthread_mutex_unlock(&mWatchDogWakeUp);
+    mWatchDocAbbort = true;
+    pthread_join(mWatchDogTask, NULL);
+    resetThreadPT(mWatchDogTask);
+
+    MQTTClient_destroy(&client);
+  }
+
+  // **************************************************************************************************
+  // ** sendMessage
+  // **************************************************************************************************
+  bool mqtt::sendMessage(std::string _topic, std::string _message)
+  {
+    if (MQTTClient_isConnected(client))
+    {
+      MQTTClient_message pubmsg = MQTTClient_message_initializer;
+      MQTTClient_deliveryToken token;
+
+      pubmsg.payload = (void*)_message.c_str();
+      pubmsg.payloadlen = _message.size();
+      pubmsg.retained = 0;
+
+      MQTTClient_publishMessage(client, _topic.c_str(), &pubmsg, &token);
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+
+  // **************************************************************************************************
+  // ** watchDog
+  // **************************************************************************************************
+  void mqtt::watchDog(void)
+  {
+    int retryTime = 2;
+
+    CLOG(INFO, loggerName.c_str()) << "monitoring of MQTT service connection started.";
+
+    do
+    {
+      if (MQTTClient_isConnected(client))
+      {
+        retryTime = 2;
+      }
+      else
+      {
+        int rc;
+        MQTTClient_connectOptions conn_opts = MQTTClient_connectOptions_initializer;
+        conn_opts.keepAliveInterval = 20;
+        conn_opts.cleansession = 1;
+
+        if ((rc = MQTTClient_connect(client, &conn_opts)) != MQTTCLIENT_SUCCESS)
+        {
+          CLOG(ERROR, loggerName.c_str()) << "connect MQTT service failed: return code " << rc;
+          retryTime = 5;
+        }
+        else
+        {
+          CLOG(INFO, loggerName.c_str()) << "MQTT service becomes alive again";
+          retryTime = 2;
+        }
+      }
+
+      // wait some time or until thread is waked up by parent
+      struct timespec abs_time;
+      time_t timeNow = time(NULL);
+      abs_time.tv_sec = timeNow + retryTime;
+
+      pthread_mutex_timedlock(&mWatchDogWakeUp, &abs_time);
+    } while (!mWatchDocAbbort);
+
+    if (MQTTClient_isConnected(client))
+    {
+      MQTTClient_disconnect(client, 10000);
+    }
+
+    CLOG(INFO, loggerName.c_str()) << "monitoring of MQTT service connection stopped. Application is detached from service!";
+  }
+
+  // **************************************************************************************************
+  // ** resetThreadPT
+  // **************************************************************************************************
+  void mqtt::resetThreadPT(pthread_t& _pt)
+  {
+    _pt = 0L;
+  }
+
+  // **************************************************************************************************
+  // ** threatPTisNull
+  // **************************************************************************************************
+  bool mqtt::threatPTisNull (pthread_t& _pt)
+  {
+    return (_pt == 0L);
+  }
+
+  // **************************************************************************************************
+  // ** isClientConnected
+  // **************************************************************************************************
+  bool mqtt::isClientConnected(void)
+  {
+    if(MQTTClient_isConnected(client))
+      return true;
+    else
+      return false;
+  }
+
+  // **************************************************************************************************
+  // ** startThread
+  // **************************************************************************************************
+  void* startThread(void *ptr)
+  {
+    if (ptr != nullptr)
+    {
+      mqtt* m = (mqtt*)(ptr);
+      m->watchDog();
+    }
+    return (nullptr);
+  }
+
+  // **************************************************************************************************
+  // ** delivered
+  // **************************************************************************************************
+  void delivered(void *context, MQTTClient_deliveryToken dt)
+  {
+  }
+
+  // **************************************************************************************************
+  // ** msgarrvd
+  // **************************************************************************************************
+  int msgarrvd(void *context, char *topicName, int topicLen, MQTTClient_message *message)
+  {
+    return 1;
+  }
+
+  // **************************************************************************************************
+  // ** connlost
+  // **************************************************************************************************
+  void connlost(void *context, char *cause)
+  {
+    if (cause != nullptr)
+      std::cerr << "connect MQTT service lost: \"" << cause << "\"" << std::endl;
+    else
+      std::cerr << "connect MQTT service lost: unknown reason" << std::endl;
+  }
+}
+
+

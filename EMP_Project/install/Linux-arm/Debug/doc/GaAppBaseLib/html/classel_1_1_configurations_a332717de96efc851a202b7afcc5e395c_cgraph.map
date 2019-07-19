@@ -1,0 +1,8 @@
+<map id="el::Configurations::set" name="el::Configurations::set">
+<area shape="rect" id="node3" href="$classel_1_1_configurations.html#a05c373510ca513e4f61999c84d512831" title="Thread unsafe set." alt="" coords="203,41,325,82"/>
+<area shape="rect" id="node9" href="$classel_1_1_configurations.html#a800efb58724eb771027135b282eae512" title="Sets configurations (Unsafely) for all levels including Level::Global if includeGlobalLevel is true..." alt="" coords="374,70,509,111"/>
+<area shape="rect" id="node5" href="$classel_1_1_configuration.html#a04755de11422d7570869433ea157b705" title="Set string based configuration value." alt="" coords="380,5,503,46"/>
+<area shape="rect" id="node7" href="$classel_1_1_configuration.html#ab31605eb195a222cf32baa4922bb9a3c" title="Gets string based configuration value." alt="" coords="588,5,711,46"/>
+<area shape="rect" id="node12" href="$classel_1_1_level_helper.html#a94449b79778145f4c58fd1da6bcaf45d" title="Applies specified function to each level starting from startIndex." alt="" coords="570,70,729,111"/>
+<area shape="rect" id="node14" href="$classel_1_1_level_helper.html#a1279f27df29a003df5ecc3d0bf4dacbb" title="Casts int(ushort) to level, useful for iterating through enum." alt="" coords="558,136,741,163"/>
+</map>

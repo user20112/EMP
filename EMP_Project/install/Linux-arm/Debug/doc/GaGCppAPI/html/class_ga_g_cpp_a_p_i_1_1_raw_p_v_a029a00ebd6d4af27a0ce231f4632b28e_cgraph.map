@@ -1,0 +1,5 @@
+<map id="GaGCppAPI::RawPV::RawPV" name="GaGCppAPI::RawPV::RawPV">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a2abed5dd7273674206165c3f13efb98b" title="first call initialization before the PV is open" alt="" coords="248,45,475,72"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a5a01ec318ce6bd87fc861f5ff589b860" title="access to global instance" alt="" coords="523,5,683,46"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a33b9c566f6e8d8825592862dbcfa3c18" title="examine the current connection state" alt="" coords="523,70,683,111"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="BaseTecDriver::AnalogInputs" name="BaseTecDriver::AnalogInputs">
+<area shape="rect" id="node2" href="$struct_base_tec_driver_1_1_analog_inputs_1_1t_chanel_data.html" title="{BaseTecDriver::AnalogInputs\l::tChanelData\n|+ lastValue\l+ sampleCount\l+ sumValues\l+ sampleRate\l|}" alt="" coords="5,35,192,171"/>
+<area shape="rect" id="node4" href="$struct_base_tec_driver_1_1_analog_inputs_1_1t_analog_data.html" title="{BaseTecDriver::AnalogInputs\l::tAnalogData\n|+ inputState\l+ sampleAverage\l+ openDelay\l+ sampleDelay\l+ diagCnt\l+ writePos\l+ readPos\l+ dataBuffer\l|}" alt="" coords="217,5,404,200"/>
+</map>

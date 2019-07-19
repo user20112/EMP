@@ -1,0 +1,159 @@
+#ifndef _TEMPERATURE_INPUTS_ASM_INCLUDED_
+#define _TEMPERATURE_INPUTS_ASM_INCLUDED_
+
+// ==========================================================================================
+//	include required header
+// ==========================================================================================
+#include "PruRegisterList.asm"
+#include "TemperatureInputsDefines.asm"
+#include "SpiCommunicationADS.asm"
+
+
+.macro temp_inputs_sleep
+.mparam delay_count
+.mparam temp_register = var_temp_0
+	LDI	temp_register, delay_count
+	DIGITAL_OUTPUTS_SLEEP_LOOP:
+		SUB temp_register, temp_register, 1
+		QBNE DIGITAL_OUTPUTS_SLEEP_LOOP, temp_register, 0
+.endm
+
+// ==========================================================================================
+//	define offsets for adc commands
+// ==========================================================================================
+      
+
+TEMPERATURE_INPUTS_INIT:
+	QBBC TEMPERATURE_INPUTS_END, var_used_resources, BIT_RESOURCE_TEMPERATURE_INPUTS
+
+// ==========================================================================================
+//	load data base pointer
+// ==========================================================================================
+	MOV pt_temperatireInputConfigData, PT_TEMP_IN_DATA
+
+// ==========================================================================================
+//	initialize spi bus
+// ==========================================================================================
+	gpio_as_output		pt_gpio_bank_0,	2		// spi clk
+	gpio_as_input		pt_gpio_bank_0,	3		// spi miso (master out slave in)
+	gpio_as_output		pt_gpio_bank_0,	4		// spi mosi (master out slave in)
+	gpio_as_output		pt_gpio_bank_0,	12    	// spi /cs (chip select)
+	gpio_as_input		pt_gpio_bank_3,	15		// /DRDY to get the "conversion done"
+	gpio_as_output		pt_gpio_bank_3,	21		// Start will always stay high
+
+	clr_gpio		 	pt_gpio_bank_0,	2		// clear spi bus
+	clr_gpio		 	pt_gpio_bank_0,	4
+	set_gpio		 	pt_gpio_bank_0,	12		// disable chip select (low active)
+	set_gpio			pt_gpio_bank_3,	21		// Start the ADC
+
+	// finalize initialisation and set active resource information
+	LBBO var_temp_0, pt_system_data, OFFSET_SYSTEM_DATA_ACTIVE_RESOURCES, 2
+	SET var_temp_0, var_temp_0, BIT_RESOURCE_TEMPERATURE_INPUTS
+	SBBO var_temp_0, pt_system_data, OFFSET_SYSTEM_DATA_ACTIVE_RESOURCES, 2
+
+	JMP TEMPERATURE_INPUTS_END
+	
+// ==========================================================================================
+//	Read HW-Info-Byte and perform the operation
+// ==========================================================================================	
+
+//Logic that sends data to the ADS1248. Outputvalues have to be stored in var_spi_output_data	
+TEMPERATURE_INPUTS_LOGIC:
+	QBBC TEMPERATURE_INPUTS_END, var_used_resources, BIT_RESOURCE_TEMPERATURE_INPUTS
+
+	//Check if the DRDY-Pin of ADS1248 indicates that there is a conversionresult to receive.
+	//Signal the new result with the second byte of HW_INFO
+	//NOTE: This code do NOTHING but indicate that the next c-command must be the
+	//one to receive a measurement and reset this bit
+	LBBO var_temp_0, pt_gpio_bank_3, GPIO_DATAIN, 4
+	QBBS	TEMPERATURE_NOINPUT, var_temp_0, 15
+		LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO,1
+		OR var_temp_0, var_temp_0, 0x02
+		SBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO,1
+
+TEMPERATURE_NOINPUT:
+	//Check if there is a DRDY reset pending
+	LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO,1
+	//QBBS 	TEMPERATURE_CLEAR_DRDY,var_temp_0,3
+	//Check if there is data to send
+	QBBC TEMPERATURE_INPUTS_END,var_temp_0,0
+
+	//Execution pending = second Bit in HW_BIT_INFO
+	//LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO,1
+
+	// start SPI transmission
+	clr_gpio		 pt_gpio_bank_0,	2
+	clr_gpio		 pt_gpio_bank_0,	4
+	clr_gpio		 pt_gpio_bank_0,	12
+
+	// wait until chip select becomes active
+	temp_inputs_sleep 30
+
+	// clear input data
+	MOV var_spi_input_data, 0
+	//Number of bytes to send
+	LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_BYTES_TO_WRITE,1
+	//Set command adress
+	LBBO var_spi_output_data, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_WRITE_BUFFER,b0
+	// set bit count
+	LSL var_temp_0, var_temp_0, 3
+	MOV var_spi_loop_count, var_temp_0
+
+    // send command to chip
+	spi_communication_run_ads
+
+	//Number of bytes to receive
+	LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_READ_BYTES,1
+	QBEQ TEMPERATURE_NO_DATA_REC, var_temp_0,0
+	LSL var_temp_0, var_temp_0, 3
+	MOV var_spi_loop_count, var_temp_0
+	MOV var_spi_output_data, 0
+	// send command to chip
+	spi_communication_run_ads
+	//Store received data in read buffer
+	LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_READ_BYTES,1
+	SBBO  var_spi_input_data, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_READ_BUFFER,b0
+
+	TEMPERATURE_NO_DATA_REC:
+	// clear spi bus bits
+	clr_gpio		 pt_gpio_bank_0,	2
+	clr_gpio		 pt_gpio_bank_0,	4
+	set_gpio		 pt_gpio_bank_0,	12
+	temp_inputs_sleep 30
+
+	//Execution done
+	//Set Hardwarestatusbit at possition 0 = 0; Indicates that the next command can be send
+	MOV var_temp_0, 0
+	LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO, 1
+	AND var_temp_0, var_temp_0, 0xFE
+	SBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO, 1
+
+	//Clear the send registers
+	LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_BYTES_TO_WRITE,1
+	MOV var_temp_1, 0
+	SBBO  var_temp_1, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_WRITE_BUFFER, b0
+
+
+TEMPERATURE_INPUTS_END:
+	RET
+
+/*TEMPERATURE_CLEAR_DRDY:
+	//Clear the DRDY falg by forcing DRDY high
+	gpio_as_output		pt_gpio_bank_3,	15
+	set_gpio		 	pt_gpio_bank_3,	15		//Force DRDY high
+	MOV var_temp_0, 0							//Replaces NOP
+	MOV var_temp_0, 0							//Replaces NOP
+	MOV var_temp_0, 0							//Replaces NOP
+	MOV var_temp_0, 0							//Replaces NOP
+	MOV var_temp_0, 0							//Replaces NOP
+	gpio_as_input		pt_gpio_bank_3,	15		// /DRDY to get the "conversion done"
+
+	//Clear reset flag
+	LBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO,1
+	AND var_temp_0, var_temp_0, 0xFB
+	SBBO var_temp_0, pt_temperatireInputConfigData, TEMPERATURE_INPUTS_OFFSET_HW_BIT_INFO,1
+	RET
+*/
+
+
+#endif //  _TEMPERATURE_INPUTS_ASM_INCLUDED_

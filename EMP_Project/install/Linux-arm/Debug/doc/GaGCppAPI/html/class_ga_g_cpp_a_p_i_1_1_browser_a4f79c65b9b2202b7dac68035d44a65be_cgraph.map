@@ -1,0 +1,6 @@
+<map id="GaGCppAPI::Browser::findPVs" name="GaGCppAPI::Browser::findPVs">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a5756b8a23abbf081f7edbadd8c8f360d" title="request current filter expression for a specific type" alt="" coords="211,5,389,46"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_browser.html#aaef46ba9f40fcfd939f00868c5794104" title="read gamma browsing information" alt="" coords="226,70,374,111"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_browser_filter.html#a136c0fa2fb3d55dcc7793855313195b6" title="check if _value fits given filter type." alt="" coords="203,136,397,163"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_shared_p_v.html#ab55234f09cae94ac878e3d0e4ae2867b" title="get PV name" alt="" coords="220,187,380,229"/>
+</map>

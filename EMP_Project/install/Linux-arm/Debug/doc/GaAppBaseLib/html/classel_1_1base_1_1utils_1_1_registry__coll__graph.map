@@ -1,0 +1,7 @@
+<map id="el::base::utils::Registry&lt; T_Ptr, T_Key &gt;" name="el::base::utils::Registry&lt; T_Ptr, T_Key &gt;">
+<area shape="rect" id="node2" href="$classel_1_1base_1_1utils_1_1_abstract_registry.html" title="{el::base::utils::Abstract\lRegistry\&lt; T_Ptr, std::map\l\&lt; T_Key, T_Ptr * \&gt; \&gt;\n|&#45; m_list\l|+ AbstractRegistry()\l+ AbstractRegistry()\l+ operator==()\l+ operator!=()\l+ operator=()\l+ ~AbstractRegistry()\l+ begin()\l+ end()\l+ cbegin()\l+ cend()\l+ empty()\l+ size()\l+ list()\l+ list()\l+ unregisterAll()\l# deepCopy()\l# reinitDeepCopy()\l}" alt="" coords="78,984,249,1325"/>
+<area shape="rect" id="node4" href="$classel_1_1base_1_1threading_1_1_thread_safe.html" title="Base of thread safe class, this class is inheritable&#45;only." alt="" coords="165,363,293,514"/>
+<area shape="rect" id="node10" href="$classel_1_1base_1_1utils_1_1_abstract_registry.html" title="Abstract registry (aka repository) that provides basic interface for pointer repository specified by ..." alt="" coords="5,579,192,906"/>
+<area shape="rect" id="node6" href="$classel_1_1base_1_1threading_1_1internal_1_1_no_mutex.html" title="Mutex wrapper used when multi&#45;threading is disabled." alt="" coords="163,163,295,299"/>
+<area shape="rect" id="node8" href="$classel_1_1base_1_1_no_copy.html" title="Internal helper class that prevent copy constructor for class." alt="" coords="168,5,291,112"/>
+</map>

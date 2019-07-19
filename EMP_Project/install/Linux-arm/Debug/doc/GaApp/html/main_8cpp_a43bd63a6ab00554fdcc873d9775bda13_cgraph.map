@@ -1,0 +1,12 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$class_app_version_info.html#a7350796865167bbd0f745294287f26f7" title="access to global instance" alt="" coords="104,5,288,32"/>
+<area shape="rect" id="node5" href="$class_app_version_info.html#a3eff7778d2d9fd3f0e03415748002a44" title="print version information to stdout" alt="" coords="115,56,277,83"/>
+<area shape="rect" id="node9" href="$class_app_version_info.html#a993b9a87564dd13e54c2ade0589a39c8" title="return name of build configuration (CMake Project Name)" alt="" coords="111,107,281,133"/>
+<area shape="rect" id="node11" href="$class_app_control.html#a27752c85663bb162bebdc56dfef14d3a" title="load application configuration file and create XML document structure" alt="" coords="109,157,283,184"/>
+<area shape="rect" id="node13" href="$class_app_control.html#a638e81d8c03f781563b83292a0b72b1e" title="load modules defined in configuration file" alt="" coords="113,208,279,235"/>
+<area shape="rect" id="node15" href="$class_app_control.html#a649a5d02b59417d72ece127d280137d8" title="call routine prepareStart for all loaded modules." alt="" coords="113,259,279,285"/>
+<area shape="rect" id="node17" href="$class_app_control.html#a39930de2fc8d18489cafe8350e77f940" title="print a list of all loaded modules to stdout. When" alt="" coords="105,309,287,336"/>
+<area shape="rect" id="node19" href="$class_app_control.html#a5781e0a3e073a14a05fae8a0c8968a14" title="send a string formated command to loaded module." alt="" coords="105,360,287,387"/>
+<area shape="rect" id="node21" href="$class_app_control.html#ab6ad110323f80c5673e5853793f793f6" title="call routine cleanUp for all loaded modules." alt="" coords="125,411,267,437"/>
+<area shape="rect" id="node7" href="$class_app_version_info.html#adf0b24c0c3da0861c349f05204219822" title="create the version information as string" alt="" coords="337,56,541,83"/>
+</map>

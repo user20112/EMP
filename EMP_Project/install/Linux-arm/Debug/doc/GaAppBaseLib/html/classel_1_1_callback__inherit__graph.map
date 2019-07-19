@@ -1,0 +1,9 @@
+<map id="el::Callback&lt; T &gt;" name="el::Callback&lt; T &gt;">
+<area shape="rect" id="node5" href="$classel_1_1_callback.html" title="{el::Callback\&lt; LogDispatch\lData \&gt;\n|&#45; m_enabled\l|+ Callback()\l+ enabled()\l+ setEnabled()\l# handle()\l}" alt="" coords="17,395,191,531"/>
+<area shape="rect" id="node11" href="$classel_1_1_callback.html" title="{el::Callback\&lt; Performance\lTrackingData \&gt;\n|&#45; m_enabled\l|+ Callback()\l+ enabled()\l+ setEnabled()\l# handle()\l}" alt="" coords="222,395,396,531"/>
+<area shape="rect" id="node2" href="$classel_1_1base_1_1threading_1_1_thread_safe.html" title="Base of thread safe class, this class is inheritable&#45;only." alt="" coords="127,6,256,157"/>
+<area shape="rect" id="node7" href="$classel_1_1_log_dispatch_callback.html" title="{el::LogDispatchCallback\n||}" alt="" coords="17,581,180,659"/>
+<area shape="rect" id="node9" href="$classel_1_1base_1_1_default_log_dispatch_callback.html" title="{el::base::DefaultLogDispatch\lCallback\n|&#45; m_data\l|# handle()\l&#45; dispatch()\l}" alt="" coords="5,709,192,816"/>
+<area shape="rect" id="node13" href="$classel_1_1_performance_tracking_callback.html" title="{el::PerformanceTrackingCallback\n||}" alt="" coords="206,581,417,659"/>
+<area shape="rect" id="node15" href="$classel_1_1base_1_1_default_performance_tracking_callback.html" title="{el::base::DefaultPerformance\lTrackingCallback\n|&#45; m_data\l|# handle()\l}" alt="" coords="217,717,407,809"/>
+</map>

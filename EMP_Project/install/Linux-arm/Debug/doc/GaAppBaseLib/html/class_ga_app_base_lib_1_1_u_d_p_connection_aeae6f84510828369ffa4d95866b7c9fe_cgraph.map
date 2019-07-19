@@ -1,0 +1,5 @@
+<map id="GaAppBaseLib::UDPConnection::openConnection" name="GaAppBaseLib::UDPConnection::openConnection">
+<area shape="rect" id="node3" href="$class_ga_app_base_lib_1_1_network_helper.html#a3a501cab9dbb92762c73c40212f500a0" title="check if given string is a valid IP&#45;Address (IPv4)" alt="" coords="269,5,470,46"/>
+<area shape="rect" id="node5" href="$class_ga_app_base_lib_1_1_network_helper.html#a65b18c2d6fccdfc87e85601fed694520" title="find IP address of given host" alt="" coords="269,70,470,111"/>
+<area shape="rect" id="node7" href="$class_ga_app_base_lib_1_1_u_d_p_connection.html#a4bcba2d850645c1626282b7757750a9c" title="function to handle communication. Will be started in own thread" alt="" coords="265,135,474,177"/>
+</map>

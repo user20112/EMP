@@ -1,0 +1,7 @@
+<map id="BeagleBoneResources::PruDriver::getInstance" name="BeagleBoneResources::PruDriver::getInstance">
+<area shape="rect" id="node3" href="$class_beagle_bone_resources_1_1_pru_interface.html#aa4b3e586e8a6c9b09eefadc23361a06c" title="constructor" alt="" coords="229,5,405,46"/>
+<area shape="rect" id="node5" href="$class_beagle_bone_resources_1_1_pru_interface.html#a48765b28ae275c7239c9c4846471863d" title="destructor" alt="" coords="225,70,409,111"/>
+<area shape="rect" id="node7" href="$class_beagle_bone_resources_1_1_pru_interface.html#af74fc229c00e9623b5ef4b39cea7104b" title="load and start a program code to the PRU" alt="" coords="227,135,407,177"/>
+<area shape="rect" id="node11" href="$class_beagle_bone_resources_1_1_pru_interface.html#ae2f901d494286280020afad12179b1c8" title="pointer to shared memory of PRU" alt="" coords="211,201,424,242"/>
+<area shape="rect" id="node9" href="$class_beagle_bone_resources_1_1_pru_interface.html#a36a447d59bf5f147d20ba84462586627" title="load and start a program code to the PRU" alt="" coords="473,135,653,177"/>
+</map>

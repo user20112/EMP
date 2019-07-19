@@ -1,0 +1,4 @@
+<map id="BeagleBoneResources::PruInterface::loadProgram" name="BeagleBoneResources::PruInterface::loadProgram">
+<area shape="rect" id="node3" href="$class_beagle_bone_resources_1_1_pru_interface.html#af74fc229c00e9623b5ef4b39cea7104b" title="load and start a program code to the PRU" alt="" coords="235,5,415,46"/>
+<area shape="rect" id="node5" href="$class_beagle_bone_resources_1_1_pru_driver.html#a3a9adac24c5ec393ec7ffecb9c3f964e" title="access to global instance" alt="" coords="464,5,621,46"/>
+</map>

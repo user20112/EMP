@@ -1,0 +1,7 @@
+<map id="GaGCppAPI::EventHandler::attachToEvent" name="GaGCppAPI::EventHandler::attachToEvent">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#aad4a2f802aee40a4143cb296531a2b1c" title="get some PV settings and prepare instance for dealing with the PV." alt="" coords="233,56,455,83"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#acd8d88af0244f64adaf223297283a2d5" title="connect to existing gamma process variable by alias name" alt="" coords="520,5,715,32"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#afa39c6b0fa9b302b6a542a83192f52a8" title="connect to existing gamma process variable by alias name" alt="" coords="504,56,731,83"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac56dd25ad2bd50be30a0ed6d0edec0b4" title="tries to attach to gamma service, when connection is lost." alt="" coords="513,107,722,133"/>
+<area shape="rect" id="node11" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a8d840730021e358487973025e6659914" title="event callback function. will be called, when a event is fired." alt="" coords="779,107,981,133"/>
+</map>

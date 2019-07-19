@@ -1,0 +1,172 @@
+<toc label="ChuckCooling" topic="index.html">
+  <topic label="Classes">
+    <topic label="Class List" href="annotated.html">
+      <topic label="ChuckCooling">
+        <topic label="ChuckCooling" href="class_chuck_cooling_1_1_chuck_cooling.html">
+          <topic label="Adc" href="class_chuck_cooling_1_1_chuck_cooling_1_1_adc.html">
+            <topic label="Adc" href="class_chuck_cooling_1_1_chuck_cooling_1_1_adc.html#a7fc8ece12fd374f2e0c9af4b5d36388b"/>
+            <topic label="~Adc" href="class_chuck_cooling_1_1_chuck_cooling_1_1_adc.html#ac7b06980c20b6130aea012e64bfbc388"/>
+          </topic>
+          <topic label="ChuckCooling" href="class_chuck_cooling_1_1_chuck_cooling.html#a45294a5c672696f523009889374a1cd9"/>
+          <topic label="~ChuckCooling" href="class_chuck_cooling_1_1_chuck_cooling.html#a04db8d0128c5a59da0651da6033b593e"/>
+          <topic label="BlinkThread" href="class_chuck_cooling_1_1_chuck_cooling.html#a6525e5ed695672d36654769ec3326a03"/>
+          <topic label="buildXML" href="class_chuck_cooling_1_1_chuck_cooling.html#ad53d46bd23717da7e2fa7b5a310b376c"/>
+          <topic label="cleanUp" href="class_chuck_cooling_1_1_chuck_cooling.html#a933832383b5cae2d0efb5fe2ee697beb"/>
+          <topic label="getCompleteXml" href="class_chuck_cooling_1_1_chuck_cooling.html#ab46a6414a5dbdd381a782f344b189988"/>
+          <topic label="prepareStart" href="class_chuck_cooling_1_1_chuck_cooling.html#a7b334a3af440db6a92be2ee93fe8d569"/>
+          <topic label="sendTelegramm" href="class_chuck_cooling_1_1_chuck_cooling.html#aa10addd4f9c7c896af534d5b61b04d20"/>
+          <topic label="taskDeinit" href="class_chuck_cooling_1_1_chuck_cooling.html#a43509df0f1eb74534076c69bdff1f745"/>
+          <topic label="taskInit" href="class_chuck_cooling_1_1_chuck_cooling.html#af5ec5bc21305438f76279efcbcf33b9b"/>
+          <topic label="taskRun" href="class_chuck_cooling_1_1_chuck_cooling.html#a0ffa282a2a0a40cf45c5dbfb5874cb3c"/>
+          <topic label="updateIP" href="class_chuck_cooling_1_1_chuck_cooling.html#a78afd12d1262e207d1a0bfa6ea5eeb29"/>
+          <topic label="AliveLED" href="class_chuck_cooling_1_1_chuck_cooling.html#a88218feef3cb00bb11d3f20c40bfbd88"/>
+          <topic label="connectionOK" href="class_chuck_cooling_1_1_chuck_cooling.html#aeb8db13237b02f4edecfa3561ad4e928"/>
+          <topic label="CurHostIP" href="class_chuck_cooling_1_1_chuck_cooling.html#a7e0493734b35e5c63baef34c27a05f76"/>
+          <topic label="DigIn0" href="class_chuck_cooling_1_1_chuck_cooling.html#a727c73fa6fb245d26409a2031b89669f"/>
+          <topic label="firstRun" href="class_chuck_cooling_1_1_chuck_cooling.html#a8fb8925496a76cf591cfbc794582a329"/>
+          <topic label="HostIP" href="class_chuck_cooling_1_1_chuck_cooling.html#a872ec168528ddd3b236d83486268ebb6"/>
+          <topic label="HostName" href="class_chuck_cooling_1_1_chuck_cooling.html#a7102ead9cc395180daf1f8b94774ee45"/>
+          <topic label="HostPort" href="class_chuck_cooling_1_1_chuck_cooling.html#a0c313e4b0f4e2968c68213e00e1bff20"/>
+          <topic label="mCycleTime" href="class_chuck_cooling_1_1_chuck_cooling.html#acbddfaf2d9a351dc423fca7563b005d2"/>
+          <topic label="mGammaPathBase" href="class_chuck_cooling_1_1_chuck_cooling.html#a47788dd836fb4c26f967aaad3e2759a9"/>
+          <topic label="mGammaSlot" href="class_chuck_cooling_1_1_chuck_cooling.html#ab42d311b3c93c614a03b47246237ba32"/>
+          <topic label="mPriority" href="class_chuck_cooling_1_1_chuck_cooling.html#a2956dfe633885d249c6661b8f3e437fc"/>
+          <topic label="mRealtimeTask" href="class_chuck_cooling_1_1_chuck_cooling.html#a63e0376a2c21ca84ba5bc604885a19c9"/>
+          <topic label="mRealtimeThreadActive" href="class_chuck_cooling_1_1_chuck_cooling.html#a40068150ed8e621d82abce60a0b349e4"/>
+          <topic label="mStopComThread" href="class_chuck_cooling_1_1_chuck_cooling.html#a98b11a61cdd316c624c5e5335a54dcf5"/>
+          <topic label="mStopRealtimeThread" href="class_chuck_cooling_1_1_chuck_cooling.html#a7057d81ad485286ddb9b7ed8db03477d"/>
+          <topic label="serial" href="class_chuck_cooling_1_1_chuck_cooling.html#a4645a4cde9d11da634c224d34a68f98d"/>
+          <topic label="ServerCom" href="class_chuck_cooling_1_1_chuck_cooling.html#a49f926f71985d78cbabbbd98503e5ab0"/>
+          <topic label="setCoolingOutput" href="class_chuck_cooling_1_1_chuck_cooling.html#abc3efe067ef2e6a4e15bd612509207e4"/>
+          <topic label="temperature_ch1" href="class_chuck_cooling_1_1_chuck_cooling.html#a81f18cb6752dc0aedb22d5c6ef9329bd"/>
+          <topic label="temperature_ch2" href="class_chuck_cooling_1_1_chuck_cooling.html#a10231f189978d19e3e69dd54e0ed1b8d"/>
+          <topic label="temperature_ch3" href="class_chuck_cooling_1_1_chuck_cooling.html#a9fd04f68af12d2e142e2530fbf051823"/>
+          <topic label="TempStoreInterval" href="class_chuck_cooling_1_1_chuck_cooling.html#a670cf8ce95adec1af54c6562a20cb570"/>
+          <topic label="VirtualDeviceId" href="class_chuck_cooling_1_1_chuck_cooling.html#a502ca3b2108c2de0a5f3415af97f14dc"/>
+        </topic>
+      </topic>
+      <topic label="confurance">
+        <topic label="ModuleVersionInfo" href="classconfurance_1_1_module_version_info.html">
+          <topic label="~ModuleVersionInfo" href="classconfurance_1_1_module_version_info.html#a3fdbc5939a4c24daa64bc9a7e5b89d11"/>
+          <topic label="ModuleVersionInfo" href="classconfurance_1_1_module_version_info.html#ae500c1933a2c0a1eebee33290d2e367c"/>
+          <topic label="ModuleVersionInfo" href="classconfurance_1_1_module_version_info.html#a3fad5bc9e106b82fb5c697a51bc741fd"/>
+          <topic label="getBuildDescription" href="classconfurance_1_1_module_version_info.html#af945689927635d1d53b03478649b315e"/>
+          <topic label="getBuildTime" href="classconfurance_1_1_module_version_info.html#a005514a8542521b68b1c1f8a36d3f38f"/>
+          <topic label="getInstance" href="classconfurance_1_1_module_version_info.html#af32fc3c0de93adb67e15caf474dc31e6"/>
+          <topic label="getMajorVersion" href="classconfurance_1_1_module_version_info.html#a62fb70c0496d6dbe36b6f6999235680f"/>
+          <topic label="getMinorVersion" href="classconfurance_1_1_module_version_info.html#a6ee6d5e19794f19cebfbce4250ed3f31"/>
+          <topic label="getName" href="classconfurance_1_1_module_version_info.html#ab16dde5d3b46f6a55e89b65147d9dfb3"/>
+          <topic label="getPatchVersion" href="classconfurance_1_1_module_version_info.html#aa7c92cf63e064370b51b7549e5ff52d3"/>
+          <topic label="getSvnBuildDate" href="classconfurance_1_1_module_version_info.html#aadc502de6d57d8f4ccb98fcb18c764fc"/>
+          <topic label="getSvnCommitDate" href="classconfurance_1_1_module_version_info.html#a5aa164ac2ccff26c5150ad25711852a6"/>
+          <topic label="getSvnRevision" href="classconfurance_1_1_module_version_info.html#ad68b086d8e9294e7c8680b8e19eb22dc"/>
+          <topic label="getSvnRevisionRange" href="classconfurance_1_1_module_version_info.html#a98e19bee44ad2abe279ba9ceb1d4aaa1"/>
+          <topic label="getSvnUrl" href="classconfurance_1_1_module_version_info.html#abb1983c2ea7b780dc13724f16596e4bc"/>
+          <topic label="getTweakVersion" href="classconfurance_1_1_module_version_info.html#a77ca2a651f5f816340d643bc7521ce43"/>
+          <topic label="getVersion" href="classconfurance_1_1_module_version_info.html#a1231142bf1bd7c5c952cd5ea9c626172"/>
+          <topic label="getVersionText" href="classconfurance_1_1_module_version_info.html#abacda4b42e3f01990568a96627988e1b"/>
+          <topic label="hasLocalModifications" href="classconfurance_1_1_module_version_info.html#a1a2ca6cdb37b3c754bfd839b831d3f19"/>
+          <topic label="hasSvnInfo" href="classconfurance_1_1_module_version_info.html#af53b525c653182cf525b06cabc370a2e"/>
+          <topic label="hasUnversionedFiles" href="classconfurance_1_1_module_version_info.html#a202ea6a987c85e9f871d64bb6ba5cc65"/>
+          <topic label="isDebugVersion" href="classconfurance_1_1_module_version_info.html#ab89c0a8ace8f05096709cd86e9395006"/>
+          <topic label="isTaggedVersion" href="classconfurance_1_1_module_version_info.html#afd8a54e9cd9987e374491528607b3cb2"/>
+          <topic label="operator=" href="classconfurance_1_1_module_version_info.html#a58fcfb29f96a007f2db205b23877fb3e"/>
+          <topic label="printInfo" href="classconfurance_1_1_module_version_info.html#a3967d9f04f48c01660fd783af13faf6f"/>
+          <topic label="mBuildDescription" href="classconfurance_1_1_module_version_info.html#a52bbf04525477f05c68df98f4f87853e"/>
+          <topic label="mBuildTime" href="classconfurance_1_1_module_version_info.html#a8d262db3560ba03233350e0b7572fb7f"/>
+          <topic label="mHasSvnInformations" href="classconfurance_1_1_module_version_info.html#a19b00fb68067a4bc669bb0b3de8e5f72"/>
+          <topic label="mInternalVersionInfo" href="classconfurance_1_1_module_version_info.html#a32824fb821bf5d4a7aa476f65a9f9109"/>
+          <topic label="mIsDebugVersion" href="classconfurance_1_1_module_version_info.html#af38ed7e2990611dbe09a6db6696844b2"/>
+          <topic label="mLibName" href="classconfurance_1_1_module_version_info.html#a8723748913fcbc1950859a6328a2de2b"/>
+          <topic label="mMajorVersion" href="classconfurance_1_1_module_version_info.html#a3f411e62f636c004746d3d4912c913f7"/>
+          <topic label="mMinorVersion" href="classconfurance_1_1_module_version_info.html#a136ea00865f85c7f16bbdab8f0a1c97c"/>
+          <topic label="mSvnBuildDate" href="classconfurance_1_1_module_version_info.html#a72453add5391b69b740a007f624eb171"/>
+          <topic label="mSvnDateCommit" href="classconfurance_1_1_module_version_info.html#a402fe0867f96a011456b75beaa65a496"/>
+          <topic label="mSvnHasLocalModifications" href="classconfurance_1_1_module_version_info.html#af855899dad27207a3b20f74d2e95216e"/>
+          <topic label="mSvnHasUnversionedFiles" href="classconfurance_1_1_module_version_info.html#a267d37fe19f0f79e4d82ddcdbb7a56ff"/>
+          <topic label="mSvnIsTaggedVersion" href="classconfurance_1_1_module_version_info.html#a58c583f47ac7f74b9e48bfac6fbce5ee"/>
+          <topic label="mSvnRevision" href="classconfurance_1_1_module_version_info.html#ada79efa1ff938d1f2b41c86ff8ff8b64"/>
+          <topic label="mSvnRevisionRange" href="classconfurance_1_1_module_version_info.html#a8023aaf06ac5d4bf31f3b2e632f463fe"/>
+          <topic label="mSvnURL" href="classconfurance_1_1_module_version_info.html#a8ddd5852812e47f36ccfdeb0a9bd65cc"/>
+          <topic label="mVersionPatch" href="classconfurance_1_1_module_version_info.html#a2b0bf21fa1b7257370bc73f5bcbea038"/>
+          <topic label="mVersionTweak" href="classconfurance_1_1_module_version_info.html#a78964f23c2a24ba2b4779a9998add92f"/>
+        </topic>
+      </topic>
+      <topic label="GaAppBaseLib">
+        <topic label="TCPServerConnection" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html">
+          <topic label="tcpReceive" href="struct_ga_app_base_lib_1_1_t_c_p_server_connection_1_1tcp_receive.html">
+            <topic label="input" href="struct_ga_app_base_lib_1_1_t_c_p_server_connection_1_1tcp_receive.html#a6c0765f706dbb4f1a4e24260f286118d"/>
+            <topic label="newDataReady" href="struct_ga_app_base_lib_1_1_t_c_p_server_connection_1_1tcp_receive.html#a1f69385b580a12bae4cada53571a97e4"/>
+          </topic>
+          <topic label="TCPServerConnection" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ace8333bb499e0288d61f7c86d7186da1"/>
+          <topic label="~TCPServerConnection" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#aaa559e2f15814db17bb6f10a4e5138ed"/>
+          <topic label="closeServerConnection" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#aab4eab5c6eeed6ac176045db5fad7b81"/>
+          <topic label="comThread" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ab0f9376bfd9e01ab6de582a1f816b806"/>
+          <topic label="getChar" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a79463edee3b737b7e7ecc1fec4d9b0a2"/>
+          <topic label="getString" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a1599e5600618ccbbad2ec31d1d3108e2"/>
+          <topic label="getTcpConStatus" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#aef3893073b88aabe8e93d765300ae594"/>
+          <topic label="hasData" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a070ce0c403eccf122fdcf76f5d7cbe68"/>
+          <topic label="isConnected" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#aa7bcce1e5d93b753d47ad5b0d9f5be86"/>
+          <topic label="openServerConnection" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ae34cd7c47bf28afa2001adaa939e99ac"/>
+          <topic label="putString" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a4a3fcba55fc5b9f83cae9144920b6be8"/>
+          <topic label="recThread" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ad3eb4d442d6edd6db1224d8a8ff8fea8"/>
+          <topic label="cli_addr" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a9db8a1d6c7861b2e0b66e3ed9c31abda"/>
+          <topic label="closeCurrentConnection" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a7d603ebd0bf31ed01aeb1204948bb624"/>
+          <topic label="cRecThread" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a3c295baf93efed4e570ebbfe08680d22"/>
+          <topic label="cStopThread" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a7ad3f2c9af90ef1f936faa91c5c9f486"/>
+          <topic label="mComThread" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ad23c30b22420dd43f12d32708ce392ff"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a97616f128a9b9a0fc7d3d12607bf7146"/>
+          <topic label="mStopThread" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#aff41d09ac4491ee2d6f7f07fae838e1c"/>
+          <topic label="newsockfd" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a3af6c83425d0d4876cb4edd7718cb451"/>
+          <topic label="portno" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a007a5fdddde965e464414d8e97a67e51"/>
+          <topic label="receiveString" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a57bac37a8c41f9b5149a402e6c33b7e5"/>
+          <topic label="sendString" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a8c79c7f8c320712c751deb039070e6ce"/>
+          <topic label="server" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#a965fc32ede75387a78a789dc341103da"/>
+          <topic label="sockfd" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ab9c7098733134f577dafb9798e0ab89b"/>
+          <topic label="tcpConActive" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ad45dbccfa4545491e4c429d68c2cdbfb"/>
+        </topic>
+      </topic>
+    </topic>
+    <topic label="Class Index" href="classes.html"/>
+    <topic label="Class Hierarchy" href="hierarchy.html">
+      <topic label="ChuckCooling::ChuckCooling::Adc" href="class_chuck_cooling_1_1_chuck_cooling_1_1_adc.html"/>
+      <topic label="GaTask">
+        <topic label="ChuckCooling::ChuckCooling" href="class_chuck_cooling_1_1_chuck_cooling.html"/>
+      </topic>
+      <topic label="ModuleInterface">
+        <topic label="ChuckCooling::ChuckCooling" href="class_chuck_cooling_1_1_chuck_cooling.html"/>
+      </topic>
+      <topic label="confurance::ModuleVersionInfo" href="classconfurance_1_1_module_version_info.html"/>
+      <topic label="GaAppBaseLib::TCPServerConnection::tcpReceive" href="struct_ga_app_base_lib_1_1_t_c_p_server_connection_1_1tcp_receive.html"/>
+      <topic label="GaAppBaseLib::TCPServerConnection" href="class_ga_app_base_lib_1_1_t_c_p_server_connection.html"/>
+    </topic>
+    <topic label="Class Members" href="functions.html">
+      <topic label="All" href="functions.html"/>
+      <topic label="Functions" href="functions_func.html"/>
+      <topic label="Variables" href="functions_vars.html"/>
+    </topic>
+  </topic>
+  <topic label="Files">
+    <topic label="File List" href="files.html">
+      <topic label="ChuckCooling.h" href="_chuck_cooling_8h_source.html"/>
+      <topic label="ChuckCoolingVersionInfo.h" href="_chuck_cooling_version_info_8h_source.html"/>
+      <topic label="ModuleVersionInfo.template.cpp" href="_module_version_info_8template_8cpp.html">
+        <topic label="SNV_REVISION" href="_module_version_info_8template_8cpp.html#a1481bbbf4577aa971b906bb2bf43bb03"/>
+        <topic label="SVN_BUILD_DATE" href="_module_version_info_8template_8cpp.html#afd3093da0834b43623c97b2ad529d69c"/>
+        <topic label="SVN_COMMIT_DATE" href="_module_version_info_8template_8cpp.html#a31cd4513ca87918cdc54fa54361429f6"/>
+        <topic label="SVN_LOCAL_MODIFICATIONS" href="_module_version_info_8template_8cpp.html#a0d0582c8417da1634bee7e245842f572"/>
+        <topic label="SVN_REVISION_NO" href="_module_version_info_8template_8cpp.html#af8d50188f1d37db3b82349731e06d8a1"/>
+        <topic label="SVN_REVISION_RANGE" href="_module_version_info_8template_8cpp.html#a75fa13ad9a8e84778bde250789a1b39a"/>
+        <topic label="SVN_TAGGED_VERSION" href="_module_version_info_8template_8cpp.html#a7638f982b9b5a2bcc657cefca803d2ed"/>
+        <topic label="SVN_UNVERSIOND_FILES" href="_module_version_info_8template_8cpp.html#ad99c38c45e8ee570f2e6022666ace9ff"/>
+        <topic label="SVN_URL" href="_module_version_info_8template_8cpp.html#ace8893bcca6db0339b9ad4e66575833c"/>
+        <topic label="SVN_VERSION_AVAILABLE" href="_module_version_info_8template_8cpp.html#ac858331b73b9f7d0f5559b17a124cf28"/>
+      </topic>
+      <topic label="TCPServerConnection.h" href="_t_c_p_server_connection_8h_source.html"/>
+    </topic>
+    <topic label="File Members" href="globals.html">
+      <topic label="All" href="globals.html"/>
+      <topic label="Macros" href="globals_defs.html"/>
+    </topic>
+  </topic>
+</toc>

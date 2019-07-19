@@ -1,0 +1,3 @@
+<map id="BaseTecDriver::DigitalOutputs" name="BaseTecDriver::DigitalOutputs">
+<area shape="rect" id="node2" href="$struct_base_tec_driver_1_1_digital_outputs_1_1t_data_channel.html" title="{BaseTecDriver::DigitalOutputs\l::tDataChannel\n|+ reqState\l+ curState\l+ standardDiagnosticInfo\l+ nextResultOffset\l+ lastBufferRead\l+ _reserved01\l+ readOffset\l+ writeOffset\l+ diagOverflowCounter\l+ _reserved02\l+ debug\l+ cmd\l+ response\l+ cmdFifo\l|}" alt="" coords="5,5,200,288"/>
+</map>

@@ -1,0 +1,49 @@
+#!/bin/bash
+
+#if [ "$1" == "local" ]
+#then
+	echo using local device setup
+	exec 2>./error.log
+#	
+#else
+#	echo using service device setup
+#	
+#	exec 0</dev/tty9
+#	exec 1>/dev/tty9
+#	exec 2>./error.log
+#fi
+
+echo check for gaserivce ... 
+if [ $(ps -A | grep -c gaservice) = 0 ];
+then
+	cd config
+
+	# use 'eth0' or 'usb0' for ethernet or usb interface
+	export IP_ADDR=`ip addr show lo | awk '/inet / {sub(/\/.*/, "", $2); print $2}'`
+	echo use IP Address $IP_ADDR as interface for gamma
+	
+	cp config.template.xml config.xml
+	sed -i "s/__IP__/$IP_ADDR/g" config.xml
+	 
+	/opt/gamma/bin/gaservice -c config.xml -p project.xml -l console &
+	sleep 3
+	cd ..
+fi
+
+echo set library path
+export LD_LIBRARY_PATH=.:/usr/local/lib:/usr/lib:$LD_LIBRARY_PATH
+
+echo set font for hdmi output
+echo -e '\033[9;0]' > /dev/tty1
+setfont -v Uni3-TerminusBold32x16
+export TERM=xterm
+sleep 1s
+
+echo start main application 
+cd bin
+./GaApp
+cd ..
+
+echo stop all services
+pkill -x gaservice
+sleep 5

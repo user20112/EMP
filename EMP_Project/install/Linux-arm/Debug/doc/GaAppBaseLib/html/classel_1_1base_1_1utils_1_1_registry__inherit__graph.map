@@ -1,0 +1,7 @@
+<map id="el::base::utils::Registry&lt; T_Ptr, T_Key &gt;" name="el::base::utils::Registry&lt; T_Ptr, T_Key &gt;">
+<area shape="rect" id="node10" href="$classel_1_1base_1_1utils_1_1_registry.html" title="{el::base::utils::Registry\l\&lt; Logger, std::string \&gt;\n||+ Registry()\l+ Registry()\l+ operator=()\l+ ~Registry()\l# unregisterAll()\l# registerNew()\l# unregister()\l# get()\l&#45; deepCopy()\l}" alt="" coords="19,1281,175,1490"/>
+<area shape="rect" id="node2" href="$classel_1_1base_1_1utils_1_1_abstract_registry.html" title="{el::base::utils::Abstract\lRegistry\&lt; T_Ptr, std::map\l\&lt; T_Key, T_Ptr * \&gt; \&gt;\n|&#45; m_list\l|+ AbstractRegistry()\l+ AbstractRegistry()\l+ operator==()\l+ operator!=()\l+ operator=()\l+ ~AbstractRegistry()\l+ begin()\l+ end()\l+ cbegin()\l+ cend()\l+ empty()\l+ size()\l+ list()\l+ list()\l+ unregisterAll()\l# deepCopy()\l# reinitDeepCopy()\l}" alt="" coords="11,613,183,955"/>
+<area shape="rect" id="node4" href="$classel_1_1base_1_1threading_1_1_thread_safe.html" title="Base of thread safe class, this class is inheritable&#45;only." alt="" coords="53,6,181,157"/>
+<area shape="rect" id="node6" href="$classel_1_1base_1_1utils_1_1_abstract_registry.html" title="Abstract registry (aka repository) that provides basic interface for pointer repository specified by ..." alt="" coords="114,209,301,535"/>
+<area shape="rect" id="node12" href="$classel_1_1base_1_1_registered_loggers.html" title="Loggers repository." alt="" coords="5,1542,189,1781"/>
+</map>

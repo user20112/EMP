@@ -1,0 +1,5 @@
+<map id="BaseTecDriver::HardwareCtrl" name="BaseTecDriver::HardwareCtrl">
+<area shape="rect" id="node2" href="$struct_base_tec_driver_1_1_hardware_ctrl_1_1t_data_channel.html" title="{BaseTecDriver::HardwareCtrl\l::tDataChannel\n|+ hwTriggerBitMask\l+ reqStateLEDgr\l+ reqStateLEDrt\l+ reqStateUARTCtrl\l+ reqStateTempCtrl\l+ _reserved01\l+ _reserved02\l+ activeStateLEDgr\l+ activeStateLEDrt\l+ activeStateUARTCtrl\l+ activeStateTempCtrl\l+ _reserved03\l|}" alt="" coords="111,307,297,560"/>
+<area shape="rect" id="node4" href="$union_base_tec_driver_1_1_hardware_ctrl_1_1t_u_a_r_t_ctrl.html" title="{BaseTecDriver::HardwareCtrl\l::tUARTCtrl\n|+ word\l+ term_rx_en\l+ term_tx_en\l+ rx_rs4xx_en\l+ h_not_f\l+ srl\l+ txp\l+ _bit06\l+ _bit07\l+ bit\l|}" alt="" coords="5,5,192,229"/>
+<area shape="rect" id="node6" href="$union_base_tec_driver_1_1_hardware_ctrl_1_1t_temp_in_ctrl.html" title="{BaseTecDriver::HardwareCtrl\l::tTempInCtrl\n|+ word\l+ not_reset\l+ _bit01\l+ _bit02\l+ _bit03\l+ _bit04\l+ _bit05\l+ _bit06\l+ _bit07\l+ bit\l|}" alt="" coords="216,5,403,229"/>
+</map>

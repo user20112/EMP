@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$class_ga_app_base_lib_1_1_exception_base.html" title="base class for exception used in this library" alt="" coords="133,77,339,104"/>
+<area shape="rect" id="node5" href="$class_ga_app_base_lib_1_1_argument_fault_exception.html" title="Exception: is used for parameter validation. Special Parameter is the name of fault argument or membe..." alt="" coords="387,5,589,46"/>
+<area shape="rect" id="node7" href="$class_ga_app_base_lib_1_1_logic_fault_exception.html" title="exception is thrown, when a logic error occurred" alt="" coords="399,70,577,111"/>
+<area shape="rect" id="node9" href="$class_ga_app_base_lib_1_1_system_call_exception.html" title="exception is thrown, when a system call failed" alt="" coords="396,135,580,177"/>
+</map>

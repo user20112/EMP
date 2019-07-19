@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.rst-automation.de"
+           xmlns:rst="http://www.rst-automation.de"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xsd:complexType name="propertyType">
+        <xsd:simpleContent>
+            <xsd:extension base="xsd:string">
+                <xsd:attribute name="name" type="xsd:string" />
+            </xsd:extension>
+        </xsd:simpleContent>
+    </xsd:complexType>
+            
+    <xsd:complexType name="sectionType">
+        <xsd:sequence>
+        	<xsd:choice minOccurs="0" maxOccurs="unbounded">
+        		<xsd:element name="property" type="rst:propertyType"
+        			minOccurs="1" maxOccurs="1" />
+        		<xsd:element name="section" type="rst:sectionType"
+        			minOccurs="1" maxOccurs="1" />
+        		<xsd:element name="include" type="rst:include" maxOccurs="1" minOccurs="1"></xsd:element>
+        	</xsd:choice>
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+    </xsd:complexType>
+    
+    <xsd:complexType name="configType">
+        <xsd:sequence>
+        	<xsd:choice minOccurs="0" maxOccurs="unbounded">
+        		<xsd:element name="property" type="rst:propertyType"
+        			minOccurs="1" maxOccurs="1" />
+        		<xsd:element name="section" type="rst:sectionType"
+        			minOccurs="1" maxOccurs="1" />
+        		<xsd:element name="include" type="rst:include" maxOccurs="1" minOccurs="1"></xsd:element>
+        	</xsd:choice>
+        </xsd:sequence>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+        <xsd:attribute name="version" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <xsd:element name="config" type="rst:configType" />
+        
+
+    <xsd:simpleType name="include">
+    	<xsd:restriction base="xsd:string"></xsd:restriction>
+    </xsd:simpleType>
+</xsd:schema>

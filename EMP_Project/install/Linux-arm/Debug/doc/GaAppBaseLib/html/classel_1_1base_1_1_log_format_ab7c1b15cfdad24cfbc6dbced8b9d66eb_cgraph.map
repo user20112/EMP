@@ -1,0 +1,4 @@
+<map id="el::base::LogFormat::parseFromFormat" name="el::base::LogFormat::parseFromFormat">
+<area shape="rect" id="node3" href="$classel_1_1base_1_1_log_format.html#a3146651eadd6b1164bde74e5b273ec94" title="Updates date time format if available in currFormat." alt="" coords="193,5,332,46"/>
+<area shape="rect" id="node5" href="$classel_1_1base_1_1_log_format.html#afee2335cce2b627dfd7f918d5a2b85f3" title="Updates level from format. This is so that we dont have to do it at log&#45;writing&#45;time. It uses m_format and m_level." alt="" coords="193,70,333,111"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="GaGCppAPI::GaService::watchDog" name="GaGCppAPI::GaService::watchDog">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_event.html#a76f4506c87e3ebba7a835a0e670104e5" title="fire event and call all call backs, listed in vector mHandlerListm " alt="" coords="422,5,581,32"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a8934e2e20eb9e8b735160e5a5f9c9478" title="detach application from gamma service" alt="" coords="213,23,373,65"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a776c3a61f007ffb2229c626838286e7a" title="attach application to gamma service" alt="" coords="213,89,373,130"/>
+<area shape="rect" id="node10" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#a486dc52893ba637dfd868acfcc04e284" title="start gamma service watchdog" alt="" coords="421,89,581,130"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="GaGCppAPI::RawPV::getValueAsString" name="GaGCppAPI::RawPV::getValueAsString">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a73cf127a7931d698825f276563790db2" title="request the current value (only for value types)" alt="" coords="256,5,475,46"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a9cbbdaa7faeaaf7a7e3f7b35192aa27c" title="request the current buffer content (only for binary data types)" alt="" coords="262,70,469,111"/>
+</map>

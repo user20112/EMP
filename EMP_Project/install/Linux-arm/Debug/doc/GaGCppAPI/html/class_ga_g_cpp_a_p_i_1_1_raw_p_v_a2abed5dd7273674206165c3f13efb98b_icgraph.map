@@ -1,0 +1,6 @@
+<map id="GaGCppAPI::RawPV::prepareOpen" name="GaGCppAPI::RawPV::prepareOpen">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a029a00ebd6d4af27a0ce231f4632b28e" title="create new instance for a gamma process variable, but will not connect" alt="" coords="296,5,491,32"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#afa39c6b0fa9b302b6a542a83192f52a8" title="connect to existing gamma process variable by alias name" alt="" coords="280,56,507,83"/>
+<area shape="rect" id="node7" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#ac56dd25ad2bd50be30a0ed6d0edec0b4" title="tries to attach to gamma service, when connection is lost." alt="" coords="289,107,498,133"/>
+<area shape="rect" id="node9" href="$class_ga_g_cpp_a_p_i_1_1_raw_p_v.html#a8d840730021e358487973025e6659914" title="event callback function. will be called, when a event is fired." alt="" coords="555,107,757,133"/>
+</map>

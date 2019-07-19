@@ -1,0 +1,1521 @@
+<toc label="GaAppBaseLib" topic="index.html">
+  <topic label="Namespaces">
+    <topic label="Namespace List" href="namespaces.html">
+      <topic label="el" href="namespaceel.html">
+        <topic label="base" href="namespaceel_1_1base.html">
+          <topic label="consts" href="namespaceel_1_1base_1_1consts.html"/>
+          <topic label="debug" href="namespaceel_1_1base_1_1debug.html"/>
+          <topic label="type" href="namespaceel_1_1base_1_1type.html"/>
+          <topic label="utils" href="namespaceel_1_1base_1_1utils.html">
+            <topic label="bitwise" href="namespaceel_1_1base_1_1utils_1_1bitwise.html"/>
+          </topic>
+        </topic>
+      </topic>
+    </topic>
+    <topic label="Namespace Members" href="namespacemembers.html">
+      <topic label="All" href="namespacemembers.html"/>
+      <topic label="Typedefs" href="namespacemembers_type.html"/>
+      <topic label="Enumerations" href="namespacemembers_enum.html"/>
+    </topic>
+  </topic>
+  <topic label="Classes">
+    <topic label="Class List" href="annotated.html">
+      <topic label="el" href="namespaceel.html">
+        <topic label="base" href="namespaceel_1_1base.html">
+          <topic label="consts" href="namespaceel_1_1base_1_1consts.html"/>
+          <topic label="debug" href="namespaceel_1_1base_1_1debug.html">
+            <topic label="StackTrace" href="classel_1_1base_1_1debug_1_1_stack_trace.html">
+              <topic label="StackTraceEntry" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html">
+                <topic label="StackTraceEntry" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#a49b21719794ee5de7f70e2558ebcba9e"/>
+                <topic label="StackTraceEntry" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#a9fbf0675fe713b1ac4ec692bbe661afe"/>
+                <topic label="StackTraceEntry" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#af0eb5681a978f0ce388274f68fc1fefd"/>
+                <topic label="operator&lt;&lt;" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#ae393cfa1f102a32239d485892c659862"/>
+                <topic label="m_addr" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#a11b23a57f14add4b825d97bb1d58e6f2"/>
+                <topic label="m_demangled" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#a7ca2c3d08ea6fbef5b605041500c7d47"/>
+                <topic label="m_hex" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#af4d5ffabfe8bbffb5eedcdd95b4eebfe"/>
+                <topic label="m_index" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#a8361364e2cbb728a2e2a17db8b308842"/>
+                <topic label="m_location" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html#aaf6f6c49736d5c10b2047dde6eef4a38"/>
+              </topic>
+              <topic label="StackTrace" href="classel_1_1base_1_1debug_1_1_stack_trace.html#a6921f2bb2ecf1830c371e554d8e5b587"/>
+              <topic label="~StackTrace" href="classel_1_1base_1_1debug_1_1_stack_trace.html#afd779a4600e05db6398dc6f19d71f66a"/>
+              <topic label="generateNew" href="classel_1_1base_1_1debug_1_1_stack_trace.html#a3e719a26db722bf816fa6d3a406bcb0b"/>
+              <topic label="getLatestStack" href="classel_1_1base_1_1debug_1_1_stack_trace.html#a8b6a4f154b59d597b73fe8a515df3240"/>
+              <topic label="operator&lt;&lt;" href="classel_1_1base_1_1debug_1_1_stack_trace.html#a3b8e978df331fbe725e2a39d031355cc"/>
+              <topic label="kMaxStack" href="classel_1_1base_1_1debug_1_1_stack_trace.html#a6e3db7fdc258a7d653f00fc5aade55c2"/>
+              <topic label="kStackStart" href="classel_1_1base_1_1debug_1_1_stack_trace.html#ab8a89fe5c4f779d3e685a5e61f1136e2"/>
+              <topic label="m_stack" href="classel_1_1base_1_1debug_1_1_stack_trace.html#ad3bbd9bb772d2af902873a6bb9f4980a"/>
+            </topic>
+            <topic label="CrashHandler" href="classel_1_1base_1_1debug_1_1_crash_handler.html">
+              <topic label="Handler" href="classel_1_1base_1_1debug_1_1_crash_handler.html#a838ba8e9b1587affca2b6cba02379cf1"/>
+              <topic label="CrashHandler" href="classel_1_1base_1_1debug_1_1_crash_handler.html#a1d1e1a77bb6c37b1fbb39ecf94b38983"/>
+              <topic label="CrashHandler" href="classel_1_1base_1_1debug_1_1_crash_handler.html#a9fbf8df7a292fcbeabfb87b241c83f78"/>
+              <topic label="setHandler" href="classel_1_1base_1_1debug_1_1_crash_handler.html#abd1d3d1ad5f1de2d40c39dd0542c26d4"/>
+              <topic label="m_handler" href="classel_1_1base_1_1debug_1_1_crash_handler.html#a058dbc4e538b6cade5c82b83ebc7309f"/>
+            </topic>
+          </topic>
+          <topic label="threading">
+            <topic label="internal">
+              <topic label="NoMutex" href="classel_1_1base_1_1threading_1_1internal_1_1_no_mutex.html">
+                <topic label="NoMutex" href="classel_1_1base_1_1threading_1_1internal_1_1_no_mutex.html#a23985cbf635efacb39f2a789d539bd29"/>
+                <topic label="lock" href="classel_1_1base_1_1threading_1_1internal_1_1_no_mutex.html#a3b38e4e9411c924daa70d358cf561b3c"/>
+                <topic label="try_lock" href="classel_1_1base_1_1threading_1_1internal_1_1_no_mutex.html#a4c0c35a99cf41f26a7608fed5609d6ae"/>
+                <topic label="unlock" href="classel_1_1base_1_1threading_1_1internal_1_1_no_mutex.html#a5a248c97fee2ef0087526f2f8d3cd26e"/>
+              </topic>
+              <topic label="NoScopedLock" href="classel_1_1base_1_1threading_1_1internal_1_1_no_scoped_lock.html">
+                <topic label="NoScopedLock" href="classel_1_1base_1_1threading_1_1internal_1_1_no_scoped_lock.html#a020f8cea6e83f40ea29662ef57a58235"/>
+                <topic label="~NoScopedLock" href="classel_1_1base_1_1threading_1_1internal_1_1_no_scoped_lock.html#ae51ca0f4952dd1e99322cda553f472e8"/>
+                <topic label="NoScopedLock" href="classel_1_1base_1_1threading_1_1internal_1_1_no_scoped_lock.html#a1e8ff78d9138e899b98e58a983defca6"/>
+              </topic>
+            </topic>
+            <topic label="ThreadSafe" href="classel_1_1base_1_1threading_1_1_thread_safe.html">
+              <topic label="ThreadSafe" href="classel_1_1base_1_1threading_1_1_thread_safe.html#aba1e98467da50d452a30672aabb6752d"/>
+              <topic label="~ThreadSafe" href="classel_1_1base_1_1threading_1_1_thread_safe.html#a97efb9503004202402178a4d3f5940f0"/>
+              <topic label="acquireLock" href="classel_1_1base_1_1threading_1_1_thread_safe.html#a59db719b214f7118f0919846a85077bf"/>
+              <topic label="lock" href="classel_1_1base_1_1threading_1_1_thread_safe.html#affb45b35790a7305d0a659562c8104fc"/>
+              <topic label="releaseLock" href="classel_1_1base_1_1threading_1_1_thread_safe.html#a95bb166242b9691f861274a9b8ced2d9"/>
+              <topic label="m_mutex" href="classel_1_1base_1_1threading_1_1_thread_safe.html#a6c3edd85aaff1db89d08b5ab7e0756e5"/>
+            </topic>
+          </topic>
+          <topic label="type" href="namespaceel_1_1base_1_1type.html"/>
+          <topic label="utils" href="namespaceel_1_1base_1_1utils.html">
+            <topic label="bitwise" href="namespaceel_1_1base_1_1utils_1_1bitwise.html"/>
+            <topic label="File" href="classel_1_1base_1_1utils_1_1_file.html">
+              <topic label="buildBaseFilename" href="classel_1_1base_1_1utils_1_1_file.html#ad6c3703c16b95bd4992f501380d503b4"/>
+              <topic label="buildStrippedFilename" href="classel_1_1base_1_1utils_1_1_file.html#a38e3b3c72f73de47563b289eff13ae2d"/>
+              <topic label="createPath" href="classel_1_1base_1_1utils_1_1_file.html#a34fbb5b06201c7e3db71db80e017fb96"/>
+              <topic label="extractPathFromFilename" href="classel_1_1base_1_1utils_1_1_file.html#af541c62ed408de7e368d339f96c0c6cf"/>
+              <topic label="getSizeOfFile" href="classel_1_1base_1_1utils_1_1_file.html#a54415ba02f698ba978795265f7f4b86c"/>
+              <topic label="newFileStream" href="classel_1_1base_1_1utils_1_1_file.html#aa4bef1f2e00269d75c1c1eabb0ce4563"/>
+              <topic label="pathExists" href="classel_1_1base_1_1utils_1_1_file.html#a4fc9e36b814f1aeaa4931e35d58e5b45"/>
+            </topic>
+            <topic label="Str" href="classel_1_1base_1_1utils_1_1_str.html">
+              <topic label="addToBuff" href="classel_1_1base_1_1utils_1_1_str.html#aa6a96f625f71661c02ecd5366533abaa"/>
+              <topic label="clearBuff" href="classel_1_1base_1_1utils_1_1_str.html#adf0c36c9b8276ede18111a866e31db8b"/>
+              <topic label="contains" href="classel_1_1base_1_1utils_1_1_str.html#a27cc1c1625b21597eb75df62b8fca0f8"/>
+              <topic label="convertAndAddToBuff" href="classel_1_1base_1_1utils_1_1_str.html#a5e12c163bf1085441ea5453fd6c62fa0"/>
+              <topic label="cStringCaseEq" href="classel_1_1base_1_1utils_1_1_str.html#aaa37755d713b5e6475950134ce9ce0e8"/>
+              <topic label="cStringEq" href="classel_1_1base_1_1utils_1_1_str.html#a8081458c7848ff991d765c69f7858c44"/>
+              <topic label="endsWith" href="classel_1_1base_1_1utils_1_1_str.html#a5bcf5f6cc41a7ed683be115148579561"/>
+              <topic label="isDigit" href="classel_1_1base_1_1utils_1_1_str.html#a4caae91dfe0310d9f182bd9b7e99103c"/>
+              <topic label="ltrim" href="classel_1_1base_1_1utils_1_1_str.html#a64b7a841f04ed916ed8d234b8508703e"/>
+              <topic label="replaceAll" href="classel_1_1base_1_1utils_1_1_str.html#aa07bfda259ed194120b371401734ae86"/>
+              <topic label="replaceAll" href="classel_1_1base_1_1utils_1_1_str.html#a8e823aa60b160451ca0b8732c3c75568"/>
+              <topic label="replaceFirstWithEscape" href="classel_1_1base_1_1utils_1_1_str.html#a3725349f601d07316d1c2bc211daaaa1"/>
+              <topic label="rtrim" href="classel_1_1base_1_1utils_1_1_str.html#a9202797763e10861c4fa84ffd40198bb"/>
+              <topic label="startsWith" href="classel_1_1base_1_1utils_1_1_str.html#acf80221cec72da701ef50995a61ab91f"/>
+              <topic label="toUpper" href="classel_1_1base_1_1utils_1_1_str.html#a6a05315fb967508dc1faf0584421a95d"/>
+              <topic label="trim" href="classel_1_1base_1_1utils_1_1_str.html#aba0bc132c410fd3c1e128d1038e996ba"/>
+              <topic label="wcharPtrToCharPtr" href="classel_1_1base_1_1utils_1_1_str.html#a6dc022e7e8d4cbf2c80ba9e1354feaea"/>
+              <topic label="wildCardMatch" href="classel_1_1base_1_1utils_1_1_str.html#a95e007a25dfcbd77d4c573b0f73b3153"/>
+            </topic>
+            <topic label="OS" href="classel_1_1base_1_1utils_1_1_o_s.html">
+              <topic label="currentHost" href="classel_1_1base_1_1utils_1_1_o_s.html#aae4fdf83828228fc440f8a875c5942b0"/>
+              <topic label="currentUser" href="classel_1_1base_1_1utils_1_1_o_s.html#ac7839ecd50e379dbdfcfce130906386e"/>
+              <topic label="getBashOutput" href="classel_1_1base_1_1utils_1_1_o_s.html#a91304c76c872459eaa9fdb3466367cd3"/>
+              <topic label="getEnvironmentVariable" href="classel_1_1base_1_1utils_1_1_o_s.html#a91540f3d8c87bd121e55fc39270eac3c"/>
+              <topic label="termSupportsColor" href="classel_1_1base_1_1utils_1_1_o_s.html#a2c941329a14ce0ea920f57779857864c"/>
+            </topic>
+            <topic label="DateTime" href="classel_1_1base_1_1utils_1_1_date_time.html">
+              <topic label="buildTimeInfo" href="classel_1_1base_1_1utils_1_1_date_time.html#a71125138b2ee3e400b7b89f4001f2887"/>
+              <topic label="formatTime" href="classel_1_1base_1_1utils_1_1_date_time.html#a1eea58fffe291c969a526d08515d29d7"/>
+              <topic label="getDateTime" href="classel_1_1base_1_1utils_1_1_date_time.html#aa813c606a98b8741f59ccdf5aacef733"/>
+              <topic label="getTimeDifference" href="classel_1_1base_1_1utils_1_1_date_time.html#a9181a3544442e1d3c05d8c96bbfff16d"/>
+              <topic label="gettimeofday" href="classel_1_1base_1_1utils_1_1_date_time.html#ac000e6ecf705c2194a173d618ff4acfd"/>
+              <topic label="parseFormat" href="classel_1_1base_1_1utils_1_1_date_time.html#a946fb1f4784642a8b464f50f2a3b09d0"/>
+            </topic>
+            <topic label="CommandLineArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html">
+              <topic label="CommandLineArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a58a5e0acd54a1412d09ec39a1140f067"/>
+              <topic label="CommandLineArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a9872b14450e9cd1c1bd96227743c083b"/>
+              <topic label="CommandLineArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a297b31b31829d9545d6e808f4be9195c"/>
+              <topic label="~CommandLineArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a41c4aafeffaef7ab6320feb709d6a0d6"/>
+              <topic label="empty" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a014c586d14eb73f2ec1deb5b08bdd6a7"/>
+              <topic label="getParamValue" href="classel_1_1base_1_1utils_1_1_command_line_args.html#ad1abe08dfdbdd95c72474197ba4a3cbd"/>
+              <topic label="hasParam" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a83fbd7e5d8422e98a7d58d65283f144f"/>
+              <topic label="hasParamWithValue" href="classel_1_1base_1_1utils_1_1_command_line_args.html#acc9fa8eeed2deecffb6019173de5ab48"/>
+              <topic label="setArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a2d59b4184e0a6a314ef1c9a4c6d946e6"/>
+              <topic label="setArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html#af88a16e6ce7b5d48f9679f304367b27a"/>
+              <topic label="size" href="classel_1_1base_1_1utils_1_1_command_line_args.html#ab335b66a2ca2dea6c9c7b8d54760e975"/>
+              <topic label="operator&lt;&lt;" href="classel_1_1base_1_1utils_1_1_command_line_args.html#aee5ba4c037136cd1d54026dd75927b10"/>
+              <topic label="m_argc" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a385a0812089ce11e57f9af1b77682501"/>
+              <topic label="m_argv" href="classel_1_1base_1_1utils_1_1_command_line_args.html#af1e90f0b14c878b28be78a519ec1930b"/>
+              <topic label="m_params" href="classel_1_1base_1_1utils_1_1_command_line_args.html#ad880bb2202ad068c3354bf3c846fc596"/>
+              <topic label="m_paramsWithValue" href="classel_1_1base_1_1utils_1_1_command_line_args.html#a2c50a180582f14a66c6c192b1a9dabeb"/>
+            </topic>
+            <topic label="AbstractRegistry" href="classel_1_1base_1_1utils_1_1_abstract_registry.html">
+              <topic label="const_iterator" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a3bbf19b112c067cb1a02a82b003cc7e2"/>
+              <topic label="iterator" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a58d0536c748633afd3f7c237b63a9a7c"/>
+              <topic label="AbstractRegistry" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#afe13c67ebd1ed1aa72845926894dffa2"/>
+              <topic label="AbstractRegistry" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a9f468010439d491e90419f9334afcdba"/>
+              <topic label="~AbstractRegistry" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a6ee2c4166629bb16515cc00b738dee65"/>
+              <topic label="acquireLock" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a59db719b214f7118f0919846a85077bf"/>
+              <topic label="begin" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a4ad971b1dddff996d327452d852e55b2"/>
+              <topic label="cbegin" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a37f743184e808d7c0028e21e0d0898bb"/>
+              <topic label="cend" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#ad3ee081b4b25c5d77f971f949bdb9158"/>
+              <topic label="deepCopy" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#aaf42dab7089a9b1198e2920983ca82bb"/>
+              <topic label="empty" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a43ff6484b778c298416c482c07a4df3f"/>
+              <topic label="end" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a67c40207c171f23ad50a71db819e84f9"/>
+              <topic label="list" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a072859d3728a75f910c2898f62fd12da"/>
+              <topic label="list" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a1c3da2af9177cbfae6f10b9e5dbe615c"/>
+              <topic label="lock" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#affb45b35790a7305d0a659562c8104fc"/>
+              <topic label="operator!=" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a35de8807521651c85acb26532a2623e1"/>
+              <topic label="operator=" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a5727a3cadeee6a2b10d8f46fb91956e7"/>
+              <topic label="operator==" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#ac3e648dc0caa8914f8604650f00bc94b"/>
+              <topic label="reinitDeepCopy" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a529677fb42e78d03c36cdea49f8877c9"/>
+              <topic label="releaseLock" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a95bb166242b9691f861274a9b8ced2d9"/>
+              <topic label="size" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a58a7b8ea964bdf6008701dcfb6609ca5"/>
+              <topic label="unregisterAll" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a19223bc1fea48dbe6b47b4879aa4672f"/>
+              <topic label="m_list" href="classel_1_1base_1_1utils_1_1_abstract_registry.html#a529b7bd1236079814316ba561c167650"/>
+            </topic>
+            <topic label="Registry" href="classel_1_1base_1_1utils_1_1_registry.html">
+              <topic label="const_iterator" href="classel_1_1base_1_1utils_1_1_registry.html#a955e62adc74c60d0205b52a3fc430cef"/>
+              <topic label="iterator" href="classel_1_1base_1_1utils_1_1_registry.html#a31f3d725285e6b65f1f9e990066f96ed"/>
+              <topic label="Registry" href="classel_1_1base_1_1utils_1_1_registry.html#aa4bb56a1aff481cc6cf8979b2f2c6eca"/>
+              <topic label="Registry" href="classel_1_1base_1_1utils_1_1_registry.html#adf5e97aa801be3b93e116ad645304759"/>
+              <topic label="~Registry" href="classel_1_1base_1_1utils_1_1_registry.html#a79aa9dfa385e233bf619d44422f4992c"/>
+              <topic label="acquireLock" href="classel_1_1base_1_1utils_1_1_registry.html#a59db719b214f7118f0919846a85077bf"/>
+              <topic label="begin" href="classel_1_1base_1_1utils_1_1_registry.html#a4ad971b1dddff996d327452d852e55b2"/>
+              <topic label="cbegin" href="classel_1_1base_1_1utils_1_1_registry.html#a37f743184e808d7c0028e21e0d0898bb"/>
+              <topic label="cend" href="classel_1_1base_1_1utils_1_1_registry.html#ad3ee081b4b25c5d77f971f949bdb9158"/>
+              <topic label="deepCopy" href="classel_1_1base_1_1utils_1_1_registry.html#aaf42dab7089a9b1198e2920983ca82bb"/>
+              <topic label="deepCopy" href="classel_1_1base_1_1utils_1_1_registry.html#a20445cd6a473c164ea4d8860921647ef"/>
+              <topic label="empty" href="classel_1_1base_1_1utils_1_1_registry.html#a43ff6484b778c298416c482c07a4df3f"/>
+              <topic label="end" href="classel_1_1base_1_1utils_1_1_registry.html#a67c40207c171f23ad50a71db819e84f9"/>
+              <topic label="get" href="classel_1_1base_1_1utils_1_1_registry.html#a18c332267f2acbe78c97a611dec2e5c2"/>
+              <topic label="list" href="classel_1_1base_1_1utils_1_1_registry.html#a072859d3728a75f910c2898f62fd12da"/>
+              <topic label="list" href="classel_1_1base_1_1utils_1_1_registry.html#a1c3da2af9177cbfae6f10b9e5dbe615c"/>
+              <topic label="lock" href="classel_1_1base_1_1utils_1_1_registry.html#affb45b35790a7305d0a659562c8104fc"/>
+              <topic label="operator!=" href="classel_1_1base_1_1utils_1_1_registry.html#a35de8807521651c85acb26532a2623e1"/>
+              <topic label="operator=" href="classel_1_1base_1_1utils_1_1_registry.html#a80e0ce12b7d0c24462b385fc7b3149e0"/>
+              <topic label="operator==" href="classel_1_1base_1_1utils_1_1_registry.html#ac3e648dc0caa8914f8604650f00bc94b"/>
+              <topic label="registerNew" href="classel_1_1base_1_1utils_1_1_registry.html#ab10b3dd25ff0df036e7a015635a15dee"/>
+              <topic label="reinitDeepCopy" href="classel_1_1base_1_1utils_1_1_registry.html#a529677fb42e78d03c36cdea49f8877c9"/>
+              <topic label="releaseLock" href="classel_1_1base_1_1utils_1_1_registry.html#a95bb166242b9691f861274a9b8ced2d9"/>
+              <topic label="size" href="classel_1_1base_1_1utils_1_1_registry.html#a58a7b8ea964bdf6008701dcfb6609ca5"/>
+              <topic label="unregister" href="classel_1_1base_1_1utils_1_1_registry.html#aab6f0ce3a99feff11add0bd8b869fcb8"/>
+              <topic label="unregisterAll" href="classel_1_1base_1_1utils_1_1_registry.html#ac40e62ddf5017beb91c28b472c9628c2"/>
+            </topic>
+            <topic label="RegistryWithPred" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html">
+              <topic label="const_iterator" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#ad9af7a8eeedd58a75eb70bccb334f6dc"/>
+              <topic label="iterator" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#afc03d2d0a72f5ebf03e1e3b37bd9932d"/>
+              <topic label="RegistryWithPred" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a564214aff7fdbd5370e777dd0c15e615"/>
+              <topic label="~RegistryWithPred" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#ae822bdfa235ace08c1d8faa8365fd240"/>
+              <topic label="RegistryWithPred" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a0e75c7daaa5fbf824b29180c7a5fd155"/>
+              <topic label="acquireLock" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a59db719b214f7118f0919846a85077bf"/>
+              <topic label="begin" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a4ad971b1dddff996d327452d852e55b2"/>
+              <topic label="cbegin" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a37f743184e808d7c0028e21e0d0898bb"/>
+              <topic label="cend" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#ad3ee081b4b25c5d77f971f949bdb9158"/>
+              <topic label="deepCopy" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#aaf42dab7089a9b1198e2920983ca82bb"/>
+              <topic label="deepCopy" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#adbd5dd3ecd87c89ccd2198f03e242a39"/>
+              <topic label="empty" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a43ff6484b778c298416c482c07a4df3f"/>
+              <topic label="end" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a67c40207c171f23ad50a71db819e84f9"/>
+              <topic label="get" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a811d9cc011d945bc7237e6ae1cf2f096"/>
+              <topic label="list" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a072859d3728a75f910c2898f62fd12da"/>
+              <topic label="list" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a1c3da2af9177cbfae6f10b9e5dbe615c"/>
+              <topic label="lock" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#affb45b35790a7305d0a659562c8104fc"/>
+              <topic label="operator!=" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a35de8807521651c85acb26532a2623e1"/>
+              <topic label="operator=" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#adb7e568c8cb084589467b937eab86b86"/>
+              <topic label="operator==" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#ac3e648dc0caa8914f8604650f00bc94b"/>
+              <topic label="registerNew" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a561a5d418106a16473ff94d43a4b6b04"/>
+              <topic label="reinitDeepCopy" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a529677fb42e78d03c36cdea49f8877c9"/>
+              <topic label="releaseLock" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a95bb166242b9691f861274a9b8ced2d9"/>
+              <topic label="size" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a58a7b8ea964bdf6008701dcfb6609ca5"/>
+              <topic label="unregister" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#aaf1afb5a9f8bd1d99c46ac529ea16417"/>
+              <topic label="unregisterAll" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a66b4eca5bb71f3fa3f0737105a00890c"/>
+              <topic label="operator&lt;&lt;" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html#a71b45d148b62604847fe06f7addda779"/>
+            </topic>
+          </topic>
+          <topic label="NoCopy" href="classel_1_1base_1_1_no_copy.html">
+            <topic label="NoCopy" href="classel_1_1base_1_1_no_copy.html#a8a0bc86c5c2b921a3c5fcf6e4d2670d3"/>
+            <topic label="NoCopy" href="classel_1_1base_1_1_no_copy.html#a1a9eccab8b58f64715ce79c6179bee21"/>
+            <topic label="operator=" href="classel_1_1base_1_1_no_copy.html#a9c20bf24f41ce8cdbd8093f49a84d5e9"/>
+          </topic>
+          <topic label="StaticClass" href="classel_1_1base_1_1_static_class.html">
+            <topic label="StaticClass" href="classel_1_1base_1_1_static_class.html#a8394b09c1ed81a3c1b9cb7fec8736115"/>
+            <topic label="StaticClass" href="classel_1_1base_1_1_static_class.html#adb18da8c79e19391d61c101a43d7eabe"/>
+            <topic label="operator=" href="classel_1_1base_1_1_static_class.html#aa00586abd362062c36ec2752e433c698"/>
+          </topic>
+          <topic label="MillisecondsWidth" href="classel_1_1base_1_1_milliseconds_width.html">
+            <topic label="MillisecondsWidth" href="classel_1_1base_1_1_milliseconds_width.html#a87712d779ce80d6ba4fffb3b7d20d1bd"/>
+            <topic label="MillisecondsWidth" href="classel_1_1base_1_1_milliseconds_width.html#a358fa0fcdd4076c4038ecdfc206de38a"/>
+            <topic label="init" href="classel_1_1base_1_1_milliseconds_width.html#a9df3aaed702fd6d5fa2af73b4da9562e"/>
+            <topic label="operator==" href="classel_1_1base_1_1_milliseconds_width.html#a60f5fb6e31216d1268585b98d20517ff"/>
+            <topic label="m_offset" href="classel_1_1base_1_1_milliseconds_width.html#a0e98edbecf602a915d4d609747c52669"/>
+            <topic label="m_width" href="classel_1_1base_1_1_milliseconds_width.html#a31c468b0323d376505c4975720c7b66e"/>
+          </topic>
+          <topic label="LogFormat" href="classel_1_1base_1_1_log_format.html">
+            <topic label="LogFormat" href="classel_1_1base_1_1_log_format.html#a15469c6f25aa4a4770b1d2aeaabba145"/>
+            <topic label="LogFormat" href="classel_1_1base_1_1_log_format.html#a746a49231f1b046803dd2144ae2a2c76"/>
+            <topic label="LogFormat" href="classel_1_1base_1_1_log_format.html#a8cc88ab095024bcfb90dd3ad7208f2ef"/>
+            <topic label="LogFormat" href="classel_1_1base_1_1_log_format.html#a697d52d55c6b6c6b8e6d5ceb37d66c19"/>
+            <topic label="~LogFormat" href="classel_1_1base_1_1_log_format.html#a09d5b42b49f00fb37edafef1102daf0c"/>
+            <topic label="addFlag" href="classel_1_1base_1_1_log_format.html#ae55910f533a6eb3b41eb75b131e522bf"/>
+            <topic label="dateTimeFormat" href="classel_1_1base_1_1_log_format.html#aa06b2643592f8a441d93cde673640262"/>
+            <topic label="flags" href="classel_1_1base_1_1_log_format.html#a3ecf5f8df9b9e090784e19ad76046c49"/>
+            <topic label="format" href="classel_1_1base_1_1_log_format.html#ac19602b3153daa9a76b56d3f4ff3beaa"/>
+            <topic label="hasFlag" href="classel_1_1base_1_1_log_format.html#ae3634f9d90f7339d99eec8512b46c734"/>
+            <topic label="level" href="classel_1_1base_1_1_log_format.html#a6c5d17ad378ccb6e53beb2d48143fecb"/>
+            <topic label="log" href="classel_1_1base_1_1_log_format.html#a0cae595d1a367538243feb1be1555d2e"/>
+            <topic label="operator=" href="classel_1_1base_1_1_log_format.html#a3c81e5976c3f3a8cb428eeeb3f188ac2"/>
+            <topic label="operator==" href="classel_1_1base_1_1_log_format.html#a31e85c6f74da6fe36d156a89a6c7fb91"/>
+            <topic label="parseFromFormat" href="classel_1_1base_1_1_log_format.html#ab7c1b15cfdad24cfbc6dbced8b9d66eb"/>
+            <topic label="updateDateFormat" href="classel_1_1base_1_1_log_format.html#a3146651eadd6b1164bde74e5b273ec94"/>
+            <topic label="updateFormatSpec" href="classel_1_1base_1_1_log_format.html#afee2335cce2b627dfd7f918d5a2b85f3"/>
+            <topic label="userFormat" href="classel_1_1base_1_1_log_format.html#a9ca6ecd5b9342653493670d5a4e230cd"/>
+            <topic label="el::Logger" href="classel_1_1base_1_1_log_format.html#aa78553f3fecc0d9551408dfd7aa7f737"/>
+            <topic label="m_dateTimeFormat" href="classel_1_1base_1_1_log_format.html#a4a11e7bb1e70f6997e628d51b232848c"/>
+            <topic label="m_flags" href="classel_1_1base_1_1_log_format.html#af0436f51f1cd1ababbbda3378f1541d3"/>
+            <topic label="m_format" href="classel_1_1base_1_1_log_format.html#ae738782f79da58139056952dee34570e"/>
+            <topic label="m_level" href="classel_1_1base_1_1_log_format.html#a08d9991b9db478f2351907bb9cad76d2"/>
+            <topic label="m_userFormat" href="classel_1_1base_1_1_log_format.html#aea94035d71cb2e50db42e42ab2774ac0"/>
+          </topic>
+          <topic label="TypedConfigurations" href="classel_1_1base_1_1_typed_configurations.html">
+            <topic label="TypedConfigurations" href="classel_1_1base_1_1_typed_configurations.html#a1b6d90479bb79da27c3e351a9be593ae"/>
+            <topic label="TypedConfigurations" href="classel_1_1base_1_1_typed_configurations.html#ae7b346e5d32305d4957bc6c564409090"/>
+            <topic label="~TypedConfigurations" href="classel_1_1base_1_1_typed_configurations.html#a43106121731b69829ad9f6d6035b1e0b"/>
+            <topic label="acquireLock" href="classel_1_1base_1_1_typed_configurations.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="build" href="classel_1_1base_1_1_typed_configurations.html#ac61af29d843691ac60aa34000183b2d8"/>
+            <topic label="configurations" href="classel_1_1base_1_1_typed_configurations.html#a65d2ec91ff7edc07db304ebd9c30291f"/>
+            <topic label="enabled" href="classel_1_1base_1_1_typed_configurations.html#a924b35df988103c737907cc7993c3c1c"/>
+            <topic label="filename" href="classel_1_1base_1_1_typed_configurations.html#a6a7871c0c37c3306334e90dfdc1d2e47"/>
+            <topic label="fileStream" href="classel_1_1base_1_1_typed_configurations.html#abb8250bc165b182524521faef6bedb19"/>
+            <topic label="getConfigByRef" href="classel_1_1base_1_1_typed_configurations.html#a69d062c9af597171adb5f4c7c60ba0ed"/>
+            <topic label="getConfigByVal" href="classel_1_1base_1_1_typed_configurations.html#a244b0b96547dad5d38e25c3eb88ce69d"/>
+            <topic label="getULong" href="classel_1_1base_1_1_typed_configurations.html#a9fe66d8b0c001d3651bff2fc31bd2883"/>
+            <topic label="insertFile" href="classel_1_1base_1_1_typed_configurations.html#a858bb6bc3328dc87a5ff31a42f16ee74"/>
+            <topic label="lock" href="classel_1_1base_1_1_typed_configurations.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="logFlushThreshold" href="classel_1_1base_1_1_typed_configurations.html#ae8710257d7f8bc20c2183a3a4404ebaf"/>
+            <topic label="logFormat" href="classel_1_1base_1_1_typed_configurations.html#a5d4d84a3dda6d54e0f291917703db441"/>
+            <topic label="maxLogFileSize" href="classel_1_1base_1_1_typed_configurations.html#aa48c0568be8fd177f1d463b1e7831f75"/>
+            <topic label="millisecondsWidth" href="classel_1_1base_1_1_typed_configurations.html#ad078669014b01e587987e9ffc2214763"/>
+            <topic label="performanceTracking" href="classel_1_1base_1_1_typed_configurations.html#a0cef785df86dbfe17a27c5b78ed3e5da"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_typed_configurations.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="resolveFilename" href="classel_1_1base_1_1_typed_configurations.html#a38c9262f6d645459d8f22bec4d47200e"/>
+            <topic label="setValue" href="classel_1_1base_1_1_typed_configurations.html#ad56715c5dcbb8480319f0909c98cfbea"/>
+            <topic label="toFile" href="classel_1_1base_1_1_typed_configurations.html#a20b9a1bd152cad3b72b558f97de3876b"/>
+            <topic label="toStandardOutput" href="classel_1_1base_1_1_typed_configurations.html#aeaa7bf7448319bc41e4e226124288c7e"/>
+            <topic label="unsafeGetConfigByRef" href="classel_1_1base_1_1_typed_configurations.html#a2d2d0d016fefa24b1b8e801cb35aec91"/>
+            <topic label="unsafeGetConfigByVal" href="classel_1_1base_1_1_typed_configurations.html#a78a9b966a06baafd55c49bdfe457c4a4"/>
+            <topic label="unsafeValidateFileRolling" href="classel_1_1base_1_1_typed_configurations.html#ae2cd87cb36b29cff7532ade26a43dbc4"/>
+            <topic label="validateFileRolling" href="classel_1_1base_1_1_typed_configurations.html#a11c4659df05b05cddfb02d12cdf4881c"/>
+            <topic label="el::base::DefaultLogDispatchCallback" href="classel_1_1base_1_1_typed_configurations.html#a42b1de96d584ae4fecbfc2b9aff95052"/>
+            <topic label="el::base::LogDispatcher" href="classel_1_1base_1_1_typed_configurations.html#a9b37b28ea1c5f8f862cc89f135711d92"/>
+            <topic label="el::base::MessageBuilder" href="classel_1_1base_1_1_typed_configurations.html#a81bbf6fe31fab133d182efa8367304f1"/>
+            <topic label="el::base::Writer" href="classel_1_1base_1_1_typed_configurations.html#a7a728edbb2761d151832daa74d5b2736"/>
+            <topic label="el::Helpers" href="classel_1_1base_1_1_typed_configurations.html#a2fb8a2c02cbf86247f093c118bed877a"/>
+            <topic label="m_configurations" href="classel_1_1base_1_1_typed_configurations.html#a92ee81552c1fc265b2ec806aab239bad"/>
+            <topic label="m_enabledMap" href="classel_1_1base_1_1_typed_configurations.html#ab2dc6ec3b3cec7f97583175ea4f93c71"/>
+            <topic label="m_filenameMap" href="classel_1_1base_1_1_typed_configurations.html#a22c998780184492f0e8f8b66de9c798f"/>
+            <topic label="m_fileStreamMap" href="classel_1_1base_1_1_typed_configurations.html#a2796c8fe48bcdc60328afb788949281a"/>
+            <topic label="m_logFlushThresholdMap" href="classel_1_1base_1_1_typed_configurations.html#a5cfb9e1aee3c0cba11ffa89abd9341df"/>
+            <topic label="m_logFormatMap" href="classel_1_1base_1_1_typed_configurations.html#ab547de181eb5b1d764d222fdbc1979d3"/>
+            <topic label="m_logStreamsReference" href="classel_1_1base_1_1_typed_configurations.html#ada819ed27623a74670f7d7a28c777bba"/>
+            <topic label="m_maxLogFileSizeMap" href="classel_1_1base_1_1_typed_configurations.html#a3cbeb29c8f845e29a1200aa645e8cba5"/>
+            <topic label="m_millisecondsWidthMap" href="classel_1_1base_1_1_typed_configurations.html#a3bb1600f7759bc85dc42e0c35b2ea26a"/>
+            <topic label="m_performanceTrackingMap" href="classel_1_1base_1_1_typed_configurations.html#a08ad6f7719d5302389ae7316bf5bdd71"/>
+            <topic label="m_toFileMap" href="classel_1_1base_1_1_typed_configurations.html#a66b9aafeceedf2b45586c79e3692447d"/>
+            <topic label="m_toStandardOutputMap" href="classel_1_1base_1_1_typed_configurations.html#a03b7cea7224d71c60557085f1f00dc08"/>
+          </topic>
+          <topic label="HitCounter" href="classel_1_1base_1_1_hit_counter.html">
+            <topic label="Predicate" href="classel_1_1base_1_1_hit_counter_1_1_predicate.html">
+              <topic label="Predicate" href="classel_1_1base_1_1_hit_counter_1_1_predicate.html#ab35f4f7da40df5a788c3984d097bb38c"/>
+              <topic label="operator()" href="classel_1_1base_1_1_hit_counter_1_1_predicate.html#ae07b1562a3c0ed38457401e60b80b0c5"/>
+              <topic label="m_filename" href="classel_1_1base_1_1_hit_counter_1_1_predicate.html#a66f35eda3d5750c870fa7f01ea4c6e1e"/>
+              <topic label="m_lineNumber" href="classel_1_1base_1_1_hit_counter_1_1_predicate.html#a686603f171b95819d91053f572da182b"/>
+            </topic>
+            <topic label="HitCounter" href="classel_1_1base_1_1_hit_counter.html#a2d32056aa55d080c2a2c534713b9a9a7"/>
+            <topic label="HitCounter" href="classel_1_1base_1_1_hit_counter.html#a1fe641f45123641012673f8bc29aefd8"/>
+            <topic label="HitCounter" href="classel_1_1base_1_1_hit_counter.html#abae187cf5ea0f94e812223ee4be7061f"/>
+            <topic label="~HitCounter" href="classel_1_1base_1_1_hit_counter.html#a8ff49793a4baef0a9ed0320f7d7db513"/>
+            <topic label="filename" href="classel_1_1base_1_1_hit_counter.html#ad04433d214c175775ed61453ead374fc"/>
+            <topic label="hitCounts" href="classel_1_1base_1_1_hit_counter.html#a3df3a285c91b5eb690be48893d677e94"/>
+            <topic label="increment" href="classel_1_1base_1_1_hit_counter.html#ae2d7709a89362019195761416d510911"/>
+            <topic label="lineNumber" href="classel_1_1base_1_1_hit_counter.html#ab43602346f499854b1764b1c2dcb70dc"/>
+            <topic label="operator=" href="classel_1_1base_1_1_hit_counter.html#ad32a5e5c2a63ff30fa9d298613d746d1"/>
+            <topic label="resetLocation" href="classel_1_1base_1_1_hit_counter.html#af58479cb66b71a76a3f8fd26193bfde1"/>
+            <topic label="validateHitCounts" href="classel_1_1base_1_1_hit_counter.html#a04dcca0a3f1b1f9a0ef8d812f00cecf0"/>
+            <topic label="m_filename" href="classel_1_1base_1_1_hit_counter.html#af6ce8f6f5d40e571affb64e0bb44a773"/>
+            <topic label="m_hitCounts" href="classel_1_1base_1_1_hit_counter.html#ac0ad7e3351b41999d8cdd9bb8cc7b04f"/>
+            <topic label="m_lineNumber" href="classel_1_1base_1_1_hit_counter.html#a3b8820c749fe1055f2585219d6d9b64c"/>
+          </topic>
+          <topic label="RegisteredHitCounters" href="classel_1_1base_1_1_registered_hit_counters.html">
+            <topic label="const_iterator" href="classel_1_1base_1_1_registered_hit_counters.html#ad9af7a8eeedd58a75eb70bccb334f6dc"/>
+            <topic label="iterator" href="classel_1_1base_1_1_registered_hit_counters.html#afc03d2d0a72f5ebf03e1e3b37bd9932d"/>
+            <topic label="acquireLock" href="classel_1_1base_1_1_registered_hit_counters.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="begin" href="classel_1_1base_1_1_registered_hit_counters.html#a4ad971b1dddff996d327452d852e55b2"/>
+            <topic label="cbegin" href="classel_1_1base_1_1_registered_hit_counters.html#a37f743184e808d7c0028e21e0d0898bb"/>
+            <topic label="cend" href="classel_1_1base_1_1_registered_hit_counters.html#ad3ee081b4b25c5d77f971f949bdb9158"/>
+            <topic label="deepCopy" href="classel_1_1base_1_1_registered_hit_counters.html#aaf42dab7089a9b1198e2920983ca82bb"/>
+            <topic label="empty" href="classel_1_1base_1_1_registered_hit_counters.html#a43ff6484b778c298416c482c07a4df3f"/>
+            <topic label="end" href="classel_1_1base_1_1_registered_hit_counters.html#a67c40207c171f23ad50a71db819e84f9"/>
+            <topic label="get" href="classel_1_1base_1_1_registered_hit_counters.html#a811d9cc011d945bc7237e6ae1cf2f096"/>
+            <topic label="getCounter" href="classel_1_1base_1_1_registered_hit_counters.html#a0ca8cd04da5686048644e8cc1533b561"/>
+            <topic label="list" href="classel_1_1base_1_1_registered_hit_counters.html#a072859d3728a75f910c2898f62fd12da"/>
+            <topic label="list" href="classel_1_1base_1_1_registered_hit_counters.html#a1c3da2af9177cbfae6f10b9e5dbe615c"/>
+            <topic label="lock" href="classel_1_1base_1_1_registered_hit_counters.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="operator!=" href="classel_1_1base_1_1_registered_hit_counters.html#a35de8807521651c85acb26532a2623e1"/>
+            <topic label="operator==" href="classel_1_1base_1_1_registered_hit_counters.html#ac3e648dc0caa8914f8604650f00bc94b"/>
+            <topic label="registerNew" href="classel_1_1base_1_1_registered_hit_counters.html#a561a5d418106a16473ff94d43a4b6b04"/>
+            <topic label="reinitDeepCopy" href="classel_1_1base_1_1_registered_hit_counters.html#a529677fb42e78d03c36cdea49f8877c9"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_registered_hit_counters.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="size" href="classel_1_1base_1_1_registered_hit_counters.html#a58a7b8ea964bdf6008701dcfb6609ca5"/>
+            <topic label="unregister" href="classel_1_1base_1_1_registered_hit_counters.html#aaf1afb5a9f8bd1d99c46ac529ea16417"/>
+            <topic label="unregisterAll" href="classel_1_1base_1_1_registered_hit_counters.html#a66b4eca5bb71f3fa3f0737105a00890c"/>
+            <topic label="validateAfterN" href="classel_1_1base_1_1_registered_hit_counters.html#af6fa32ffd76776863d8bd2f0e9b341fc"/>
+            <topic label="validateEveryN" href="classel_1_1base_1_1_registered_hit_counters.html#a18fecedc6be778cfd63e30cc42fb9c82"/>
+            <topic label="validateNTimes" href="classel_1_1base_1_1_registered_hit_counters.html#aa270c1b9a8cc3a4d12cea45e07560d98"/>
+          </topic>
+          <topic label="RegisteredLoggers" href="classel_1_1base_1_1_registered_loggers.html">
+            <topic label="const_iterator" href="classel_1_1base_1_1_registered_loggers.html#a955e62adc74c60d0205b52a3fc430cef"/>
+            <topic label="iterator" href="classel_1_1base_1_1_registered_loggers.html#a31f3d725285e6b65f1f9e990066f96ed"/>
+            <topic label="RegisteredLoggers" href="classel_1_1base_1_1_registered_loggers.html#ae52ec336770d33fef86f234e4e68dce5"/>
+            <topic label="~RegisteredLoggers" href="classel_1_1base_1_1_registered_loggers.html#ac87ee24f4d1bb36757f6ce1e1f5a8362"/>
+            <topic label="acquireLock" href="classel_1_1base_1_1_registered_loggers.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="begin" href="classel_1_1base_1_1_registered_loggers.html#a4ad971b1dddff996d327452d852e55b2"/>
+            <topic label="cbegin" href="classel_1_1base_1_1_registered_loggers.html#a37f743184e808d7c0028e21e0d0898bb"/>
+            <topic label="cend" href="classel_1_1base_1_1_registered_loggers.html#ad3ee081b4b25c5d77f971f949bdb9158"/>
+            <topic label="deepCopy" href="classel_1_1base_1_1_registered_loggers.html#aaf42dab7089a9b1198e2920983ca82bb"/>
+            <topic label="defaultConfigurations" href="classel_1_1base_1_1_registered_loggers.html#acb38f67cf5e297f4be3efa5312e09914"/>
+            <topic label="empty" href="classel_1_1base_1_1_registered_loggers.html#a43ff6484b778c298416c482c07a4df3f"/>
+            <topic label="end" href="classel_1_1base_1_1_registered_loggers.html#a67c40207c171f23ad50a71db819e84f9"/>
+            <topic label="flushAll" href="classel_1_1base_1_1_registered_loggers.html#abe6fdac67d9d4c35fb48c9fd88a49c2e"/>
+            <topic label="get" href="classel_1_1base_1_1_registered_loggers.html#a18c332267f2acbe78c97a611dec2e5c2"/>
+            <topic label="get" href="classel_1_1base_1_1_registered_loggers.html#a8e554505cd7f66d31e91933b61d74144"/>
+            <topic label="has" href="classel_1_1base_1_1_registered_loggers.html#a85916925e2c53d1ebf9865625132a0be"/>
+            <topic label="list" href="classel_1_1base_1_1_registered_loggers.html#a072859d3728a75f910c2898f62fd12da"/>
+            <topic label="list" href="classel_1_1base_1_1_registered_loggers.html#a1c3da2af9177cbfae6f10b9e5dbe615c"/>
+            <topic label="lock" href="classel_1_1base_1_1_registered_loggers.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="logStreamsReference" href="classel_1_1base_1_1_registered_loggers.html#a11eb24bac74b7ae2d85b324fed707819"/>
+            <topic label="operator!=" href="classel_1_1base_1_1_registered_loggers.html#a35de8807521651c85acb26532a2623e1"/>
+            <topic label="operator==" href="classel_1_1base_1_1_registered_loggers.html#ac3e648dc0caa8914f8604650f00bc94b"/>
+            <topic label="registerNew" href="classel_1_1base_1_1_registered_loggers.html#ab10b3dd25ff0df036e7a015635a15dee"/>
+            <topic label="reinitDeepCopy" href="classel_1_1base_1_1_registered_loggers.html#a529677fb42e78d03c36cdea49f8877c9"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_registered_loggers.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="remove" href="classel_1_1base_1_1_registered_loggers.html#a4d17dc9673f6aa6216571e182097400a"/>
+            <topic label="setDefaultConfigurations" href="classel_1_1base_1_1_registered_loggers.html#a28e1f955ad55d89a4ae91fa74545ee4f"/>
+            <topic label="size" href="classel_1_1base_1_1_registered_loggers.html#a58a7b8ea964bdf6008701dcfb6609ca5"/>
+            <topic label="unregister" href="classel_1_1base_1_1_registered_loggers.html#aab6f0ce3a99feff11add0bd8b869fcb8"/>
+            <topic label="unregister" href="classel_1_1base_1_1_registered_loggers.html#ad8fa8f829fdb6a03e6f5a38704811e7b"/>
+            <topic label="unregisterAll" href="classel_1_1base_1_1_registered_loggers.html#ac40e62ddf5017beb91c28b472c9628c2"/>
+            <topic label="el::base::Storage" href="classel_1_1base_1_1_registered_loggers.html#acc1efd1b8a3fc5e0028dab98b02e550a"/>
+            <topic label="m_defaultConfigurations" href="classel_1_1base_1_1_registered_loggers.html#ac676f20bb311763d8ab50b6d1f35c8fa"/>
+            <topic label="m_defaultLogBuilder" href="classel_1_1base_1_1_registered_loggers.html#af2aad243e9df5d1aba298214996a4857"/>
+            <topic label="m_logStreamsReference" href="classel_1_1base_1_1_registered_loggers.html#aede1b4dc482f9dede2125d2e8dc16797"/>
+          </topic>
+          <topic label="VRegistry" href="classel_1_1base_1_1_v_registry.html">
+            <topic label="VRegistry" href="classel_1_1base_1_1_v_registry.html#ac4b36d32d3722238024480ce66c52ad0"/>
+            <topic label="acquireLock" href="classel_1_1base_1_1_v_registry.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="allowed" href="classel_1_1base_1_1_v_registry.html#a13b725e3da8935fce5cf3c16fd3a2ff9"/>
+            <topic label="clearModules" href="classel_1_1base_1_1_v_registry.html#a52de90db82e57827ac3d3994f70c17cf"/>
+            <topic label="level" href="classel_1_1base_1_1_v_registry.html#ad68e225738ecde9a5a59e9fcdfdcc1b9"/>
+            <topic label="lock" href="classel_1_1base_1_1_v_registry.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="modules" href="classel_1_1base_1_1_v_registry.html#abc23bea6b9f2884caa6d5aadc8769892"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_v_registry.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="setFromArgs" href="classel_1_1base_1_1_v_registry.html#a811e62d7d016a0714b4363f47216a9da"/>
+            <topic label="setLevel" href="classel_1_1base_1_1_v_registry.html#aea4fb84a03363080ee2501193084f71f"/>
+            <topic label="setModules" href="classel_1_1base_1_1_v_registry.html#a65e202cc547cd11231d3ea0fb70765d0"/>
+            <topic label="vModulesEnabled" href="classel_1_1base_1_1_v_registry.html#ad7a8e939daf6b3d6b949def0a9f65a1f"/>
+            <topic label="m_level" href="classel_1_1base_1_1_v_registry.html#a604df3aa599dc05433ede629d7448146"/>
+            <topic label="m_modules" href="classel_1_1base_1_1_v_registry.html#afc12f719fa1e9f6b931274134e4b85a3"/>
+            <topic label="m_pFlags" href="classel_1_1base_1_1_v_registry.html#aaaa9259d6c6850a83a13a50c112d9b35"/>
+          </topic>
+          <topic label="Storage" href="classel_1_1base_1_1_storage.html">
+            <topic label="Storage" href="classel_1_1base_1_1_storage.html#a4932a8f8a55c3b00467cf2feed6acf59"/>
+            <topic label="~Storage" href="classel_1_1base_1_1_storage.html#a4059a5073b5d73b8671b6c980929da95"/>
+            <topic label="acquireLock" href="classel_1_1base_1_1_storage.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="addFlag" href="classel_1_1base_1_1_storage.html#a3e17c61961f3b2f45e8ec77e3320bed5"/>
+            <topic label="callback" href="classel_1_1base_1_1_storage.html#aab89673e77a71488b6361cb73883b4f0"/>
+            <topic label="commandLineArgs" href="classel_1_1base_1_1_storage.html#a84f3d208bead8a8b2c15834be7f30f8d"/>
+            <topic label="customFormatSpecifiers" href="classel_1_1base_1_1_storage.html#aaafbc69cac920ec79f60e1cf4c2c12d6"/>
+            <topic label="flags" href="classel_1_1base_1_1_storage.html#a0a8da674f034011c50b0479307677855"/>
+            <topic label="hasCustomFormatSpecifier" href="classel_1_1base_1_1_storage.html#ae953cb6e8acafa96c5c1ab2f4826a4a5"/>
+            <topic label="hasFlag" href="classel_1_1base_1_1_storage.html#ab569cf6e09897b0520dee7f4d1fb742e"/>
+            <topic label="hitCounters" href="classel_1_1base_1_1_storage.html#accd5495cdad77254eb24ef8f75cd71ad"/>
+            <topic label="installCallback" href="classel_1_1base_1_1_storage.html#a03535a861f2cb708701cc5c367a61eb1"/>
+            <topic label="installCustomFormatSpecifier" href="classel_1_1base_1_1_storage.html#a355aac8191ab98869a52394cc868a315"/>
+            <topic label="installLogDispatchCallback" href="classel_1_1base_1_1_storage.html#aec36c8e770c0ac354e74d57aba1cfa03"/>
+            <topic label="installPerformanceTrackingCallback" href="classel_1_1base_1_1_storage.html#ad95b77123066f0a49817155dd75583b5"/>
+            <topic label="lock" href="classel_1_1base_1_1_storage.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="logDispatchCallback" href="classel_1_1base_1_1_storage.html#a408d2420169a7f7286552fd153967b8d"/>
+            <topic label="performanceTrackingCallback" href="classel_1_1base_1_1_storage.html#aa511779589370416030d9fc1149a32fd"/>
+            <topic label="preRollOutCallback" href="classel_1_1base_1_1_storage.html#a90a3a886437746acae51cacbd5731572"/>
+            <topic label="registeredLoggers" href="classel_1_1base_1_1_storage.html#af0c2f1e119ac3f111f810a324b6b0d3a"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_storage.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="removeFlag" href="classel_1_1base_1_1_storage.html#aaecbb6ae954d0bf748ac7f3c980a9173"/>
+            <topic label="setApplicationArguments" href="classel_1_1base_1_1_storage.html#addc88a3c2b5720871d4a9ca954f47aa6"/>
+            <topic label="setApplicationArguments" href="classel_1_1base_1_1_storage.html#acef53d022f493b46faa70bb0b5fa4219"/>
+            <topic label="setFlags" href="classel_1_1base_1_1_storage.html#a5df88c56b8d923c20568e50ceb0bdd64"/>
+            <topic label="setLoggingLevel" href="classel_1_1base_1_1_storage.html#a163473357c32184769e8edd993c8b440"/>
+            <topic label="setPreRollOutCallback" href="classel_1_1base_1_1_storage.html#a626165bc5c8808b733707294ce2a0dc8"/>
+            <topic label="uninstallCallback" href="classel_1_1base_1_1_storage.html#a60c43e819ab8f86e7a465f31c146175b"/>
+            <topic label="uninstallCustomFormatSpecifier" href="classel_1_1base_1_1_storage.html#a68e1d3e0b657418ddb0f62f60fe979d2"/>
+            <topic label="uninstallLogDispatchCallback" href="classel_1_1base_1_1_storage.html#a34c2c9f8abff647e22e1ee0b52357f88"/>
+            <topic label="uninstallPerformanceTrackingCallback" href="classel_1_1base_1_1_storage.html#a0e69baf4bf3140fb7bc88bb386d933cf"/>
+            <topic label="unsetPreRollOutCallback" href="classel_1_1base_1_1_storage.html#a2bfdc3a20eeafe158ee8603c805131e4"/>
+            <topic label="validateAfterNCounter" href="classel_1_1base_1_1_storage.html#ad93b7ae53a58a57b85db2dfb310406c6"/>
+            <topic label="validateEveryNCounter" href="classel_1_1base_1_1_storage.html#ae99093b82b3f25b6baf5d3d8b00b27e5"/>
+            <topic label="validateNTimesCounter" href="classel_1_1base_1_1_storage.html#a141d7ef080be7eae11ac6201a538eec9"/>
+            <topic label="vRegistry" href="classel_1_1base_1_1_storage.html#a1ec05ca060ff169569b6ea86da1e30da"/>
+            <topic label="el::base::DefaultLogDispatchCallback" href="classel_1_1base_1_1_storage.html#a42b1de96d584ae4fecbfc2b9aff95052"/>
+            <topic label="el::base::LogDispatcher" href="classel_1_1base_1_1_storage.html#a9b37b28ea1c5f8f862cc89f135711d92"/>
+            <topic label="el::base::MessageBuilder" href="classel_1_1base_1_1_storage.html#a81bbf6fe31fab133d182efa8367304f1"/>
+            <topic label="el::base::PerformanceTracker" href="classel_1_1base_1_1_storage.html#a6a4d7851e1984800be3c230f06a79528"/>
+            <topic label="el::base::Writer" href="classel_1_1base_1_1_storage.html#a7a728edbb2761d151832daa74d5b2736"/>
+            <topic label="el::Helpers" href="classel_1_1base_1_1_storage.html#a2fb8a2c02cbf86247f093c118bed877a"/>
+            <topic label="el::LogBuilder" href="classel_1_1base_1_1_storage.html#a8c584bcf767a4d007311a7408b22ad62"/>
+            <topic label="m_commandLineArgs" href="classel_1_1base_1_1_storage.html#afeaa179496743ec2891ea0a93524f0be"/>
+            <topic label="m_customFormatSpecifiers" href="classel_1_1base_1_1_storage.html#ae369b599364fe21956aa075d45d8bed4"/>
+            <topic label="m_flags" href="classel_1_1base_1_1_storage.html#aeaadb83c15bd787804193d62571534d9"/>
+            <topic label="m_logDispatchCallbacks" href="classel_1_1base_1_1_storage.html#ace1486f4aad89ec7820ac83df0e58979"/>
+            <topic label="m_loggingLevel" href="classel_1_1base_1_1_storage.html#ae95f2c3550b1b345199f0a761826a399"/>
+            <topic label="m_performanceTrackingCallbacks" href="classel_1_1base_1_1_storage.html#a932e179beae9bf3cbc95b76f63a7a7a8"/>
+            <topic label="m_preRollOutCallback" href="classel_1_1base_1_1_storage.html#a4baec56ab2490c003de59411ca7210bc"/>
+            <topic label="m_registeredHitCounters" href="classel_1_1base_1_1_storage.html#a103b2d48149c9903f88ff29f17d4d157"/>
+            <topic label="m_registeredLoggers" href="classel_1_1base_1_1_storage.html#a3f45fdc7ad0262cc8c8391ffe049073f"/>
+            <topic label="m_vRegistry" href="classel_1_1base_1_1_storage.html#a1225686b8bc699e1a94db84ad2cf6711"/>
+          </topic>
+          <topic label="DefaultLogDispatchCallback" href="classel_1_1base_1_1_default_log_dispatch_callback.html">
+            <topic label="acquireLock" href="classel_1_1base_1_1_default_log_dispatch_callback.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="dispatch" href="classel_1_1base_1_1_default_log_dispatch_callback.html#adc7c200395c99534d55cb23cfabafcb1"/>
+            <topic label="enabled" href="classel_1_1base_1_1_default_log_dispatch_callback.html#a1e3089fd19a11965e7b98bd423116bbd"/>
+            <topic label="handle" href="classel_1_1base_1_1_default_log_dispatch_callback.html#acdac30f202c245500e6d94c55eee6d95"/>
+            <topic label="lock" href="classel_1_1base_1_1_default_log_dispatch_callback.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_default_log_dispatch_callback.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="setEnabled" href="classel_1_1base_1_1_default_log_dispatch_callback.html#a05e68cb0b5ea4423913fa2ec4ea306b4"/>
+            <topic label="m_data" href="classel_1_1base_1_1_default_log_dispatch_callback.html#aedfea386b8666f0d7c04c7ce0f69a375"/>
+          </topic>
+          <topic label="DefaultLogBuilder" href="classel_1_1base_1_1_default_log_builder.html">
+            <topic label="build" href="classel_1_1base_1_1_default_log_builder.html#aa8d2f42068115d899ed81de1b0ed360e"/>
+            <topic label="convertToColoredOutput" href="classel_1_1base_1_1_default_log_builder.html#a229244f323f25bdbd7725f8bbf983a17"/>
+          </topic>
+          <topic label="LogDispatcher" href="classel_1_1base_1_1_log_dispatcher.html">
+            <topic label="LogDispatcher" href="classel_1_1base_1_1_log_dispatcher.html#aef59d9895c348f0b3ad5a776276f1c22"/>
+            <topic label="dispatch" href="classel_1_1base_1_1_log_dispatcher.html#a88d4a644364bb454136c85338f05da7a"/>
+            <topic label="m_dispatchAction" href="classel_1_1base_1_1_log_dispatcher.html#ab4a0ccea5722b54579eb31993d9be2c0"/>
+            <topic label="m_logMessage" href="classel_1_1base_1_1_log_dispatcher.html#a2fc20ac639d3e58161d1801b7d0d1cbd"/>
+            <topic label="m_proceed" href="classel_1_1base_1_1_log_dispatcher.html#a7f7ef9cdee31386abbc9cc9627ae2213"/>
+          </topic>
+          <topic label="MessageBuilder" href="classel_1_1base_1_1_message_builder.html">
+            <topic label="MessageBuilder" href="classel_1_1base_1_1_message_builder.html#ac0b1b1be970ceab13eb023ef0399ef87"/>
+            <topic label="ELPP_SIMPLE_LOG" href="classel_1_1base_1_1_message_builder.html#a9f2c449619a925e6b338c3cdc1edd90d"/>
+            <topic label="initialize" href="classel_1_1base_1_1_message_builder.html#a61729d9b620eb7b3e6ac1af69364553c"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_message_builder.html#a740a968d7f2901d49a2e1c348cfea7bf"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_message_builder.html#a42c2a21a6bebb2ad52d22da054cd8f49"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_message_builder.html#a884b9fd5f742f5fa25bbc78d3415a674"/>
+            <topic label="writeIterator" href="classel_1_1base_1_1_message_builder.html#a240ef66bd4e1ff4169594b8138ca2baa"/>
+            <topic label="m_containerLogSeperator" href="classel_1_1base_1_1_message_builder.html#a9d9521a2a49382370a5c63a7605e0cfb"/>
+          </topic>
+          <topic label="NullWriter" href="classel_1_1base_1_1_null_writer.html">
+            <topic label="NullWriter" href="classel_1_1base_1_1_null_writer.html#a936572812bfcd5a34ed928f11cac9e22"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_null_writer.html#a39cb7d47986d70c2b4e9d78d1482da7d"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_null_writer.html#a57cb0f5d93ebac076b8ef94d6eff65a2"/>
+          </topic>
+          <topic label="Writer" href="classel_1_1base_1_1_writer.html">
+            <topic label="Writer" href="classel_1_1base_1_1_writer.html#ac2a835925f37fd2ca3da00998d8a533c"/>
+            <topic label="~Writer" href="classel_1_1base_1_1_writer.html#a6db9eafd05eed680d93c7f29b786a41d"/>
+            <topic label="construct" href="classel_1_1base_1_1_writer.html#a282d82f392a3e6fef9eda47ce53e87dc"/>
+            <topic label="construct" href="classel_1_1base_1_1_writer.html#ab2bc960787eb3c9b01569629dcbeb246"/>
+            <topic label="initializeLogger" href="classel_1_1base_1_1_writer.html#ae687ebbee62b086f318ee4c8d1a655c4"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_writer.html#ab94f0d920c6465a57937e893aa9f5ada"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_writer.html#aea6d7f996ff92e9485a76ad3955f0a29"/>
+            <topic label="processDispatch" href="classel_1_1base_1_1_writer.html#a692d05d209840d6ae8c2c8e0bea21d29"/>
+            <topic label="triggerDispatch" href="classel_1_1base_1_1_writer.html#a1c7d90bd4e00af4e7307f5936e1b6507"/>
+            <topic label="el::Helpers" href="classel_1_1base_1_1_writer.html#a2fb8a2c02cbf86247f093c118bed877a"/>
+            <topic label="m_dispatchAction" href="classel_1_1base_1_1_writer.html#acbea5b77953cf6e39baab015e83a4100"/>
+            <topic label="m_file" href="classel_1_1base_1_1_writer.html#a1eada1175721ba11b4eb6c9515d8e2dc"/>
+            <topic label="m_func" href="classel_1_1base_1_1_writer.html#a57291e0751fe93547d9d5551fb3e8415"/>
+            <topic label="m_level" href="classel_1_1base_1_1_writer.html#a28522bf9b05b4edcc0baf5196645d317"/>
+            <topic label="m_line" href="classel_1_1base_1_1_writer.html#ac71f81d43f58b80ea31ae248e9fe6a23"/>
+            <topic label="m_logger" href="classel_1_1base_1_1_writer.html#a0fab2e9a168b7973bcca4574d05490d2"/>
+            <topic label="m_loggerIds" href="classel_1_1base_1_1_writer.html#a9137860437510e1a26e8b0c1814c7ae7"/>
+            <topic label="m_messageBuilder" href="classel_1_1base_1_1_writer.html#a63763a047d595271cb14f9a80430306b"/>
+            <topic label="m_proceed" href="classel_1_1base_1_1_writer.html#a238593eda90cf32645c4541e738bea9a"/>
+            <topic label="m_verboseLevel" href="classel_1_1base_1_1_writer.html#a335803052b6878c058a4a888279df04d"/>
+          </topic>
+          <topic label="PErrorWriter" href="classel_1_1base_1_1_p_error_writer.html">
+            <topic label="PErrorWriter" href="classel_1_1base_1_1_p_error_writer.html#a60d1ff92d16e3927e2c4b5bb77d34092"/>
+            <topic label="~PErrorWriter" href="classel_1_1base_1_1_p_error_writer.html#a29754e846334ec7bbf2e780d2f28887f"/>
+            <topic label="construct" href="classel_1_1base_1_1_p_error_writer.html#a282d82f392a3e6fef9eda47ce53e87dc"/>
+            <topic label="construct" href="classel_1_1base_1_1_p_error_writer.html#ab2bc960787eb3c9b01569629dcbeb246"/>
+            <topic label="initializeLogger" href="classel_1_1base_1_1_p_error_writer.html#ae687ebbee62b086f318ee4c8d1a655c4"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_p_error_writer.html#ab94f0d920c6465a57937e893aa9f5ada"/>
+            <topic label="operator&lt;&lt;" href="classel_1_1base_1_1_p_error_writer.html#aea6d7f996ff92e9485a76ad3955f0a29"/>
+            <topic label="processDispatch" href="classel_1_1base_1_1_p_error_writer.html#a692d05d209840d6ae8c2c8e0bea21d29"/>
+            <topic label="triggerDispatch" href="classel_1_1base_1_1_p_error_writer.html#a1c7d90bd4e00af4e7307f5936e1b6507"/>
+            <topic label="m_dispatchAction" href="classel_1_1base_1_1_p_error_writer.html#acbea5b77953cf6e39baab015e83a4100"/>
+            <topic label="m_file" href="classel_1_1base_1_1_p_error_writer.html#a1eada1175721ba11b4eb6c9515d8e2dc"/>
+            <topic label="m_func" href="classel_1_1base_1_1_p_error_writer.html#a57291e0751fe93547d9d5551fb3e8415"/>
+            <topic label="m_level" href="classel_1_1base_1_1_p_error_writer.html#a28522bf9b05b4edcc0baf5196645d317"/>
+            <topic label="m_line" href="classel_1_1base_1_1_p_error_writer.html#ac71f81d43f58b80ea31ae248e9fe6a23"/>
+            <topic label="m_logger" href="classel_1_1base_1_1_p_error_writer.html#a0fab2e9a168b7973bcca4574d05490d2"/>
+            <topic label="m_loggerIds" href="classel_1_1base_1_1_p_error_writer.html#a9137860437510e1a26e8b0c1814c7ae7"/>
+            <topic label="m_messageBuilder" href="classel_1_1base_1_1_p_error_writer.html#a63763a047d595271cb14f9a80430306b"/>
+            <topic label="m_proceed" href="classel_1_1base_1_1_p_error_writer.html#a238593eda90cf32645c4541e738bea9a"/>
+            <topic label="m_verboseLevel" href="classel_1_1base_1_1_p_error_writer.html#a335803052b6878c058a4a888279df04d"/>
+          </topic>
+          <topic label="PerformanceTracker" href="classel_1_1base_1_1_performance_tracker.html">
+            <topic label="PerformanceTracker" href="classel_1_1base_1_1_performance_tracker.html#a46ac6a851c6d1cde6742a7ebfeedd1b6"/>
+            <topic label="PerformanceTracker" href="classel_1_1base_1_1_performance_tracker.html#a49e655c1f414f904b2d6a9abb0d344f4"/>
+            <topic label="~PerformanceTracker" href="classel_1_1base_1_1_performance_tracker.html#a19be0aa65c8623273459185277b52b0c"/>
+            <topic label="PerformanceTracker" href="classel_1_1base_1_1_performance_tracker.html#ad56ef28efd71d48b783b2ae055810720"/>
+            <topic label="acquireLock" href="classel_1_1base_1_1_performance_tracker.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="checkpoint" href="classel_1_1base_1_1_performance_tracker.html#aec9a6e149674c5782cc855e49aeb0aaf"/>
+            <topic label="getFormattedTimeTaken" href="classel_1_1base_1_1_performance_tracker.html#a5976689dda6d6e97ce4253e63c83fc99"/>
+            <topic label="getFormattedTimeTaken" href="classel_1_1base_1_1_performance_tracker.html#aaf303bf6478f3bf6bfa7fa7e8196013a"/>
+            <topic label="level" href="classel_1_1base_1_1_performance_tracker.html#a3e0ebd666cc7416dc9b818418266161b"/>
+            <topic label="lock" href="classel_1_1base_1_1_performance_tracker.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="log" href="classel_1_1base_1_1_performance_tracker.html#adf1fcfeac69977b88829381fed76782a"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_performance_tracker.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="base::DefaultPerformanceTrackingCallback" href="classel_1_1base_1_1_performance_tracker.html#ad346c4097e3db22a7434e7da5aa9c5e3"/>
+            <topic label="el::PerformanceTrackingData" href="classel_1_1base_1_1_performance_tracker.html#a7a4da7334b79856c37538484584207a6"/>
+            <topic label="m_blockName" href="classel_1_1base_1_1_performance_tracker.html#ab52f1075abba50159819bc11e60075d2"/>
+            <topic label="m_enabled" href="classel_1_1base_1_1_performance_tracker.html#af073b82b17b91efdd89767e298a46f6d"/>
+            <topic label="m_hasChecked" href="classel_1_1base_1_1_performance_tracker.html#a9df033d2c58225e0ff16051a2fd2f5e2"/>
+            <topic label="m_lastCheckpointId" href="classel_1_1base_1_1_performance_tracker.html#aaca0d90d4d7362448059574ba8c53f3f"/>
+            <topic label="m_lastCheckpointTime" href="classel_1_1base_1_1_performance_tracker.html#a8ce0cac688064d04528b4cdb413bbd05"/>
+            <topic label="m_level" href="classel_1_1base_1_1_performance_tracker.html#aa301e7c31f3c6bce388be75a4ed9273b"/>
+            <topic label="m_loggerId" href="classel_1_1base_1_1_performance_tracker.html#a1c0aa0d5523bf515bd0f14debf4cb745"/>
+            <topic label="m_scopedLog" href="classel_1_1base_1_1_performance_tracker.html#adbb9d42c6f0eec8e7cc6bc1e79430c58"/>
+            <topic label="m_timestampUnit" href="classel_1_1base_1_1_performance_tracker.html#a356f8bda1da441b667f6122b78faf4ca"/>
+          </topic>
+          <topic label="DefaultPerformanceTrackingCallback" href="classel_1_1base_1_1_default_performance_tracking_callback.html">
+            <topic label="acquireLock" href="classel_1_1base_1_1_default_performance_tracking_callback.html#a59db719b214f7118f0919846a85077bf"/>
+            <topic label="enabled" href="classel_1_1base_1_1_default_performance_tracking_callback.html#a1e3089fd19a11965e7b98bd423116bbd"/>
+            <topic label="handle" href="classel_1_1base_1_1_default_performance_tracking_callback.html#afabb8820e1bd9a7fb89508fe11f59d37"/>
+            <topic label="lock" href="classel_1_1base_1_1_default_performance_tracking_callback.html#affb45b35790a7305d0a659562c8104fc"/>
+            <topic label="releaseLock" href="classel_1_1base_1_1_default_performance_tracking_callback.html#a95bb166242b9691f861274a9b8ced2d9"/>
+            <topic label="setEnabled" href="classel_1_1base_1_1_default_performance_tracking_callback.html#a05e68cb0b5ea4423913fa2ec4ea306b4"/>
+            <topic label="m_data" href="classel_1_1base_1_1_default_performance_tracking_callback.html#a050ab4fb5768c8be8e12341264e54e96"/>
+          </topic>
+        </topic>
+        <topic label="LevelHelper" href="classel_1_1_level_helper.html">
+          <topic label="castFromInt" href="classel_1_1_level_helper.html#a1279f27df29a003df5ecc3d0bf4dacbb"/>
+          <topic label="castToInt" href="classel_1_1_level_helper.html#a6576fd7cd6d1d839952145115c6e4b38"/>
+          <topic label="convertFromString" href="classel_1_1_level_helper.html#a4ff401c62931609c849d580fb6ad2028"/>
+          <topic label="convertToString" href="classel_1_1_level_helper.html#a53b3e226a09af6e87c2072c115b3ba1a"/>
+          <topic label="forEachLevel" href="classel_1_1_level_helper.html#a94449b79778145f4c58fd1da6bcaf45d"/>
+          <topic label="kMaxValid" href="classel_1_1_level_helper.html#aa06e80c65db5c336c4aad25872cf9a48"/>
+          <topic label="kMinValid" href="classel_1_1_level_helper.html#a3ecfe43d5b242e9946bad7f61ea4d89d"/>
+        </topic>
+        <topic label="ConfigurationTypeHelper" href="classel_1_1_configuration_type_helper.html">
+          <topic label="castFromInt" href="classel_1_1_configuration_type_helper.html#a62301cbc966cf7e7e2a7b55cc3259996"/>
+          <topic label="castToInt" href="classel_1_1_configuration_type_helper.html#aa53161071fee3ce3f371ab90c62d5fc2"/>
+          <topic label="convertFromString" href="classel_1_1_configuration_type_helper.html#af4a35305e3941fd578e55fec624eba43"/>
+          <topic label="convertToString" href="classel_1_1_configuration_type_helper.html#ad7f0a19c416c4a8ddaf85330b141383c"/>
+          <topic label="forEachConfigType" href="classel_1_1_configuration_type_helper.html#aa0524147f792309fc09e0b8d14826c17"/>
+          <topic label="kMaxValid" href="classel_1_1_configuration_type_helper.html#aa02f3cefb127e7eb97d7e1dd7f51a12d"/>
+          <topic label="kMinValid" href="classel_1_1_configuration_type_helper.html#ab7266e698eb32dec2da285325a66e322"/>
+        </topic>
+        <topic label="Loggable" href="classel_1_1_loggable.html">
+          <topic label="~Loggable" href="classel_1_1_loggable.html#a6891b802d139da4041edf9e36d38e6c4"/>
+          <topic label="log" href="classel_1_1_loggable.html#ad8a2e0ebc11e4bd00ef49fc67db3d59e"/>
+          <topic label="operator&lt;&lt;" href="classel_1_1_loggable.html#a00722a386f498be3ebece2e266fb0f05"/>
+        </topic>
+        <topic label="CustomFormatSpecifier" href="classel_1_1_custom_format_specifier.html">
+          <topic label="CustomFormatSpecifier" href="classel_1_1_custom_format_specifier.html#a1d1bfa8b489d2908ee543023a51e58f6"/>
+          <topic label="formatSpecifier" href="classel_1_1_custom_format_specifier.html#a0be00787b7ca1caedd32e1627d76fd24"/>
+          <topic label="operator==" href="classel_1_1_custom_format_specifier.html#ae17a9fbf8c5a28867308fcb8966a3aa0"/>
+          <topic label="resolver" href="classel_1_1_custom_format_specifier.html#ac426e6771ae35e060313b8683b88adc8"/>
+          <topic label="m_formatSpecifier" href="classel_1_1_custom_format_specifier.html#a3122951d62f4365d2be7125be35e5fa1"/>
+          <topic label="m_resolver" href="classel_1_1_custom_format_specifier.html#ad186240c7e0b0d6738951ea30a6e0ce2"/>
+        </topic>
+        <topic label="Configuration" href="classel_1_1_configuration.html">
+          <topic label="Predicate" href="classel_1_1_configuration_1_1_predicate.html">
+            <topic label="Predicate" href="classel_1_1_configuration_1_1_predicate.html#ab0a4580d6c2d1aaf36a62913fdc38447"/>
+            <topic label="operator()" href="classel_1_1_configuration_1_1_predicate.html#a985dce44ae06854e789a2ad3be11698f"/>
+            <topic label="m_configurationType" href="classel_1_1_configuration_1_1_predicate.html#aca11723d6622619bf438d951914623cf"/>
+            <topic label="m_level" href="classel_1_1_configuration_1_1_predicate.html#adcfd359eb0297cb25f587cf5d84357f0"/>
+          </topic>
+          <topic label="Configuration" href="classel_1_1_configuration.html#a71867a89e7d44cac62e0a436f01b484d"/>
+          <topic label="~Configuration" href="classel_1_1_configuration.html#abaf0a9e1a96bd40800174982c983a4ac"/>
+          <topic label="Configuration" href="classel_1_1_configuration.html#a1a00abf955e028debaaf7556a647dbf5"/>
+          <topic label="configurationType" href="classel_1_1_configuration.html#aab5091dcca176e309c0a2268ff55db0d"/>
+          <topic label="level" href="classel_1_1_configuration.html#a66a96cf46d20204c50718f8a5e3622e2"/>
+          <topic label="log" href="classel_1_1_configuration.html#a82c87e1a93211a1d21da99570f47dd49"/>
+          <topic label="operator=" href="classel_1_1_configuration.html#a80bc5b14f61906633cf695ea62e454a2"/>
+          <topic label="setValue" href="classel_1_1_configuration.html#a04755de11422d7570869433ea157b705"/>
+          <topic label="value" href="classel_1_1_configuration.html#ab31605eb195a222cf32baa4922bb9a3c"/>
+          <topic label="m_configurationType" href="classel_1_1_configuration.html#a1c27ee7c9ebcb905fea87d1f546b9647"/>
+          <topic label="m_level" href="classel_1_1_configuration.html#a2c3043405c48ebe7931cf49626d70213"/>
+          <topic label="m_value" href="classel_1_1_configuration.html#a45acd1edcd253110d23851b04dc8f16e"/>
+        </topic>
+        <topic label="Configurations" href="classel_1_1_configurations.html">
+          <topic label="Parser" href="classel_1_1_configurations_1_1_parser.html">
+            <topic label="ignoreComments" href="classel_1_1_configurations_1_1_parser.html#a4f297abdd39005027c94bf5310064e8d"/>
+            <topic label="isComment" href="classel_1_1_configurations_1_1_parser.html#af32ba1d039b88897f9138dcdc8a304a7"/>
+            <topic label="isConfig" href="classel_1_1_configurations_1_1_parser.html#aa8867a3b5393466a1e099ea5f61e3312"/>
+            <topic label="isLevel" href="classel_1_1_configurations_1_1_parser.html#a8663b749895c6f2ba20fc65f5015dae4"/>
+            <topic label="parseFromFile" href="classel_1_1_configurations_1_1_parser.html#a45def5007bf368c4d2a505af58cd94c2"/>
+            <topic label="parseFromText" href="classel_1_1_configurations_1_1_parser.html#a39ec1b06f673e8155a83d66e08229129"/>
+            <topic label="parseLine" href="classel_1_1_configurations_1_1_parser.html#a69b50228b000bda11bc07fa2e3219b3e"/>
+            <topic label="el::Loggers" href="classel_1_1_configurations_1_1_parser.html#a6efe246b312d02731fb0e1d120c0331d"/>
+          </topic>
+          <topic label="const_iterator" href="classel_1_1_configurations.html#ad9af7a8eeedd58a75eb70bccb334f6dc"/>
+          <topic label="iterator" href="classel_1_1_configurations.html#afc03d2d0a72f5ebf03e1e3b37bd9932d"/>
+          <topic label="Configurations" href="classel_1_1_configurations.html#ae299dd1b60a1df9c013cc23029242a77"/>
+          <topic label="Configurations" href="classel_1_1_configurations.html#ae341bd647734d1180a5a138222d2f1ea"/>
+          <topic label="~Configurations" href="classel_1_1_configurations.html#aed56020af78d32cb4d3e4ac73abf3349"/>
+          <topic label="acquireLock" href="classel_1_1_configurations.html#a59db719b214f7118f0919846a85077bf"/>
+          <topic label="begin" href="classel_1_1_configurations.html#a4ad971b1dddff996d327452d852e55b2"/>
+          <topic label="cbegin" href="classel_1_1_configurations.html#a37f743184e808d7c0028e21e0d0898bb"/>
+          <topic label="cend" href="classel_1_1_configurations.html#ad3ee081b4b25c5d77f971f949bdb9158"/>
+          <topic label="clear" href="classel_1_1_configurations.html#a2a13be6154439286a68d2eccf8417edf"/>
+          <topic label="configurationFile" href="classel_1_1_configurations.html#a18df64bb5cd97bee672160290133141c"/>
+          <topic label="deepCopy" href="classel_1_1_configurations.html#aaf42dab7089a9b1198e2920983ca82bb"/>
+          <topic label="empty" href="classel_1_1_configurations.html#a43ff6484b778c298416c482c07a4df3f"/>
+          <topic label="end" href="classel_1_1_configurations.html#a67c40207c171f23ad50a71db819e84f9"/>
+          <topic label="get" href="classel_1_1_configurations.html#a811d9cc011d945bc7237e6ae1cf2f096"/>
+          <topic label="get" href="classel_1_1_configurations.html#a6da4bc9bd6a14dc44feaf25163e998ca"/>
+          <topic label="hasConfiguration" href="classel_1_1_configurations.html#a1e812370f896b6429bf46b31fcd4e3e0"/>
+          <topic label="hasConfiguration" href="classel_1_1_configurations.html#a5313557efac3b0c78f973a5a1d685277"/>
+          <topic label="list" href="classel_1_1_configurations.html#a072859d3728a75f910c2898f62fd12da"/>
+          <topic label="list" href="classel_1_1_configurations.html#a1c3da2af9177cbfae6f10b9e5dbe615c"/>
+          <topic label="lock" href="classel_1_1_configurations.html#affb45b35790a7305d0a659562c8104fc"/>
+          <topic label="operator!=" href="classel_1_1_configurations.html#a35de8807521651c85acb26532a2623e1"/>
+          <topic label="operator==" href="classel_1_1_configurations.html#ac3e648dc0caa8914f8604650f00bc94b"/>
+          <topic label="parseFromFile" href="classel_1_1_configurations.html#aaa098126d64a5ee04a3944b1a65dcdca"/>
+          <topic label="parseFromText" href="classel_1_1_configurations.html#af262a41dff665a11889261137b62af4a"/>
+          <topic label="registerNew" href="classel_1_1_configurations.html#a561a5d418106a16473ff94d43a4b6b04"/>
+          <topic label="reinitDeepCopy" href="classel_1_1_configurations.html#a529677fb42e78d03c36cdea49f8877c9"/>
+          <topic label="releaseLock" href="classel_1_1_configurations.html#a95bb166242b9691f861274a9b8ced2d9"/>
+          <topic label="set" href="classel_1_1_configurations.html#a332717de96efc851a202b7afcc5e395c"/>
+          <topic label="set" href="classel_1_1_configurations.html#a0ab07520b9409fe9f2c16a705d6936f1"/>
+          <topic label="setFromBase" href="classel_1_1_configurations.html#a4c6db218908b39d23cc09b1a16a18e83"/>
+          <topic label="setGlobally" href="classel_1_1_configurations.html#a56c82c15ea39cc230a5c85ec2c41cbfd"/>
+          <topic label="setGlobally" href="classel_1_1_configurations.html#ac658068ac7454b47284e211e16da5b18"/>
+          <topic label="setRemainingToDefault" href="classel_1_1_configurations.html#ad89b7d2dd750e4d1b3deff800e278fdb"/>
+          <topic label="setToDefault" href="classel_1_1_configurations.html#ab34fa2ed4ac77f47b41e464c2d186239"/>
+          <topic label="size" href="classel_1_1_configurations.html#a58a7b8ea964bdf6008701dcfb6609ca5"/>
+          <topic label="unregister" href="classel_1_1_configurations.html#aaf1afb5a9f8bd1d99c46ac529ea16417"/>
+          <topic label="unregisterAll" href="classel_1_1_configurations.html#a66b4eca5bb71f3fa3f0737105a00890c"/>
+          <topic label="unsafeSet" href="classel_1_1_configurations.html#a05c373510ca513e4f61999c84d512831"/>
+          <topic label="unsafeSetGlobally" href="classel_1_1_configurations.html#a800efb58724eb771027135b282eae512"/>
+          <topic label="unsafeSetIfNotExist" href="classel_1_1_configurations.html#a84c06d47e550b5eda3060f399698ec28"/>
+          <topic label="el::Loggers" href="classel_1_1_configurations.html#a6efe246b312d02731fb0e1d120c0331d"/>
+          <topic label="m_configurationFile" href="classel_1_1_configurations.html#a6be3a0a8bb01ad491342933e0ae11f2c"/>
+          <topic label="m_isFromFile" href="classel_1_1_configurations.html#ae1ffab3e0b9ba3962b1d0d28fab0c887"/>
+        </topic>
+        <topic label="Callback" href="classel_1_1_callback.html">
+          <topic label="Callback" href="classel_1_1_callback.html#a58b0b0516f68247681a6a5da21a9d953"/>
+          <topic label="acquireLock" href="classel_1_1_callback.html#a59db719b214f7118f0919846a85077bf"/>
+          <topic label="enabled" href="classel_1_1_callback.html#a1e3089fd19a11965e7b98bd423116bbd"/>
+          <topic label="handle" href="classel_1_1_callback.html#a8997c7971d65062c374ef24e653061be"/>
+          <topic label="lock" href="classel_1_1_callback.html#affb45b35790a7305d0a659562c8104fc"/>
+          <topic label="releaseLock" href="classel_1_1_callback.html#a95bb166242b9691f861274a9b8ced2d9"/>
+          <topic label="setEnabled" href="classel_1_1_callback.html#a05e68cb0b5ea4423913fa2ec4ea306b4"/>
+          <topic label="m_enabled" href="classel_1_1_callback.html#a3034988053eff262f06a551ea68d699c"/>
+        </topic>
+        <topic label="LogDispatchData" href="classel_1_1_log_dispatch_data.html">
+          <topic label="LogDispatchData" href="classel_1_1_log_dispatch_data.html#a851cab4e58658e3dc8267427fd1e3572"/>
+          <topic label="dispatchAction" href="classel_1_1_log_dispatch_data.html#aee0808c660aa39b34ee69850a2c74c09"/>
+          <topic label="logMessage" href="classel_1_1_log_dispatch_data.html#ad52d4ddc330b6260bf10e9879a653829"/>
+          <topic label="setDispatchAction" href="classel_1_1_log_dispatch_data.html#ae85d1d70f93b81ec57f058cf4bda27d4"/>
+          <topic label="setLogMessage" href="classel_1_1_log_dispatch_data.html#a09fcf704874e1f0a9d9061fafdaa0ce8"/>
+          <topic label="base::LogDispatcher" href="classel_1_1_log_dispatch_data.html#a84d22f9ad5b796e49ff5f15a8c32773d"/>
+          <topic label="m_dispatchAction" href="classel_1_1_log_dispatch_data.html#aaa55d828676b38ad60ab34befd588e9e"/>
+          <topic label="m_logMessage" href="classel_1_1_log_dispatch_data.html#ab96f5a89f384e7e2fafce2efb89c91fc"/>
+        </topic>
+        <topic label="LogDispatchCallback" href="classel_1_1_log_dispatch_callback.html">
+          <topic label="acquireLock" href="classel_1_1_log_dispatch_callback.html#a59db719b214f7118f0919846a85077bf"/>
+          <topic label="enabled" href="classel_1_1_log_dispatch_callback.html#a1e3089fd19a11965e7b98bd423116bbd"/>
+          <topic label="handle" href="classel_1_1_log_dispatch_callback.html#a8997c7971d65062c374ef24e653061be"/>
+          <topic label="lock" href="classel_1_1_log_dispatch_callback.html#affb45b35790a7305d0a659562c8104fc"/>
+          <topic label="releaseLock" href="classel_1_1_log_dispatch_callback.html#a95bb166242b9691f861274a9b8ced2d9"/>
+          <topic label="setEnabled" href="classel_1_1_log_dispatch_callback.html#a05e68cb0b5ea4423913fa2ec4ea306b4"/>
+          <topic label="base::LogDispatcher" href="classel_1_1_log_dispatch_callback.html#a84d22f9ad5b796e49ff5f15a8c32773d"/>
+        </topic>
+        <topic label="PerformanceTrackingCallback" href="classel_1_1_performance_tracking_callback.html">
+          <topic label="acquireLock" href="classel_1_1_performance_tracking_callback.html#a59db719b214f7118f0919846a85077bf"/>
+          <topic label="enabled" href="classel_1_1_performance_tracking_callback.html#a1e3089fd19a11965e7b98bd423116bbd"/>
+          <topic label="handle" href="classel_1_1_performance_tracking_callback.html#a8997c7971d65062c374ef24e653061be"/>
+          <topic label="lock" href="classel_1_1_performance_tracking_callback.html#affb45b35790a7305d0a659562c8104fc"/>
+          <topic label="releaseLock" href="classel_1_1_performance_tracking_callback.html#a95bb166242b9691f861274a9b8ced2d9"/>
+          <topic label="setEnabled" href="classel_1_1_performance_tracking_callback.html#a05e68cb0b5ea4423913fa2ec4ea306b4"/>
+          <topic label="base::PerformanceTracker" href="classel_1_1_performance_tracking_callback.html#a05f271f9cc2531409fe682c6ce0d9feb"/>
+        </topic>
+        <topic label="LogBuilder" href="classel_1_1_log_builder.html">
+          <topic label="~LogBuilder" href="classel_1_1_log_builder.html#ae45008e1c004367ef611b22662e7ed72"/>
+          <topic label="build" href="classel_1_1_log_builder.html#a633b373a3bb9d3e17bdd664aeba4dbc8"/>
+          <topic label="convertToColoredOutput" href="classel_1_1_log_builder.html#a229244f323f25bdbd7725f8bbf983a17"/>
+          <topic label="el::base::DefaultLogDispatchCallback" href="classel_1_1_log_builder.html#a42b1de96d584ae4fecbfc2b9aff95052"/>
+        </topic>
+        <topic label="Logger" href="classel_1_1_logger.html">
+          <topic label="Logger" href="classel_1_1_logger.html#a59b1c5a0f8c5c670e59d2f69f9e39fbb"/>
+          <topic label="Logger" href="classel_1_1_logger.html#a43abea8865d7316f05c8a676a8c04896"/>
+          <topic label="Logger" href="classel_1_1_logger.html#a984de07936a8c783e91496dfa6df69ea"/>
+          <topic label="~Logger" href="classel_1_1_logger.html#ae285e82b96ffcbe715ed1f9e51f2f86e"/>
+          <topic label="Logger" href="classel_1_1_logger.html#a4f21acdbc87e153b7e77066fc9807960"/>
+          <topic label="acquireLock" href="classel_1_1_logger.html#a59db719b214f7118f0919846a85077bf"/>
+          <topic label="configurations" href="classel_1_1_logger.html#aeb57aeaddbb3dcd0cb96114019817142"/>
+          <topic label="configure" href="classel_1_1_logger.html#ad9db621dbf8977bf814dc7baea8dcee4"/>
+          <topic label="enabled" href="classel_1_1_logger.html#a5abaca24ac28bfd4806bea32be193435"/>
+          <topic label="flush" href="classel_1_1_logger.html#a9a89d454008b1ee1a197eec4b92ce22a"/>
+          <topic label="flush" href="classel_1_1_logger.html#a83c85278ebeeef6a24cc112e56c344dd"/>
+          <topic label="id" href="classel_1_1_logger.html#ae51a621df3c835f51f450134ba66f8ac"/>
+          <topic label="initUnflushedCount" href="classel_1_1_logger.html#ae7c1d538f6163b6be5d37dafcaf24610"/>
+          <topic label="isFlushNeeded" href="classel_1_1_logger.html#abdf56c00388c71d1cbaa7e2df4449202"/>
+          <topic label="isValidId" href="classel_1_1_logger.html#af6cf4f266ceb65da9563afd3706f26d6"/>
+          <topic label="lock" href="classel_1_1_logger.html#affb45b35790a7305d0a659562c8104fc"/>
+          <topic label="log" href="classel_1_1_logger.html#a12e1e5f6f91bad8d6a71c3918f09b672"/>
+          <topic label="logBuilder" href="classel_1_1_logger.html#aead5b130c5141d2024740b03ab4b45d7"/>
+          <topic label="operator=" href="classel_1_1_logger.html#a2bfb4ed37f3281a701f20fb21a4cac62"/>
+          <topic label="parentApplicationName" href="classel_1_1_logger.html#a9e56e468bccd7b52281e7bbc75892431"/>
+          <topic label="reconfigure" href="classel_1_1_logger.html#adfd57ab27fb398cc980a3edfab92927e"/>
+          <topic label="releaseLock" href="classel_1_1_logger.html#a95bb166242b9691f861274a9b8ced2d9"/>
+          <topic label="resolveLoggerFormatSpec" href="classel_1_1_logger.html#a7e513cde53aa820eaff79c54982b7524"/>
+          <topic label="setLogBuilder" href="classel_1_1_logger.html#a737340322cc9d9d20febd7131c1e262f"/>
+          <topic label="setParentApplicationName" href="classel_1_1_logger.html#a6890af8910adba26b01ef029429c4f15"/>
+          <topic label="stream" href="classel_1_1_logger.html#add143e52020c9df44b0d40cd6006a65f"/>
+          <topic label="typedConfigurations" href="classel_1_1_logger.html#ac1d34e77892ea506b011d5279b6b139d"/>
+          <topic label="el::base::DefaultLogDispatchCallback" href="classel_1_1_logger.html#a42b1de96d584ae4fecbfc2b9aff95052"/>
+          <topic label="el::base::LogDispatcher" href="classel_1_1_logger.html#a9b37b28ea1c5f8f862cc89f135711d92"/>
+          <topic label="el::base::MessageBuilder" href="classel_1_1_logger.html#a81bbf6fe31fab133d182efa8367304f1"/>
+          <topic label="el::base::PerformanceTracker" href="classel_1_1_logger.html#a6a4d7851e1984800be3c230f06a79528"/>
+          <topic label="el::base::PErrorWriter" href="classel_1_1_logger.html#a2a368b9be1b8d6a29d4bb92a11807f39"/>
+          <topic label="el::base::RegisteredLoggers" href="classel_1_1_logger.html#a574ecee25e8d578f76060a95a2fe7c9e"/>
+          <topic label="el::base::Storage" href="classel_1_1_logger.html#acc1efd1b8a3fc5e0028dab98b02e550a"/>
+          <topic label="el::base::Writer" href="classel_1_1_logger.html#a7a728edbb2761d151832daa74d5b2736"/>
+          <topic label="el::Helpers" href="classel_1_1_logger.html#a2fb8a2c02cbf86247f093c118bed877a"/>
+          <topic label="el::Loggers" href="classel_1_1_logger.html#a6efe246b312d02731fb0e1d120c0331d"/>
+          <topic label="el::LogMessage" href="classel_1_1_logger.html#a22965b691242a9f61d443ba03fce3e35"/>
+          <topic label="m_configurations" href="classel_1_1_logger.html#a361a27c72c8056a14424a5ca2e25bdf8"/>
+          <topic label="m_id" href="classel_1_1_logger.html#a85d05cd89396fed50f7a9e290310dd08"/>
+          <topic label="m_isConfigured" href="classel_1_1_logger.html#acb6c47ff0a401c5e662e1a93df608f27"/>
+          <topic label="m_logBuilder" href="classel_1_1_logger.html#a6f8b15fe795c2670d106f4fcc3ab405f"/>
+          <topic label="m_logStreamsReference" href="classel_1_1_logger.html#ab1c9be1a377fa368cfbf836671eb367e"/>
+          <topic label="m_parentApplicationName" href="classel_1_1_logger.html#af45edcb6c708fa816d62a8c2502816ba"/>
+          <topic label="m_stream" href="classel_1_1_logger.html#a137a903f3499933e06e14ed8b2d8c2ad"/>
+          <topic label="m_typedConfigurations" href="classel_1_1_logger.html#a9f5c5be3d961685635263d90a1f36acc"/>
+          <topic label="m_unflushedCount" href="classel_1_1_logger.html#a2d562702b66bbc4d749ffeea6949f8f4"/>
+        </topic>
+        <topic label="LogMessage" href="classel_1_1_log_message.html">
+          <topic label="LogMessage" href="classel_1_1_log_message.html#a6cb875167d28c57e11877f833d733e04"/>
+          <topic label="file" href="classel_1_1_log_message.html#a8f72164d7bf31ea3b15a5c0201fca0c4"/>
+          <topic label="func" href="classel_1_1_log_message.html#ae09cdff5620dcf8269b2b83bea722a2a"/>
+          <topic label="level" href="classel_1_1_log_message.html#a09514a3bb7deae447c3141bc55b52d06"/>
+          <topic label="line" href="classel_1_1_log_message.html#a4bc97e6670d890cae719e3e9680b8373"/>
+          <topic label="logger" href="classel_1_1_log_message.html#ae67b30a16a4115148ee32c9b2c91e03c"/>
+          <topic label="message" href="classel_1_1_log_message.html#a0f34882ed8102061bb9bb247cb08a5c3"/>
+          <topic label="verboseLevel" href="classel_1_1_log_message.html#a52e91b0dd3e5af96642622cc2a67aa88"/>
+          <topic label="m_file" href="classel_1_1_log_message.html#a5c0d7fe55cf8bd4e83155e5f6fb9f88b"/>
+          <topic label="m_func" href="classel_1_1_log_message.html#ad411e3427b34f63ad7f6e6ba3e329972"/>
+          <topic label="m_level" href="classel_1_1_log_message.html#a90ec35b2d76925821551516266edc68d"/>
+          <topic label="m_line" href="classel_1_1_log_message.html#a91c947e40289bab12a97b4246005ccba"/>
+          <topic label="m_logger" href="classel_1_1_log_message.html#a821ca1ad0bfc7bd8811a1dc1c44eb970"/>
+          <topic label="m_message" href="classel_1_1_log_message.html#a8d529922e99c38c22ec8e49f6949e26e"/>
+          <topic label="m_verboseLevel" href="classel_1_1_log_message.html#a1175df6a8d538848353fb425e2703f0e"/>
+        </topic>
+        <topic label="PerformanceTrackingData" href="classel_1_1_performance_tracking_data.html">
+          <topic label="DataType" href="classel_1_1_performance_tracking_data.html#a1b45d5b1d5e76d0687aaffcf08302f17"/>
+          <topic label="PerformanceTrackingData" href="classel_1_1_performance_tracking_data.html#afea4cb5328e6fdb27fcf8fc14acbdb40"/>
+          <topic label="blockName" href="classel_1_1_performance_tracking_data.html#a929601137dcef83759a563a94ef7aad4"/>
+          <topic label="checkpointId" href="classel_1_1_performance_tracking_data.html#a17c92b7a9ea243eb37f3fa903ce6e06d"/>
+          <topic label="dataType" href="classel_1_1_performance_tracking_data.html#a38dc15a2015be16e23aafd3c36332dbf"/>
+          <topic label="endTime" href="classel_1_1_performance_tracking_data.html#a83db09f7d5ae3aec4c5c0aa3984b855e"/>
+          <topic label="file" href="classel_1_1_performance_tracking_data.html#a51512448de4eb220514f193a2fc14849"/>
+          <topic label="firstCheckpoint" href="classel_1_1_performance_tracking_data.html#a5bf01d3c580627a9a564cc6043275287"/>
+          <topic label="formattedTimeTaken" href="classel_1_1_performance_tracking_data.html#a44a4c82d400155bd147eb455025c88fc"/>
+          <topic label="func" href="classel_1_1_performance_tracking_data.html#a12fe4fe91e83cbff7d5bb4736176ec30"/>
+          <topic label="init" href="classel_1_1_performance_tracking_data.html#a13e58ffa9fa5e011fa342bf661c960d0"/>
+          <topic label="lastCheckpointTime" href="classel_1_1_performance_tracking_data.html#a2cf2fe171e15284e94775f98aeb51906"/>
+          <topic label="line" href="classel_1_1_performance_tracking_data.html#a82529dd8d0c92bf377ec269cb4f69a45"/>
+          <topic label="loggerId" href="classel_1_1_performance_tracking_data.html#ae8ad846d155762ae7cab3fb67760f5a1"/>
+          <topic label="performanceTracker" href="classel_1_1_performance_tracking_data.html#ad19493aa3f826fdee28b59630ba3ecae"/>
+          <topic label="startTime" href="classel_1_1_performance_tracking_data.html#add41478967359f86bdf2cbc5244e1ae0"/>
+          <topic label="el::base::PerformanceTracker" href="classel_1_1_performance_tracking_data.html#a6a4d7851e1984800be3c230f06a79528"/>
+          <topic label="m_checkpointId" href="classel_1_1_performance_tracking_data.html#ac483d0609a24d6b1f7873a2e725cde67"/>
+          <topic label="m_dataType" href="classel_1_1_performance_tracking_data.html#aca578f620291a67ea650ed8c6b95da17"/>
+          <topic label="m_file" href="classel_1_1_performance_tracking_data.html#a719b7af28f4e75eec44b69a6a88efd28"/>
+          <topic label="m_firstCheckpoint" href="classel_1_1_performance_tracking_data.html#ae0f2463ae6518c0aa3e3c56b09c35bf9"/>
+          <topic label="m_formattedTimeTaken" href="classel_1_1_performance_tracking_data.html#a7caf922940b3fa3cdceed4af4e1d8ff9"/>
+          <topic label="m_func" href="classel_1_1_performance_tracking_data.html#a033e7822115c557536720ab6d907ae0a"/>
+          <topic label="m_line" href="classel_1_1_performance_tracking_data.html#aca54bfddc19189550144de109aeab5b0"/>
+          <topic label="m_performanceTracker" href="classel_1_1_performance_tracking_data.html#a9fe3b958fb585f4f639680e00dc1fd6d"/>
+        </topic>
+        <topic label="SysLogInitializer" href="classel_1_1_sys_log_initializer.html">
+          <topic label="SysLogInitializer" href="classel_1_1_sys_log_initializer.html#aae71ee83f45c4cf770fbc6c6e87d9406"/>
+          <topic label="~SysLogInitializer" href="classel_1_1_sys_log_initializer.html#ade55d170ff1f11b55fb1bd6a6b940894"/>
+        </topic>
+        <topic label="Helpers" href="classel_1_1_helpers.html">
+          <topic label="commandLineArgs" href="classel_1_1_helpers.html#a83bab44f77a4961f8f5231e7ce9917bb"/>
+          <topic label="convertTemplateToStdString" href="classel_1_1_helpers.html#a8b032e32cd042ddc4fef4e814bad1082"/>
+          <topic label="crashAbort" href="classel_1_1_helpers.html#a6e16f0e07ce40e0659fcfec4ea5b6fe1"/>
+          <topic label="hasCustomFormatSpecifier" href="classel_1_1_helpers.html#a154ce041890564d1ae5f87184e24f13d"/>
+          <topic label="installCustomFormatSpecifier" href="classel_1_1_helpers.html#aa6de15a09db4f2a6763a6652c0ea12b1"/>
+          <topic label="installLogDispatchCallback" href="classel_1_1_helpers.html#a3f3e84057567a8ac568a35899318544a"/>
+          <topic label="installPerformanceTrackingCallback" href="classel_1_1_helpers.html#a93e2727d3a7a5c06ccc41a2ae7fe1835"/>
+          <topic label="installPreRollOutCallback" href="classel_1_1_helpers.html#a5fd7ad6d636c28d2e706203d0c43cf8c"/>
+          <topic label="logCrashReason" href="classel_1_1_helpers.html#abf1ae61428740e1e6c5d5f0c36500faa"/>
+          <topic label="logDispatchCallback" href="classel_1_1_helpers.html#aa01d59ca141bc75c4fdd78a34234611b"/>
+          <topic label="performanceTrackingCallback" href="classel_1_1_helpers.html#a007844d35095b26301c9218b29d74049"/>
+          <topic label="setArgs" href="classel_1_1_helpers.html#a68748f618a0c2840b96dc12532b09bf0"/>
+          <topic label="setArgs" href="classel_1_1_helpers.html#afac7a023e2c13a62d0295cf0239eb848"/>
+          <topic label="setCrashHandler" href="classel_1_1_helpers.html#a4155f6fff0074ad93aa56fd7fe064097"/>
+          <topic label="setStorage" href="classel_1_1_helpers.html#af78fd39725281e3dddd7c0fbdc14f11f"/>
+          <topic label="storage" href="classel_1_1_helpers.html#a13a5365de36b3af27660cf9b358829d3"/>
+          <topic label="uninstallCustomFormatSpecifier" href="classel_1_1_helpers.html#a23ec73819c25758d604d149ad0c6b73f"/>
+          <topic label="uninstallLogDispatchCallback" href="classel_1_1_helpers.html#ac94b44cc8d399a5842703126478300d7"/>
+          <topic label="uninstallPerformanceTrackingCallback" href="classel_1_1_helpers.html#af1c5a4951991179dca4879ba05fb67a6"/>
+          <topic label="uninstallPreRollOutCallback" href="classel_1_1_helpers.html#ab829e5ed1b43bf965f5c288bc0280376"/>
+          <topic label="validateFileRolling" href="classel_1_1_helpers.html#aea3fcde8a07e6f7278574e9563d8ab6b"/>
+        </topic>
+        <topic label="Loggers" href="classel_1_1_loggers.html">
+          <topic label="ScopedAddFlag" href="classel_1_1_loggers_1_1_scoped_add_flag.html">
+            <topic label="ScopedAddFlag" href="classel_1_1_loggers_1_1_scoped_add_flag.html#a13e0b1052cd1a7a15fae63fd6454d598"/>
+            <topic label="~ScopedAddFlag" href="classel_1_1_loggers_1_1_scoped_add_flag.html#a81902a30dc450a8f9b154ae72e0250d7"/>
+            <topic label="m_flag" href="classel_1_1_loggers_1_1_scoped_add_flag.html#a476568b8e4ce169e665fa3104f477482"/>
+          </topic>
+          <topic label="ScopedRemoveFlag" href="classel_1_1_loggers_1_1_scoped_remove_flag.html">
+            <topic label="ScopedRemoveFlag" href="classel_1_1_loggers_1_1_scoped_remove_flag.html#a7ae9a1cde34e1145d8b90b639cc12dc1"/>
+            <topic label="~ScopedRemoveFlag" href="classel_1_1_loggers_1_1_scoped_remove_flag.html#a594658e9dbe13ecbdfa136decb89645c"/>
+            <topic label="m_flag" href="classel_1_1_loggers_1_1_scoped_remove_flag.html#a0f82ce4e2297a4642ffcf44041cddd7f"/>
+          </topic>
+          <topic label="addFlag" href="classel_1_1_loggers.html#aedd2de02dd701b0f20ddaa10f1f728f1"/>
+          <topic label="clearVModules" href="classel_1_1_loggers.html#afcf50abc11530eb7f28fcab7eab27e4f"/>
+          <topic label="configureFromArg" href="classel_1_1_loggers.html#a28acf6f2b1ea7e5edd1b2560cde82406"/>
+          <topic label="configureFromGlobal" href="classel_1_1_loggers.html#a9992995a85745639aa9aa5a2df2255f5"/>
+          <topic label="defaultConfigurations" href="classel_1_1_loggers.html#a96f2336fafdc3ef2c4df01a73ae5ffb7"/>
+          <topic label="defaultTypedConfigurations" href="classel_1_1_loggers.html#af296007c3eb3b71602ec80ff59875b46"/>
+          <topic label="flushAll" href="classel_1_1_loggers.html#a1834480e970c16817459ca3ee26b44b5"/>
+          <topic label="getLogger" href="classel_1_1_loggers.html#aaebf868c558e3ba1d2e4f073a00f1d4a"/>
+          <topic label="hasFlag" href="classel_1_1_loggers.html#a591a45565c1eb7073ec3a979df8b5a4c"/>
+          <topic label="hasLogger" href="classel_1_1_loggers.html#a2d7a056cb7d9da3d96c709a2fac5c2bb"/>
+          <topic label="logStreamsReference" href="classel_1_1_loggers.html#ad17312c9474d94bc98efcaf08ca279a4"/>
+          <topic label="populateAllLoggerIds" href="classel_1_1_loggers.html#adea07ec6cbc1dfc50f939d69dcac7160"/>
+          <topic label="reconfigureAllLoggers" href="classel_1_1_loggers.html#ac834df0f5e9e3dab18e70321a2543af7"/>
+          <topic label="reconfigureAllLoggers" href="classel_1_1_loggers.html#a1ebd33bc0208b430f41508e34509c7c9"/>
+          <topic label="reconfigureAllLoggers" href="classel_1_1_loggers.html#ab24b99e5bb3c907d1418ee3266f15397"/>
+          <topic label="reconfigureLogger" href="classel_1_1_loggers.html#a888aca5bdccccc322da2eed430909d04"/>
+          <topic label="reconfigureLogger" href="classel_1_1_loggers.html#a105f776fe19cb7fa2fccd2993d9f7a7c"/>
+          <topic label="reconfigureLogger" href="classel_1_1_loggers.html#aef49fdae329cefcc1c01428568dced4b"/>
+          <topic label="removeFlag" href="classel_1_1_loggers.html#a23fcb4b492f70a34285c45c0b5e2e515"/>
+          <topic label="setDefaultConfigurations" href="classel_1_1_loggers.html#ab9fb62a8ff904ff887fefde3282f46a4"/>
+          <topic label="setLoggingLevel" href="classel_1_1_loggers.html#afbee019d722fef5148d8355f45ba7993"/>
+          <topic label="setVerboseLevel" href="classel_1_1_loggers.html#a826b238fe4f3719305a2d19f0c121fa0"/>
+          <topic label="setVModules" href="classel_1_1_loggers.html#acbc5e2cef230331c57f364852a671507"/>
+          <topic label="unregisterLogger" href="classel_1_1_loggers.html#a201d261ea57c070f07f0bf2006158587"/>
+          <topic label="verboseLevel" href="classel_1_1_loggers.html#ad4840bb4b6b80746a2212cf3cc058142"/>
+        </topic>
+        <topic label="VersionInfo" href="classel_1_1_version_info.html">
+          <topic label="releaseDate" href="classel_1_1_version_info.html#ab23c2545115898f4071fa4e125204946"/>
+          <topic label="version" href="classel_1_1_version_info.html#a6fee512d52168445b2118ff2b31b4058"/>
+        </topic>
+      </topic>
+      <topic label="GaAppBaseLib">
+        <topic label="ArgumentFaultException" href="class_ga_app_base_lib_1_1_argument_fault_exception.html">
+          <topic label="ArgumentFaultException" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#af1dcb9ea0533f06d826d03df50d54425"/>
+          <topic label="~ArgumentFaultException" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#ace8826f86500287f94f238d0540a411e"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#a840e0c696dd4c63644a89e1be18837b4"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#aa66ffc4b4fd3534cdcfb80635a8d6686"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="mArgumentName" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#ac97d1b87a26db16380f2f3fd7d199131"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+        <topic label="ExceptionBase" href="class_ga_app_base_lib_1_1_exception_base.html">
+          <topic label="ExceptionBase" href="class_ga_app_base_lib_1_1_exception_base.html#adb2fab334498166b67442d896515e32c"/>
+          <topic label="~ExceptionBase" href="class_ga_app_base_lib_1_1_exception_base.html#a2d1649167a2fa2d2f9fd47b01f053ab6"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_exception_base.html#acf3e140c00772696646c68d05cab6e95"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_exception_base.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_exception_base.html#ad0d4058a3c3e2f72c884fd79cf6f5a6a"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_exception_base.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_exception_base.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_exception_base.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_exception_base.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+        <topic label="LogicFaultException" href="class_ga_app_base_lib_1_1_logic_fault_exception.html">
+          <topic label="LogicFaultException" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a1990324ade665564f9624f34ca2af265"/>
+          <topic label="~LogicFaultException" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#ad06ea367ad1f80e6376e8deb3eef8a4f"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a5ea05aafa06a369b4f4108b94c460375"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a81ffd73dc1f64eeaf1f23a23ed1d9aa1"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+        <topic label="SystemCallException" href="class_ga_app_base_lib_1_1_system_call_exception.html">
+          <topic label="SystemCallException" href="class_ga_app_base_lib_1_1_system_call_exception.html#a11db80e6b9710dc94af2c05bd69f7fdd"/>
+          <topic label="~SystemCallException" href="class_ga_app_base_lib_1_1_system_call_exception.html#ac14f97c6ae013f55d99c8fc1d78bfc1c"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_system_call_exception.html#a0f8bccc015857fbacc03254057087aad"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_system_call_exception.html#a8c6a713efb616ef8d9197e5232833268"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_system_call_exception.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="mCode" href="class_ga_app_base_lib_1_1_system_call_exception.html#a2a7c737054924d7321931f0a060738a3"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_system_call_exception.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_system_call_exception.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_system_call_exception.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_system_call_exception.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+        <topic label="LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html">
+          <topic label="~LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#a5dbbe260aad29b9ee912075cdbfe67cc"/>
+          <topic label="LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#af7cde8d1880eb9147c9f5e20f5155eb3"/>
+          <topic label="LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#a0fd35a52291133f3e2bbfca73f7ae62a"/>
+          <topic label="getBuildDescription" href="class_ga_app_base_lib_1_1_lib_version_info.html#a0b9f011868b98efee3d33fbb9ce413ab"/>
+          <topic label="getBuildTime" href="class_ga_app_base_lib_1_1_lib_version_info.html#a808a62238d1fe032588b9964e32fa90c"/>
+          <topic label="getInstance" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab8735af036f7ab89efc909da3b79bfc0"/>
+          <topic label="getMajorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#acbd304ff83d576ee2c55a5152976c57d"/>
+          <topic label="getMinorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a9e50deeeef67e478dcd188a75bf53f20"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_lib_version_info.html#a2da6c13dda9e12b301eb309d0443a075"/>
+          <topic label="getPatchVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a51b5095973c85a694033f229102f57cc"/>
+          <topic label="getSvnBuildDate" href="class_ga_app_base_lib_1_1_lib_version_info.html#aa347e50bcb1e3ea0137a219639a84d26"/>
+          <topic label="getSvnCommitDate" href="class_ga_app_base_lib_1_1_lib_version_info.html#adec01cf0c0f8dbeff44a9964ba8878b3"/>
+          <topic label="getSvnRevision" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab0717819f3b97ad04bde9f261759921e"/>
+          <topic label="getSvnRevisionRange" href="class_ga_app_base_lib_1_1_lib_version_info.html#a2ae92bbb5edbe180d5e166e1797a19f1"/>
+          <topic label="getSvnUrl" href="class_ga_app_base_lib_1_1_lib_version_info.html#a1eebcf96525f0751ce4192d29df57754"/>
+          <topic label="getTweakVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4531582bd334600209eef3b7804a213c"/>
+          <topic label="getVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a35590e3133a926b0d050b0e0878505f0"/>
+          <topic label="getVersionText" href="class_ga_app_base_lib_1_1_lib_version_info.html#a7d59951c3918554f03a8be41711b9aa4"/>
+          <topic label="hasLocalModifications" href="class_ga_app_base_lib_1_1_lib_version_info.html#abaf575b5c971b5b74f36c93806734a7b"/>
+          <topic label="hasSvnInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#a7d243826287902c1a36ddcdcc0b48842"/>
+          <topic label="hasUnversionedFiles" href="class_ga_app_base_lib_1_1_lib_version_info.html#a50a2470394314d46650d9a48a2890539"/>
+          <topic label="isDebugVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#adab557a707b8be036f4167391c899dd5"/>
+          <topic label="isTaggedVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab00ccbcd0e05cdd99657105456f0072d"/>
+          <topic label="operator=" href="class_ga_app_base_lib_1_1_lib_version_info.html#af48d344a7347c745c67fcf17c5c0c2f9"/>
+          <topic label="printInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#ae2383793eec7df65d2c19f223da2d1f7"/>
+          <topic label="mBuildDescription" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab1c7e69c17e24422c85fd0cfa3ffac48"/>
+          <topic label="mBuildTime" href="class_ga_app_base_lib_1_1_lib_version_info.html#a120dd8280ae6020115aac29631553909"/>
+          <topic label="mHasSvnInformations" href="class_ga_app_base_lib_1_1_lib_version_info.html#a203d0deec735108ba5b99f24d40ca2b4"/>
+          <topic label="mInternalVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#ada95d88af6eea8a63283bb9df2e0ffb8"/>
+          <topic label="mIsDebugVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a35b39d96713b0507568c2432cd7d070d"/>
+          <topic label="mLibName" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4f1897dee5c5414f70f0ccd1725638ba"/>
+          <topic label="mMajorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#af6c66eabf36ba743b1a8d9ea57f34c26"/>
+          <topic label="mMinorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4370ed161379dca20008198ae2ec7b41"/>
+          <topic label="mSvnBuildDate" href="class_ga_app_base_lib_1_1_lib_version_info.html#a128b8d79763677431652b0cff5e89dd7"/>
+          <topic label="mSvnDateCommit" href="class_ga_app_base_lib_1_1_lib_version_info.html#af11a901df02fa9fd855a8b0028718ce8"/>
+          <topic label="mSvnHasLocalModifications" href="class_ga_app_base_lib_1_1_lib_version_info.html#a0fb22010c326ff58914ed9038b8794da"/>
+          <topic label="mSvnHasUnversionedFiles" href="class_ga_app_base_lib_1_1_lib_version_info.html#a5773acff516a579361935c13c006ab68"/>
+          <topic label="mSvnIsTaggedVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4d5756ef5a5a4b7ef74cd74ef1354de3"/>
+          <topic label="mSvnRevision" href="class_ga_app_base_lib_1_1_lib_version_info.html#a2d8f4cefc3e7348b7e4c5efd0ba7108b"/>
+          <topic label="mSvnRevisionRange" href="class_ga_app_base_lib_1_1_lib_version_info.html#a42539025b10ee63ab827e690f97ed489"/>
+          <topic label="mSvnURL" href="class_ga_app_base_lib_1_1_lib_version_info.html#aa06b8a6bddff108df5dbdea1e602be79"/>
+          <topic label="mVersionPatch" href="class_ga_app_base_lib_1_1_lib_version_info.html#a451db5dbc81ae7b10c79dca1077c77b6"/>
+          <topic label="mVersionTweak" href="class_ga_app_base_lib_1_1_lib_version_info.html#ac917cce0623500d1ad7f52a83313e265"/>
+        </topic>
+        <topic label="LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html">
+          <topic label="~LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html#ab91955f76b255a637ef44559d0a70bc8"/>
+          <topic label="LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html#ae56c42ddfc48cf6a695ac9d955a731c8"/>
+          <topic label="LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html#a80abfe3acb3c2d5f533bbdbcfe7ba311"/>
+          <topic label="addModuleInstance" href="class_ga_app_base_lib_1_1_lib_container.html#adff16ac68475f43516e5aca00056890f"/>
+          <topic label="getInstance" href="class_ga_app_base_lib_1_1_lib_container.html#a9b87e8cc738a6e3ae618d02a73c8de4b"/>
+          <topic label="getModuleInstance" href="class_ga_app_base_lib_1_1_lib_container.html#aeea9de2ef15720e6f1acf98e91f22a06"/>
+          <topic label="loadLib" href="class_ga_app_base_lib_1_1_lib_container.html#a4ddeae48fdd462901701981c23efc948"/>
+          <topic label="modulesCleanUp" href="class_ga_app_base_lib_1_1_lib_container.html#a9a232d3ca2a457b0c66838ce9fcf7bd3"/>
+          <topic label="modulesPrepareStart" href="class_ga_app_base_lib_1_1_lib_container.html#a88cae34b1b91b48ed9f2c309a7c23cbd"/>
+          <topic label="operator=" href="class_ga_app_base_lib_1_1_lib_container.html#a481f99f66be2f371384e2dd2dfd9aa69"/>
+          <topic label="printModuleList" href="class_ga_app_base_lib_1_1_lib_container.html#a78af099f595bb4631b556305b2c1d2b1"/>
+          <topic label="removeModuleInstance" href="class_ga_app_base_lib_1_1_lib_container.html#a6f328ba5928a1ae17a1ef59b0f617637"/>
+          <topic label="unloadLib" href="class_ga_app_base_lib_1_1_lib_container.html#a2bcb7fc8c33e0914a3b42c76a643c232"/>
+          <topic label="mLibraryList" href="class_ga_app_base_lib_1_1_lib_container.html#a39650f4bdfe096986661bca99e369b54"/>
+          <topic label="mModuleList" href="class_ga_app_base_lib_1_1_lib_container.html#a5b2cfa6b3760593d1a6708e14dc45b27"/>
+        </topic>
+        <topic label="LibInstance" href="class_ga_app_base_lib_1_1_lib_instance.html">
+          <topic label="LibInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a92700bcb8b5830581b00f632df1c1628"/>
+          <topic label="~LibInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a851560c3b3463879854d3c614e88ce65"/>
+          <topic label="createNewInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a1c133ea77bf3d5fb23e9af29e3ba2ec8"/>
+          <topic label="deleteInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a3a4d6e053f3a243202893b85c5cc59dd"/>
+          <topic label="getInstanceCount" href="class_ga_app_base_lib_1_1_lib_instance.html#a48831ff1ca9f92341e9e48c1f931ac05"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_lib_instance.html#acdf6f00f0297432733f5deaa8567650e"/>
+          <topic label="mHandle" href="class_ga_app_base_lib_1_1_lib_instance.html#a4b42a47423edd052d80ca09b24bfe2f6"/>
+          <topic label="mInstanceCounter" href="class_ga_app_base_lib_1_1_lib_instance.html#ae6815cb4aae1f71b650a8ecc4d0b2d19"/>
+          <topic label="mLibName" href="class_ga_app_base_lib_1_1_lib_instance.html#a4b8af403d5b6517736eb6c8591356b9a"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_lib_instance.html#a2be96507c76d96e7aa2a0def099a6bd6"/>
+          <topic label="mPtCreateFkt" href="class_ga_app_base_lib_1_1_lib_instance.html#ae13e99a461718f45d10e0bda3838e017"/>
+          <topic label="mPtDeleteFkt" href="class_ga_app_base_lib_1_1_lib_instance.html#a06aface2041585c59795a4488a23e69f"/>
+        </topic>
+        <topic label="ModuleInstance" href="class_ga_app_base_lib_1_1_module_instance.html">
+          <topic label="ModuleInstance" href="class_ga_app_base_lib_1_1_module_instance.html#a32efc2b06020e3fb3428ecaf58be62ad"/>
+          <topic label="~ModuleInstance" href="class_ga_app_base_lib_1_1_module_instance.html#a18d5abaf62537100e02eacc14aeadb52"/>
+          <topic label="cleanUp" href="class_ga_app_base_lib_1_1_module_instance.html#ab8223afbe1293012a3cc26571b3a9f73"/>
+          <topic label="execCommand" href="class_ga_app_base_lib_1_1_module_instance.html#ac10ddf32f8084100f2f466bc206c5531"/>
+          <topic label="getLibInstance" href="class_ga_app_base_lib_1_1_module_instance.html#adcca8a0c4de9de2cd07ed503b4d7b3e8"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_module_instance.html#afbcef36cc220ed0dcbf59fe8b04ff3c3"/>
+          <topic label="prepareStart" href="class_ga_app_base_lib_1_1_module_instance.html#a4727344fe516a5edfb4409e317be9526"/>
+          <topic label="instance" href="class_ga_app_base_lib_1_1_module_instance.html#a819c1cc9b48ce153e1c680a5c2a75743"/>
+          <topic label="mConfigNode" href="class_ga_app_base_lib_1_1_module_instance.html#abaf1bef6023a28a93be2ec3f7fdd08d2"/>
+          <topic label="mInstanceName" href="class_ga_app_base_lib_1_1_module_instance.html#afa76f880d89a63aa8c6edfe9a0499e2f"/>
+          <topic label="mLibInstance" href="class_ga_app_base_lib_1_1_module_instance.html#a6da2c51e33e774857f617af74b7c2aa5"/>
+        </topic>
+        <topic label="ModuleInterface" href="class_ga_app_base_lib_1_1_module_interface.html">
+          <topic label="ModuleInterface" href="class_ga_app_base_lib_1_1_module_interface.html#a94473a1d6d4b78bb815ef53ec08adb6f"/>
+          <topic label="~ModuleInterface" href="class_ga_app_base_lib_1_1_module_interface.html#a1b75edd06355046b97f909db8553407a"/>
+          <topic label="cleanUp" href="class_ga_app_base_lib_1_1_module_interface.html#a7700a90d1f627cdf00780d8ff1694190"/>
+          <topic label="execCommand" href="class_ga_app_base_lib_1_1_module_interface.html#a9b07ac1109d178b0b2323dbeed93e61c"/>
+          <topic label="getConfigNode" href="class_ga_app_base_lib_1_1_module_interface.html#a09ecbccc7390353a34630a7ec328e8a7"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_module_interface.html#ab08d908405d6f43cb92d3f40b1b6762f"/>
+          <topic label="prepareStart" href="class_ga_app_base_lib_1_1_module_interface.html#ada04c778ed74c496ef856e5e771f2b17"/>
+          <topic label="mConfigNode" href="class_ga_app_base_lib_1_1_module_interface.html#a988c157d9ff38d1c2736d81383dddaf5"/>
+          <topic label="mLogger" href="class_ga_app_base_lib_1_1_module_interface.html#aff64cc2720b79be533449790e2e72f42"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_module_interface.html#a9abe444fbeaf128fd7c4d5d01d38e134"/>
+          <topic label="mModuleName" href="class_ga_app_base_lib_1_1_module_interface.html#a5ef94f075595ecfed3c7062b55301880"/>
+        </topic>
+        <topic label="NetworkHelper" href="class_ga_app_base_lib_1_1_network_helper.html">
+          <topic label="~NetworkHelper" href="class_ga_app_base_lib_1_1_network_helper.html#aa1c28c5df5daf3e3e8c8f635e2391900"/>
+          <topic label="NetworkHelper" href="class_ga_app_base_lib_1_1_network_helper.html#abf878267508565e396c655d7abae4a43"/>
+          <topic label="getIpByName" href="class_ga_app_base_lib_1_1_network_helper.html#a65b18c2d6fccdfc87e85601fed694520"/>
+          <topic label="isIpValid" href="class_ga_app_base_lib_1_1_network_helper.html#a3a501cab9dbb92762c73c40212f500a0"/>
+          <topic label="ipfilter" href="class_ga_app_base_lib_1_1_network_helper.html#a67adb8c0f98864f320e69bf5f921c37c"/>
+        </topic>
+        <topic label="TCPConnection" href="class_ga_app_base_lib_1_1_t_c_p_connection.html">
+          <topic label="tcpReceive" href="struct_ga_app_base_lib_1_1_t_c_p_connection_1_1tcp_receive.html">
+            <topic label="input" href="struct_ga_app_base_lib_1_1_t_c_p_connection_1_1tcp_receive.html#aacb008a254c52a63c9e08a71e12d2075"/>
+            <topic label="newDataReady" href="struct_ga_app_base_lib_1_1_t_c_p_connection_1_1tcp_receive.html#a5ad8eacf23b4562eaae29d51409b72bc"/>
+          </topic>
+          <topic label="TCPConnection" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a4199cf29d248b5573169e5d46cd2b9ee"/>
+          <topic label="~TCPConnection" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a72bfd6b3821c5b579948dafb6d9a050b"/>
+          <topic label="closeConnection" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a4e2849cd9ed1ac0987443c042698ad51"/>
+          <topic label="comThread" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a9dc1f3acf66a1a7d8c490be49a53fc70"/>
+          <topic label="getChar" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a84f3e697e533386cdffe809e95c759c7"/>
+          <topic label="getString" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a0fa69881807f7c1afdcaeb45ffb600b1"/>
+          <topic label="hasData" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a865a394c01195668edb1fc9375ca5e97"/>
+          <topic label="isConnected" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a329ba4f2d8752c8ef528b77b182539eb"/>
+          <topic label="openConnection" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#ac258ccd02151d4def7b2f993fd9ad9f8"/>
+          <topic label="putString" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a06e16744c0ef61bd91eaa472666172e5"/>
+          <topic label="mComThread" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a004bc6c2628587b32f399d5346ace1f4"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a7fe5f18d7f65b22b9dd05325c7a27540"/>
+          <topic label="mStopThread" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#adb223502837914dd5783ed6a1397e74f"/>
+          <topic label="receiveString" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a8cfbddbc07b67e700a410b9c9e5fe053"/>
+          <topic label="sendString" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#ace028987cc154ad46896b3656c81cce0"/>
+          <topic label="serv_addr" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a5a6f1134857be7b38ceb59f4d419f4c2"/>
+          <topic label="server" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a2e68a42dfb84f4b086c175cce471032a"/>
+          <topic label="sockfd" href="class_ga_app_base_lib_1_1_t_c_p_connection.html#a6fa468ee0ba3bdda7f1fb02a2220b624"/>
+        </topic>
+        <topic label="UDPConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html">
+          <topic label="UDPConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#ac010f4ba5fd7b34d4408780a9aeacd7e"/>
+          <topic label="~UDPConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#ab1025c64d5e9e11b281795ee8dc08743"/>
+          <topic label="closeConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a10e0cd523891dea7b61cdcb54af5928d"/>
+          <topic label="comThread" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a4bcba2d850645c1626282b7757750a9c"/>
+          <topic label="getChar" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#afe5623f64ab68adfdc3dd0db5890ac32"/>
+          <topic label="getString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a8ee6957c08f152a29db9ec022201cc86"/>
+          <topic label="hasData" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a9c7f68aebd773153d287f40e4017124a"/>
+          <topic label="isConnected" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a6354625312fa5cd3f73deb8bd31b01a4"/>
+          <topic label="openConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#aeae6f84510828369ffa4d95866b7c9fe"/>
+          <topic label="putString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a8896a78864737fbb627d1a020d619469"/>
+          <topic label="mComThread" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a0914dc35d9f07649cefae983ae536de1"/>
+          <topic label="mHost" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a4997bd350d88e929dd7fb065c6619089"/>
+          <topic label="mHostPort" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a4a84162cbd91bb589d0f98bd85fbae21"/>
+          <topic label="mIP" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a876de6508830800ea0b566dfec1e0d9b"/>
+          <topic label="mLocAddr" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a6e9daac91376d0f593127269c8a5849e"/>
+          <topic label="mLocalPort" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a395b23d4e617860ae169eb6bbeb8d4d3"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#acbcf76bed4a0ce87d0810a5ee6093dc1"/>
+          <topic label="mRemAddr" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a5c7836fb411eac4977927d8931f07cb3"/>
+          <topic label="mSocketID" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#ab88ea31828faa06ac098f686a40c8560"/>
+          <topic label="mStopThread" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a846e54c41ccc43eddca6f4f5d15cb9c3"/>
+          <topic label="receiveString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a97b79f6aee76748d8a623efc8b184e41"/>
+          <topic label="sendString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#aaabad3215deeb943813e6a450c5d8f75"/>
+        </topic>
+      </topic>
+      <topic label="Callback" href="class_callback.html"/>
+    </topic>
+    <topic label="Class Index" href="classes.html"/>
+    <topic label="Class Hierarchy" href="hierarchy.html">
+      <topic label="Callback&lt; T &gt;" href="class_callback.html"/>
+      <topic label="el::base::utils::CommandLineArgs" href="classel_1_1base_1_1utils_1_1_command_line_args.html"/>
+      <topic label="el::CustomFormatSpecifier" href="classel_1_1_custom_format_specifier.html"/>
+      <topic label="exception">
+        <topic label="GaAppBaseLib::ExceptionBase" href="class_ga_app_base_lib_1_1_exception_base.html">
+          <topic label="GaAppBaseLib::ArgumentFaultException" href="class_ga_app_base_lib_1_1_argument_fault_exception.html"/>
+          <topic label="GaAppBaseLib::LogicFaultException" href="class_ga_app_base_lib_1_1_logic_fault_exception.html"/>
+          <topic label="GaAppBaseLib::SystemCallException" href="class_ga_app_base_lib_1_1_system_call_exception.html"/>
+        </topic>
+      </topic>
+      <topic label="el::base::HitCounter" href="classel_1_1base_1_1_hit_counter.html"/>
+      <topic label="GaAppBaseLib::LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html"/>
+      <topic label="GaAppBaseLib::LibInstance" href="class_ga_app_base_lib_1_1_lib_instance.html"/>
+      <topic label="GaAppBaseLib::LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html"/>
+      <topic label="el::LogDispatchData" href="classel_1_1_log_dispatch_data.html"/>
+      <topic label="el::Loggable" href="classel_1_1_loggable.html">
+        <topic label="el::base::LogFormat" href="classel_1_1base_1_1_log_format.html"/>
+        <topic label="el::base::PerformanceTracker" href="classel_1_1base_1_1_performance_tracker.html"/>
+        <topic label="el::Configuration" href="classel_1_1_configuration.html"/>
+        <topic label="el::Logger" href="classel_1_1_logger.html"/>
+      </topic>
+      <topic label="el::LogMessage" href="classel_1_1_log_message.html"/>
+      <topic label="el::base::MessageBuilder" href="classel_1_1base_1_1_message_builder.html"/>
+      <topic label="el::base::MillisecondsWidth" href="classel_1_1base_1_1_milliseconds_width.html"/>
+      <topic label="GaAppBaseLib::ModuleInstance" href="class_ga_app_base_lib_1_1_module_instance.html"/>
+      <topic label="GaAppBaseLib::ModuleInterface" href="class_ga_app_base_lib_1_1_module_interface.html"/>
+      <topic label="GaAppBaseLib::NetworkHelper" href="class_ga_app_base_lib_1_1_network_helper.html"/>
+      <topic label="el::base::NoCopy" href="classel_1_1base_1_1_no_copy.html">
+        <topic label="el::base::debug::CrashHandler" href="classel_1_1base_1_1debug_1_1_crash_handler.html"/>
+        <topic label="el::base::debug::StackTrace" href="classel_1_1base_1_1debug_1_1_stack_trace.html"/>
+        <topic label="el::base::LogDispatcher" href="classel_1_1base_1_1_log_dispatcher.html"/>
+        <topic label="el::base::NullWriter" href="classel_1_1base_1_1_null_writer.html"/>
+        <topic label="el::base::Storage" href="classel_1_1base_1_1_storage.html"/>
+        <topic label="el::base::threading::internal::NoMutex" href="classel_1_1base_1_1threading_1_1internal_1_1_no_mutex.html"/>
+        <topic label="el::base::threading::internal::NoScopedLock&lt; Mutex &gt;" href="classel_1_1base_1_1threading_1_1internal_1_1_no_scoped_lock.html"/>
+        <topic label="el::base::VRegistry" href="classel_1_1base_1_1_v_registry.html"/>
+        <topic label="el::base::Writer" href="classel_1_1base_1_1_writer.html">
+          <topic label="el::base::PErrorWriter" href="classel_1_1base_1_1_p_error_writer.html"/>
+        </topic>
+        <topic label="el::LogBuilder" href="classel_1_1_log_builder.html">
+          <topic label="el::base::DefaultLogBuilder" href="classel_1_1base_1_1_default_log_builder.html"/>
+        </topic>
+      </topic>
+      <topic label="el::PerformanceTrackingData" href="classel_1_1_performance_tracking_data.html"/>
+      <topic label="el::Configuration::Predicate" href="classel_1_1_configuration_1_1_predicate.html"/>
+      <topic label="el::base::HitCounter::Predicate" href="classel_1_1base_1_1_hit_counter_1_1_predicate.html"/>
+      <topic label="el::Loggers::ScopedAddFlag" href="classel_1_1_loggers_1_1_scoped_add_flag.html"/>
+      <topic label="el::Loggers::ScopedRemoveFlag" href="classel_1_1_loggers_1_1_scoped_remove_flag.html"/>
+      <topic label="el::base::debug::StackTrace::StackTraceEntry" href="classel_1_1base_1_1debug_1_1_stack_trace_1_1_stack_trace_entry.html"/>
+      <topic label="el::base::StaticClass" href="classel_1_1base_1_1_static_class.html">
+        <topic label="el::base::utils::DateTime" href="classel_1_1base_1_1utils_1_1_date_time.html"/>
+        <topic label="el::base::utils::File" href="classel_1_1base_1_1utils_1_1_file.html"/>
+        <topic label="el::base::utils::OS" href="classel_1_1base_1_1utils_1_1_o_s.html"/>
+        <topic label="el::base::utils::Str" href="classel_1_1base_1_1utils_1_1_str.html"/>
+        <topic label="el::Configurations::Parser" href="classel_1_1_configurations_1_1_parser.html"/>
+        <topic label="el::ConfigurationTypeHelper" href="classel_1_1_configuration_type_helper.html"/>
+        <topic label="el::Helpers" href="classel_1_1_helpers.html"/>
+        <topic label="el::LevelHelper" href="classel_1_1_level_helper.html"/>
+        <topic label="el::Loggers" href="classel_1_1_loggers.html"/>
+        <topic label="el::VersionInfo" href="classel_1_1_version_info.html"/>
+      </topic>
+      <topic label="el::SysLogInitializer" href="classel_1_1_sys_log_initializer.html"/>
+      <topic label="GaAppBaseLib::TCPConnection" href="class_ga_app_base_lib_1_1_t_c_p_connection.html"/>
+      <topic label="GaAppBaseLib::TCPConnection::tcpReceive" href="struct_ga_app_base_lib_1_1_t_c_p_connection_1_1tcp_receive.html"/>
+      <topic label="el::base::threading::ThreadSafe" href="classel_1_1base_1_1threading_1_1_thread_safe.html">
+        <topic label="el::base::utils::AbstractRegistry&lt; base::HitCounter, std::vector&lt; base::HitCounter * &gt; &gt;" href="classel_1_1base_1_1utils_1_1_abstract_registry.html">
+          <topic label="el::base::utils::RegistryWithPred&lt; base::HitCounter, base::HitCounter::Predicate &gt;" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html">
+            <topic label="el::base::RegisteredHitCounters" href="classel_1_1base_1_1_registered_hit_counters.html"/>
+          </topic>
+        </topic>
+        <topic label="el::base::utils::AbstractRegistry&lt; Configuration, std::vector&lt; Configuration * &gt; &gt;" href="classel_1_1base_1_1utils_1_1_abstract_registry.html">
+          <topic label="el::base::utils::RegistryWithPred&lt; Configuration, Configuration::Predicate &gt;" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html">
+            <topic label="el::Configurations" href="classel_1_1_configurations.html"/>
+          </topic>
+        </topic>
+        <topic label="el::base::utils::AbstractRegistry&lt; Logger, std::map&lt; std::string, Logger * &gt; &gt;" href="classel_1_1base_1_1utils_1_1_abstract_registry.html">
+          <topic label="el::base::utils::Registry&lt; Logger, std::string &gt;" href="classel_1_1base_1_1utils_1_1_registry.html">
+            <topic label="el::base::RegisteredLoggers" href="classel_1_1base_1_1_registered_loggers.html"/>
+          </topic>
+        </topic>
+        <topic label="el::base::utils::AbstractRegistry&lt; T_Ptr, std::map&lt; T_Key, T_Ptr * &gt; &gt;" href="classel_1_1base_1_1utils_1_1_abstract_registry.html">
+          <topic label="el::base::utils::Registry&lt; T_Ptr, T_Key &gt;" href="classel_1_1base_1_1utils_1_1_registry.html"/>
+        </topic>
+        <topic label="el::base::utils::AbstractRegistry&lt; T_Ptr, std::vector&lt; T_Ptr * &gt; &gt;" href="classel_1_1base_1_1utils_1_1_abstract_registry.html">
+          <topic label="el::base::utils::RegistryWithPred&lt; T_Ptr, Pred &gt;" href="classel_1_1base_1_1utils_1_1_registry_with_pred.html"/>
+        </topic>
+        <topic label="el::Callback&lt; LogDispatchData &gt;" href="classel_1_1_callback.html">
+          <topic label="el::LogDispatchCallback" href="classel_1_1_log_dispatch_callback.html">
+            <topic label="el::base::DefaultLogDispatchCallback" href="classel_1_1base_1_1_default_log_dispatch_callback.html"/>
+          </topic>
+        </topic>
+        <topic label="el::Callback&lt; PerformanceTrackingData &gt;" href="classel_1_1_callback.html">
+          <topic label="el::PerformanceTrackingCallback" href="classel_1_1_performance_tracking_callback.html">
+            <topic label="el::base::DefaultPerformanceTrackingCallback" href="classel_1_1base_1_1_default_performance_tracking_callback.html"/>
+          </topic>
+        </topic>
+        <topic label="el::base::PerformanceTracker" href="classel_1_1base_1_1_performance_tracker.html"/>
+        <topic label="el::base::Storage" href="classel_1_1base_1_1_storage.html"/>
+        <topic label="el::base::TypedConfigurations" href="classel_1_1base_1_1_typed_configurations.html"/>
+        <topic label="el::base::utils::AbstractRegistry&lt; T_Ptr, Container &gt;" href="classel_1_1base_1_1utils_1_1_abstract_registry.html"/>
+        <topic label="el::base::VRegistry" href="classel_1_1base_1_1_v_registry.html"/>
+        <topic label="el::Callback&lt; T &gt;" href="classel_1_1_callback.html"/>
+        <topic label="el::Logger" href="classel_1_1_logger.html"/>
+      </topic>
+      <topic label="GaAppBaseLib::UDPConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html"/>
+    </topic>
+    <topic label="Class Members" href="functions.html">
+      <topic label="All" href="functions.html">
+        <topic label="a" href="functions.html"/>
+        <topic label="b" href="functions_0x62.html"/>
+        <topic label="c" href="functions_0x63.html"/>
+        <topic label="d" href="functions_0x64.html"/>
+        <topic label="e" href="functions_0x65.html"/>
+        <topic label="f" href="functions_0x66.html"/>
+        <topic label="g" href="functions_0x67.html"/>
+        <topic label="h" href="functions_0x68.html"/>
+        <topic label="i" href="functions_0x69.html"/>
+        <topic label="k" href="functions_0x6b.html"/>
+        <topic label="l" href="functions_0x6c.html"/>
+        <topic label="m" href="functions_0x6d.html"/>
+        <topic label="n" href="functions_0x6e.html"/>
+        <topic label="o" href="functions_0x6f.html"/>
+        <topic label="p" href="functions_0x70.html"/>
+        <topic label="r" href="functions_0x72.html"/>
+        <topic label="s" href="functions_0x73.html"/>
+        <topic label="t" href="functions_0x74.html"/>
+        <topic label="u" href="functions_0x75.html"/>
+        <topic label="v" href="functions_0x76.html"/>
+        <topic label="w" href="functions_0x77.html"/>
+        <topic label="~" href="functions_0x7e.html"/>
+      </topic>
+      <topic label="Functions" href="functions_func.html">
+        <topic label="a" href="functions_func.html"/>
+        <topic label="b" href="functions_func_0x62.html"/>
+        <topic label="c" href="functions_func_0x63.html"/>
+        <topic label="d" href="functions_func_0x64.html"/>
+        <topic label="e" href="functions_func_0x65.html"/>
+        <topic label="f" href="functions_func_0x66.html"/>
+        <topic label="g" href="functions_func_0x67.html"/>
+        <topic label="h" href="functions_func_0x68.html"/>
+        <topic label="i" href="functions_func_0x69.html"/>
+        <topic label="l" href="functions_func_0x6c.html"/>
+        <topic label="m" href="functions_func_0x6d.html"/>
+        <topic label="n" href="functions_func_0x6e.html"/>
+        <topic label="o" href="functions_func_0x6f.html"/>
+        <topic label="p" href="functions_func_0x70.html"/>
+        <topic label="r" href="functions_func_0x72.html"/>
+        <topic label="s" href="functions_func_0x73.html"/>
+        <topic label="t" href="functions_func_0x74.html"/>
+        <topic label="u" href="functions_func_0x75.html"/>
+        <topic label="v" href="functions_func_0x76.html"/>
+        <topic label="w" href="functions_func_0x77.html"/>
+        <topic label="~" href="functions_func_0x7e.html"/>
+      </topic>
+      <topic label="Variables" href="functions_vars.html"/>
+      <topic label="Related Functions" href="functions_rela.html"/>
+    </topic>
+  </topic>
+  <topic label="Files">
+    <topic label="File List" href="files.html">
+      <topic label="ArgumentFaultException.cpp" href="_argument_fault_exception_8cpp.html"/>
+      <topic label="ArgumentFaultException.h" href="_argument_fault_exception_8h.html">
+        <topic label="ArgumentFaultException" href="class_ga_app_base_lib_1_1_argument_fault_exception.html">
+          <topic label="ArgumentFaultException" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#af1dcb9ea0533f06d826d03df50d54425"/>
+          <topic label="~ArgumentFaultException" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#ace8826f86500287f94f238d0540a411e"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#a840e0c696dd4c63644a89e1be18837b4"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#aa66ffc4b4fd3534cdcfb80635a8d6686"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="mArgumentName" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#ac97d1b87a26db16380f2f3fd7d199131"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_argument_fault_exception.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+      </topic>
+      <topic label="easylogging++.h" href="easylogging_09_09_8h_source.html"/>
+      <topic label="ExceptionBase.cpp" href="_exception_base_8cpp.html"/>
+      <topic label="ExceptionBase.h" href="_exception_base_8h.html">
+        <topic label="ExceptionBase" href="class_ga_app_base_lib_1_1_exception_base.html">
+          <topic label="ExceptionBase" href="class_ga_app_base_lib_1_1_exception_base.html#adb2fab334498166b67442d896515e32c"/>
+          <topic label="~ExceptionBase" href="class_ga_app_base_lib_1_1_exception_base.html#a2d1649167a2fa2d2f9fd47b01f053ab6"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_exception_base.html#acf3e140c00772696646c68d05cab6e95"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_exception_base.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_exception_base.html#ad0d4058a3c3e2f72c884fd79cf6f5a6a"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_exception_base.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_exception_base.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_exception_base.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_exception_base.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+      </topic>
+      <topic label="ExceptionsMacros.h" href="_exceptions_macros_8h.html">
+        <topic label="THROW_LOGIC_FAULT" href="_exceptions_macros_8h.html#a449370da6e5d96d27e965e2976d8f32c"/>
+        <topic label="THROW_SYSTEM_FAULT" href="_exceptions_macros_8h.html#a937f25de5e93c39c986c53361f83ce4b"/>
+        <topic label="VALIDATE_ARGUMENT_EQUAL" href="_exceptions_macros_8h.html#ad09b4280bc0bf955e99e5707b8dc34f9"/>
+        <topic label="VALIDATE_ARGUMENT_NO_NULL_PT" href="_exceptions_macros_8h.html#a9358f333daba6f1a97284892ea26cbfa"/>
+        <topic label="VALIDATE_ARGUMENT_NOT_EQUAL" href="_exceptions_macros_8h.html#aa9dd102f0edb4913f3b5e8c09006ff32"/>
+        <topic label="VALIDATE_ARGUMENT_RANGE_EXCLUDE" href="_exceptions_macros_8h.html#a1b63f518b3640e3a742bdbd39284b443"/>
+        <topic label="VALIDATE_ARGUMENT_RANGE_INCLUDE" href="_exceptions_macros_8h.html#a2116c11dbdb6c29fd3c9efdd20d4f2c8"/>
+      </topic>
+      <topic label="GaAppBaseLib.h" href="_ga_app_base_lib_8h.html"/>
+      <topic label="GaAppBaseLibVersionInfo.h" href="_ga_app_base_lib_version_info_8h.html">
+        <topic label="LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html">
+          <topic label="~LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#a5dbbe260aad29b9ee912075cdbfe67cc"/>
+          <topic label="LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#af7cde8d1880eb9147c9f5e20f5155eb3"/>
+          <topic label="LibVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#a0fd35a52291133f3e2bbfca73f7ae62a"/>
+          <topic label="getBuildDescription" href="class_ga_app_base_lib_1_1_lib_version_info.html#a0b9f011868b98efee3d33fbb9ce413ab"/>
+          <topic label="getBuildTime" href="class_ga_app_base_lib_1_1_lib_version_info.html#a808a62238d1fe032588b9964e32fa90c"/>
+          <topic label="getInstance" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab8735af036f7ab89efc909da3b79bfc0"/>
+          <topic label="getMajorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#acbd304ff83d576ee2c55a5152976c57d"/>
+          <topic label="getMinorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a9e50deeeef67e478dcd188a75bf53f20"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_lib_version_info.html#a2da6c13dda9e12b301eb309d0443a075"/>
+          <topic label="getPatchVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a51b5095973c85a694033f229102f57cc"/>
+          <topic label="getSvnBuildDate" href="class_ga_app_base_lib_1_1_lib_version_info.html#aa347e50bcb1e3ea0137a219639a84d26"/>
+          <topic label="getSvnCommitDate" href="class_ga_app_base_lib_1_1_lib_version_info.html#adec01cf0c0f8dbeff44a9964ba8878b3"/>
+          <topic label="getSvnRevision" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab0717819f3b97ad04bde9f261759921e"/>
+          <topic label="getSvnRevisionRange" href="class_ga_app_base_lib_1_1_lib_version_info.html#a2ae92bbb5edbe180d5e166e1797a19f1"/>
+          <topic label="getSvnUrl" href="class_ga_app_base_lib_1_1_lib_version_info.html#a1eebcf96525f0751ce4192d29df57754"/>
+          <topic label="getTweakVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4531582bd334600209eef3b7804a213c"/>
+          <topic label="getVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a35590e3133a926b0d050b0e0878505f0"/>
+          <topic label="getVersionText" href="class_ga_app_base_lib_1_1_lib_version_info.html#a7d59951c3918554f03a8be41711b9aa4"/>
+          <topic label="hasLocalModifications" href="class_ga_app_base_lib_1_1_lib_version_info.html#abaf575b5c971b5b74f36c93806734a7b"/>
+          <topic label="hasSvnInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#a7d243826287902c1a36ddcdcc0b48842"/>
+          <topic label="hasUnversionedFiles" href="class_ga_app_base_lib_1_1_lib_version_info.html#a50a2470394314d46650d9a48a2890539"/>
+          <topic label="isDebugVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#adab557a707b8be036f4167391c899dd5"/>
+          <topic label="isTaggedVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab00ccbcd0e05cdd99657105456f0072d"/>
+          <topic label="operator=" href="class_ga_app_base_lib_1_1_lib_version_info.html#af48d344a7347c745c67fcf17c5c0c2f9"/>
+          <topic label="printInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#ae2383793eec7df65d2c19f223da2d1f7"/>
+          <topic label="mBuildDescription" href="class_ga_app_base_lib_1_1_lib_version_info.html#ab1c7e69c17e24422c85fd0cfa3ffac48"/>
+          <topic label="mBuildTime" href="class_ga_app_base_lib_1_1_lib_version_info.html#a120dd8280ae6020115aac29631553909"/>
+          <topic label="mHasSvnInformations" href="class_ga_app_base_lib_1_1_lib_version_info.html#a203d0deec735108ba5b99f24d40ca2b4"/>
+          <topic label="mInternalVersionInfo" href="class_ga_app_base_lib_1_1_lib_version_info.html#ada95d88af6eea8a63283bb9df2e0ffb8"/>
+          <topic label="mIsDebugVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a35b39d96713b0507568c2432cd7d070d"/>
+          <topic label="mLibName" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4f1897dee5c5414f70f0ccd1725638ba"/>
+          <topic label="mMajorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#af6c66eabf36ba743b1a8d9ea57f34c26"/>
+          <topic label="mMinorVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4370ed161379dca20008198ae2ec7b41"/>
+          <topic label="mSvnBuildDate" href="class_ga_app_base_lib_1_1_lib_version_info.html#a128b8d79763677431652b0cff5e89dd7"/>
+          <topic label="mSvnDateCommit" href="class_ga_app_base_lib_1_1_lib_version_info.html#af11a901df02fa9fd855a8b0028718ce8"/>
+          <topic label="mSvnHasLocalModifications" href="class_ga_app_base_lib_1_1_lib_version_info.html#a0fb22010c326ff58914ed9038b8794da"/>
+          <topic label="mSvnHasUnversionedFiles" href="class_ga_app_base_lib_1_1_lib_version_info.html#a5773acff516a579361935c13c006ab68"/>
+          <topic label="mSvnIsTaggedVersion" href="class_ga_app_base_lib_1_1_lib_version_info.html#a4d5756ef5a5a4b7ef74cd74ef1354de3"/>
+          <topic label="mSvnRevision" href="class_ga_app_base_lib_1_1_lib_version_info.html#a2d8f4cefc3e7348b7e4c5efd0ba7108b"/>
+          <topic label="mSvnRevisionRange" href="class_ga_app_base_lib_1_1_lib_version_info.html#a42539025b10ee63ab827e690f97ed489"/>
+          <topic label="mSvnURL" href="class_ga_app_base_lib_1_1_lib_version_info.html#aa06b8a6bddff108df5dbdea1e602be79"/>
+          <topic label="mVersionPatch" href="class_ga_app_base_lib_1_1_lib_version_info.html#a451db5dbc81ae7b10c79dca1077c77b6"/>
+          <topic label="mVersionTweak" href="class_ga_app_base_lib_1_1_lib_version_info.html#ac917cce0623500d1ad7f52a83313e265"/>
+        </topic>
+      </topic>
+      <topic label="LibContainer.cpp" href="_lib_container_8cpp.html"/>
+      <topic label="LibContainer.h" href="_lib_container_8h.html">
+        <topic label="LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html">
+          <topic label="~LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html#ab91955f76b255a637ef44559d0a70bc8"/>
+          <topic label="LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html#ae56c42ddfc48cf6a695ac9d955a731c8"/>
+          <topic label="LibContainer" href="class_ga_app_base_lib_1_1_lib_container.html#a80abfe3acb3c2d5f533bbdbcfe7ba311"/>
+          <topic label="addModuleInstance" href="class_ga_app_base_lib_1_1_lib_container.html#adff16ac68475f43516e5aca00056890f"/>
+          <topic label="getInstance" href="class_ga_app_base_lib_1_1_lib_container.html#a9b87e8cc738a6e3ae618d02a73c8de4b"/>
+          <topic label="getModuleInstance" href="class_ga_app_base_lib_1_1_lib_container.html#aeea9de2ef15720e6f1acf98e91f22a06"/>
+          <topic label="loadLib" href="class_ga_app_base_lib_1_1_lib_container.html#a4ddeae48fdd462901701981c23efc948"/>
+          <topic label="modulesCleanUp" href="class_ga_app_base_lib_1_1_lib_container.html#a9a232d3ca2a457b0c66838ce9fcf7bd3"/>
+          <topic label="modulesPrepareStart" href="class_ga_app_base_lib_1_1_lib_container.html#a88cae34b1b91b48ed9f2c309a7c23cbd"/>
+          <topic label="operator=" href="class_ga_app_base_lib_1_1_lib_container.html#a481f99f66be2f371384e2dd2dfd9aa69"/>
+          <topic label="printModuleList" href="class_ga_app_base_lib_1_1_lib_container.html#a78af099f595bb4631b556305b2c1d2b1"/>
+          <topic label="removeModuleInstance" href="class_ga_app_base_lib_1_1_lib_container.html#a6f328ba5928a1ae17a1ef59b0f617637"/>
+          <topic label="unloadLib" href="class_ga_app_base_lib_1_1_lib_container.html#a2bcb7fc8c33e0914a3b42c76a643c232"/>
+          <topic label="mLibraryList" href="class_ga_app_base_lib_1_1_lib_container.html#a39650f4bdfe096986661bca99e369b54"/>
+          <topic label="mModuleList" href="class_ga_app_base_lib_1_1_lib_container.html#a5b2cfa6b3760593d1a6708e14dc45b27"/>
+        </topic>
+      </topic>
+      <topic label="LibInstance.cpp" href="_lib_instance_8cpp.html"/>
+      <topic label="LibInstance.h" href="_lib_instance_8h.html">
+        <topic label="LibInstance" href="class_ga_app_base_lib_1_1_lib_instance.html">
+          <topic label="LibInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a92700bcb8b5830581b00f632df1c1628"/>
+          <topic label="~LibInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a851560c3b3463879854d3c614e88ce65"/>
+          <topic label="createNewInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a1c133ea77bf3d5fb23e9af29e3ba2ec8"/>
+          <topic label="deleteInstance" href="class_ga_app_base_lib_1_1_lib_instance.html#a3a4d6e053f3a243202893b85c5cc59dd"/>
+          <topic label="getInstanceCount" href="class_ga_app_base_lib_1_1_lib_instance.html#a48831ff1ca9f92341e9e48c1f931ac05"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_lib_instance.html#acdf6f00f0297432733f5deaa8567650e"/>
+          <topic label="mHandle" href="class_ga_app_base_lib_1_1_lib_instance.html#a4b42a47423edd052d80ca09b24bfe2f6"/>
+          <topic label="mInstanceCounter" href="class_ga_app_base_lib_1_1_lib_instance.html#ae6815cb4aae1f71b650a8ecc4d0b2d19"/>
+          <topic label="mLibName" href="class_ga_app_base_lib_1_1_lib_instance.html#a4b8af403d5b6517736eb6c8591356b9a"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_lib_instance.html#a2be96507c76d96e7aa2a0def099a6bd6"/>
+          <topic label="mPtCreateFkt" href="class_ga_app_base_lib_1_1_lib_instance.html#ae13e99a461718f45d10e0bda3838e017"/>
+          <topic label="mPtDeleteFkt" href="class_ga_app_base_lib_1_1_lib_instance.html#a06aface2041585c59795a4488a23e69f"/>
+        </topic>
+        <topic label="tFctPtCreateModule" href="_lib_instance_8h.html#a059ea2bcd7ec00b684a28901f9be063c"/>
+        <topic label="tFctPtDeleteModule" href="_lib_instance_8h.html#a9ebc0c4e88f42a1e6d9b4d1764b7b9e8"/>
+        <topic label="tShdPtLibInstnace" href="_lib_instance_8h.html#aa89656b35e8d765473afbaba3a6f1fa6"/>
+      </topic>
+      <topic label="LibVersionInfo.template.cpp" href="_lib_version_info_8template_8cpp.html">
+        <topic label="SNV_REVISION" href="_lib_version_info_8template_8cpp.html#a1481bbbf4577aa971b906bb2bf43bb03"/>
+        <topic label="SVN_BUILD_DATE" href="_lib_version_info_8template_8cpp.html#afd3093da0834b43623c97b2ad529d69c"/>
+        <topic label="SVN_COMMIT_DATE" href="_lib_version_info_8template_8cpp.html#a31cd4513ca87918cdc54fa54361429f6"/>
+        <topic label="SVN_LOCAL_MODIFICATIONS" href="_lib_version_info_8template_8cpp.html#a0d0582c8417da1634bee7e245842f572"/>
+        <topic label="SVN_REVISION_NO" href="_lib_version_info_8template_8cpp.html#af8d50188f1d37db3b82349731e06d8a1"/>
+        <topic label="SVN_REVISION_RANGE" href="_lib_version_info_8template_8cpp.html#a75fa13ad9a8e84778bde250789a1b39a"/>
+        <topic label="SVN_TAGGED_VERSION" href="_lib_version_info_8template_8cpp.html#a7638f982b9b5a2bcc657cefca803d2ed"/>
+        <topic label="SVN_UNVERSIOND_FILES" href="_lib_version_info_8template_8cpp.html#ad99c38c45e8ee570f2e6022666ace9ff"/>
+        <topic label="SVN_URL" href="_lib_version_info_8template_8cpp.html#ace8893bcca6db0339b9ad4e66575833c"/>
+        <topic label="SVN_VERSION_AVAILABLE" href="_lib_version_info_8template_8cpp.html#ac858331b73b9f7d0f5559b17a124cf28"/>
+      </topic>
+      <topic label="logger.h" href="logger_8h.html">
+        <topic label="_QUOTEME" href="logger_8h.html#ae407c81bea67d024777e6c9349e73086"/>
+        <topic label="ELPP_STACKTRACE_ON_CRASH" href="logger_8h.html#a999d51038359db9f71ea13e7a4cca7c6"/>
+      </topic>
+      <topic label="LogicFaultException.cpp" href="_logic_fault_exception_8cpp.html"/>
+      <topic label="LogicFaultException.h" href="_logic_fault_exception_8h.html">
+        <topic label="LogicFaultException" href="class_ga_app_base_lib_1_1_logic_fault_exception.html">
+          <topic label="LogicFaultException" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a1990324ade665564f9624f34ca2af265"/>
+          <topic label="~LogicFaultException" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#ad06ea367ad1f80e6376e8deb3eef8a4f"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a5ea05aafa06a369b4f4108b94c460375"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a81ffd73dc1f64eeaf1f23a23ed1d9aa1"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_logic_fault_exception.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+      </topic>
+      <topic label="ModuleInstance.cpp" href="_module_instance_8cpp.html"/>
+      <topic label="ModuleInstance.h" href="_module_instance_8h.html">
+        <topic label="ModuleInstance" href="class_ga_app_base_lib_1_1_module_instance.html">
+          <topic label="ModuleInstance" href="class_ga_app_base_lib_1_1_module_instance.html#a32efc2b06020e3fb3428ecaf58be62ad"/>
+          <topic label="~ModuleInstance" href="class_ga_app_base_lib_1_1_module_instance.html#a18d5abaf62537100e02eacc14aeadb52"/>
+          <topic label="cleanUp" href="class_ga_app_base_lib_1_1_module_instance.html#ab8223afbe1293012a3cc26571b3a9f73"/>
+          <topic label="execCommand" href="class_ga_app_base_lib_1_1_module_instance.html#ac10ddf32f8084100f2f466bc206c5531"/>
+          <topic label="getLibInstance" href="class_ga_app_base_lib_1_1_module_instance.html#adcca8a0c4de9de2cd07ed503b4d7b3e8"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_module_instance.html#afbcef36cc220ed0dcbf59fe8b04ff3c3"/>
+          <topic label="prepareStart" href="class_ga_app_base_lib_1_1_module_instance.html#a4727344fe516a5edfb4409e317be9526"/>
+          <topic label="instance" href="class_ga_app_base_lib_1_1_module_instance.html#a819c1cc9b48ce153e1c680a5c2a75743"/>
+          <topic label="mConfigNode" href="class_ga_app_base_lib_1_1_module_instance.html#abaf1bef6023a28a93be2ec3f7fdd08d2"/>
+          <topic label="mInstanceName" href="class_ga_app_base_lib_1_1_module_instance.html#afa76f880d89a63aa8c6edfe9a0499e2f"/>
+          <topic label="mLibInstance" href="class_ga_app_base_lib_1_1_module_instance.html#a6da2c51e33e774857f617af74b7c2aa5"/>
+        </topic>
+        <topic label="sptModuleInterface" href="_module_instance_8h.html#a38d9a3a0ae838f51cc6d1077011e4e2c"/>
+      </topic>
+      <topic label="ModuleInterface.cpp" href="_module_interface_8cpp.html"/>
+      <topic label="ModuleInterface.h" href="_module_interface_8h.html">
+        <topic label="ModuleInterface" href="class_ga_app_base_lib_1_1_module_interface.html">
+          <topic label="ModuleInterface" href="class_ga_app_base_lib_1_1_module_interface.html#a94473a1d6d4b78bb815ef53ec08adb6f"/>
+          <topic label="~ModuleInterface" href="class_ga_app_base_lib_1_1_module_interface.html#a1b75edd06355046b97f909db8553407a"/>
+          <topic label="cleanUp" href="class_ga_app_base_lib_1_1_module_interface.html#a7700a90d1f627cdf00780d8ff1694190"/>
+          <topic label="execCommand" href="class_ga_app_base_lib_1_1_module_interface.html#a9b07ac1109d178b0b2323dbeed93e61c"/>
+          <topic label="getConfigNode" href="class_ga_app_base_lib_1_1_module_interface.html#a09ecbccc7390353a34630a7ec328e8a7"/>
+          <topic label="getName" href="class_ga_app_base_lib_1_1_module_interface.html#ab08d908405d6f43cb92d3f40b1b6762f"/>
+          <topic label="prepareStart" href="class_ga_app_base_lib_1_1_module_interface.html#ada04c778ed74c496ef856e5e771f2b17"/>
+          <topic label="mConfigNode" href="class_ga_app_base_lib_1_1_module_interface.html#a988c157d9ff38d1c2736d81383dddaf5"/>
+          <topic label="mLogger" href="class_ga_app_base_lib_1_1_module_interface.html#aff64cc2720b79be533449790e2e72f42"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_module_interface.html#a9abe444fbeaf128fd7c4d5d01d38e134"/>
+          <topic label="mModuleName" href="class_ga_app_base_lib_1_1_module_interface.html#a5ef94f075595ecfed3c7062b55301880"/>
+        </topic>
+        <topic label="EXPORT_FUNCTIONS" href="_module_interface_8h.html#ad371e8c80de95efc813c78ce90db3556"/>
+      </topic>
+      <topic label="NetworkHelper.h" href="_network_helper_8h.html">
+        <topic label="NetworkHelper" href="class_ga_app_base_lib_1_1_network_helper.html">
+          <topic label="~NetworkHelper" href="class_ga_app_base_lib_1_1_network_helper.html#aa1c28c5df5daf3e3e8c8f635e2391900"/>
+          <topic label="NetworkHelper" href="class_ga_app_base_lib_1_1_network_helper.html#abf878267508565e396c655d7abae4a43"/>
+          <topic label="getIpByName" href="class_ga_app_base_lib_1_1_network_helper.html#a65b18c2d6fccdfc87e85601fed694520"/>
+          <topic label="isIpValid" href="class_ga_app_base_lib_1_1_network_helper.html#a3a501cab9dbb92762c73c40212f500a0"/>
+          <topic label="ipfilter" href="class_ga_app_base_lib_1_1_network_helper.html#a67adb8c0f98864f320e69bf5f921c37c"/>
+        </topic>
+      </topic>
+      <topic label="SystemCallException.cpp" href="_system_call_exception_8cpp.html"/>
+      <topic label="SystemCallException.h" href="_system_call_exception_8h.html">
+        <topic label="SystemCallException" href="class_ga_app_base_lib_1_1_system_call_exception.html">
+          <topic label="SystemCallException" href="class_ga_app_base_lib_1_1_system_call_exception.html#a11db80e6b9710dc94af2c05bd69f7fdd"/>
+          <topic label="~SystemCallException" href="class_ga_app_base_lib_1_1_system_call_exception.html#ac14f97c6ae013f55d99c8fc1d78bfc1c"/>
+          <topic label="getMessage" href="class_ga_app_base_lib_1_1_system_call_exception.html#a0f8bccc015857fbacc03254057087aad"/>
+          <topic label="operator&lt;&lt;" href="class_ga_app_base_lib_1_1_system_call_exception.html#a8c6a713efb616ef8d9197e5232833268"/>
+          <topic label="what" href="class_ga_app_base_lib_1_1_system_call_exception.html#abf3296a5fb986b97c5edf491ad2f377e"/>
+          <topic label="mCode" href="class_ga_app_base_lib_1_1_system_call_exception.html#a2a7c737054924d7321931f0a060738a3"/>
+          <topic label="mFile" href="class_ga_app_base_lib_1_1_system_call_exception.html#a2bc109752a3911a6f07884067592a5a0"/>
+          <topic label="mFunction" href="class_ga_app_base_lib_1_1_system_call_exception.html#ab84ceae300d628f841a8fa82114ceed6"/>
+          <topic label="mLine" href="class_ga_app_base_lib_1_1_system_call_exception.html#a4ea5f9c8b83345e812652feeb3cb0edc"/>
+          <topic label="mMessage" href="class_ga_app_base_lib_1_1_system_call_exception.html#abc4b089dca5b23ae2e74b6420c2e4152"/>
+        </topic>
+      </topic>
+      <topic label="TCPClientConnection.h" href="_t_c_p_client_connection_8h_source.html"/>
+      <topic label="UDPConnection.cpp" href="_u_d_p_connection_8cpp.html"/>
+      <topic label="UDPConnection.h" href="_u_d_p_connection_8h.html">
+        <topic label="UDPConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html">
+          <topic label="UDPConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#ac010f4ba5fd7b34d4408780a9aeacd7e"/>
+          <topic label="~UDPConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#ab1025c64d5e9e11b281795ee8dc08743"/>
+          <topic label="closeConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a10e0cd523891dea7b61cdcb54af5928d"/>
+          <topic label="comThread" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a4bcba2d850645c1626282b7757750a9c"/>
+          <topic label="getChar" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#afe5623f64ab68adfdc3dd0db5890ac32"/>
+          <topic label="getString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a8ee6957c08f152a29db9ec022201cc86"/>
+          <topic label="hasData" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a9c7f68aebd773153d287f40e4017124a"/>
+          <topic label="isConnected" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a6354625312fa5cd3f73deb8bd31b01a4"/>
+          <topic label="openConnection" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#aeae6f84510828369ffa4d95866b7c9fe"/>
+          <topic label="putString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a8896a78864737fbb627d1a020d619469"/>
+          <topic label="mComThread" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a0914dc35d9f07649cefae983ae536de1"/>
+          <topic label="mHost" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a4997bd350d88e929dd7fb065c6619089"/>
+          <topic label="mHostPort" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a4a84162cbd91bb589d0f98bd85fbae21"/>
+          <topic label="mIP" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a876de6508830800ea0b566dfec1e0d9b"/>
+          <topic label="mLocAddr" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a6e9daac91376d0f593127269c8a5849e"/>
+          <topic label="mLocalPort" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a395b23d4e617860ae169eb6bbeb8d4d3"/>
+          <topic label="mLoggerName" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#acbcf76bed4a0ce87d0810a5ee6093dc1"/>
+          <topic label="mRemAddr" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a5c7836fb411eac4977927d8931f07cb3"/>
+          <topic label="mSocketID" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#ab88ea31828faa06ac098f686a40c8560"/>
+          <topic label="mStopThread" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a846e54c41ccc43eddca6f4f5d15cb9c3"/>
+          <topic label="receiveString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#a97b79f6aee76748d8a623efc8b184e41"/>
+          <topic label="sendString" href="class_ga_app_base_lib_1_1_u_d_p_connection.html#aaabad3215deeb943813e6a450c5d8f75"/>
+        </topic>
+      </topic>
+    </topic>
+    <topic label="File Members" href="globals.html">
+      <topic label="All" href="globals.html"/>
+      <topic label="Macros" href="globals_defs.html"/>
+    </topic>
+  </topic>
+</toc>

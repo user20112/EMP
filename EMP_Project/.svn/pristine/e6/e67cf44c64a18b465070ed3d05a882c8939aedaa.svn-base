@@ -1,0 +1,211 @@
+#include <iostream>
+#include <string>
+
+#include "CognexSerial.h"
+
+using namespace std;
+
+namespace AsymtecUnloader
+{
+    CognexSerial::CognexSerial(const unsigned int _portNo, const unsigned int _baud, string _objectToBeScanned, const unsigned int _numberOfScans)
+            : uart(_portNo, _baud),
+              currentState(warteAufScanBefehl),
+              lastState(scanVorgangNichtErfolgreich),
+              triggerScannerCounter(0),
+              numberOfScans(_numberOfScans),
+              schedulerCounter(0),
+              dmcValid(false),
+              index(0)
+    {
+        el::Loggers::getLogger(mLoggerName);
+        CLOG(DEBUG, mLoggerName.c_str())<< "CognexSerial constructor executed.";
+
+        objectToBeScanned = _objectToBeScanned;
+
+        if (objectToBeScanned == "NUTZEN")
+        {
+            dmcTelegramLength = DMC_TELEGRAM_NUTZEN_LENGTH;
+        }
+        else if (objectToBeScanned == "MAGAZIN")
+        {
+            dmcTelegramLength = DMC_TELEGRAM_MAGAZIN_LENGTH;
+        }
+    }
+
+    CognexSerial::~CognexSerial()
+    {
+        CLOG(DEBUG, mLoggerName.c_str())<< "CognexSerial destructor executed.";
+        el::Loggers::unregisterLogger(mLoggerName.c_str());
+    }
+
+    void CognexSerial::scheduler(void)
+    {
+        unsigned char c;
+
+        uart.UartScheduler();
+
+        while ((c = uart.UartGetByte()) != 0)
+        {
+        	dmcValid = false; // solange der String bearbeitet wird darf er nicht ausgelesen werden!!
+            // insert new character into telegram; if telegram is finished, forward it
+            if (parseTelegram(c) == 1)
+            {
+            	dmcString = (char*) dmc;
+            	CLOG(INFO, mLoggerName.c_str())<< "received: " << dmcString;
+                if (strlen((const char*) dmc) == dmcTelegramLength)
+                {
+                    // everything went fine, that's why our telegram is valid
+                    dmcValid = true;
+                }
+                else
+                {
+                    CLOG(ERROR, mLoggerName.c_str())<< "length of dmc telegram invalid, expected: " << dmcTelegramLength << ", received: " << strlen((const char*) dmc);
+                }
+            }
+        }
+
+        if (lastState != currentState)
+        {
+            lastState = currentState;
+
+            switch (currentState)
+            {
+                case warteAufScanBefehl:
+                    {
+                    CLOG(INFO, mLoggerName.c_str())<< ": SCANNER_STATE_" << objectToBeScanned << " = WARTE_AUF_SCAN_BEFEHL";
+                    break;
+                }
+                case scanVorgangStarten:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< ": SCANNER_STATE_" << objectToBeScanned << " = SCAN_VORGANG_STARTEN";
+                    break;
+                }
+                case scanVorgangLaeuft:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< ": SCANNER_STATE_" << objectToBeScanned << " = SCAN_VORGANG_LAEUFT";
+                    break;
+                }
+                case scanVorgangErfolgreich:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< ": SCANNER_STATE_" << objectToBeScanned << " = SCAN_VORGANG_ERFOLGREICH";
+                    break;
+                }
+                case scanVorgangNichtErfolgreich:
+                {
+                    CLOG(INFO, mLoggerName.c_str())<< ": SCANNER_STATE_" << objectToBeScanned << " = SCAN_VORGANG_NICHT_ERFOLGREICH";
+                    break;
+                }
+            }
+        }
+
+        switch (currentState)
+        {
+            case warteAufScanBefehl:
+                {
+
+                break;
+            }
+            case scanVorgangStarten:
+                {
+                if (triggerScannerCounter < numberOfScans)
+                {
+                    // trigger the scanner
+                    //uart.UartPutByte('+'); // umstellen auf continous!!!!!!
+                    triggerScannerCounter++;
+                    currentState = scanVorgangLaeuft;
+                }
+                else
+                {
+                    currentState = scanVorgangNichtErfolgreich;
+                }
+                break;
+            }
+            case scanVorgangLaeuft:
+                {
+                if (dmcValid)
+                {
+                    currentState = scanVorgangErfolgreich;
+                    dmcString = (char*) dmc;// String sofort puffern
+                    break;
+                }
+
+                schedulerCounter++;
+
+                // we wait a bit until we start a new scanning process
+                if (schedulerCounter == 2) //tested 5
+                {
+                    schedulerCounter = 0;
+                    currentState = scanVorgangStarten;
+                }
+                break;
+            }
+            case scanVorgangErfolgreich:
+                {
+                triggerScannerCounter = 0;
+                dmcValid = false;
+
+
+
+                currentState = warteAufScanBefehl;
+
+                break;
+            }
+            case scanVorgangNichtErfolgreich:
+                {
+                triggerScannerCounter = 0;
+                dmcValid = false;
+
+                dmcString = "ERROR";
+
+                currentState = warteAufScanBefehl;
+
+                break;
+            }
+        }
+    }
+
+    int CognexSerial::parseTelegram(const unsigned char c)
+    {
+        // a line feed is the last character of a DMC string
+        if (c == LF)
+        {
+            return (1);                             // return 1 to signalize new available telegram
+        }
+        // a tilde starts a new telegram (ignore and set buffer pointer to start)
+        else if (c == '~')
+        {
+            index = 0;                         // start with new telegram (reset buffer position)
+            dmc[index] = '\0';                         // mark end of string
+        }
+        // all characters between ! and } are printable characters, use them only.
+        else if ((c >= '!') && (c <= '}'))
+        {
+            dmc[index] = c;              // put character to buffer
+            if (index < DMC_TELEGRAM_BUFLEN - 1)              // increment buffer position
+            {
+                index++;
+            }
+            dmc[index] = '\0';           // mark end of string (so that telegram string is always valid)
+        }
+        return (0);
+    }
+
+    void CognexSerial::scanDmc(void)
+    {
+        // reset the dmcString
+        dmcString = string();
+        currentState = scanVorgangStarten;
+    }
+
+    void CognexSerial::stopScanning(void)
+    {
+        currentState = scanVorgangNichtErfolgreich;
+    }
+
+    string
+    CognexSerial::getDmc(void)
+    {
+        return (dmcString);
+    }
+}
+

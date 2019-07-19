@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config name="GaApp" version="01.00.000" xmlns="http://www.rst-automation.de"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rst-automation.de config.xsd ">
+
+	<property name="NetworkChannel">1798</property>
+	<property name="NetworkTimeout">10000</property>
+	<property name="ClockPrecisionUsec">1000</property>
+
+	<section name="Network">
+		<property name="NetworkImplementation">IP</property>
+		<section name="IPNetwork">
+			<property name="IPAddress">__IP__</property>
+		</section>
+	</section>
+</config>

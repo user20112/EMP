@@ -1,0 +1,4 @@
+<map id="GaGCppAPI::GaService" name="GaGCppAPI::GaService">
+<area shape="rect" id="node2" href="$class_ga_g_cpp_a_p_i_1_1_ga_logger.html" title="logger wrapper class. receive messages as stream and forward these to gamma logger" alt="" coords="5,35,163,186"/>
+<area shape="rect" id="node4" href="$class_ga_g_cpp_a_p_i_1_1_event.html" title="Event class. several instances of EventHandler can attach to event and will be called, when event is fired." alt="" coords="187,6,320,215"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="GaGCppAPI::GaService::setTaskState" name="GaGCppAPI::GaService::setTaskState">
+<area shape="rect" id="node3" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#af00b54bd7fe967f27be5ccafbd98147e" title="change the current task state to INITIALIZING" alt="" coords="213,5,373,46"/>
+<area shape="rect" id="node5" href="$class_ga_g_cpp_a_p_i_1_1_ga_service.html#aa1cb818bd846cadcf4da18f6baef5aa7" title="change the current task state to OPERATIONAL" alt="" coords="213,70,373,111"/>
+</map>

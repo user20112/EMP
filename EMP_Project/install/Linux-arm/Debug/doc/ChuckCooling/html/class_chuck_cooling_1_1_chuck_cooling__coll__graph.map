@@ -1,0 +1,3 @@
+<map id="ChuckCooling::ChuckCooling" name="ChuckCooling::ChuckCooling">
+<area shape="rect" id="node6" href="$class_ga_app_base_lib_1_1_t_c_p_server_connection.html" title="{GaAppBaseLib::TCPServerConnection\n|&#45; closeCurrentConnection\l&#45; tcpConActive\l&#45; sockfd\l&#45; newsockfd\l&#45; portno\l&#45; cli_addr\l&#45; server\l&#45; sendString\l&#45; receiveString\l&#45; mLoggerName\l&#45; mComThread\l&#45; cRecThread\l&#45; mStopThread\l&#45; cStopThread\l|+ TCPServerConnection()\l+ ~TCPServerConnection()\l+ openServerConnection()\l+ closeServerConnection()\l+ isConnected()\l+ putString()\l+ hasData()\l+ getString()\l+ getChar()\l+ getTcpConStatus()\l&#45; comThread()\l&#45; recThread()\l}" alt="" coords="408,5,651,435"/>
+</map>

@@ -1,0 +1,101 @@
+/*
+ * UART.h
+ *
+ *  Created on: 14.09.2017
+ *      Author: mario.richter
+ */
+
+#ifndef SOURCE_BEAGLEBONERESOURCES_INCLUDE_UART_H_
+#define SOURCE_BEAGLEBONERESOURCES_INCLUDE_UART_H_
+
+// Used for TimeOut operations
+#include <sys/time.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/shm.h>
+#include <termios.h>
+#include <string.h>
+#include <iostream>
+
+// File control definitions
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+
+#include "log/logger.h"
+
+#define CIRBUFLEN           1024
+#define MAX_READ_AT_ONCE    64
+
+typedef struct
+{
+    volatile unsigned int read;                            /* pts at next filled char    */
+    volatile unsigned int writ;                            /* pts at next free char      */
+    volatile unsigned char buf[CIRBUFLEN];                 /* circular buffer for input  */
+} cir_buf;
+
+
+namespace AsymtecUnloader
+{
+  class UartInterface
+  {
+    public:
+
+      /**
+       * @short Constructor
+       */
+      UartInterface(const unsigned int _portNo, const unsigned int _baud);
+
+      /**
+       * @short Destructor
+       */
+      ~UartInterface();
+
+      /**
+       * @short Fetch new data from the interface into the circular buffer and send
+       * new data from the buffer to the interface.
+       * @return none
+       */
+      void UartScheduler(void);
+
+      /**
+       * @short Get a (received) byte from the circular buffer.
+       * @return The received byte, or 0 if no new byte available.
+       */
+      unsigned char UartGetByte(void);
+
+      /**
+       * @short Put a new byte to send into the circular buffer.
+       * @param data The byte to send.
+       * @return 0, if the byte was placed into the buffer.
+       * @return -1, if the send buffer is full.
+       */
+      int UartPutByte(const unsigned char data);
+
+    private:
+
+      /**
+       * @short Open file to access the serial port.
+       * @param _device Name (string) of the device to open, e.g. /dev/ttyO1
+       * @param _baud Baud rate for serial communication
+       * @return  0 if successfully opened
+       * @return -1 if file could not be opened
+       * @return -2 if baudrate is invalid
+       */
+      int UartOpen(const char* _device, const unsigned int _baud);
+
+      /**
+       * @short Close file to access the serial port.
+       * @return none
+       */
+      void UartClose(void);
+
+      int fHandle;            //!< file handle for UART file access
+      cir_buf recv_buf;       //!< circular receive buffer
+      cir_buf send_buf;       //!< circular send buffer
+
+      std::string loggerName;
+  };
+}
+
+#endif /* SOURCE_BEAGLEBONERESOURCES_INCLUDE_UART_H_ */

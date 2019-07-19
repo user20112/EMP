@@ -1,0 +1,258 @@
+/**
+ * @file main.cpp
+ * @short program start entry
+ *
+ * Version Information
+ * -------------------
+ * $Revision: 29111 $
+ * $HeadURL: https://app-aug-svn01.aug.osram.de/svn/aug-sw/TASKS/SOFTWARE/LIBS/CPP/Gamma_IOPlugins/PlugInTemplate/trunk/src/PlugInVersionInfo.template.cpp $
+ * $Author: S.Hegemann $
+ * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
+ *
+ */
+
+// System header
+#include <iostream>
+#include <string.h>
+#include <unistd.h>
+
+// external library header
+#include "GaAppBaseLib.h"
+#include "GaGCppAPI.h"
+
+// application header
+#include "AppVersionInfo.h"
+#include "AppConfig.h"
+
+INITIALIZE_EASYLOGGINGPP
+
+/**
+ * @short program entry called by operating system
+ *
+ * @remark
+ * in case of an error (return value not 0) see error output for further details.
+ *
+ * _Program arguments_
+ *
+ * __Logging system__
+ *  | Argument                |  Description
+ *  |-------------------------|------------------------------------------------------------------------------------
+ *  | -v                      | Activates maximum verbosity
+ *  | --v=2                   | Activates verbosity upto verbose level 2 (valid range: 0-9)
+ *  | --verbose               | Activates maximum verbosity
+ *  | -vmodule=MODULE_NAME    | Activates verbosity for files starting with main to level 1, the rest of the files depend on logging flag  AllowVerboseIfModuleNotSpecified  Please see Logging Flags section above. Two modules can be separated by comma. Please note vmodules are last in order of precedence of checking arguments for verbose logging, e.g, if we have -v in application arguments before vmodules, vmodules will be ignored.
+ *  | --logging-flags=3       | Sets logging flag. In example  i.e, 3 , it sets logging flag to  NewLineForContainer  and  AllowVerboseIfModuleNotSpecified . See logging flags section above for further details and values. See macros section to disable this function.
+ *  | --default-log-file=FILE | Sets default log file for existing and future loggers. You may want to consider defining  ELPP_NO_DEFAULT_LOG_FILE  to prevent creation of default empty log file during pre-processing. See macros section to disable this function.
+ *
+ *
+ * @param argc count of program arguments
+ * @param argv array of program arguments as string
+ * @param envp array of system environment variables (format: KEY=VALUE)
+ * @return program exit code
+ * @retval       0  program finished successfully
+ * @retval      -1  unsupported basic library
+ * @retval      -2  unsupported gamma library
+ * @retval     -10  gamma connection failed.
+ * @retval     -20  unable to read application configuration or loading modules failed.
+ * @retval     -30  clean up failed.
+ */
+int
+main(int argc,
+     char* argv[],
+     char* envp[])
+{
+
+    int retVal = 0;
+    AppControl moduleCtrl;
+
+    // ****************************************************************************************************************************************************************************
+    // *** Prepare logging system
+    // ****************************************************************************************************************************************************************************
+    START_EASYLOGGINGPP(argc, argv);
+    el::Loggers::addFlag(el::LoggingFlag::DisableApplicationAbortOnFatalLog);
+
+    el::Configurations logConfig("./../config/defaultLog.conf");
+    el::Loggers::setDefaultConfigurations(logConfig, true);
+    el::Loggers::getLogger("GaApp");
+    CLOG(INFO, "GaApp")<< "Application " << argv[0] << " started.";
+
+    // ****************************************************************************************************************************************************************************
+    // *** Prepare Application and print debug information to terminal
+    // ****************************************************************************************************************************************************************************
+    CLOG(TRACE, "GaApp")<< "check program and library version";
+    AppVersionInfo& info = AppVersionInfo::getInstance();
+    info.printInfo(4);
+
+    // ****************************************************************************************************************************************************************************
+    // *** Check library versions
+    // ****************************************************************************************************************************************************************************
+    GaAppBaseLib::LibVersionInfo& baseLibInfoInfo = GaAppBaseLib::LibVersionInfo::getInstance();
+    baseLibInfoInfo.printInfo(4);
+    CLOG(INFO, "GaApp")<< " used library " << baseLibInfoInfo.getName() << " (version " << baseLibInfoInfo.getVersionText() << ")";
+    if ((baseLibInfoInfo.getVersion() < 0x01000000ul) || (baseLibInfoInfo.getVersion() >= 0x02000000ul)) {
+        CLOG(ERROR, "GaApp")<< "unsupported basic library " << baseLibInfoInfo.getName() << " in version " << baseLibInfoInfo.getVersionText();
+        return (-1);
+    }
+
+    GaGCppAPI::LibVersionInfo& gammaInfo = GaGCppAPI::LibVersionInfo::getInstance();
+    gammaInfo.printInfo(4);
+    CLOG(INFO, "GaApp")<< " used library " << gammaInfo.getName() << " (version " << gammaInfo.getVersionText() << ")";
+    if ((gammaInfo.getVersion() < 0x01000000ul) || (gammaInfo.getVersion() >= 0x02000000ul)) {
+        CLOG(ERROR, "GaApp")<< "unsupported gamma interface " << gammaInfo.getName() << " in version " << gammaInfo.getVersionText();
+        return (-2);
+    }
+    GaGCppAPI::GaService& gammaSerive = GaGCppAPI::GaService::getInstance();
+
+    // ****************************************************************************************************************************************************************************
+    // *** Attach to gamma service
+    // ****************************************************************************************************************************************************************************
+    if (retVal == 0) {
+        CLOG(INFO, "GaApp")<< "Attach application to gamma service.";
+
+        try {
+            gammaSerive.setTaskName(info.getName());
+            gammaSerive.setServicePort(0);
+            gammaSerive.setConnectTimeout(100);
+            gammaSerive.attach(true);
+            gammaSerive.setTaskInitializing();
+        }
+        catch (GaAppBaseLib::ExceptionBase &e) {
+            CLOG(ERROR, "GaApp") << e.what();
+            retVal = -10;
+        }
+        catch (std::exception &e) {
+            CLOG(ERROR, "GaApp") << "system exception is thrown when gamma connection is established: " << e.what();
+            retVal = -10;
+        }
+    }
+
+    // ****************************************************************************************************************************************************************************
+    // *** Load application configuration and prepare system for cyclic mode
+    // ****************************************************************************************************************************************************************************
+    if (retVal == 0) {
+        try {
+            std::string configFileName = "../config/AppConfig.xml";
+            CLOG(INFO, "GaApp")<< "load application configuration \"" << configFileName << "\" file and load additional modules";
+            moduleCtrl.loadConfigFile(configFileName);
+            moduleCtrl.loadModules();
+            CLOG(INFO, "GaApp")<< "All modules loaded. Run now prepare startup.";
+            moduleCtrl.prepareStart();
+        }
+        catch (GaAppBaseLib::ExceptionBase &e) {
+            CLOG(ERROR, "GaApp")<< e.what();
+            retVal = -20;
+        }
+        catch (std::exception &e) {
+            CLOG(ERROR, "GaApp") << "system exception is thrown when configuration file was loaded: " << e.what();
+            retVal = -20;
+        }
+    }
+
+    // ****************************************************************************************************************************************************************************
+    // *** start gamma scheduler
+    // ****************************************************************************************************************************************************************************
+    if (retVal == 0) {
+        try {
+            gammaSerive.startSchedulerAll();
+        }
+        catch (GaAppBaseLib::ExceptionBase &e) {
+            CLOG(ERROR, "GaApp")<< e.what();
+            retVal = -20;
+        }
+        catch (std::exception &e) {
+            CLOG(ERROR, "GaApp") << "system exception is thrown when gamma scheduler are started: " << e.what();
+            retVal = -40;
+        }
+    }
+
+    // ****************************************************************************************************************************************************************************
+    // *** run command terminal
+    // ****************************************************************************************************************************************************************************
+    while (retVal == 0) {
+        // read command line from standard input device
+        std::string commandLine;
+        std::getline(std::cin, commandLine);
+
+        if (commandLine.length() == 0) {
+            usleep(1000);
+            continue;
+        }
+        CLOG(DEBUG, "GaApp")<< "execute terminal command \"" << commandLine << "\"";
+
+        // extract given command
+        std::string cmd = commandLine.substr(0, commandLine.find(' '));
+
+        // extract module name
+        size_t delimitPos = cmd.find(':');
+
+        // -------------------------------------------------------------------------------------------------------
+        // command: "bye"  => quit application
+        // -------------------------------------------------------------------------------------------------------
+        if (cmd == "bye") {
+            CLOG(WARNING, "GaApp")<< "application stopped by user command.";
+            break;
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // command: "info"  => print application version information (including used libs)
+        // -------------------------------------------------------------------------------------------------------
+        else if (cmd == "info") {
+            CLOG(TRACE, "GaApp") << "    get version information";
+            info.printInfo(2);
+
+            baseLibInfoInfo.printInfo();
+            gammaInfo.printInfo();
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // command: "modules"  => print list of loaded modules without version informations
+        // -------------------------------------------------------------------------------------------------------
+        else if (cmd == "modules") {
+            CLOG(TRACE, "GaApp") << "    get module list";
+            moduleCtrl.printModuleList(false);
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // command: "modules.all"  => print list of loaded modules including version informations
+        // -------------------------------------------------------------------------------------------------------
+        else if (cmd == "modules.all") {
+            CLOG(TRACE, "GaApp") << "    get module list with version information";
+            moduleCtrl.printModuleList(true);
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // call module command
+        // -------------------------------------------------------------------------------------------------------
+        else if (delimitPos != std::string::npos) {
+            std::string moduleName = cmd.substr(0, delimitPos);
+            std::string moduleCmd = commandLine.substr(delimitPos + 1, std::string::npos);
+
+            CLOG(TRACE, "GaApp") << "command for module " << moduleName << ": " << moduleCmd;
+
+            moduleCtrl.sendCommand(moduleName, moduleCmd);
+        }
+        // -------------------------------------------------------------------------------------------------------
+        // unknown command
+        // -------------------------------------------------------------------------------------------------------
+        else if (commandLine.length() > 0) {
+            CLOG(WARNING, "GaApp") << "    unknown command \"" << cmd << "\"";
+        }
+    }    // while (retVal == 0)
+
+    // ****************************************************************************************************************************************************************************
+    // *** clean up application
+    // ****************************************************************************************************************************************************************************
+    try {
+        CLOG(INFO, "GaApp")<< "run application clean up.";
+        gammaSerive.stopSchedulerAll();
+        moduleCtrl.cleanUp();
+    }
+    catch (GaAppBaseLib::ExceptionBase &e) {
+        CLOG(ERROR, "GaApp") << e.what();
+        retVal = -30;
+    }
+    catch (std::exception &e) {
+        CLOG(ERROR, "GaApp") << "system exception is thrown during clean up: " << e.what();
+        retVal = -30;
+    }
+
+    CLOG(INFO, "GaApp")<< "stop application (result: " << retVal << ").";
+    return (retVal);
+}
+

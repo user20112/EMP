@@ -1,0 +1,4 @@
+<map id="GaAppBaseLib::TCPServerConnection::openServerConnection" name="GaAppBaseLib::TCPServerConnection::openServerConnection">
+<area shape="rect" id="node3" href="$class_ga_app_base_lib_1_1_t_c_p_server_connection.html#ab0f9376bfd9e01ab6de582a1f816b806" title="function to handle communication. Will be started in own thread" alt="" coords="296,5,539,46"/>
+<area shape="rect" id="node5" href="$class_ga_app_base_lib_1_1_t_c_p_server_connection.html#aab4eab5c6eeed6ac176045db5fad7b81" title="close connection and clean up" alt="" coords="587,5,829,46"/>
+</map>

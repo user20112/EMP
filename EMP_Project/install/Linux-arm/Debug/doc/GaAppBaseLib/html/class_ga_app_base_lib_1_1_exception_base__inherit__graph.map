@@ -1,0 +1,5 @@
+<map id="GaAppBaseLib::ExceptionBase" name="GaAppBaseLib::ExceptionBase">
+<area shape="rect" id="node5" href="$class_ga_app_base_lib_1_1_argument_fault_exception.html" title="Exception: is used for parameter validation. Special Parameter is the name of fault argument or membe..." alt="" coords="5,344,208,480"/>
+<area shape="rect" id="node7" href="$class_ga_app_base_lib_1_1_logic_fault_exception.html" title="exception is thrown, when a logic error occurred" alt="" coords="233,344,409,480"/>
+<area shape="rect" id="node9" href="$class_ga_app_base_lib_1_1_system_call_exception.html" title="exception is thrown, when a system call failed" alt="" coords="435,344,619,480"/>
+</map>

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../../../source/GaApp/./include/gpiolib.h
+stdint.h
+-
+
+S:/work/XLSDispenser/source/GaApp/src/gpiolib.c
+errno.h
+-
+fcntl.h
+-
+stdbool.h
+-
+stdint.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/mman.h
+-
+unistd.h
+-
+gpiolib.h
+S:/work/XLSDispenser/source/GaApp/src/gpiolib.h
+

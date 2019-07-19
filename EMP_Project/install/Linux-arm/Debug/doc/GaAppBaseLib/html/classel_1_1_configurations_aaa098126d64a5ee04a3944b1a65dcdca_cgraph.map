@@ -1,0 +1,6 @@
+<map id="el::Configurations::parseFromFile" name="el::Configurations::parseFromFile">
+<area shape="rect" id="node3" href="$classel_1_1base_1_1utils_1_1_file.html#a4fc9e36b814f1aeaa4931e35d58e5b45" title="Determines whether or not provided path exist in current file system." alt="" coords="191,5,321,46"/>
+<area shape="rect" id="node5" href="$classel_1_1_configurations_1_1_parser.html#a45def5007bf368c4d2a505af58cd94c2" title="Parses configuration from file." alt="" coords="177,70,335,111"/>
+<area shape="rect" id="node7" href="$classel_1_1_configurations.html#a4c6db218908b39d23cc09b1a16a18e83" title="Sets configuration based&#45;off an existing configurations." alt="" coords="384,70,507,111"/>
+<area shape="rect" id="node9" href="$classel_1_1base_1_1utils_1_1_abstract_registry.html#a072859d3728a75f910c2898f62fd12da" title="Returns underlying container by reference." alt="" coords="555,70,712,111"/>
+</map>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AppConfig>
+	<ModuleList>
+
+		<Module library="BaseTecDriver" name="HW">
+			<RealtimeSetup cycleTime="1000" priority="99" />
+			<GammaConnection PVNode="HardwareResources.BaseTecDriver"
+				SchedulerSlot=":BaseTecDriver.IOSync" />
+		</Module>
+
+		<Module library="XLSDispenser" name="XLS">
+			<RealtimeSetup cycleTime="100000" priority="90" />
+			<GammaConnection PVNode="XLSDispenser.data"
+				SchedulerSlot=":XLSDispenserTask.XLSWork" />
+			<!-- MQTTConnection server="tcp://app-her-cspac01.ops.osp-light.com" topic="XLS_Asymtec/HER-XLS-DammDisp01/MagazinNutzen" 
+				defId1="MagazinId" defType1="Magazin" defId2="NutzenId" defType2="Nutzen" / -->
+			<MQTTConnection server="tcp://aug-prod-334" deviceName="BaseTec_Asymtec_001"
+				topic="XLS_Asymtec/HER-XLS-DammDisp01/MagazinNutzen" defId1="MagazinId"
+				defType1="Magazin" defId2="NutzenId" defType2="Nutzen" />
+		</Module>
+
+		<Module library="KleberMqtt" name="Kleber">
+			<RealtimeSetup cycleTime="20000" priority="95" />
+			<GammaConnection PVNode="KleberMqtt.data"
+				SchedulerSlot=":KleberTask.KWork" />
+			<Mqtt name="BaseTec_Kleber_001" mqttServer="tcp://aug-prod-334"
+				mqttServerPort="1883" mqttTimeout="10"
+				topicName="XLS_Asymtec01_Prematerial_Expiration" />
+			<Eiga function="Confirmation_Button" no="1" use="true" />
+			<Auga function="SignalTower_Green" no="1" use="true" />
+			<Auga function="SignalTower_Yellow" no="2" use="true" />
+			<Auga function="SignalTower_Red" no="3" use="true" />
+			<Auga function="SignalTower_Buzzer" no="4" use="true" />
+		</Module>
+
+	</ModuleList>
+</AppConfig>

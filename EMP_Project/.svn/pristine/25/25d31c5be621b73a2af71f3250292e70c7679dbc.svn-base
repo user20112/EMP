@@ -1,0 +1,848 @@
+/*
+ * KleberMqtt.cpp
+ *
+ *  Created on: 21.11.2017
+ *      Author: mario.richter
+ */
+
+// System header
+#include "../include/KleberMqtt.h"
+
+#include <iostream>
+
+// external library header
+
+// local library header
+#include "../include/KleberMqttVersionInfo.h"
+
+/**
+ * @fn createModule
+ * @short create a new module instance
+ * @param _instanceName name of module instance
+ * @param _configNode pointer to XML configuration information
+ * @return pointer to new module instance
+ *
+ * @fn deleteModule
+ * @short destroy module instance
+ * @param _module pointer to instance
+ */
+
+// ncurses
+WINDOW *winHeadline_1, *winHeadline_2_1, *winHeadline_2_2, *winPotlifetime, *winMessage;
+
+EXPORT_FUNCTIONS(KleberMqtt, KleberMqtt)
+
+namespace KleberMqtt
+{
+
+    // **************************************************************************************************
+    // ** wrapper functions for callbacks
+    // **************************************************************************************************
+    void taskDisplayCallback(void *arg)
+    {
+        KleberMqtt* inst = reinterpret_cast<KleberMqtt*>(arg);
+        if (inst != nullptr)
+            inst->taskDisplay();
+    }
+
+    void mqttConnlostCallback(void *context, char *cause)
+    {
+        KleberMqtt* inst = reinterpret_cast<KleberMqtt*>(context);
+        if (inst != nullptr)
+        {
+            inst->mqttConnlost(context, cause);
+        }
+    }
+
+    int mqttMsgArrvdCallback(void *context, char *topicName, int topicLen, MQTTClient_message *message)
+    {
+        KleberMqtt* inst = reinterpret_cast<KleberMqtt*>(context);
+        if (inst != nullptr)
+            return inst->mqttMsgArrvd(context, topicName, topicLen, message);
+        else
+            return 1;
+    }
+
+    void mqttDeliveredCallback(void *context, MQTTClient_deliveryToken dt)
+    {
+        KleberMqtt* inst = reinterpret_cast<KleberMqtt*>(context);
+        if (inst != nullptr)
+            inst->mqttDelivered(context, dt);
+    }
+
+    // **************************************************************************************************
+    // ** realtime display task
+    // **************************************************************************************************
+    void KleberMqtt::taskDisplay()
+    {
+        uint32_t now_timestamp;
+        uint32_t mqtt_timeout;
+        bool mqtt_error_timeout;
+        uint32_t mqttErrorCounter = 0;
+        uint32_t moduloDivisor = 1;
+
+        while (1)
+        {
+            rt_task_wait_period((unsigned long *) NULL);
+
+            // check for mqtt timeouts
+            time_t timer;
+            struct tm* tm_info;
+            time(&timer);
+            tm_info = localtime(&timer);
+            strftime(time_hms, 20, "%H:%M:%S", tm_info);
+
+            now_timestamp = time(NULL);
+            mqtt_timeout = (now_timestamp - mqtt_telegram_timestamp);
+            if (mqtt_timeout > xmlMqttTimeout)
+            {
+                mqtt_error_timeout = true;
+            }
+            else
+            {
+                mqtt_error_timeout = false;
+            }
+
+            // ncurses display output
+            werase(winHeadline_1);
+            mvwprintw(winHeadline_1, 1, 1, "%s", json_string_value(jsonColumnValue[Headline_1]));
+            wrefresh(winHeadline_1);
+
+            werase(winHeadline_2_1);
+            mvwprintw(winHeadline_2_1, 1, 1, "%s", json_string_value(jsonColumnValue[Headline_2_1]));
+            wrefresh(winHeadline_2_1);
+
+            werase(winHeadline_2_1);
+            mvwprintw(winHeadline_2_2, 1, 1, "%s", json_string_value(jsonColumnValue[Headline_2_2]));
+            wrefresh(winHeadline_2_2);
+
+            werase(winPotlifetime);
+            mvwprintw(winPotlifetime, 3, (COLS / 4 - 4), "%s", json_string_value(jsonColumnValue[Potlifetime_Absolute]));
+            mvwprintw(winPotlifetime, 3, ((COLS / 4) * 3 - 4), "%s", json_string_value(jsonColumnValue[Potlifetime_Remaining]));    //todo check middle window size
+            wrefresh(winPotlifetime);
+
+            if (mqtt_error_connection || mqtt_error_timeout)
+            {
+
+                // 1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, ...
+
+                mqttErrorCounter++;
+
+                if (mqttErrorCounter % moduloDivisor == 0)
+                {
+                    CLOG(ERROR, mLoggerName.c_str())<< "mqtt connection error: " << mqtt_error_connection << " - timeout: " << mqtt_error_timeout;
+
+                    if(mqttErrorCounter == 1 << 15)
+                    {
+                        mqttErrorCounter = mqttErrorCounter >> 1;
+
+                        moduloDivisor = moduloDivisor >> 1;
+                    }
+
+                    moduloDivisor = moduloDivisor << 1;
+                }
+
+                if (mqtt_timeout > 10)
+                {
+                    werase(winMessage);
+                    wbkgd(winMessage, COLOR_PAIR(10));
+                    wattron(winMessage, COLOR_PAIR(10));
+                    //mvwprintw(winMessage, 1, 0,"%s",json_string_value(jsonColumnValue[Message]));
+                    wattrset(winMessage, A_BOLD);
+                    mvwprintw(winMessage, 1, 0, "Keine Datenverbindung %ds", mqtt_timeout);
+                    wattrset(winMessage, A_NORMAL);
+                }
+            }
+            else
+            {
+                werase(winMessage);
+                wbkgd(winMessage, COLOR_PAIR(5));
+                wattron(winMessage, COLOR_PAIR(5));
+                mvwprintw(winMessage, 1, 0, "%s", json_string_value(jsonColumnValue[Message]));
+            }
+
+            // internals
+            mvwprintw(winMessage, (LINES - 14), 0, "V1.0.0\n");
+            mvwprintw(winMessage, (LINES - 14), (COLS - 8), "%s\n", time_hms);
+            wrefresh(winMessage);
+        }
+    }
+
+    // **************************************************************************************************
+    // ** KleberMqtt
+    // **************************************************************************************************
+    KleberMqtt::KleberMqtt(const char* _instanceName,    // @suppress("Class members should be properly initialized")
+                           pugi::xml_node* _configInfo)
+            : GaAppBaseLib::ModuleInterface(_instanceName, _configInfo),
+              isMqttConfBad(false),
+              inputCount(0),
+              outputCount(0),
+              jsonSignalTower_Green(false),
+              jsonSignalTower_Yellow(false),
+              jsonSignalTower_Red(false),
+              jsonSignalTower_Buzzer(false),
+              taskCounter(0)
+    {
+        uint32_t parent_x, parent_y;
+        uint32_t mqtt_rc;
+        uint32_t ioIndex;
+
+        // initialize loggersmqt
+        el::Loggers::getLogger(mLoggerName);
+        CLOG(DEBUG, mLoggerName.c_str())<< "KleberMqtt constructor executed.";
+
+        // gamma connection
+        mGammaSlot = ":KleberTask.KWork";
+        mGammaPathBase = "HardwareResources.BaseTecDriver";       // for digital I/Os -> use BaseTecDriver!
+        connect(mGammaSlot);
+
+        // ------------------------------------------------------------
+        // get the configuration from the XML file
+
+        pugi::xml_attribute attr;
+        pugi::xml_node mqttSetup = getConfigNode().child("Mqtt");
+        if (!mqttSetup.empty())
+        {
+            attr = mqttSetup.attribute("mqttServer");
+            if (!attr.empty())
+                xmlMqttAddress = attr.as_string();
+            else
+                isMqttConfBad = true;
+
+            xmlMqttAddress.append(":");
+
+            attr = mqttSetup.attribute("mqttServerPort");
+            if (!attr.empty())
+                xmlMqttAddress.append(attr.as_string());
+            else
+                isMqttConfBad = true;
+
+            attr = mqttSetup.attribute("topicName");
+            if (!attr.empty())
+                xmlMqttTopic = attr.as_string();
+            else
+                isMqttConfBad = true;
+
+            attr = mqttSetup.attribute("name");
+            if (!attr.empty())
+                xmlMqttClientId = attr.as_string();
+            else
+                isMqttConfBad = true;
+
+            attr = mqttSetup.attribute("mqttTimeout");
+            if (!attr.empty())
+                xmlMqttTimeout = attr.as_int();
+            else
+                isMqttConfBad = true;
+
+            if (!isMqttConfBad)
+            {
+                CLOG(DEBUG, mLoggerName.c_str())<< "mqtt: " << xmlMqttAddress << " topic=" << xmlMqttTopic
+                << " timeout=" << xmlMqttTimeout;
+            }
+        }
+
+        // ------------------------------------------------------------
+        // get the input configuration and connect to gamma variables
+
+        for (pugi::xml_node eiga = getConfigNode().child("Eiga"); eiga; eiga = eiga.next_sibling("Eiga"))
+        {
+            attr = eiga.attribute("function");
+            if (!attr.empty())
+                xmlInput[inputCount].Function = attr.as_string();
+
+            attr = eiga.attribute("no");
+            if (!attr.empty())
+                xmlInput[inputCount].no = attr.as_int();
+
+            attr = eiga.attribute("use");
+            if (!attr.empty())
+                xmlInput[inputCount].use = attr.as_bool();
+
+            CLOG(DEBUG, mLoggerName.c_str())<< "input " << xmlInput[inputCount].no << ": " << xmlInput[inputCount].Function
+            << " is " << ((xmlInput[inputCount].use == true) ? "used." : "NOT used.");
+
+            inputCount++;
+        }
+
+        for (ioIndex = 0; ioIndex < inputCount; ioIndex++)
+        {
+            if ((!strcmp(xmlInput[ioIndex].Function.c_str(), "Confirmation_Button")) && (xmlInput[ioIndex].use))
+            {
+                inConfirmation_Button = xmlInput[ioIndex].no;
+                digInConfirmButton.connectToPv(
+                        (mGammaPathBase + ".DigitalInputs.Input_0" + std::to_string(inConfirmation_Button - 1) + ".actState").c_str(),
+                        ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
+                CLOG(DEBUG, mLoggerName.c_str())<< "Confirmation_Button connected to Input_0" << (inConfirmation_Button - 1);
+            }
+        }
+
+        // ------------------------------------------------------------
+        // get the output configuration and connect to gamma variables
+
+        for (pugi::xml_node auga = getConfigNode().child("Auga"); auga; auga = auga.next_sibling("Auga"))
+        {
+            attr = auga.attribute("function");
+            if (!attr.empty())
+                xmlOutput[outputCount].Function = attr.as_string();
+
+            attr = auga.attribute("no");
+            if (!attr.empty())
+                xmlOutput[outputCount].no = attr.as_int();
+
+            attr = auga.attribute("use");
+            if (!attr.empty())
+                xmlOutput[outputCount].use = attr.as_bool();
+
+            CLOG(DEBUG, mLoggerName.c_str())<< "output " << xmlOutput[outputCount].no << ": " << xmlOutput[outputCount].Function
+            << " is " << ((xmlOutput[outputCount].use == true) ? "used." : "NOT used.");
+
+            outputCount++;
+        }
+
+        for (ioIndex = 0; ioIndex < outputCount; ioIndex++)
+        {
+            if ((!strcmp(xmlOutput[ioIndex].Function.c_str(), "SignalTower_Green")) && (xmlOutput[ioIndex].use))
+            {
+                outSignalTower_Green = xmlOutput[ioIndex].no;
+                digOutSignalGreen.connectToPv(
+                        (mGammaPathBase + ".DigitalOutputs.Output_0" + std::to_string(outSignalTower_Green - 1) + ".reqState").c_str(),
+                        ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
+                CLOG(DEBUG, mLoggerName.c_str())<< "SignalTower_Green connected to Output_0" << (outSignalTower_Green - 1);
+            }
+            if ((!strcmp(xmlOutput[ioIndex].Function.c_str(), "SignalTower_Yellow")) && (xmlOutput[ioIndex].use))
+            {
+                outSignalTower_Yellow = xmlOutput[ioIndex].no;
+                digOutSignalYellow.connectToPv(
+                        (mGammaPathBase + ".DigitalOutputs.Output_0" + std::to_string(outSignalTower_Yellow - 1) + ".reqState").c_str(),
+                        ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
+                CLOG(DEBUG, mLoggerName.c_str()) << "SignalTower_Yellow connected to Output_0" << (outSignalTower_Yellow - 1);
+            }
+            if ((!strcmp(xmlOutput[ioIndex].Function.c_str(), "SignalTower_Red")) && (xmlOutput[ioIndex].use))
+            {
+                outSignalTower_Red = xmlOutput[ioIndex].no;
+                digOutSignalRed.connectToPv(
+                        (mGammaPathBase + ".DigitalOutputs.Output_0" + std::to_string(outSignalTower_Red - 1) + ".reqState").c_str(),
+                        ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
+                CLOG(DEBUG, mLoggerName.c_str()) << "SignalTower_Red connected to Output_0" << (outSignalTower_Red - 1);
+            }
+            if ((!strcmp(xmlOutput[ioIndex].Function.c_str(), "SignalTower_Buzzer")) && (xmlOutput[ioIndex].use))
+            {
+                outSignalTower_Buzzer = xmlOutput[ioIndex].no;
+                digOutSignalBuzzer.connectToPv(
+                        (mGammaPathBase + ".DigitalOutputs.Output_0" + std::to_string(outSignalTower_Buzzer - 1) + ".reqState").c_str(),
+                        ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
+                CLOG(DEBUG, mLoggerName.c_str()) << "SignalTower_Buzzer connected to Output_0" << (outSignalTower_Buzzer - 1);
+            }
+        }
+
+        // ------------------------------------------------------------
+        // create realtime task
+
+        if (rt_task_create(&display_task, "task_display", 0, 50, 0) != 0)
+        {
+            CLOG(ERROR, mLoggerName.c_str())<< "ERROR: rt_task_create() failed.";
+            exit(EXIT_FAILURE);
+        }
+        if (rt_task_set_periodic(&display_task, TM_NOW, TIME_DISPLAY) != 0)
+        {
+            CLOG(ERROR, mLoggerName.c_str())<< "ERROR: rt_task_set_periodic() failed.";
+            exit(EXIT_FAILURE);
+        }
+        if (rt_task_start(&display_task, &taskDisplayCallback, (void*) this) != 0)
+        {
+            CLOG(ERROR, mLoggerName.c_str())<< "ERROR: rt_task_start() failed.";
+            exit(EXIT_FAILURE);
+        }
+
+        // ------------------------------------------------------------
+        // ncurses init
+
+        //initscr();
+        // redirect output to HDMI (tty1)
+        fd = fopen("/dev/tty1", "r+");
+        scr = newterm(NULL, fd, fd);
+
+        noecho();
+        start_color();
+
+        // init color pairs
+        init_pair(1, COLOR_WHITE, COLOR_BLACK);
+        init_pair(2, COLOR_WHITE, COLOR_BLACK);
+        init_pair(3, COLOR_WHITE, COLOR_BLACK);
+        init_pair(4, COLOR_WHITE, COLOR_BLACK);
+        init_pair(5, COLOR_WHITE, COLOR_BLACK);
+        init_pair(10, COLOR_WHITE, COLOR_RED);
+
+        // init windows
+        getmaxyx(stdscr, parent_y, parent_x);
+        winHeadline_1 = newwin(3, parent_x, 0, 0);
+        wbkgd(winHeadline_1, COLOR_PAIR(1));
+        wattron(winHeadline_1, COLOR_PAIR(1));
+
+        winHeadline_2_1 = newwin(3, (parent_x / 2), 3, 0);
+        wbkgd(winHeadline_2_1, COLOR_PAIR(2));
+        wattron(winHeadline_2_1, COLOR_PAIR(2));
+
+        winHeadline_2_2 = newwin(3, (parent_x / 2), 3, (parent_x / 2));
+        wbkgd(winHeadline_2_2, COLOR_PAIR(3));
+        wattron(winHeadline_2_2, COLOR_PAIR(3));
+
+        winPotlifetime = newwin(7, parent_x, 6, 0);
+        wbkgd(winPotlifetime, COLOR_PAIR(4));
+        wattron(winPotlifetime, COLOR_PAIR(4));
+
+        winMessage = newwin((parent_y - 13), parent_x, 13, 0);
+        wbkgd(winMessage, COLOR_PAIR(5));
+        wattron(winMessage, COLOR_PAIR(5));
+
+        // getchar nonblocking
+        timeout(0);
+
+        // no cursor
+        curs_set(FALSE);
+
+        // ------------------------------------------------------------
+        // mqtt init
+
+        if (!isMqttConfBad)
+        {
+            CLOG(INFO, mLoggerName.c_str())<< "MQTT configuration successful.";
+
+            conn_opts.keepAliveInterval = 20;
+            conn_opts.cleansession = 1;
+            mqtt_telegram_timestamp = time(NULL);
+            mqtt_error_initial_connection = false;
+
+            MQTTClient_create(&client, xmlMqttAddress.c_str(), xmlMqttClientId.c_str(), MQTTCLIENT_PERSISTENCE_NONE, NULL);
+            MQTTClient_setCallbacks(client, (void*)this, mqttConnlostCallback, mqttMsgArrvdCallback, mqttDeliveredCallback);
+
+            if((mqtt_rc = MQTTClient_connect(client, &conn_opts)) != MQTTCLIENT_SUCCESS)
+            {
+                CLOG(INFO, mLoggerName.c_str()) << "ERROR: MQTTClient_connect=" << mqtt_rc;
+                // exit(EXIT_FAILURE);
+            }
+            else
+            {
+                mqtt_error_initial_connection = true;
+                MQTTClient_subscribe(client, xmlMqttTopic.c_str(), MQTT_QOS);
+            }
+        }
+        else
+        {
+            CLOG(ERROR, mLoggerName.c_str()) << "BAD MQTT CONFIGURATION! MQTT is now disabled.";
+        }
+    }
+
+    // **************************************************************************************************
+    // ** ~KleberMqtt
+    // **************************************************************************************************
+    KleberMqtt::~KleberMqtt()
+    {
+        rt_task_delete(&display_task);
+
+        werase(winMessage);
+        wrefresh(winMessage);
+
+        CLOG(DEBUG, mLoggerName.c_str())<< "KleberMqtt destructed.";
+
+        el::Loggers::unregisterLogger(mLoggerName);
+    }
+
+    // **************************************************************************************************
+    // ** prepareStart
+    // **************************************************************************************************
+    void
+    KleberMqtt::prepareStart()
+    {
+        CLOG(DEBUG, mLoggerName.c_str())<< "KleberMqtt prepareStart done.";
+    }
+
+    // **************************************************************************************************
+    // ** cleanUp
+    // **************************************************************************************************
+    void
+    KleberMqtt::cleanUp()
+    {
+    }
+
+    // **************************************************************************************************
+    // ** execCommand
+    // **************************************************************************************************
+    void KleberMqtt::execCommand(std::string& _cmdLine)
+    {
+        // extract given command
+        std::string cmd = _cmdLine.substr(0, _cmdLine.find(' '));
+
+        // extract module name
+        size_t delimitPos = cmd.find(':');
+
+        // -------------------------------------------------------------------------------------------------------
+        // command: "info"  => print version information
+        // -------------------------------------------------------------------------------------------------------
+        if (cmd == "info")
+        {
+            std::cout << "  " << getName() << " (Type:" << ModuleVersionInfo::getInstance().getName() << ")" << std::endl;
+            ModuleVersionInfo::getInstance().printInfo(4);
+        }
+
+        // -------------------------------------------------------------------------------------------------------
+        // submodule command
+        // -------------------------------------------------------------------------------------------------------
+        else if (delimitPos != std::string::npos)
+        {
+            std::string moduleName = cmd.substr(0, delimitPos);
+            std::string moduleCmd = _cmdLine.substr(delimitPos + 1, std::string::npos);
+
+            // TODO: call submodule command interface
+            std::cout << "  " << getName() << ": command for submodule \"" << moduleName << "\": \"" << moduleCmd << "\"" << std::endl;
+        }
+
+        // -------------------------------------------------------------------------------------------------------
+        // unknown command
+        // -------------------------------------------------------------------------------------------------------
+        else if (_cmdLine.length() > 0)
+        {
+            std::cerr << "  " << getName() << ": unknown command \"" << cmd << "\"" << std::endl;
+        }
+    }
+
+    // **************************************************************************************************
+    // ** taskInit
+    // **************************************************************************************************
+    int32_t KleberMqtt::taskInit() noexcept
+    {
+        return (0);
+    }
+
+    // **************************************************************************************************
+    // ** taskDeinit
+    // **************************************************************************************************
+    int32_t KleberMqtt::taskDeinit() noexcept
+    {
+        return (0);
+    }
+
+    // **************************************************************************************************
+    // ** taskRun
+    // **************************************************************************************************
+    int32_t KleberMqtt::taskRun(gs_Task taskHandle, const uint32_t* frameNumber) noexcept
+    {
+        if (!isMqttConfBad)    // only if mqtt is configured correctly
+        {
+            // check of initial MQTT connect was successful
+            if (mqtt_error_initial_connection == false)
+            {
+                mqtt_error_initial_connection = true;
+                MQTTClient_subscribe(client, xmlMqttTopic.c_str(), MQTT_QOS);
+            }
+        }
+
+        // reset buzzer when confirmed
+        if (inConfirmation_Button > 0)
+        {
+            if (digInConfirmButton.get() == 1)
+            {
+                buzzerConfirmed = true;
+            }
+        }
+
+        // output signals to signal tower
+        if (outSignalTower_Green > 0)
+            digOutSignalGreen.put((jsonSignalTower_Green == true) ? 1 : 0);
+
+        if (outSignalTower_Yellow > 0)
+            digOutSignalYellow.put((jsonSignalTower_Yellow == true) ? 1 : 0);
+
+        if (outSignalTower_Red > 0)
+            digOutSignalRed.put((jsonSignalTower_Red == true) ? 1 : 0);
+
+        // task counter for buzzer PWM
+        taskCounter++;
+        if (taskCounter >= 10)    // Tperiod = 200ms
+            taskCounter = 0;
+
+        if (outSignalTower_Buzzer > 0)
+        {
+            if (!buzzerConfirmed)
+                digOutSignalBuzzer.put((taskCounter >= 5) ? 1 : 0);
+            else
+                digOutSignalBuzzer.put(0);
+        }
+
+        return (0);
+    }
+
+    // **************************************************************************************************
+    // ** Mqtt callback: connection lost
+    // **************************************************************************************************
+    void KleberMqtt::mqttConnlost(void *context, char *cause)
+    {
+
+        uint32_t mqtt_rc;
+
+    	if (MQTTClient_isConnected(client))
+		{
+    		CLOG(INFO, mLoggerName.c_str())<< "Call of Connection Lost but still connected";
+		}
+		else
+		{
+			mqtt_error_connection = true;
+
+			CLOG(ERROR, mLoggerName.c_str())<< "mqtt connection error: " << mqtt_error_connection;
+
+			if (cause == nullptr)
+			{
+				CLOG(INFO, mLoggerName.c_str())<< "MQTTClient_disconnected = " << "no cause available";
+			}
+			else
+			{
+				CLOG(INFO, mLoggerName.c_str()) << "MQTTClient_disconnected = " << cause;
+			}
+
+			conn_opts.keepAliveInterval = 20;
+			conn_opts.cleansession = 1;
+
+	//        if (context != nullptr)
+	//        {
+	//            client = (MQTTClient*) (context);
+	//            CLOG(INFO, mLoggerName.c_str()) << "reconnect old mqttClient" << cause;
+	//        }
+	//        else
+	//        {
+	//            MQTTClient_create(&client, xmlMqttAddress.c_str(), xmlMqttClientId.c_str(), MQTTCLIENT_PERSISTENCE_NONE, NULL);
+	//            MQTTClient_setCallbacks(client, (void*) this, mqttConnlostCallback, mqttMsgArrvdCallback, mqttDeliveredCallback);
+	//            CLOG(INFO, mLoggerName.c_str()) << "connect new mqttClient" << cause;
+	//        }
+
+			MQTTClient_create(&client, xmlMqttAddress.c_str(), xmlMqttClientId.c_str(), MQTTCLIENT_PERSISTENCE_NONE, NULL);
+			MQTTClient_setCallbacks(client, (void*) this, mqttConnlostCallback, mqttMsgArrvdCallback, mqttDeliveredCallback);
+
+			while ((mqtt_rc = MQTTClient_connect(client, &conn_opts)) != MQTTCLIENT_SUCCESS)
+			{
+				CLOG(ERROR, mLoggerName.c_str())<< "MQTTClient_connect=" << mqtt_rc;
+				usleep(MQTT_RECONNECT_DELAY);
+			}
+
+			MQTTClient_subscribe(client, xmlMqttTopic.c_str(), MQTT_QOS);
+
+			mqtt_error_connection = false;
+		}
+    }
+
+    // **************************************************************************************************
+    // ** Mqtt callback: message arrived
+    // **************************************************************************************************
+    int KleberMqtt::mqttMsgArrvd(void *context, char *topicName, int topicLen, MQTTClient_message *message)
+    {
+        uint32_t columnIndex;
+
+        json_t *root;
+        json_error_t error;
+        //char    *mqtt_payload;
+
+        mqtt_error_connection = false;
+
+        mqtt_telegram_timestamp = time(NULL);
+        mqtt_telegram_counter++;
+
+        CLOG(DEBUG, mLoggerName.c_str())<< "timestamp: " << time_hms
+        << "strlen(payload): " << strlen((char*)message->payload)
+        << " payloadlen: "<< message->payloadlen;
+
+        root = json_loads((char*) message->payload, JSON_DISABLE_EOF_CHECK, &error);
+
+        if (!root)
+        {
+            CLOG(DEBUG, mLoggerName.c_str())<< "ERROR: json_loads [" << error.line << "]->[" << error.text << "]"
+            << "timestamp: " << time_hms
+            << "strlen(payload): " << strlen((char*)message->payload)
+            << " payloadlen: "<< message->payloadlen;
+
+            MQTTClient_freeMessage(&message);
+            MQTTClient_free(topicName);
+            return(false);
+        }
+
+        if (!json_is_object(root))
+        {
+            CLOG(DEBUG, mLoggerName.c_str())<< "ERROR: !json_is_object(root)";
+            json_decref(root);
+            MQTTClient_freeMessage(&message);
+            MQTTClient_free(topicName);
+            return(false);
+        }
+
+        jsonName = json_object_get(root, "DefinitionId");
+        if (!json_is_string(jsonName))
+        {
+            CLOG(DEBUG, mLoggerName.c_str())<< "ERROR: !json_is_string(jsonName)";
+            json_decref(root);
+            MQTTClient_freeMessage(&message);
+            MQTTClient_free(topicName);
+            return(false);
+        }
+        //syslog(LOG_ERR,"DEBUG: jsonName[%s]  %s,(%d)\n",json_string_value(jsonName), __FILE__, __LINE__);
+
+        jsonVersion = json_object_get(root, "Version");
+        if (!json_is_string(jsonVersion))
+        {
+            CLOG(DEBUG, mLoggerName.c_str())<< "ERROR: !json_is_string(jsonVersion)";
+            json_decref(root);
+            MQTTClient_freeMessage(&message);
+            MQTTClient_free(topicName);
+            return(false);
+        }
+        //syslog(LOG_ERR,"DEBUG: jsonVersion[%s]  %s,(%d)\n",json_string_value(jsonVersion), __FILE__, __LINE__);
+
+        jsonColumns = json_object_get(root, "Columns");
+        if (!json_is_object(jsonColumns))
+        {
+            CLOG(DEBUG, mLoggerName.c_str())<< "ERROR: !json_is_object(jsonColumns)";
+            json_decref(root);
+            MQTTClient_freeMessage(&message);
+            MQTTClient_free(topicName);
+            return(false);
+        }
+
+        for (columnIndex = 0; columnIndex < COLUMN_MAX_SIZE; columnIndex++)
+        {
+            jsonColumnValue[columnIndex] = json_object_get(jsonColumns, jsonColumnName[columnIndex]);
+            if (!json_is_string(jsonColumnValue[columnIndex]))
+            {
+                CLOG(DEBUG, mLoggerName.c_str())<< "ERROR: !json_is_string(jsonColumnValue[columnIndex])";
+                json_decref(jsonColumns);
+                MQTTClient_freeMessage(&message);
+                MQTTClient_free(topicName);
+                return(false);
+            }
+            //syslog(LOG_ERR,"DEBUG: jsonColumnValue[%s]->[%s]  %s,(%d)\n", jsonColumnName[columnIndex], json_string_value(jsonColumnValue[columnIndex]), __FILE__, __LINE__);
+        }
+
+        // telegramm color assignation
+        init_pair(1, toColor(jsonColumnValue[ColorHeadline_1_Textcolor]), toColor(jsonColumnValue[ColorHeadline_1_Background]));
+        init_pair(2, toColor(jsonColumnValue[ColorHeadline_2_1_Textcolor]), toColor(jsonColumnValue[ColorHeadline_2_1_Background]));
+        init_pair(3, toColor(jsonColumnValue[ColorHeadline_2_2_Textcolor]), toColor(jsonColumnValue[ColorHeadline_2_2_Background]));
+        init_pair(4, toColor(jsonColumnValue[ColorPotlifetime_Textcolor]), toColor(jsonColumnValue[ColorPotlifetime_Background]));
+        init_pair(5, toColor(jsonColumnValue[ColorMessage_Textcolor]), toColor(jsonColumnValue[ColorMessage_Background]));
+
+        wattron(winHeadline_1, COLOR_PAIR(1));
+        wbkgd(winHeadline_1, COLOR_PAIR(1));
+
+        wbkgd(winHeadline_2_1, COLOR_PAIR(2));
+        wattron(winHeadline_2_1, COLOR_PAIR(2));
+
+        wbkgd(winHeadline_2_2, COLOR_PAIR(3));
+        wattron(winHeadline_2_2, COLOR_PAIR(3));
+
+        wbkgd(winPotlifetime, COLOR_PAIR(4));
+        wattron(winPotlifetime, COLOR_PAIR(4));
+
+        wbkgd(winMessage, COLOR_PAIR(5));
+        wattron(winMessage, COLOR_PAIR(5));
+
+        // telegramm output assignation
+        if (!strcmp(json_string_value(jsonColumnValue[SignalTower_Green]), "true"))
+        {
+            jsonSignalTower_Green = true;
+        }
+        else
+        {
+            jsonSignalTower_Green = false;
+        }
+
+        if (!strcmp(json_string_value(jsonColumnValue[SignalTower_Yellow]), "true"))
+        {
+            jsonSignalTower_Yellow = true;
+        }
+        else
+        {
+            jsonSignalTower_Yellow = false;
+        }
+
+        if (!strcmp(json_string_value(jsonColumnValue[SignalTower_Red]), "true"))
+        {
+            jsonSignalTower_Red = true;
+        }
+        else
+        {
+            jsonSignalTower_Red = false;
+        }
+
+        if (!strcmp(json_string_value(jsonColumnValue[SignalTower_Buzzer]), "true"))
+        {
+        	if (!jsonSignalTower_Buzzer)
+        	{
+        		buzzerConfirmed = false;
+        	}
+            jsonSignalTower_Buzzer = true;
+        }
+        else
+        {
+            jsonSignalTower_Buzzer = false;
+            // clear trough inConfirmation_Button
+        }
+
+        MQTTClient_freeMessage(&message);
+        MQTTClient_free(topicName);
+        return (true);
+    }
+
+    // **************************************************************************************************
+    // ** Mqtt callback: packet delivered
+    // **************************************************************************************************
+    void KleberMqtt::mqttDelivered(void *context, MQTTClient_deliveryToken dt)
+    {
+        MQTTClient_deliveryToken deliveredToken;
+
+        deliveredToken = dt;
+        CLOG(DEBUG, mLoggerName.c_str())<< "message sent. value: " << deliveredToken;
+    }
+
+    // **************************************************************************************************
+    // ** helper color conversion to int for ncurses
+    // **************************************************************************************************
+    uint8_t KleberMqtt::toColor(json_t *buff)
+    {
+        if (!strcmp(json_string_value(buff), "COLOR_BLACK"))
+        {
+            return (0);
+        }
+        if (!strcmp(json_string_value(buff), "COLOR_RED"))
+        {
+            return (1);
+        }
+        if (!strcmp(json_string_value(buff), "COLOR_GREEN"))
+        {
+            return (2);
+        }
+        if (!strcmp(json_string_value(buff), "COLOR_YELLOW"))
+        {
+            return (3);
+        }
+        if (!strcmp(json_string_value(buff), "COLOR_BLUE"))
+        {
+            return (4);
+        }
+        if (!strcmp(json_string_value(buff), "COLOR_MAGENTA"))
+        {
+            return (5);
+        }
+        if (!strcmp(json_string_value(buff), "COLOR_CYAN"))
+        {
+            return (6);
+        }
+        if (!strcmp(json_string_value(buff), "COLOR_WHITE"))
+        {
+            return (7);
+        }
+
+        return (0);
+    }
+}
+

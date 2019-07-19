@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="0.1732218507">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="0.1732218507" moduleId="org.eclipse.cdt.core.settings" name="Default">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.VCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="" id="0.1732218507" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+					<folderInfo id="0.1732218507." name="/" resourcePath="">
+						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.968293027" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
+							<targetPlatform id="org.eclipse.cdt.build.core.prefbase.toolchain.968293027.1101191227" name=""/>
+							<builder buildPath="${workspace_loc:/BaseTec_AsymtecUnloader/build/Linux-arm/Debug}" id="org.eclipse.cdt.build.core.settings.default.builder.1514705274" incrementalBuildTarget="install" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.162899454" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.901102091" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1336239257" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\libc\usr\include\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\bits&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\backward&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\bits\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\arm-linux-gnueabi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\lib\gcc\arm-linux-gnueabihf\4.8.2\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\lib\gcc\arm-linux-gnueabihf\4.8.2\include-fixed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\gamma\include&quot;"/>
+									<listOptionValue builtIn="false" value="s:/tools/paho/include"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\boost\1.58.0&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\xenomai\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\ncurses\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\jansson\include\&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.592375578" languageId="org.eclipse.cdt.core.assembly" languageName="Assembly" sourceContentType="org.eclipse.cdt.core.asmSource" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1825846487" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1908731760" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\libc\usr\include\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\bits&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\backward&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\bits\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\arm-linux-gnueabi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\lib\gcc\arm-linux-gnueabihf\4.8.2\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\lib\gcc\arm-linux-gnueabihf\4.8.2\include-fixed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\gamma\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\boost\1.58.0&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\xenomai\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\paho\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\ncurses\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\jansson\include\&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.1277550332" languageId="org.eclipse.cdt.core.g++" languageName="GNU C++" sourceContentType="org.eclipse.cdt.core.cxxSource,org.eclipse.cdt.core.cxxHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+							<tool id="org.eclipse.cdt.build.core.settings.holder.1687738899" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
+								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.326925562" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\libc\usr\include\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\bits&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\backward&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\bits\&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\arm-linux-gnueabihf\include\c++\4.8.2\arm-linux-gnueabihf\arm-linux-gnueabi&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\lib\gcc\arm-linux-gnueabihf\4.8.2\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\lib\gcc\arm-linux-gnueabihf\4.8.2\include-fixed&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\gamma\include&quot;"/>
+									<listOptionValue builtIn="false" value="s:/tools/paho/include"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\boost\1.58.0&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\xenomai\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;S:\tools\ncurses\include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;s:\tools\jansson\include\&quot;"/>
+								</option>
+								<inputType id="org.eclipse.cdt.build.core.settings.holder.inType.504767136" languageId="org.eclipse.cdt.core.gcc" languageName="GNU C" sourceContentType="org.eclipse.cdt.core.cSource,org.eclipse.cdt.core.cHeader" superClass="org.eclipse.cdt.build.core.settings.holder.inType"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="ChuckCooling2.null.1755077760" name="ChuckCooling2"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="0.1732218507">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets">
+		<buildTargets>
+			<target name="build" path="build/Linux-arm/Debug" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>all</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="build + install" path="build/Linux-arm/Debug" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>install</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="clean" path="build/Linux-arm/Debug" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>clean</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="create documentation" path="build/Linux-arm/Debug" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>documentation</buildTarget>
+				<stopOnError>false</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="make" path="build/Linux-arm/Debug" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>make</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="Target Config" path="build/Linux-arm/Debug" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>edit_cache</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+			<target name="Target List" path="build/Linux-arm/Debug" targetID="org.eclipse.cdt.build.MakeTargetBuilder">
+				<buildCommand>make</buildCommand>
+				<buildArguments/>
+				<buildTarget>help</buildTarget>
+				<stopOnError>true</stopOnError>
+				<useDefaultCommand>true</useDefaultCommand>
+				<runAllBuilders>true</runAllBuilders>
+			</target>
+		</buildTargets>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Default">
+			<resource resourceType="PROJECT" workspacePath="/BaseTec_develop"/>
+		</configuration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
+</cproject>
