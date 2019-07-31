@@ -1,9 +1,9 @@
 /**
- * @file SkeletonModule
- * @short contain declaration of class \c SkeletonModule methods
+ * @file EMP
+ * @short contain declaration of class \c EMP methods
  *
  * @remark
- * this file is a template file and could be used to create new GaApp - Modules. Do do so replace all "SkeletonModule" by your module name and add your code to all TODO comments
+ * this file is a template file and could be used to create new GaApp - Modules. Do do so replace all "EMP" by your module name and add your code to all TODO comments
  *
  * Version Information
  * -------------------
@@ -14,27 +14,43 @@
  *
  */
 // System header
-#include "../../EMP/include/EMPModule.h"
 #include <iostream>
-#include "../../EMP/include/SkeletonModuleVersionInfo.h"
+
+#include "../include/EMP.h"
+// external library header
+
+// local library header
+#include "EMPVersionInfo.h"
+
 /**
  * @fn createModule
  * @short create a new module instance
  * @param _instanceName name of module instance
  * @param _configNode pointer to XML configuration information
  * @return pointer to new module instance
+ *
  * @fn deleteModule
  * @short destroy module instance
  * @param _module pointer to instance
  */
 EXPORT_FUNCTIONS(HwAccessDemo, HwAccessModule)
+
 namespace HwAccessDemo {
-HwAccessModule::HwAccessModule(const char* _instanceName,pugi::xml_node* _configInfo): GaAppBaseLib::ModuleInterface (_instanceName, _configInfo)
+
+    // **************************************************************************************************
+    // ** EMP
+    // **************************************************************************************************
+    HwAccessModule::HwAccessModule(const char* _instanceName,
+                                   pugi::xml_node* _configInfo)
+        : GaAppBaseLib::ModuleInterface (_instanceName, _configInfo)
     {
         myOutput.connectToPv("GaApp:HardwareResources.Output_00.reqState", ga_PV_PROPERTY_ACC_NON_BLOCKING);
         myOutput2.connectToPv("GaApp:HardwareResources.Output_01.reqState", ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
         myInput.connectToPv("GaApp:HardwareResources.Input_00.actState", ga_PV_PROPERTY_ACC_NON_BLOCKING);
+
         mGammaSlot = ":BaseTecDriver.Logic";
+
 
         pugi::xml_attribute attr;
         pugi::xml_node gaSetup = getConfigNode().child("GammaConnection");
@@ -55,7 +71,7 @@ HwAccessModule::HwAccessModule(const char* _instanceName,pugi::xml_node* _config
     }
 
     // **************************************************************************************************
-    // ** ~SkeletonModule
+    // ** ~EMP
     // **************************************************************************************************
     HwAccessModule::~HwAccessModule()
     {
@@ -97,7 +113,7 @@ HwAccessModule::HwAccessModule(const char* _instanceName,pugi::xml_node* _config
     HwAccessModule::execCommand (std::string& _cmdLine)
     {
         // extract given command
-        std::string cmd = _cmdLine.substr(0, _cmdLine.find(' '));
+        std::string cmd = _cmdLine.substr(0, _cmdLine .find(' '));
 
         // extract module name
         size_t delimitPos = cmd.find(':');
@@ -177,4 +193,4 @@ HwAccessModule::HwAccessModule(const char* _instanceName,pugi::xml_node* _config
         return (0);
     }
 
-} /* namespace SkeletonModule */
+} /* namespace EMP */
