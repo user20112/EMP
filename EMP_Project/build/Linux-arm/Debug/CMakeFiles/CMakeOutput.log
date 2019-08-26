@@ -1,5 +1,5 @@
 The target system is: LINUX - 1 - 
-The host system is: Windows - 6.1 - AMD64
+The host system is: Windows - 6.2 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: S:/tools/Linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/arm-linux-gnueabihf-gcc.exe 
 Build flags: 
@@ -11,7 +11,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/3.1.0-rc1/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/3.1.0-rc1/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: S:/tools/Linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/arm-linux-gnueabihf-g++.exe 
@@ -24,69 +24,69 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/3.1.0-rc1/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/3.1.0-rc1/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2083379045/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2083379045.dir\build.make CMakeFiles/cmTryCompileExec2083379045.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2083379045.dir/testCCompiler.c.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTryCompileExec2083379045.dir\testCCompiler.c.o   -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTryCompileExec2083379045
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec2083379045.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec2083379045.dir/testCCompiler.c.o  -o cmTryCompileExec2083379045 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1683500216/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1683500216.dir\build.make CMakeFiles/cmTryCompileExec1683500216.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1683500216.dir/testCCompiler.c.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTryCompileExec1683500216.dir\testCCompiler.c.o   -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTryCompileExec1683500216
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec1683500216.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec1683500216.dir/testCCompiler.c.o  -o cmTryCompileExec1683500216 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2043665776/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2043665776.dir\build.make CMakeFiles/cmTryCompileExec2043665776.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec2043665776.dir/CMakeCCompilerABI.c.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTryCompileExec2043665776.dir\CMakeCCompilerABI.c.o   -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec2043665776
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec2043665776.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe     -v CMakeFiles/cmTryCompileExec2043665776.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2043665776 -rdynamic  
-Es werden eingebaute Spezifikationen verwendet.
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec3863280186/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3863280186.dir\build.make CMakeFiles/cmTryCompileExec3863280186.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3863280186.dir/CMakeCCompilerABI.c.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTryCompileExec3863280186.dir\CMakeCCompilerABI.c.o   -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3863280186
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec3863280186.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe     -v CMakeFiles/cmTryCompileExec3863280186.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3863280186 -rdynamic  
+Using built-in specs.
 COLLECT_GCC=S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe
 COLLECT_LTO_WRAPPER=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/lto-wrapper.exe
-Ziel: arm-linux-gnueabihf
-Konfiguriert mit: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb
-Thread-Modell: posix
-gcc-Version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) 
+Target: arm-linux-gnueabihf
+Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb
+Thread model: posix
+gcc version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) 
 COMPILER_PATH=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/bin/
 LIBRARY_PATH=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2043665776' '-rdynamic' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2043665776 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec2043665776.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3863280186' '-rdynamic' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec3863280186 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec3863280186.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-linux-gnueabihf-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2043665776/fast"]
-  ignore line: [c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2043665776.dir\build.make CMakeFiles/cmTryCompileExec2043665776.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp']
-  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec2043665776.dir/CMakeCCompilerABI.c.o]
-  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTryCompileExec2043665776.dir\CMakeCCompilerABI.c.o   -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec2043665776]
-  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec2043665776.dir\link.txt --verbose=1]
-  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe     -v CMakeFiles/cmTryCompileExec2043665776.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2043665776 -rdynamic  ]
-  ignore line: [Es werden eingebaute Spezifikationen verwendet.]
+  ignore line: [Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec3863280186/fast"]
+  ignore line: [S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3863280186.dir\build.make CMakeFiles/cmTryCompileExec3863280186.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp']
+  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3863280186.dir/CMakeCCompilerABI.c.o]
+  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe    -o CMakeFiles\cmTryCompileExec3863280186.dir\CMakeCCompilerABI.c.o   -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3863280186]
+  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec3863280186.dir\link.txt --verbose=1]
+  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe     -v CMakeFiles/cmTryCompileExec3863280186.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3863280186 -rdynamic  ]
+  ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/lto-wrapper.exe]
-  ignore line: [Ziel: arm-linux-gnueabihf]
-  ignore line: [Konfiguriert mit: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb]
-  ignore line: [Thread-Modell: posix]
-  ignore line: [gcc-Version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) ]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) ]
   ignore line: [COMPILER_PATH=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/]
@@ -103,8 +103,8 @@ Parsed C implicit link information from above output:
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2043665776' '-rdynamic' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2043665776 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec2043665776.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3863280186' '-rdynamic' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec3863280186 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec3863280186.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o]
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe] ==> ignore
     arg [--sysroot=s:toolslinarogcc-linaro-arm-linux-gnueabihf-4.8-2013.09bin../arm-linux-gnueabihf/libc] ==> ignore
     arg [--build-id] ==> ignore
@@ -116,7 +116,7 @@ Parsed C implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2043665776] ==> ignore
+    arg [cmTryCompileExec3863280186] ==> ignore
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o] ==> ignore
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o] ==> ignore
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o] ==> ignore
@@ -131,7 +131,7 @@ Parsed C implicit link information from above output:
     arg [-Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf] ==> dir [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf]
     arg [-Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib] ==> dir [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib]
     arg [-Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf] ==> dir [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf]
-    arg [CMakeFiles/cmTryCompileExec2043665776.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3863280186.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib []
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib []
@@ -166,18 +166,18 @@ Parsed C implicit link information from above output:
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec207745282/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec207745282.dir\build.make CMakeFiles/cmTryCompileExec207745282.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec207745282.dir/feature_tests.c.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe   -std=c90 -o CMakeFiles\cmTryCompileExec207745282.dir\feature_tests.c.o   -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\feature_tests.c
-Linking C executable cmTryCompileExec207745282
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec207745282.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec207745282.dir/feature_tests.c.o  -o cmTryCompileExec207745282 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec3874043284/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3874043284.dir\build.make CMakeFiles/cmTryCompileExec3874043284.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3874043284.dir/feature_tests.c.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe   -std=c90 -o CMakeFiles\cmTryCompileExec3874043284.dir\feature_tests.c.o   -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\feature_tests.c
+Linking C executable cmTryCompileExec3874043284
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec3874043284.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec3874043284.dir/feature_tests.c.o  -o cmTryCompileExec3874043284 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -187,18 +187,18 @@ mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1568009075/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1568009075.dir\build.make CMakeFiles/cmTryCompileExec1568009075.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1568009075.dir/feature_tests.c.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe   -std=c99 -o CMakeFiles\cmTryCompileExec1568009075.dir\feature_tests.c.o   -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\feature_tests.c
-Linking C executable cmTryCompileExec1568009075
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec1568009075.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec1568009075.dir/feature_tests.c.o  -o cmTryCompileExec1568009075 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec4205241463/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec4205241463.dir\build.make CMakeFiles/cmTryCompileExec4205241463.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4205241463.dir/feature_tests.c.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe   -std=c99 -o CMakeFiles\cmTryCompileExec4205241463.dir\feature_tests.c.o   -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\feature_tests.c
+Linking C executable cmTryCompileExec4205241463
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec4205241463.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec4205241463.dir/feature_tests.c.o  -o cmTryCompileExec4205241463 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:0c_function_prototypes
@@ -208,18 +208,18 @@ mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec350331929/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec350331929.dir\build.make CMakeFiles/cmTryCompileExec350331929.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec350331929.dir/feature_tests.c.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe   -std=c11 -o CMakeFiles\cmTryCompileExec350331929.dir\feature_tests.c.o   -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\feature_tests.c
-Linking C executable cmTryCompileExec350331929
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec350331929.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec350331929.dir/feature_tests.c.o  -o cmTryCompileExec350331929 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2583416504/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2583416504.dir\build.make CMakeFiles/cmTryCompileExec2583416504.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2583416504.dir/feature_tests.c.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe   -std=c11 -o CMakeFiles\cmTryCompileExec2583416504.dir\feature_tests.c.o   -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\feature_tests.c
+Linking C executable cmTryCompileExec2583416504
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec2583416504.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-gcc.exe      CMakeFiles/cmTryCompileExec2583416504.dir/feature_tests.c.o  -o cmTryCompileExec2583416504 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: C_FEATURE:0c_function_prototypes
@@ -227,66 +227,66 @@ mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/
     Feature record: C_FEATURE:1c_static_assert
     Feature record: C_FEATURE:1c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1286525529/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1286525529.dir\build.make CMakeFiles/cmTryCompileExec1286525529.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1286525529.dir/testCXXCompiler.cxx.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe     -o CMakeFiles\cmTryCompileExec1286525529.dir\testCXXCompiler.cxx.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec1286525529
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec1286525529.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec1286525529.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1286525529 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2249401829/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2249401829.dir\build.make CMakeFiles/cmTryCompileExec2249401829.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2249401829.dir/testCXXCompiler.cxx.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe     -o CMakeFiles\cmTryCompileExec2249401829.dir\testCXXCompiler.cxx.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2249401829
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec2249401829.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec2249401829.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2249401829 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec690226086/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec690226086.dir\build.make CMakeFiles/cmTryCompileExec690226086.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec690226086.dir/CMakeCXXCompilerABI.cpp.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe     -o CMakeFiles\cmTryCompileExec690226086.dir\CMakeCXXCompilerABI.cpp.o -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec690226086
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec690226086.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe      -v CMakeFiles/cmTryCompileExec690226086.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec690226086 -rdynamic  
-Es werden eingebaute Spezifikationen verwendet.
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec414789451/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec414789451.dir\build.make CMakeFiles/cmTryCompileExec414789451.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec414789451.dir/CMakeCXXCompilerABI.cpp.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe     -o CMakeFiles\cmTryCompileExec414789451.dir\CMakeCXXCompilerABI.cpp.o -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec414789451
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec414789451.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe      -v CMakeFiles/cmTryCompileExec414789451.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec414789451 -rdynamic  
+Using built-in specs.
 COLLECT_GCC=S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe
 COLLECT_LTO_WRAPPER=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/lto-wrapper.exe
-Ziel: arm-linux-gnueabihf
-Konfiguriert mit: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb
-Thread-Modell: posix
-gcc-Version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) 
+Target: arm-linux-gnueabihf
+Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb
+Thread model: posix
+gcc version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) 
 COMPILER_PATH=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/bin/
 LIBRARY_PATH=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/;s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec690226086' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
- s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec690226086 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec690226086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec414789451' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu'
+ s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec414789451 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec414789451.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(arm-linux-gnueabihf-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec690226086/fast"]
-  ignore line: [c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec690226086.dir\build.make CMakeFiles/cmTryCompileExec690226086.dir/build]
-  ignore line: [mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp']
-  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec690226086.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe     -o CMakeFiles\cmTryCompileExec690226086.dir\CMakeCXXCompilerABI.cpp.o -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec690226086]
-  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec690226086.dir\link.txt --verbose=1]
-  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe      -v CMakeFiles/cmTryCompileExec690226086.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec690226086 -rdynamic  ]
-  ignore line: [Es werden eingebaute Spezifikationen verwendet.]
+  ignore line: [Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec414789451/fast"]
+  ignore line: [S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec414789451.dir\build.make CMakeFiles/cmTryCompileExec414789451.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp']
+  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec414789451.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe     -o CMakeFiles\cmTryCompileExec414789451.dir\CMakeCXXCompilerABI.cpp.o -c S:\tools\CMake\share\cmake-3.1\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec414789451]
+  ignore line: [S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec414789451.dir\link.txt --verbose=1]
+  ignore line: [S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe      -v CMakeFiles/cmTryCompileExec414789451.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec414789451 -rdynamic  ]
+  ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/lto-wrapper.exe]
-  ignore line: [Ziel: arm-linux-gnueabihf]
-  ignore line: [Konfiguriert mit: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb]
-  ignore line: [Thread-Modell: posix]
-  ignore line: [gcc-Version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) ]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: /cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/src/gcc-linaro-4.8-2013.09/configure --build=i686-build_pc-linux-gnu --host=i586-host_pc-mingw32msvc --target=arm-linux-gnueabihf --prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install --with-sysroot=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-languages=c,c++,fortran --enable-multilib --with-arch=armv7-a --with-tune=cortex-a9 --with-fpu=vfpv3-d16 --with-float=hard --with-pkgversion='crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09' --with-bugurl=https://bugs.launchpad.net/gcc-linaro --enable-__cxa_atexit --enable-libmudflap --enable-libgomp --enable-libssp --with-gmp=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpfr=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-mpc=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-isl=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-cloog=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --with-libelf=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/.build/arm-linux-gnueabihf/build/static --enable-threads=posix --disable-libstdcxx-pch --enable-linker-build-id --enable-gold --with-local-prefix=/cbuild/slaves/oorts/crosstool-ng/builds/arm-linux-gnueabihf-win32/install/arm-linux-gnueabihf/libc --enable-c99 --enable-long-long --with-mode=thumb]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.8.2 20130902 (prerelease) (crosstool-NG linaro-1.13.1-4.8-2013.09 - Linaro GCC 2013.09) ]
   ignore line: [COMPILER_PATH=s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/]
@@ -303,8 +303,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/]
   ignore line: [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec690226086' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
-  link line: [ s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec690226086 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec690226086.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec414789451' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mtune=cortex-a9' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb' '-mtls-dialect=gnu']
+  link line: [ s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe --sysroot=s:\tools\linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\../arm-linux-gnueabihf/libc --build-id --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec414789451 s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2 -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/../../../../arm-linux-gnueabihf/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib -Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec414789451.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtend.o s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crtn.o]
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../libexec/gcc/arm-linux-gnueabihf/4.8.2/collect2.exe] ==> ignore
     arg [--sysroot=s:toolslinarogcc-linaro-arm-linux-gnueabihf-4.8-2013.09bin../arm-linux-gnueabihf/libc] ==> ignore
     arg [--build-id] ==> ignore
@@ -316,7 +316,7 @@ Parsed CXX implicit link information from above output:
     arg [-m] ==> ignore
     arg [armelf_linux_eabi] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec690226086] ==> ignore
+    arg [cmTryCompileExec414789451] ==> ignore
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crt1.o] ==> ignore
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf/crti.o] ==> ignore
     arg [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../lib/gcc/arm-linux-gnueabihf/4.8.2/crtbegin.o] ==> ignore
@@ -331,7 +331,7 @@ Parsed CXX implicit link information from above output:
     arg [-Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf] ==> dir [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf]
     arg [-Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib] ==> dir [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib]
     arg [-Ls:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf] ==> dir [s:/tools/linaro/gcc-linaro-arm-linux-gnueabihf-4.8-2013.09/bin/../arm-linux-gnueabihf/libc/usr/lib/arm-linux-gnueabihf]
-    arg [CMakeFiles/cmTryCompileExec690226086.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec414789451.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib []
     arg [-lm] ==> lib []
     arg [-lgcc_s] ==> lib []
@@ -364,18 +364,18 @@ Parsed CXX implicit link information from above output:
 
 
 Detecting CXX [-std=c++1y] compiler features compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1901528237/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1901528237.dir\build.make CMakeFiles/cmTryCompileExec1901528237.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1901528237.dir/feature_tests.cxx.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe    -std=c++1y -o CMakeFiles\cmTryCompileExec1901528237.dir\feature_tests.cxx.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTryCompileExec1901528237
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec1901528237.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec1901528237.dir/feature_tests.cxx.o  -o cmTryCompileExec1901528237 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2949783618/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2949783618.dir\build.make CMakeFiles/cmTryCompileExec2949783618.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2949783618.dir/feature_tests.cxx.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe    -std=c++1y -o CMakeFiles\cmTryCompileExec2949783618.dir\feature_tests.cxx.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTryCompileExec2949783618
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec2949783618.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec2949783618.dir/feature_tests.cxx.o  -o cmTryCompileExec2949783618 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_alias_templates
@@ -435,18 +435,18 @@ mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec2677452672/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2677452672.dir\build.make CMakeFiles/cmTryCompileExec2677452672.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec2677452672.dir/feature_tests.cxx.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe    -std=c++11 -o CMakeFiles\cmTryCompileExec2677452672.dir\feature_tests.cxx.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTryCompileExec2677452672
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec2677452672.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec2677452672.dir/feature_tests.cxx.o  -o cmTryCompileExec2677452672 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec3752008544/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3752008544.dir\build.make CMakeFiles/cmTryCompileExec3752008544.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3752008544.dir/feature_tests.cxx.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe    -std=c++11 -o CMakeFiles\cmTryCompileExec3752008544.dir\feature_tests.cxx.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTryCompileExec3752008544
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec3752008544.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec3752008544.dir/feature_tests.cxx.o  -o cmTryCompileExec3752008544 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:1cxx_alias_templates
@@ -506,18 +506,18 @@ mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"c:/MinGW/bin/mingw32-make.exe" "cmTryCompileExec422486401/fast"
-c:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec422486401.dir\build.make CMakeFiles/cmTryCompileExec422486401.dir/build
-mingw32-make.exe[1]: Entering directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
-S:\tools\CMake\bin\cmake.exe -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec422486401.dir/feature_tests.cxx.o
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe    -std=c++98 -o CMakeFiles\cmTryCompileExec422486401.dir\feature_tests.cxx.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTryCompileExec422486401
-S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec422486401.dir\link.txt --verbose=1
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec422486401.dir/feature_tests.cxx.o  -o cmTryCompileExec422486401 -rdynamic 
-mingw32-make.exe[1]: Leaving directory 'S:/work/AsymtecUnloader/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+Run Build Command:"S:/tools/MinGW/bin/mingw32-make.exe" "cmTryCompileExec1215641700/fast"
+S:/tools/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1215641700.dir\build.make CMakeFiles/cmTryCompileExec1215641700.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
+S:\tools\CMake\bin\cmake.exe -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1215641700.dir/feature_tests.cxx.o
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe    -std=c++98 -o CMakeFiles\cmTryCompileExec1215641700.dir\feature_tests.cxx.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTryCompileExec1215641700
+S:\tools\CMake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTryCompileExec1215641700.dir\link.txt --verbose=1
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe       CMakeFiles/cmTryCompileExec1215641700.dir/feature_tests.cxx.o  -o cmTryCompileExec1215641700 -rdynamic 
+mingw32-make.exe[1]: Leaving directory 'C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/CMakeFiles/CMakeTmp'
 
 
     Feature record: CXX_FEATURE:0cxx_alias_templates

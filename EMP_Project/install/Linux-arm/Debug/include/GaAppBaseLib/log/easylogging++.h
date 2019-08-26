@@ -99,7 +99,7 @@
 #   define ELPP_INTERNAL_DEBUGGING_OUT_INFO std::cout
 #endif // !defined(ELPP_INTERNAL_DEBUGGING_OUT)
 #if !defined(ELPP_INTERNAL_DEBUGGING_OUT_ERROR)
-#   define ELPP_INTERNAL_DEBUGGING_OUT_ERROR std::cout
+#   define ELPP_INTERNAL_DEBUGGING_OUT_ERROR std::cerr
 #endif // !defined(ELPP_INTERNAL_DEBUGGING_OUT)
 #if !defined(ELPP_INTERNAL_DEBUGGING_ENDL)
 #   define ELPP_INTERNAL_DEBUGGING_ENDL std::endl
@@ -3117,7 +3117,7 @@ private:
     void insertFile(Level level, const std::string& fullFilename) {
         std::string resolvedFilename = resolveFilename(fullFilename);
         if (resolvedFilename.empty()) {
-            std::cout << "Could not load empty file for logging, please re-check your configurations for level ["
+            std::cerr << "Could not load empty file for logging, please re-check your configurations for level ["
                     << LevelHelper::convertToString(level) << "]";
         }
         std::string filePath = base::utils::File::extractPathFromFilename(resolvedFilename, base::consts::kFilePathSeperator);

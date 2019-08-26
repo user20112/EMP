@@ -42,10 +42,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt\CMakeFiles\progress.marks
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt\CMakeFiles\progress.marks
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/clean
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/rule
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/rule
 
 # Convenience name for target.
@@ -153,17 +153,17 @@ KleberMqtt: source/KleberMqtt/CMakeFiles/KleberMqtt.dir/rule
 
 # fast build rule for target.
 KleberMqtt/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/build
 .PHONY : KleberMqtt/fast
 
 # Manual pre-install relink rule for target.
 KleberMqtt/preinstall:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/preinstall
 .PHONY : KleberMqtt/preinstall
 
 # Convenience name for target.
 source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/rule
 .PHONY : source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ docKleberMqtt: source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/rule
 
 # fast build rule for target.
 docKleberMqtt/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\docKleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\docKleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/build
 .PHONY : docKleberMqtt/fast
 
 ModuleVersionInfo.o: ModuleVersionInfo.cpp.o
@@ -180,7 +180,7 @@ ModuleVersionInfo.o: ModuleVersionInfo.cpp.o
 
 # target to build an object file
 ModuleVersionInfo.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.o
 .PHONY : ModuleVersionInfo.cpp.o
 
 ModuleVersionInfo.i: ModuleVersionInfo.cpp.i
@@ -188,7 +188,7 @@ ModuleVersionInfo.i: ModuleVersionInfo.cpp.i
 
 # target to preprocess a source file
 ModuleVersionInfo.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.i
 .PHONY : ModuleVersionInfo.cpp.i
 
 ModuleVersionInfo.s: ModuleVersionInfo.cpp.s
@@ -196,7 +196,7 @@ ModuleVersionInfo.s: ModuleVersionInfo.cpp.s
 
 # target to generate assembly for a file
 ModuleVersionInfo.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.s
 .PHONY : ModuleVersionInfo.cpp.s
 
 src/KleberMqtt.o: src/KleberMqtt.cpp.o
@@ -204,7 +204,7 @@ src/KleberMqtt.o: src/KleberMqtt.cpp.o
 
 # target to build an object file
 src/KleberMqtt.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o
 .PHONY : src/KleberMqtt.cpp.o
 
 src/KleberMqtt.i: src/KleberMqtt.cpp.i
@@ -212,7 +212,7 @@ src/KleberMqtt.i: src/KleberMqtt.cpp.i
 
 # target to preprocess a source file
 src/KleberMqtt.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.i
 .PHONY : src/KleberMqtt.cpp.i
 
 src/KleberMqtt.s: src/KleberMqtt.cpp.s
@@ -220,7 +220,7 @@ src/KleberMqtt.s: src/KleberMqtt.cpp.s
 
 # target to generate assembly for a file
 src/KleberMqtt.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.s
 .PHONY : src/KleberMqtt.cpp.s
 
 # Help Target
@@ -254,6 +254,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

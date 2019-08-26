@@ -24,7 +24,6 @@ AppControl::AppControl()
         : mModuleContainer(GaAppBaseLib::LibContainer::getInstance())
 {
     mFileLoaded = false;
-    el::Loggers::getLogger("AppControl");
 }
 
 // ******************************************************************************************************************
@@ -33,7 +32,7 @@ AppControl::AppControl()
 AppControl::~AppControl()
 {
     if (!mConfigFile.save_file(mConfigFileName.c_str())) {
-        CLOG(ERROR, "AppControl") << "AppConfig: writing configuration " << mConfigFileName << " failed!";
+        std::cerr << "AppConfig: writing configuration " << mConfigFileName << " failed!" << std::endl;
     }
 }
 
@@ -43,12 +42,12 @@ AppControl::~AppControl()
 void
 AppControl::loadConfigFile(std::string _configFileName)
 {
-    CLOG(INFO, "AppControl") << "Load Application Configuration file " << _configFileName;
+    std::cout << "Load Application Configuration file " << _configFileName << std::endl;
     mConfigFileName = _configFileName;
 
     pugi::xml_parse_result result = mConfigFile.load_file(mConfigFileName.c_str());
     if (result == false) {
-        THROW_LOGIC_FAULT() << "unable to load XML File " << _configFileName << ": reason: " << result.description();
+        THROW_LOGIC_FAULT()<< "unable to load XML File " << _configFileName << ": reason: " << result.description();
     }
 
     mFileLoaded = true;
@@ -61,12 +60,12 @@ void
 AppControl::loadModules()
 {
     if (!mFileLoaded) {
-        THROW_LOGIC_FAULT() << "load a configuration file before create modules!";
+        THROW_LOGIC_FAULT()<< "load a configuration file before create modules!";
     }
 
     pugi::xpath_node_set tools = mConfigFile.select_nodes("/AppConfig/ModuleList/Module");
 
-    CLOG(INFO, "AppControl") << "Load Modules from configuration file";
+    std::cout << "Load Modules from configuration file" << std::endl;
 
     for (pugi::xpath_node_set::const_iterator it = tools.begin(); it != tools.end(); ++it)
     {
@@ -74,10 +73,10 @@ AppControl::loadModules()
         if ((node.attribute("name").empty()) || (node.attribute("library").empty())) {
             continue;
         }
-        CLOG(DEBUG, "AppControl") << "  => module " << node.attribute("name").value() << " of type " << node.attribute("library").value() << "\n";
+        std::cout << "  => module " << node.attribute("name").value() << " of type " << node.attribute("library").value() << "\n";
         mModuleContainer.addModuleInstance(node.attribute("library").value(), node.attribute("name").value(), node);
     }
-    CLOG(INFO, "AppControl") << "Load Modules done.";
+    std::cout << "Load Modules done." << std::endl;
 }
 
 // ******************************************************************************************************************
@@ -109,16 +108,16 @@ AppControl::sendCommand(std::string& _moduleName,
         mModuleContainer.getModuleInstance(_moduleName)->execCommand(_commandLine);
     }
     catch (GaAppBaseLib::ExceptionBase &e) {
-        CLOG(ERROR, "AppControl") << "\n" << e.what();
+        std::cerr << e.what() << std::endl;
     }
     catch (std::out_of_range &e) {
-        CLOG(WARNING, "AppControl") << "unknown module " << _moduleName;
+        std::cerr << "unknown module " << _moduleName << std::endl;
     }
     catch (std::exception &e) {
-        CLOG(ERROR, "AppControl") << "calling command interface for module " << _moduleName << " failed: \n" << e.what();
+        std::cerr << "calling command interface for module " << _moduleName << " failed: \n\t" << e.what() << std::endl;
     }
     catch (...) {
-        CLOG(ERROR, "AppControl") << "calling command interface for module " << _moduleName << " failed: reason unknown";
+        std::cerr << "calling command interface for module " << _moduleName << " failed: reason unknown" << std::endl;
     }
 }
 

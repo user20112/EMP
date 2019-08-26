@@ -30,52 +30,52 @@
  * @def SVN_VERSION_AVAILABLE
  * @short is zero, when no SVN information is given, otherwise the revision number is defined
  */
-#define SVN_VERSION_AVAILABLE               52256
+#define SVN_VERSION_AVAILABLE               $WCREV$
 /**
  * @def SVN_COMMIT_DATE
  * @short date and time of last commit
  */
-#define SVN_COMMIT_DATE                     "2019-07-01 15:08"
+#define SVN_COMMIT_DATE                     "$WCDATE=%Y-%m-%d %H:%M$"
 /**
  * @def SVN_BUILD_DATE
  * @short date and time of last file update
  */
-#define SVN_BUILD_DATE                      "2019-07-08 10:33"
+#define SVN_BUILD_DATE                      "$WCNOW=%Y-%m-%d %H:%M$"
 /**
  * @def SVN_REVISION_NO
  * @short latest revision number as string
  */
-#define SVN_REVISION_NO                     "52256"
+#define SVN_REVISION_NO                     "$WCREV$"
 /**
  * @def SVN_REVISION_RANGE
  * @short range of used revisions
  */
-#define SVN_REVISION_RANGE                  "49865:52256"
+#define SVN_REVISION_RANGE                  "$WCRANGE$"
 /**
  * @def SNV_REVISION
  * @short current SVN revision
  */
-#define SNV_REVISION                        SVN_REVISION_RANGE
+#define SNV_REVISION                        $WCMIXED?SVN_REVISION_RANGE:SVN_REVISION_NO$
 /**
  * @def SVN_LOCAL_MODIFICATIONS
  * @short is true, when local modifications are detected
  */
-#define SVN_LOCAL_MODIFICATIONS             false
+#define SVN_LOCAL_MODIFICATIONS             $WCMODS?true:false$
 /**
  * @def SVN_UNVERSIOND_FILES
  * @short is true, when unversioned files are detected
  */
-#define SVN_UNVERSIOND_FILES                false
+#define SVN_UNVERSIOND_FILES                $WCUNVER?true:false$
 /**
  * @def SVN_TAGGED_VERSION
  * @short is true, when the source is marked as tagged = released version
  */
-#define SVN_TAGGED_VERSION                  false
+#define SVN_TAGGED_VERSION                  $WCISTAGGED?true:false$
 /**
  * @def SVN_URL
  * @short URL of used SVN repository
  */
-#define SVN_URL                             "https://svn.int.osram-light.com/svn/aug-sw/PROJECTS/HERBRECHTINGEN/XLS/BBB/DispControlHDMI/trunk/source/KleberMqtt"
+#define SVN_URL                             "$WCURL$"
 
 namespace KleberMqtt {
 

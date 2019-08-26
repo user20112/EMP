@@ -1,8 +1,8 @@
-# Install script for directory: S:/work/AsymtecUnloader
+# Install script for directory: C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "S:/work/AsymtecUnloader/install/Linux-arm/Debug")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/Install/Linux-arm/Debug")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -34,14 +34,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/PugiXML/cmake_install.cmake")
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/GaAppBaseLib/cmake_install.cmake")
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/GaGCppAPI/cmake_install.cmake")
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/BeagleBoneResources/cmake_install.cmake")
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/GaApp/cmake_install.cmake")
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/BaseTecDriver/cmake_install.cmake")
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/AsymtecUnloader/cmake_install.cmake")
-  include("S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/KleberMqtt/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/PugiXML/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/GaAppBaseLib/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/GaGCppAPI/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/BeagleBoneResources/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/GaApp/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/BaseTecDriver/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/HwAccessDemo/cmake_install.cmake")
+  include("C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/KleberMqtt/cmake_install.cmake")
 
 endif()
 
@@ -51,7 +51,7 @@ else()
   set(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 endif()
 
-file(WRITE "S:/work/AsymtecUnloader/build/Linux-arm/Debug/${CMAKE_INSTALL_MANIFEST}" "")
+file(WRITE "C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/${CMAKE_INSTALL_MANIFEST}" "")
 foreach(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  file(APPEND "S:/work/AsymtecUnloader/build/Linux-arm/Debug/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  file(APPEND "C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 endforeach()

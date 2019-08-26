@@ -44,8 +44,7 @@ set(SOURCES src/exceptions/ExceptionBase.cpp
             src/ModuleInterface/ModuleInstance.cpp
             src/ModuleInterface/ModuleInterface.cpp
             src/network/NetworkHelper.cpp
-            src/network/UDPConnection.cpp
-            src/network/TCPClientConnection.cpp)
+            src/network/UDPConnection.cpp)
                    
 # build an executable file
 add_library(${PROJECT_NAME} SHARED

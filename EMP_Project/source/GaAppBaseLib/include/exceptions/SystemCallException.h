@@ -10,15 +10,15 @@
  * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_SYSTEMCALLEXCEPTION_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_SYSTEMCALLEXCEPTION_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_SYSTEMCALLEXCEPTION_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_SYSTEMCALLEXCEPTION_H_
 
 // System header
 
 // external library header
 
 // local library header
-#include "exceptions/ExceptionBase.h"
+#include "ExceptionBase.h"
 
 namespace GaAppBaseLib {
 
@@ -76,4 +76,4 @@ namespace GaAppBaseLib {
 
 } /* namespace GaAppBaseLib */
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_SYSTEMCALLEXCEPTION_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_SYSTEMCALLEXCEPTION_H_ */

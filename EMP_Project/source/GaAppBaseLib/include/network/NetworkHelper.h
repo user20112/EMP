@@ -9,11 +9,10 @@
  * $Author$
  * $Date$
  *
- */#ifndef SOURCE_GaAppBaseLib_INCLUDE_NETWORK_NETWORKHELPER_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_NETWORK_NETWORKHELPER_H_
+ */#ifndef SOURCE_GAAPPBASELIB_INCLUDE_NETWORK_NETWORKHELPER_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_NETWORK_NETWORKHELPER_H_
 
 // System header
-#include <string>
 
 // external library header
 
@@ -67,4 +66,4 @@ namespace GaAppBaseLib {
 
 } /* namespace GaAppBaseLib */
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_NETWORK_NETWORKHELPER_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_NETWORK_NETWORKHELPER_H_ */

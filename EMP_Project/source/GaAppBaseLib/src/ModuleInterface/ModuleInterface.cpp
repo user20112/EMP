@@ -28,7 +28,7 @@ namespace GaAppBaseLib {
     {
         mModuleName = _instanceName;
         mLoggerName = mModuleName;
-        mLogger = el::Loggers::getLogger(mLoggerName);
+        el::Loggers::getLogger(mLoggerName);
     }
 
     // **************************************************************************************************
@@ -60,12 +60,7 @@ namespace GaAppBaseLib {
     void
     ModuleInterface::execCommand (std::string& _cmdLine)
     {
-        // extract given command
-        std::string cmd = _cmdLine.substr(0, _cmdLine.find(' '));
-
-        if (_cmdLine.length() > 0) {
-            std::cout << "  " << getName() << ": unknown command \"" << cmd << "\"" << std::endl;
-        }
+        CLOG(ERROR, mLoggerName.c_str()) << "no command interface is implemented!";
     }
 
     // **************************************************************************************************

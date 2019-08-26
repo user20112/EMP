@@ -16,26 +16,22 @@
 #include <sys/mman.h>
 #include <math.h>
 
-#include "AnalogInputs.h"
 #include "GaAppBaseLib.h"
+
+#include "AnalogInputs.h"
 
 namespace BaseTecDriver {
 
-    const uint32_t AnalogInputs::dataBufferSize;
-
     AnalogInputs::AnalogInputs(volatile void* ptMemoryBase,
                                std::string _dataBaseNode,
-                               std::string _loggerName,
-                               uint32_t _taskCycleTime)
+                               std::string _loggerName)
             : dataBaseNode(_dataBaseNode)
     {
         mLoggerName = _loggerName;
         el::Loggers::getLogger(mLoggerName);
 
-        taskCycleTime = _taskCycleTime;
-
         ptRawData = (tAnalogData*) ptMemoryBase;
-        memset((void*) ptRawData, 0, (unsigned int)sizeof(tAnalogData));
+        memset((void*) ptRawData, 0, sizeof(tAnalogData));
 /*
         ptRawData->sampleAverage = 3;
         ptRawData->openDelay = 100;
@@ -83,31 +79,31 @@ namespace BaseTecDriver {
         ptRawData->diagCnt = 0;
 
         if (lastReadPos != dumpReadPos) {
-            CLOG(WARNING, mLoggerName.c_str()) << "analog inputs: read position is modified! " << std::dec << dumpReadPos << " should be: " << lastReadPos;
+            std::cerr << "analog inputs: read position is modified! " << std::dec << dumpReadPos << " should be: " << lastReadPos << std::endl;
         }
 
         if ((dumpReadPos < 0) || (dumpReadPos >= dataBufferSize)) {
-            CLOG(WARNING, mLoggerName.c_str()) << "analog inputs: invalid read position" << std::dec << dumpReadPos;
+            std::cerr << "analog inputs: invalid read position" << std::dec << dumpReadPos << std::endl;
             dumpReadPos = 0;
             readPosCorrected = true;
         }
 
         if (dumpDiagCnt > dataBufferSize-1) {
-            CLOG(WARNING, mLoggerName.c_str()) << "analog inputs: buffer overflow detected; " << (int)dumpDiagCnt - (int)dataBufferSize << " values lost (" << dumpDiagCnt << " values written since last read out; buffer size: " << dataBufferSize << " values) ";
+            std::cerr << "analog inputs: buffer overflow detected; " << (int)dumpDiagCnt - (int)dataBufferSize << " values lost (" << dumpDiagCnt << " values written since last read out; buffer size: " << dataBufferSize << " values) " << std::endl;
             dumpReadPos += (int)dumpDiagCnt - (int)dataBufferSize;
             dumpReadPos %= dataBufferSize;
             readPosCorrected = true;
         }
 
         for (int i = 0; i < 7; i++) {
-            chn[i].sampleCount = 0;
+            chn[i].sampleRate = 0;
             chn[i].sumValues = 0;
         }
 
         while (ptRawData->dataBuffer[dumpReadPos] & 0x8000)
         {
             if (!(ptRawData->dataBuffer[dumpReadPos] & 0x8000)) {
-                CLOG(WARNING, mLoggerName.c_str()) << "invalid buffer entry 0x" << std::hex << std::setw(4) << std::setfill('0') << ptRawData->dataBuffer[dumpReadPos];
+                std::cerr << "invalid buffer entry 0x" << std::hex << std::setw(4) << std::setfill('0') << ptRawData->dataBuffer[dumpReadPos] << std::endl;
             }
             else {
                 channel = ptRawData->dataBuffer[dumpReadPos] & 0x7000;
@@ -117,7 +113,7 @@ namespace BaseTecDriver {
                 channel >>= 12;
 
                 if (channel > 7) {
-                    CLOG(WARNING, mLoggerName.c_str()) << "analog inputs: invalid channel ID " << channel;
+                    std::cerr << "analog inputs: invalid channel ID " << channel << std::endl;
                     break;
                 }
 
@@ -126,7 +122,7 @@ namespace BaseTecDriver {
                     lastChannelId = 0;
                 if (channel != lastChannelId) {
                     if (!readPosCorrected) {
-                        CLOG(WARNING, mLoggerName.c_str()) << "missing data for channel " << lastChannelId << " (current index: " << channel << ").";
+                      //  std::cerr << "missing data for channel " << lastChannelId << " (current index: " << channel << ")." << std::endl;
                     }
                     lastChannelId = channel;
                 }
@@ -134,7 +130,7 @@ namespace BaseTecDriver {
                 readPosCorrected = false;
 
                 chn[channel].sumValues += (value / 4096.0) * 10.2;
-                chn[channel].sampleCount++;
+                chn[channel].sampleRate++;
             }
 
             dumpReadPos++;
@@ -150,9 +146,8 @@ namespace BaseTecDriver {
 
 
         for (int i = 0; i < 7; i++) {
-            if (chn[i].sampleCount > 0) {
-                chn[i].lastValue = chn[i].sumValues  / chn[i].sampleCount;
-                chn[i].sampleRate = chn[i].sampleCount / (float)(taskCycleTime / 1000.0 / 1000.0);
+            if (chn[i].sampleRate > 0) {
+                chn[i].lastValue = chn[i].sumValues  / chn[i].sampleRate;
             }
             // rawVal.at(i)->put((float) chn[i].lastValue);
             // normVal.at(i)->put((float) chn[i].lastValue / 4096.0);
@@ -270,7 +265,7 @@ namespace BaseTecDriver {
         close(fp);
 
         for (int i = 0; i < 7; i++) {
-            std::cout << " Channel " << std::dec << i + 1 << ": Value " << std::setw(6) << std::setfill(' ') << std::setprecision(3) << chn[i].lastValue << "V   (samples: " << std::setw(4) << chn[i].sampleCount << ")" << std::endl;
+            std::cout << " Channel " << std::dec << i + 1 << ": Value " << std::setw(6) << std::setfill(' ') << std::setprecision(3) << chn[i].lastValue << "V   (samples: " << std::setw(4) << chn[i].sampleRate << ")" << std::endl;
         }
 
     }

@@ -10,8 +10,8 @@
  * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_MODULEINTERFACE_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_MODULEINTERFACE_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_MODULEINTERFACE_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_MODULEINTERFACE_H_
 
 // System header
 
@@ -120,7 +120,6 @@ namespace GaAppBaseLib {
 
         protected:
             std::string mLoggerName;        ///< @short loggerName
-            el::Logger* mLogger;            ///< @short logger Instance
 
         private:
             std::string mModuleName;        ///< @short instance name
@@ -169,4 +168,4 @@ namespace GaAppBaseLib {
         } \
     } \
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_MODULEINTERFACE_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_MODULEINTERFACE_H_ */

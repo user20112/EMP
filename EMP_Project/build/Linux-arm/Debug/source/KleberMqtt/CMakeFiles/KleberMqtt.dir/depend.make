@@ -11,6 +11,7 @@ source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../sourc
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/LibInstance.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInstance.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInterface.h
+source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ArgumentFaultException.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionBase.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
@@ -36,6 +37,9 @@ source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../sourc
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/GaGCppAPI/include/scheduler/GaTask.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/PugiXML/src/pugiconfig.hpp
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/PugiXML/src/pugixml.hpp
+source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/KleberMqtt/include/KleberMqtt.h
+source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/KleberMqtt/include/KleberMqttVersionInfo.h
+source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/KleberMqtt/src/KleberMqtt.cpp
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: S:/tools/boost/1.58.0/boost/align/align.hpp
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: S:/tools/boost/1.58.0/boost/align/detail/address.hpp
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: S:/tools/boost/1.58.0/boost/align/detail/align.hpp
@@ -1218,9 +1222,6 @@ source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: S:/tools/xenom
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: S:/tools/xenomai/include/nucleus/types.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: S:/tools/xenomai/include/nucleus/vfile.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: S:/tools/xenomai/include/xeno_config.h
-source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/KleberMqtt/include/KleberMqtt.h
-source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/KleberMqtt/include/KleberMqttVersionInfo.h
-source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/KleberMqtt/src/KleberMqtt.cpp
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: s:/tools/paho/include/MQTTClient.h
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: s:/tools/paho/include/MQTTClientPersistence.h
 

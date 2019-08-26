@@ -5,8 +5,9 @@
  *      Author: s.hegemann
  */
 
-#include "HardwareCtrl.h"
 #include "GaAppBaseLib.h"
+
+#include "HardwareCtrl.h"
 
 namespace BaseTecDriver {
 
@@ -19,6 +20,7 @@ namespace BaseTecDriver {
               RequestedLedStatusRt(      (_dataBaseNode + ".Config.reqStateLEDrt").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
               RequestedCtrlUart1(        (_dataBaseNode + ".Config.reqCtrlUart_00").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
               RequestedCtrlUart2(        (_dataBaseNode + ".Config.reqCtrlUart_01").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
+              RequestedCtrlTemperature(  (_dataBaseNode + ".Config.reqStateTempCtrl").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
               CurrentLedStatusGr(        (_dataBaseNode + ".Data.actStateLEDgr").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
               CurrentLedStatusRt(        (_dataBaseNode + ".Data.actStateLEDrt").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
               CurrentCtrlUart1(          (_dataBaseNode + ".Data.actCtrlUart_00").c_str(), ga_PV_PROPERTY_ACC_NON_BLOCKING),
@@ -33,7 +35,6 @@ namespace BaseTecDriver {
 
         RequestedLedStatusGr = 1;
         RequestedLedStatusRt = 0;
-        RequestedCtrlTemperature = true;
 
         ptRawData->hwTriggerBitMask = HardwareTriggerBit;
     }
@@ -67,14 +68,6 @@ namespace BaseTecDriver {
         }
 
         return (0);
-    }
-
-    void HardwareCtrl::setTemperatureReset(bool resetState)
-    {
-        if(resetState)
-            RequestedCtrlTemperature = 0;
-        else
-            RequestedCtrlTemperature = 1;
     }
 
 } /* namespace BaseTecDriver */

@@ -8,6 +8,7 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/BeagleBoneResources/./libs/pru_driver/include/pruss_intc_mapping.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/BeagleBoneResources/./libs/pru_driver/include/prussdrv.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/BeagleBoneResources/include/pru/PruDriver.h
+source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ArgumentFaultException.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionBase.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
@@ -15,6 +16,7 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/SystemCallException.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/GaAppBaseLib/include/log/easylogging++.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/GaAppBaseLib/include/log/logger.h
+source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/BeagleBoneResources/src/pru/PruDriver.cpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: S:/tools/boost/1.58.0/boost/assert.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: S:/tools/boost/1.58.0/boost/checked_delete.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: S:/tools/boost/1.58.0/boost/config.hpp
@@ -625,11 +627,11 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: S:/tools/boost/1.58.0/boost/utility/enable_if.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: S:/tools/boost/1.58.0/boost/utility/in_place_factory.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: S:/tools/boost/1.58.0/boost/utility/swap.hpp
-source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/BeagleBoneResources/src/pru/PruDriver.cpp
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/BeagleBoneResources/./libs/pru_driver/include/prussdrv.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/BeagleBoneResources/include/pru/PruDriver.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/BeagleBoneResources/include/pru/PruInterface.h
+source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ArgumentFaultException.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionBase.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
@@ -637,6 +639,7 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterfa
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/SystemCallException.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/GaAppBaseLib/include/log/easylogging++.h
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/GaAppBaseLib/include/log/logger.h
+source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/BeagleBoneResources/src/pru/PruInterface.cpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: S:/tools/boost/1.58.0/boost/assert.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: S:/tools/boost/1.58.0/boost/checked_delete.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: S:/tools/boost/1.58.0/boost/config.hpp
@@ -1247,5 +1250,4 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterfa
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: S:/tools/boost/1.58.0/boost/utility/enable_if.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: S:/tools/boost/1.58.0/boost/utility/in_place_factory.hpp
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: S:/tools/boost/1.58.0/boost/utility/swap.hpp
-source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/BeagleBoneResources/src/pru/PruInterface.cpp
 

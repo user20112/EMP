@@ -245,17 +245,17 @@ namespace KleberMqtt
         // ------------------------------------------------------------
         // get the input configuration and connect to gamma variables
 
-        for (pugi::xml_node Input = getConfigNode().child("Input"); Input; Input = Input.next_sibling("Input"))
+        for (pugi::xml_node eiga = getConfigNode().child("Eiga"); eiga; eiga = eiga.next_sibling("Eiga"))
         {
-            attr = Input.attribute("function");
+            attr = eiga.attribute("function");
             if (!attr.empty())
                 xmlInput[inputCount].Function = attr.as_string();
 
-            attr = Input.attribute("no");
+            attr = eiga.attribute("no");
             if (!attr.empty())
                 xmlInput[inputCount].no = attr.as_int();
 
-            attr = Input.attribute("use");
+            attr = eiga.attribute("use");
             if (!attr.empty())
                 xmlInput[inputCount].use = attr.as_bool();
 
@@ -281,17 +281,17 @@ namespace KleberMqtt
         // ------------------------------------------------------------
         // get the output configuration and connect to gamma variables
 
-        for (pugi::xml_node Output = getConfigNode().child("Output"); Output; Output = Output.next_sibling("Output"))
+        for (pugi::xml_node auga = getConfigNode().child("Auga"); auga; auga = auga.next_sibling("Auga"))
         {
-            attr = Output.attribute("function");
+            attr = auga.attribute("function");
             if (!attr.empty())
                 xmlOutput[outputCount].Function = attr.as_string();
 
-            attr = Output.attribute("no");
+            attr = auga.attribute("no");
             if (!attr.empty())
                 xmlOutput[outputCount].no = attr.as_int();
 
-            attr = Output.attribute("use");
+            attr = auga.attribute("use");
             if (!attr.empty())
                 xmlOutput[outputCount].use = attr.as_bool();
 

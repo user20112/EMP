@@ -1,1 +1,1 @@
-S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  -fPIC  -std=gnu++11 -Wall -D__GNU_SOURCE -D_REENTRANT -D__XENO__ -LS:/tools/xenomai/lib -fPIC -g  -shared -Wl,-soname,libPugiXML.so -o libPugiXML.so CMakeFiles/PugiXML.dir/src/pugixml.cpp.o 
+S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  -fPIC  -std=gnu++11 -Wall -D__GNU_SOURCE -D_REENTRANT -D__XENO__ -LS:/tools/xenomai/lib -fPIC  -shared -Wl,-soname,libPugiXML.so -o libPugiXML.so CMakeFiles/PugiXML.dir/src/pugixml.cpp.o 

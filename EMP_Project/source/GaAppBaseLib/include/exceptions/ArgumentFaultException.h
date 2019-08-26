@@ -10,15 +10,15 @@
  * $Date$
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_ARGUMENTFAULTEXCEPTION_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_ARGUMENTFAULTEXCEPTION_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_ARGUMENTFAULTEXCEPTION_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_ARGUMENTFAULTEXCEPTION_H_
 
 // System header
 
 // external library header
 
 // local library header
-#include "exceptions/ExceptionBase.h"
+#include "./ExceptionBase.h"
 
 namespace GaAppBaseLib {
 
@@ -79,4 +79,4 @@ namespace GaAppBaseLib {
 
 } /* namespace GaAppBaseLib */
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_ARGUMENTFAULTEXCEPTION_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_ARGUMENTFAULTEXCEPTION_H_ */

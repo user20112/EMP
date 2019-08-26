@@ -10,16 +10,24 @@
  * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_GAAPPBASELIB_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_GAAPPBASELIB_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_GAAPPBASELIB_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_GAAPPBASELIB_H_
 
 // library version information
-#include "exceptions/ExceptionsMacros.h"
 #include "GaAppBaseLibVersionInfo.h"
+
+// logging system
 #include "log/logger.h"
+
+// additional exceptions and calling macros
+#include "exceptions/ExceptionsMacros.h"
+
+// dynamic module interface
 #include "ModuleInterface/LibContainer.h"
 #include "ModuleInterface/ModuleInterface.h"
+
+// network functions
 #include "network/NetworkHelper.h"
 #include "network/UDPConnection.h"
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_GAAPPBASELIB_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_GAAPPBASELIB_H_ */

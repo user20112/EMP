@@ -1,0 +1,377 @@
+/**
+ * @file LibVersionInfo.h
+ * @short source is generated during building project and contains build version and date. Additional several SVN parameter can be requested.
+ *
+ * Version Information
+ * -------------------
+ * $Revision: 29149 $
+ * $HeadURL: https://app-aug-svn01.aug.osram.de/svn/aug-sw/TASKS/SOFTWARE/LIBS/CPP/Gamma_IOPlugins/PlugInTemplate/trunk/include/PlugInVersionInfo.h $
+ * $Author: S.Hegemann $
+ * $Date: 2014-11-21 18:02:59 +0100 (Fr, 21 Nov 2014) $
+ *
+ */
+
+#ifndef SOURCE_GAGCPPAPI_INCLUDE_APPVERSIONINFO_H_
+#define SOURCE_GAGCPPAPI_INCLUDE_APPVERSIONINFO_H_
+
+#include <string>
+
+namespace GaGCppAPI {
+
+    /**
+     * @short this class contain build informations, library version and SVN parameter
+     * @remark
+     * this class is a singelton class. Use static method \c LibVersionInfo::getInstance() to get access to the
+     * included informations.
+     */
+    class LibVersionInfo
+    {
+        public:
+            /**
+             * @short access to global instance
+             *
+             * @return reference to global class instance
+             */
+            static LibVersionInfo&
+            getInstance();
+
+            /**
+             * @short class destructor
+             */
+            virtual
+            ~LibVersionInfo();
+
+            /**
+             * @short print version information to stdout
+             *
+             * The Terminal output contains current Version number and build date. Also Revision and URL of Subversion is printed, when this information is available
+             */
+            void
+            printInfo() const;
+
+            /**
+             * @short return name of build configuration (CMake Project Name)
+             *
+             * @return Project Name
+             */
+            inline const std::string&
+            getName() const
+            {
+                return (mLibName);
+            }
+
+            /**
+             * @short return date and time of last build as string
+             *
+             * @return date and time of build run
+             */
+            inline const std::string&
+            getBuildTime() const
+            {
+                return (mBuildTime);
+            }
+
+            /**
+             * @short return a Build desctiption. This Information is set in CMakeLists.txt of tis project
+             *
+             * @return Build description
+             */
+            inline const std::string&
+            getBuildDescription() const
+            {
+                return (mBuildDescription);
+            }
+
+            /**
+             * @short return the build version as integer.
+             *
+             * Building format:
+             *
+             * | Position   | Version info
+             * |------------|----------------
+             * | 0xff000000 | Major Version
+             * | 0x00fff000 | Minor Version
+             * | 0x00000fff | Patch Version
+             *
+             * @return build version as single integer
+             */
+            inline unsigned int
+            getVersion() const
+            {
+                return (mInternalVersionInfo);
+            }
+
+            /**
+             * @short return the major version information [1 .. 255]
+             *
+             * @return major version
+             */
+            inline unsigned int
+            getMajorVersion() const
+            {
+                return (mMajorVersion);
+            }
+
+            /**
+             * @short return the minor version information [1 .. 4095]
+             *
+             * @return minor version
+             */
+            inline unsigned int
+            getMinorVersion() const
+            {
+                return (mMinorVersion);
+            }
+
+            /**
+             * @short return the patch version information [1 .. 4095]
+             *
+             * @return debug counter
+             */
+            inline unsigned int
+            getPatchVersion() const
+            {
+                return (mVersionPatch);
+            }
+
+            /**
+             * @short return the tweak version information
+             *
+             * @return debug counter
+             */
+            inline unsigned int
+            getTweakVersion() const
+            {
+                return (mVersionTweak);
+            }
+
+            /**
+             * @short create the version information as string
+             *
+             * @return version as string
+             */
+            std::string
+            getVersionText () const;
+
+            /**
+             * @short is true, when the current build include debug informations
+             *
+             * @return true, when this is a debug version
+             */
+            inline bool
+            isDebugVersion() const
+            {
+                return (mIsDebugVersion);
+            }
+
+            /**
+             * @short is true, when SVN informations are available
+             *
+             * @return true, when SVN informations are available
+             */
+            inline bool
+            hasSvnInfo() const
+            {
+                return (mHasSvnInformations);
+            }
+
+            /**
+             * @short return the latest revision number as integer
+             *
+             * @return the latest revision number
+             */
+            inline unsigned int
+            getSvnRevision() const
+            {
+                return (mSvnRevision);
+            }
+
+            /**
+             * @short return the range of revisions. Format: [lowest Revision]:[highest Revision]
+             *
+             * @return range of revisions
+             */
+            inline const std::string&
+            getSvnRevisionRange() const
+            {
+                return (mSvnRevisionRange);
+            }
+
+            /**
+             * @short return the source location in SVN as URL
+             *
+             * @return source URL
+             */
+            inline const std::string&
+            getSvnUrl() const
+            {
+                return (mSvnURL);
+            }
+
+            /**
+             * @short return the date and time of the last commit
+             *
+             * @return date and time of last commit
+             */
+            inline const std::string&
+            getSvnCommitDate() const
+            {
+                return (mSvnDateCommit);
+            }
+
+            /**
+             * @short return the date and time of the last update of all svn informations
+             *
+             * @return date and time of last update
+             */
+            inline const std::string&
+            getSvnBuildDate() const
+            {
+                return (mSvnBuildDate);
+            }
+
+            /**
+             * @short is true, when local modifications are done in the builded source code
+             *
+             * @return true, when uncommited changed are used in this build, otherwise false.
+             */
+            inline bool
+            hasLocalModifications() const
+            {
+                return (mSvnHasLocalModifications);
+            }
+
+            /**
+             * @short is set, when the build has files witch are not included to subversion control
+             * @return true, when unversioned files are used in this build, otherwise false,
+             */
+            inline bool
+            hasUnversionedFiles() const
+            {
+                return (mSvnHasUnversionedFiles);
+            }
+
+            /**
+             * @short is set, when the source of this build is tagged
+             * @return true, when the code is marked as tagged, otherwise false
+             */
+            inline bool
+            isTaggedVersion() const
+            {
+                return (mSvnIsTaggedVersion);
+            }
+
+        private:
+            /**
+             * @short private constructor: use static method \c getInstance to get access.
+             */
+            LibVersionInfo();
+
+            /**
+             * @short copy constructor: not implemented for this class!
+             * @param _other
+             */
+            LibVersionInfo(LibVersionInfo& _other) = delete;
+
+            /**
+             * @short (assignment operator): not implemented for this class!
+             * @param _other
+             * @return none
+             */
+            LibVersionInfo&
+            operator =(const LibVersionInfo& _other) = delete;
+
+            /**
+             * @short name of the library (set up during build process)
+             */
+            std::string mLibName;
+
+            /**
+             * @short date and time of build
+             */
+            std::string mBuildTime;
+
+            /**
+             * @short build description (set up during build process)
+             */
+            std::string mBuildDescription;
+
+            /**
+             * @short major version number
+             */
+            unsigned int mMajorVersion;
+
+            /**
+             * @short minor version number
+             */
+            unsigned int mMinorVersion;
+
+            /**
+             * @short patch counter
+             */
+            unsigned int mVersionPatch;
+
+            /**
+             * @short tweak counter
+             */
+            unsigned int mVersionTweak;
+
+            /**
+             * @short version key as hexadecimal value. Contains major version, minor version and patch counter.
+             */
+            unsigned int mInternalVersionInfo;
+
+            /**
+             * @short is set, when this build contains debug informations
+             */
+            bool mIsDebugVersion;
+
+            /**
+             * @short is set, when subversion informations are available
+             */
+            bool mHasSvnInformations;
+
+            /**
+             * @short revision number of last commit
+             */
+            unsigned int mSvnRevision;
+
+            /**
+             * @short used revision range (highest and lowest revision number)
+             */
+            std::string mSvnRevisionRange;
+
+            /**
+             * @short data and time of last commit
+             */
+            std::string mSvnDateCommit;
+
+            /**
+             * @short data and time of build, generated by SubWCRev
+             */
+            std::string mSvnBuildDate;
+
+            /**
+             * @short URL of the used subversion repository
+             */
+            std::string mSvnURL;
+
+            /**
+             * @short is set, when files with local modifications are used for this build
+             */
+            bool mSvnHasLocalModifications;
+
+            /**
+             * @short is set, when unversioned files are used for this build.
+             */
+            bool mSvnHasUnversionedFiles;
+
+            /**
+             * @short is set, when source is marked as tagged
+             */
+            bool mSvnIsTaggedVersion;
+
+    };
+}    // namespace GaGCppAPI
+
+#endif /* SOURCE_GAGCPPAPI_INCLUDE_APPVERSIONINFO_H_ */

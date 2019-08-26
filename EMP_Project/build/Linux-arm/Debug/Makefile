@@ -42,10 +42,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,9 +113,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -324,35 +324,35 @@ docBaseTecDriver/fast:
 .PHONY : docBaseTecDriver/fast
 
 #=============================================================================
-# Target rules for targets named AsymtecUnloader
+# Target rules for targets named HwAccessDemo
 
 # Build rule for target.
-AsymtecUnloader: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 AsymtecUnloader
-.PHONY : AsymtecUnloader
+HwAccessDemo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 HwAccessDemo
+.PHONY : HwAccessDemo
 
 # fast build rule for target.
-AsymtecUnloader/fast:
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\AsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/build
-.PHONY : AsymtecUnloader/fast
+HwAccessDemo/fast:
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\HwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/build
+.PHONY : HwAccessDemo/fast
 
 # Manual pre-install relink rule for target.
-AsymtecUnloader/preinstall:
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\AsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/preinstall
-.PHONY : AsymtecUnloader/preinstall
+HwAccessDemo/preinstall:
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\HwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/preinstall
+.PHONY : HwAccessDemo/preinstall
 
 #=============================================================================
-# Target rules for targets named docAsymtecUnloader
+# Target rules for targets named docHwAccessDemo
 
 # Build rule for target.
-docAsymtecUnloader: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 docAsymtecUnloader
-.PHONY : docAsymtecUnloader
+docHwAccessDemo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 docHwAccessDemo
+.PHONY : docHwAccessDemo
 
 # fast build rule for target.
-docAsymtecUnloader/fast:
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\docAsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/build
-.PHONY : docAsymtecUnloader/fast
+docHwAccessDemo/fast:
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\docHwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/build
+.PHONY : docHwAccessDemo/fast
 
 #=============================================================================
 # Target rules for targets named KleberMqtt
@@ -409,8 +409,8 @@ help:
 	@echo ... GaApp
 	@echo ... BaseTecDriver
 	@echo ... docBaseTecDriver
-	@echo ... docAsymtecUnloader
-	@echo ... AsymtecUnloader
+	@echo ... HwAccessDemo
+	@echo ... docHwAccessDemo
 	@echo ... KleberMqtt
 	@echo ... docKleberMqtt
 .PHONY : help

@@ -18,7 +18,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../../../source/BeagleBoneResources/include"
   "../../../source/GaApp/./include"
   "source/GaApp"
-  "s:/tools/paho/include"
   )
 set(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 set(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

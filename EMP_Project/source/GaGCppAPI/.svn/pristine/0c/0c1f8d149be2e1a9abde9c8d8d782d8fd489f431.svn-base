@@ -1,0 +1,73 @@
+/*
+ * GaTask.cpp
+ *
+ *  Created on: 09.12.2014
+ *      Author: s.hegemann
+ */
+
+#include "exceptions/GammaFaultException.h"
+#include "scheduler/GaTask.h"
+
+namespace GaGCppAPI {
+
+    int32_t ga_task_init(void* userData)
+    {
+        GaTask* ptTask = (GaTask*) userData;
+        return (ptTask->taskInit());
+    }
+
+    int32_t ga_task_deinit(void* userData)
+    {
+        GaTask* ptTask = (GaTask*) userData;
+        return (ptTask->taskDeinit());
+    }
+
+    int32_t ga_task_run(void* userData,
+                        gs_Task taskHandle,
+                        const uint32_t* frameNumber)
+    {
+        GaTask* ptTask = (GaTask*) userData;
+        return (ptTask->taskRun(taskHandle, frameNumber));
+    }
+
+    GaTask::GaTask(std::string& _name)
+    {
+        mName = _name;
+
+        gc_ErrorID result;
+        result =  gs_task_register (&mTaskHandler, mName.c_str(), (void* const)this, ga_task_init, ga_task_run, ga_task_deinit);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result)<< "unable to register to task " << mName;
+        }
+    }
+
+    GaTask::~GaTask()
+    {
+        gc_ErrorID result;
+        result =  gs_task_stop  (&mTaskHandler, &mStatistics);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            // TODO: hier braucht es noch was schlaues! Aber keine Exception bitte!!!
+        }
+    }
+
+    void
+    GaTask::updateStatistics()
+    {
+        gc_ErrorID result;
+        result =  gs_task_getStatistics  (mTaskHandler, &mStatistics);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result)<< "unable to update task " << mName << " statistics";
+        }
+    }
+
+    void
+    GaTask::waitNextFrame(const uint32_t  _framesToWait)
+    {
+        gc_ErrorID result;
+        result =  gs_task_waitNextFrame  (mTaskHandler, _framesToWait);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result)<< "error while waiting for " << _framesToWait << " Frames. (Task " << mName << ")";
+        }
+    }
+
+} /* namespace GaGCppAPI */

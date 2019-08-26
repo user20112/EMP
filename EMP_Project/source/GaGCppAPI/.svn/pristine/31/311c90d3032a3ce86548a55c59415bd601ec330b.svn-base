@@ -1,0 +1,93 @@
+/*
+ * ExceptionBase.h
+ *
+ *  Created on: 05.12.2014
+ *      Author: s.hegemann
+ */
+
+#ifndef SOURCE_GAGCPPAPI_EXCEPTIONBASE_H_
+#define SOURCE_GAGCPPAPI_EXCEPTIONBASE_H_
+
+#include <exception>
+#include <string>
+#include <sstream>
+
+namespace GaGCppAPI {
+
+    /**
+     * @short base class for exception used in this library
+     */
+    class ExceptionBase: public std::exception
+    {
+        public:
+            /**
+             * @short default constructor
+             * @param _file current file name as string. Use __FILE__ for default. The path will be truncated!
+             * @param _function current function as string. Use __FUNCTION__ for default.
+             * @param _line line in current file. Use __LINE__ for default.
+             * @param _message a user defined message with further details.
+             */
+            ExceptionBase(const char* const _file,
+                          const char* const _function,
+                          uint32_t _line,
+                          const std::string& _message) noexcept;
+
+            /**
+             * @short clean up
+             */
+            virtual
+            ~ExceptionBase() noexcept;
+
+            /**
+             * @short get exception message
+             * @return formated message string
+             */
+            virtual const char*
+            what() const noexcept;
+
+            /**
+             * @short enable usage of exceptions in ostreams. Will add the formated message.
+             * @param _os used output stream
+             * @param _e exception for output
+             * @return reference to used output stream
+             */
+            friend std::ostream&
+            operator<<(std::ostream& _os,
+                       const ExceptionBase& _e)
+            {
+                _os << _e.getMessage();
+                return (_os);
+            }
+
+        protected:
+            /**
+             * @short create a formarted message string
+             * @return formarted message string
+             */
+            virtual const std::string
+            getMessage() const = 0;
+
+            /**
+             * @short filename, where exception is thrown
+             */
+            std::string mFile;
+
+            /**
+             * @short function name, where exception is thrown
+             */
+            std::string mFunction;
+
+            /**
+             * @short line number, where exception is thrown
+             */
+            uint32_t mLine;
+
+            /**
+             * @short user message
+             */
+            std::string mMessage;
+    };
+
+} /* namespace GaGCppAPI */
+
+#endif /* SOURCE_GAGCPPAPI_EXCEPTIONBASE_H_ */

@@ -34,10 +34,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 # Include any dependencies generated for this target.
 include source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/depend.make
@@ -49,23 +49,23 @@ include source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/progress.make
 include source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 
 source/GaAppBaseLib/LibVersionInfo.cpp: ../../../source/GaAppBaseLib/src/LibVersionInfo.template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating LibVersionInfo.cpp"
-	cd /d S:\work\AsymtecUnloader\source\GaAppBaseLib && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/GaAppBaseLib/LibVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/GaAppBaseLib/LibVersionInfo.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.o: ../../../source/GaAppBaseLib/src/exceptions/ExceptionBase.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ExceptionBase.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\ExceptionBase.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ExceptionBase.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\ExceptionBase.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\ExceptionBase.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\ExceptionBase.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\ExceptionBase.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\ExceptionBase.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\ExceptionBase.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ExceptionBase.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\ExceptionBase.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ExceptionBase.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.o.requires
@@ -78,17 +78,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.o: ../../../source/GaAppBaseLib/src/exceptions/ArgumentFaultException.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ArgumentFaultException.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\ArgumentFaultException.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ArgumentFaultException.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\ArgumentFaultException.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\ArgumentFaultException.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\ArgumentFaultException.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\ArgumentFaultException.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\ArgumentFaultException.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\ArgumentFaultException.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ArgumentFaultException.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\ArgumentFaultException.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\ArgumentFaultException.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.o.requires
@@ -101,17 +101,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultExce
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.o: ../../../source/GaAppBaseLib/src/exceptions/LogicFaultException.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\LogicFaultException.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\LogicFaultException.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\LogicFaultException.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\LogicFaultException.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\LogicFaultException.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\LogicFaultException.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\LogicFaultException.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\LogicFaultException.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\LogicFaultException.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\LogicFaultException.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\LogicFaultException.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\LogicFaultException.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.o.requires
@@ -124,17 +124,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultExcepti
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.o: ../../../source/GaAppBaseLib/src/exceptions/SystemCallException.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\SystemCallException.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\SystemCallException.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\SystemCallException.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\SystemCallException.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\SystemCallException.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\SystemCallException.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\SystemCallException.cpp > CMakeFiles\GaAppBaseLib.dir\src\exceptions\SystemCallException.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\exceptions\SystemCallException.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\SystemCallException.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\exceptions\SystemCallException.cpp -o CMakeFiles\GaAppBaseLib.dir\src\exceptions\SystemCallException.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.o.requires
@@ -147,17 +147,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallExcepti
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.o: ../../../source/GaAppBaseLib/src/ModuleInterface/LibContainer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibContainer.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\LibContainer.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibContainer.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\LibContainer.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\LibContainer.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibContainer.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\LibContainer.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibContainer.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\LibContainer.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibContainer.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\LibContainer.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibContainer.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.o.requires
@@ -170,17 +170,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.o: ../../../source/GaAppBaseLib/src/ModuleInterface/LibInstance.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibInstance.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\LibInstance.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibInstance.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\LibInstance.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\LibInstance.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibInstance.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\LibInstance.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibInstance.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\LibInstance.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibInstance.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\LibInstance.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\LibInstance.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.o.requires
@@ -193,17 +193,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.o: ../../../source/GaAppBaseLib/src/ModuleInterface/ModuleInstance.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInstance.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\ModuleInstance.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInstance.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\ModuleInstance.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\ModuleInstance.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInstance.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\ModuleInstance.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInstance.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\ModuleInstance.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInstance.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\ModuleInstance.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInstance.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.o.requires
@@ -216,17 +216,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstan
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o: ../../../source/GaAppBaseLib/src/ModuleInterface/ModuleInterface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInterface.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\ModuleInterface.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInterface.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\ModuleInterface.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\ModuleInterface.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInterface.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\ModuleInterface.cpp > CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInterface.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\ModuleInterface\ModuleInterface.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInterface.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\ModuleInterface\ModuleInterface.cpp -o CMakeFiles\GaAppBaseLib.dir\src\ModuleInterface\ModuleInterface.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o.requires
@@ -239,17 +239,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterf
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o: ../../../source/GaAppBaseLib/src/network/NetworkHelper.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\network\NetworkHelper.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\NetworkHelper.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\network\NetworkHelper.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\network\NetworkHelper.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\NetworkHelper.cpp > CMakeFiles\GaAppBaseLib.dir\src\network\NetworkHelper.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\network\NetworkHelper.cpp > CMakeFiles\GaAppBaseLib.dir\src\network\NetworkHelper.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\NetworkHelper.cpp -o CMakeFiles\GaAppBaseLib.dir\src\network\NetworkHelper.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\network\NetworkHelper.cpp -o CMakeFiles\GaAppBaseLib.dir\src\network\NetworkHelper.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o.requires
@@ -262,17 +262,17 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o.
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o: ../../../source/GaAppBaseLib/src/network/UDPConnection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\network\UDPConnection.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\UDPConnection.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\network\UDPConnection.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\network\UDPConnection.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\UDPConnection.cpp > CMakeFiles\GaAppBaseLib.dir\src\network\UDPConnection.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\network\UDPConnection.cpp > CMakeFiles\GaAppBaseLib.dir\src\network\UDPConnection.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\UDPConnection.cpp -o CMakeFiles\GaAppBaseLib.dir\src\network\UDPConnection.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib\src\network\UDPConnection.cpp -o CMakeFiles\GaAppBaseLib.dir\src\network\UDPConnection.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o.requires
@@ -283,42 +283,19 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o.
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o.provides.build: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o
 
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o: ../../../source/GaAppBaseLib/src/network/TCPClientConnection.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\src\network\TCPClientConnection.cpp.o -c S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\TCPClientConnection.cpp
-
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\TCPClientConnection.cpp > CMakeFiles\GaAppBaseLib.dir\src\network\TCPClientConnection.cpp.i
-
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\GaAppBaseLib\src\network\TCPClientConnection.cpp -o CMakeFiles\GaAppBaseLib.dir\src\network\TCPClientConnection.cpp.s
-
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.requires:
-.PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.requires
-
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.provides: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.requires
-	$(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.provides.build
-.PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.provides
-
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.provides.build: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o
-
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/flags.make
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o: source/GaAppBaseLib/LibVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\LibVersionInfo.cpp.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib\LibVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\GaAppBaseLib.dir\LibVersionInfo.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib\LibVersionInfo.cpp
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib\LibVersionInfo.cpp > CMakeFiles\GaAppBaseLib.dir\LibVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib\LibVersionInfo.cpp > CMakeFiles\GaAppBaseLib.dir\LibVersionInfo.cpp.i
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib\LibVersionInfo.cpp -o CMakeFiles\GaAppBaseLib.dir\LibVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib\LibVersionInfo.cpp -o CMakeFiles\GaAppBaseLib.dir\LibVersionInfo.cpp.s
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o.requires:
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o.requires
@@ -341,7 +318,6 @@ GaAppBaseLib_OBJECTS = \
 "CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o" \
 "CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o" \
 "CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o" \
-"CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o" \
 "CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o"
 
 # External object files for target GaAppBaseLib
@@ -357,7 +333,6 @@ source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBase
 source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o
 source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o
 source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o
-source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o
 source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o
 source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/build.make
 source/GaAppBaseLib/libGaAppBaseLib.so: S:/tools/boost/1.58.0/bin/Linux/armhf/libboost_system.so
@@ -365,8 +340,8 @@ source/GaAppBaseLib/libGaAppBaseLib.so: S:/tools/boost/1.58.0/bin/Linux/armhf/li
 source/GaAppBaseLib/libGaAppBaseLib.so: S:/tools/boost/1.58.0/bin/Linux/armhf/libboost_thread.so
 source/GaAppBaseLib/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libGaAppBaseLib.so"
-	cd /d S:\work\AsymtecUnloader\source\GaAppBaseLib && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/GaAppBaseLib/LibVersionInfo.cpp
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GaAppBaseLib.dir\link.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/GaAppBaseLib/LibVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GaAppBaseLib.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/build: source/GaAppBaseLib/libGaAppBaseLib.so
@@ -384,7 +359,6 @@ GaAppBaseLib_OBJECTS = \
 "CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o" \
 "CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o" \
 "CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o" \
-"CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o" \
 "CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o"
 
 # External object files for target GaAppBaseLib
@@ -400,7 +374,6 @@ source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppB
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o
-source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/build.make
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: S:/tools/boost/1.58.0/bin/Linux/armhf/libboost_system.so
@@ -408,7 +381,7 @@ source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: S:/tools/boos
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: S:/tools/boost/1.58.0/bin/Linux/armhf/libboost_thread.so
 source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/relink.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library CMakeFiles\CMakeRelink.dir\libGaAppBaseLib.so"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GaAppBaseLib.dir\relink.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\GaAppBaseLib.dir\relink.txt --verbose=$(VERBOSE)
 
 # Rule to relink during preinstall.
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/preinstall: source/GaAppBaseLib/CMakeFiles/CMakeRelink.dir/libGaAppBaseLib.so
@@ -424,15 +397,14 @@ source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/requires: source/GaAppBaseLib/CM
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/requires: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o.requires
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/requires: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o.requires
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/requires: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o.requires
-source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/requires: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o.requires
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/requires: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o.requires
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/requires
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib && $(CMAKE_COMMAND) -P CMakeFiles\GaAppBaseLib.dir\cmake_clean.cmake
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib && $(CMAKE_COMMAND) -P CMakeFiles\GaAppBaseLib.dir\cmake_clean.cmake
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/clean
 
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/depend: source/GaAppBaseLib/LibVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" S:\work\AsymtecUnloader S:\work\AsymtecUnloader\source\GaAppBaseLib S:\work\AsymtecUnloader\build\Linux-arm\Debug S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaAppBaseLib C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/depend
 

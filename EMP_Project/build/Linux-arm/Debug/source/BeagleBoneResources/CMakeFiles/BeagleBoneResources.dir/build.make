@@ -34,10 +34,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 # Include any dependencies generated for this target.
 include source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/depend.make
@@ -49,23 +49,23 @@ include source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/progress.m
 include source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/flags.make
 
 source/BeagleBoneResources/LibVersionInfo.cpp: ../../../source/BeagleBoneResources/src/LibVersionInfo.template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating LibVersionInfo.cpp"
-	cd /d S:\work\AsymtecUnloader\source\BeagleBoneResources && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/BeagleBoneResources/LibVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/BeagleBoneResources/LibVersionInfo.cpp
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/flags.make
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o: ../../../source/BeagleBoneResources/src/pru/PruDriver.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruDriver.cpp.o -c S:\work\AsymtecUnloader\source\BeagleBoneResources\src\pru\PruDriver.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruDriver.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources\src\pru\PruDriver.cpp
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BeagleBoneResources\src\pru\PruDriver.cpp > CMakeFiles\BeagleBoneResources.dir\src\pru\PruDriver.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources\src\pru\PruDriver.cpp > CMakeFiles\BeagleBoneResources.dir\src\pru\PruDriver.cpp.i
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BeagleBoneResources\src\pru\PruDriver.cpp -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruDriver.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources\src\pru\PruDriver.cpp -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruDriver.cpp.s
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o.requires:
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o.requires
@@ -78,17 +78,17 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/flags.make
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o: ../../../source/BeagleBoneResources/src/pru/PruInterface.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruInterface.cpp.o -c S:\work\AsymtecUnloader\source\BeagleBoneResources\src\pru\PruInterface.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruInterface.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources\src\pru\PruInterface.cpp
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BeagleBoneResources\src\pru\PruInterface.cpp > CMakeFiles\BeagleBoneResources.dir\src\pru\PruInterface.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources\src\pru\PruInterface.cpp > CMakeFiles\BeagleBoneResources.dir\src\pru\PruInterface.cpp.i
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BeagleBoneResources\src\pru\PruInterface.cpp -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruInterface.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources\src\pru\PruInterface.cpp -o CMakeFiles\BeagleBoneResources.dir\src\pru\PruInterface.cpp.s
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o.requires:
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o.requires
@@ -101,17 +101,17 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterfa
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.o: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/flags.make
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.o: source/BeagleBoneResources/LibVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BeagleBoneResources.dir\LibVersionInfo.cpp.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources\LibVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BeagleBoneResources.dir\LibVersionInfo.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources\LibVersionInfo.cpp
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources\LibVersionInfo.cpp > CMakeFiles\BeagleBoneResources.dir\LibVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources\LibVersionInfo.cpp > CMakeFiles\BeagleBoneResources.dir\LibVersionInfo.cpp.i
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources\LibVersionInfo.cpp -o CMakeFiles\BeagleBoneResources.dir\LibVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources\LibVersionInfo.cpp -o CMakeFiles\BeagleBoneResources.dir\LibVersionInfo.cpp.s
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.o.requires:
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.o.requires
@@ -142,8 +142,8 @@ source/BeagleBoneResources/libBeagleBoneResources.so: S:/tools/boost/1.58.0/bin/
 source/BeagleBoneResources/libBeagleBoneResources.so: S:/tools/boost/1.58.0/bin/Linux/armhf/libboost_thread.so
 source/BeagleBoneResources/libBeagleBoneResources.so: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libBeagleBoneResources.so"
-	cd /d S:\work\AsymtecUnloader\source\BeagleBoneResources && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/BeagleBoneResources/LibVersionInfo.cpp
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BeagleBoneResources.dir\link.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources && sh /cygdrive/S/Scripts/buildVersion.sh src/LibVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/BeagleBoneResources/LibVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BeagleBoneResources.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/build: source/BeagleBoneResources/libBeagleBoneResources.so
@@ -169,7 +169,7 @@ source/BeagleBoneResources/CMakeFiles/CMakeRelink.dir/libBeagleBoneResources.so:
 source/BeagleBoneResources/CMakeFiles/CMakeRelink.dir/libBeagleBoneResources.so: S:/tools/boost/1.58.0/bin/Linux/armhf/libboost_thread.so
 source/BeagleBoneResources/CMakeFiles/CMakeRelink.dir/libBeagleBoneResources.so: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/relink.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library CMakeFiles\CMakeRelink.dir\libBeagleBoneResources.so"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BeagleBoneResources.dir\relink.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BeagleBoneResources.dir\relink.txt --verbose=$(VERBOSE)
 
 # Rule to relink during preinstall.
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/preinstall: source/BeagleBoneResources/CMakeFiles/CMakeRelink.dir/libBeagleBoneResources.so
@@ -181,10 +181,10 @@ source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/requires: source/B
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/requires
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources && $(CMAKE_COMMAND) -P CMakeFiles\BeagleBoneResources.dir\cmake_clean.cmake
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources && $(CMAKE_COMMAND) -P CMakeFiles\BeagleBoneResources.dir\cmake_clean.cmake
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/clean
 
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/depend: source/BeagleBoneResources/LibVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" S:\work\AsymtecUnloader S:\work\AsymtecUnloader\source\BeagleBoneResources S:\work\AsymtecUnloader\build\Linux-arm\Debug S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BeagleBoneResources C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/depend
 

@@ -42,10 +42,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaApp\CMakeFiles\progress.marks
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaApp\CMakeFiles\progress.marks
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/clean
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/GaApp/CMakeFiles/GaApp.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/GaApp.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/GaApp.dir/rule
 .PHONY : source/GaApp/CMakeFiles/GaApp.dir/rule
 
 # Convenience name for target.
@@ -153,17 +153,17 @@ GaApp: source/GaApp/CMakeFiles/GaApp.dir/rule
 
 # fast build rule for target.
 GaApp/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/build
 .PHONY : GaApp/fast
 
 # Manual pre-install relink rule for target.
 GaApp/preinstall:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/GaApp.dir/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/GaApp.dir/preinstall
 .PHONY : GaApp/preinstall
 
 # Convenience name for target.
 source/GaApp/CMakeFiles/docGaApp.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/docGaApp.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/docGaApp.dir/rule
 .PHONY : source/GaApp/CMakeFiles/docGaApp.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ docGaApp: source/GaApp/CMakeFiles/docGaApp.dir/rule
 
 # fast build rule for target.
 docGaApp/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\docGaApp.dir\build.make source/GaApp/CMakeFiles/docGaApp.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\docGaApp.dir\build.make source/GaApp/CMakeFiles/docGaApp.dir/build
 .PHONY : docGaApp/fast
 
 AppVersionInfo.o: AppVersionInfo.cpp.o
@@ -180,7 +180,7 @@ AppVersionInfo.o: AppVersionInfo.cpp.o
 
 # target to build an object file
 AppVersionInfo.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/AppVersionInfo.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/AppVersionInfo.cpp.o
 .PHONY : AppVersionInfo.cpp.o
 
 AppVersionInfo.i: AppVersionInfo.cpp.i
@@ -188,7 +188,7 @@ AppVersionInfo.i: AppVersionInfo.cpp.i
 
 # target to preprocess a source file
 AppVersionInfo.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/AppVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/AppVersionInfo.cpp.i
 .PHONY : AppVersionInfo.cpp.i
 
 AppVersionInfo.s: AppVersionInfo.cpp.s
@@ -196,7 +196,7 @@ AppVersionInfo.s: AppVersionInfo.cpp.s
 
 # target to generate assembly for a file
 AppVersionInfo.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/AppVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/AppVersionInfo.cpp.s
 .PHONY : AppVersionInfo.cpp.s
 
 src/AppConfig.o: src/AppConfig.cpp.o
@@ -204,7 +204,7 @@ src/AppConfig.o: src/AppConfig.cpp.o
 
 # target to build an object file
 src/AppConfig.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o
 .PHONY : src/AppConfig.cpp.o
 
 src/AppConfig.i: src/AppConfig.cpp.i
@@ -212,7 +212,7 @@ src/AppConfig.i: src/AppConfig.cpp.i
 
 # target to preprocess a source file
 src/AppConfig.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.i
 .PHONY : src/AppConfig.cpp.i
 
 src/AppConfig.s: src/AppConfig.cpp.s
@@ -220,7 +220,7 @@ src/AppConfig.s: src/AppConfig.cpp.s
 
 # target to generate assembly for a file
 src/AppConfig.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.s
 .PHONY : src/AppConfig.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -228,7 +228,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -236,7 +236,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -244,7 +244,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -281,6 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

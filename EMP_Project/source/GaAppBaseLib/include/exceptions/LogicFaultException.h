@@ -18,7 +18,7 @@
 // external library header
 
 // local library header
-#include "exceptions/ExceptionBase.h"
+#include "./ExceptionBase.h"
 
 namespace GaAppBaseLib {
 

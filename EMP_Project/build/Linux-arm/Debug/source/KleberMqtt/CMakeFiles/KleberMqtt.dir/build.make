@@ -34,10 +34,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 # Include any dependencies generated for this target.
 include source/KleberMqtt/CMakeFiles/KleberMqtt.dir/depend.make
@@ -49,23 +49,23 @@ include source/KleberMqtt/CMakeFiles/KleberMqtt.dir/progress.make
 include source/KleberMqtt/CMakeFiles/KleberMqtt.dir/flags.make
 
 source/KleberMqtt/ModuleVersionInfo.cpp: ../../../source/KleberMqtt/src/ModuleVersionInfo.template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ModuleVersionInfo.cpp"
-	cd /d S:\work\AsymtecUnloader\source\KleberMqtt && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/KleberMqtt/ModuleVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\KleberMqtt && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/KleberMqtt/ModuleVersionInfo.cpp
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: source/KleberMqtt/CMakeFiles/KleberMqtt.dir/flags.make
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o: ../../../source/KleberMqtt/src/KleberMqtt.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\KleberMqtt.dir\src\KleberMqtt.cpp.o -c S:\work\AsymtecUnloader\source\KleberMqtt\src\KleberMqtt.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\KleberMqtt.dir\src\KleberMqtt.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\KleberMqtt\src\KleberMqtt.cpp
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\KleberMqtt\src\KleberMqtt.cpp > CMakeFiles\KleberMqtt.dir\src\KleberMqtt.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\KleberMqtt\src\KleberMqtt.cpp > CMakeFiles\KleberMqtt.dir\src\KleberMqtt.cpp.i
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\KleberMqtt\src\KleberMqtt.cpp -o CMakeFiles\KleberMqtt.dir\src\KleberMqtt.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\KleberMqtt\src\KleberMqtt.cpp -o CMakeFiles\KleberMqtt.dir\src\KleberMqtt.cpp.s
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o.requires:
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o.requires
@@ -78,17 +78,17 @@ source/KleberMqtt/CMakeFiles/KleberMqtt.dir/src/KleberMqtt.cpp.o.provides.build:
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.o: source/KleberMqtt/CMakeFiles/KleberMqtt.dir/flags.make
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.o: source/KleberMqtt/ModuleVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\KleberMqtt.dir\ModuleVersionInfo.cpp.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt\ModuleVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\KleberMqtt.dir\ModuleVersionInfo.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt\ModuleVersionInfo.cpp
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt\ModuleVersionInfo.cpp > CMakeFiles\KleberMqtt.dir\ModuleVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt\ModuleVersionInfo.cpp > CMakeFiles\KleberMqtt.dir\ModuleVersionInfo.cpp.i
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt\ModuleVersionInfo.cpp -o CMakeFiles\KleberMqtt.dir\ModuleVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt\ModuleVersionInfo.cpp -o CMakeFiles\KleberMqtt.dir\ModuleVersionInfo.cpp.s
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.o.requires:
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/ModuleVersionInfo.cpp.o.requires
@@ -132,8 +132,8 @@ source/KleberMqtt/libKleberMqtt.so: S:/tools/gamma/target/linux/armhf/lib/libgaC
 source/KleberMqtt/libKleberMqtt.so: S:/tools/gamma/target/linux/armhf/lib/libTLSF.so
 source/KleberMqtt/libKleberMqtt.so: source/KleberMqtt/CMakeFiles/KleberMqtt.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libKleberMqtt.so"
-	cd /d S:\work\AsymtecUnloader\source\KleberMqtt && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/KleberMqtt/ModuleVersionInfo.cpp
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\KleberMqtt.dir\link.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\KleberMqtt && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/KleberMqtt/ModuleVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\KleberMqtt.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/build: source/KleberMqtt/libKleberMqtt.so
@@ -172,7 +172,7 @@ source/KleberMqtt/CMakeFiles/CMakeRelink.dir/libKleberMqtt.so: S:/tools/gamma/ta
 source/KleberMqtt/CMakeFiles/CMakeRelink.dir/libKleberMqtt.so: S:/tools/gamma/target/linux/armhf/lib/libTLSF.so
 source/KleberMqtt/CMakeFiles/CMakeRelink.dir/libKleberMqtt.so: source/KleberMqtt/CMakeFiles/KleberMqtt.dir/relink.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library CMakeFiles\CMakeRelink.dir\libKleberMqtt.so"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\KleberMqtt.dir\relink.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\KleberMqtt.dir\relink.txt --verbose=$(VERBOSE)
 
 # Rule to relink during preinstall.
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/preinstall: source/KleberMqtt/CMakeFiles/CMakeRelink.dir/libKleberMqtt.so
@@ -183,10 +183,10 @@ source/KleberMqtt/CMakeFiles/KleberMqtt.dir/requires: source/KleberMqtt/CMakeFil
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/requires
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt && $(CMAKE_COMMAND) -P CMakeFiles\KleberMqtt.dir\cmake_clean.cmake
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt && $(CMAKE_COMMAND) -P CMakeFiles\KleberMqtt.dir\cmake_clean.cmake
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/clean
 
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/depend: source/KleberMqtt/ModuleVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" S:\work\AsymtecUnloader S:\work\AsymtecUnloader\source\KleberMqtt S:\work\AsymtecUnloader\build\Linux-arm\Debug S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\KleberMqtt\CMakeFiles\KleberMqtt.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\KleberMqtt C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\KleberMqtt\CMakeFiles\KleberMqtt.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/depend
 

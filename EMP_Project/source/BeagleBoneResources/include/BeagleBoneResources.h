@@ -16,16 +16,6 @@
 // library version information
 #include "BeagleBoneResourcesVersionInfo.h"
 
-#include "exceptions/GammaFaultException.h"
-#include "exceptions/LogicFaultException.h"
-#include "exceptions/ArgumentFaultException.h"
-
-//#include "GPIO.h"
-
-//#include "SPIBus.h"
-//#include "SPIDevice.h"
-
-#include "pru/PruDriver.h"
 #include "pru/PruInterface.h"
 
 #endif /* SOURCE_BEAGLEBONE_RESOURCES_INCLUDE_BEAGLEBONE_RESOURCES_H_ */

@@ -34,10 +34,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 # Include any dependencies generated for this target.
 include source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/depend.make
@@ -49,23 +49,23 @@ include source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/progress.make
 include source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
 
 source/BaseTecDriver/ModuleVersionInfo.cpp: ../../../source/BaseTecDriver/src/ModuleVersionInfo.template.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ModuleVersionInfo.cpp"
-	cd /d S:\work\AsymtecUnloader\source\BaseTecDriver && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/BaseTecDriver/ModuleVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/BaseTecDriver/ModuleVersionInfo.cpp
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o: ../../../source/BaseTecDriver/src/BaseTecDriver.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\BaseTecDriver.cpp.o -c S:\work\AsymtecUnloader\source\BaseTecDriver\src\BaseTecDriver.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\BaseTecDriver.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\BaseTecDriver.cpp
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BaseTecDriver\src\BaseTecDriver.cpp > CMakeFiles\BaseTecDriver.dir\src\BaseTecDriver.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\BaseTecDriver.cpp > CMakeFiles\BaseTecDriver.dir\src\BaseTecDriver.cpp.i
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BaseTecDriver\src\BaseTecDriver.cpp -o CMakeFiles\BaseTecDriver.dir\src\BaseTecDriver.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\BaseTecDriver.cpp -o CMakeFiles\BaseTecDriver.dir\src\BaseTecDriver.cpp.s
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o.requires:
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o.requires
@@ -78,17 +78,17 @@ source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o.provid
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o: ../../../source/BaseTecDriver/src/HardwareCtrl.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\HardwareCtrl.cpp.o -c S:\work\AsymtecUnloader\source\BaseTecDriver\src\HardwareCtrl.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\HardwareCtrl.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\HardwareCtrl.cpp
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BaseTecDriver\src\HardwareCtrl.cpp > CMakeFiles\BaseTecDriver.dir\src\HardwareCtrl.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\HardwareCtrl.cpp > CMakeFiles\BaseTecDriver.dir\src\HardwareCtrl.cpp.i
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BaseTecDriver\src\HardwareCtrl.cpp -o CMakeFiles\BaseTecDriver.dir\src\HardwareCtrl.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\HardwareCtrl.cpp -o CMakeFiles\BaseTecDriver.dir\src\HardwareCtrl.cpp.s
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o.requires:
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o.requires
@@ -101,17 +101,17 @@ source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o.provide
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o: ../../../source/BaseTecDriver/src/DigitalInputs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\DigitalInputs.cpp.o -c S:\work\AsymtecUnloader\source\BaseTecDriver\src\DigitalInputs.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\DigitalInputs.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\DigitalInputs.cpp
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BaseTecDriver\src\DigitalInputs.cpp > CMakeFiles\BaseTecDriver.dir\src\DigitalInputs.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\DigitalInputs.cpp > CMakeFiles\BaseTecDriver.dir\src\DigitalInputs.cpp.i
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BaseTecDriver\src\DigitalInputs.cpp -o CMakeFiles\BaseTecDriver.dir\src\DigitalInputs.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\DigitalInputs.cpp -o CMakeFiles\BaseTecDriver.dir\src\DigitalInputs.cpp.s
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o.requires:
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o.requires
@@ -124,17 +124,17 @@ source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o.provid
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o: ../../../source/BaseTecDriver/src/DigitalOutputs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\DigitalOutputs.cpp.o -c S:\work\AsymtecUnloader\source\BaseTecDriver\src\DigitalOutputs.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\DigitalOutputs.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\DigitalOutputs.cpp
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BaseTecDriver\src\DigitalOutputs.cpp > CMakeFiles\BaseTecDriver.dir\src\DigitalOutputs.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\DigitalOutputs.cpp > CMakeFiles\BaseTecDriver.dir\src\DigitalOutputs.cpp.i
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BaseTecDriver\src\DigitalOutputs.cpp -o CMakeFiles\BaseTecDriver.dir\src\DigitalOutputs.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\DigitalOutputs.cpp -o CMakeFiles\BaseTecDriver.dir\src\DigitalOutputs.cpp.s
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o.requires:
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o.requires
@@ -147,17 +147,17 @@ source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o.provi
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o: ../../../source/BaseTecDriver/src/AnalogInputs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\AnalogInputs.cpp.o -c S:\work\AsymtecUnloader\source\BaseTecDriver\src\AnalogInputs.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\AnalogInputs.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\AnalogInputs.cpp
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BaseTecDriver\src\AnalogInputs.cpp > CMakeFiles\BaseTecDriver.dir\src\AnalogInputs.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\AnalogInputs.cpp > CMakeFiles\BaseTecDriver.dir\src\AnalogInputs.cpp.i
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BaseTecDriver\src\AnalogInputs.cpp -o CMakeFiles\BaseTecDriver.dir\src\AnalogInputs.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver\src\AnalogInputs.cpp -o CMakeFiles\BaseTecDriver.dir\src\AnalogInputs.cpp.s
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o.requires:
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o.requires
@@ -168,65 +168,19 @@ source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o.provide
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o.provides.build: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o
 
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o: ../../../source/BaseTecDriver/src/TemperatureInputs.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\TemperatureInputs.cpp.o -c S:\work\AsymtecUnloader\source\BaseTecDriver\src\TemperatureInputs.cpp
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BaseTecDriver\src\TemperatureInputs.cpp > CMakeFiles\BaseTecDriver.dir\src\TemperatureInputs.cpp.i
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BaseTecDriver\src\TemperatureInputs.cpp -o CMakeFiles\BaseTecDriver.dir\src\TemperatureInputs.cpp.s
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.requires:
-.PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.requires
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.provides: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.requires
-	$(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.provides.build
-.PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.provides
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.provides.build: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o: ../../../source/BaseTecDriver/src/median.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\src\median.cpp.o -c S:\work\AsymtecUnloader\source\BaseTecDriver\src\median.cpp
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/src/median.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\source\BaseTecDriver\src\median.cpp > CMakeFiles\BaseTecDriver.dir\src\median.cpp.i
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/src/median.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\source\BaseTecDriver\src\median.cpp -o CMakeFiles\BaseTecDriver.dir\src\median.cpp.s
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.requires:
-.PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.requires
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.provides: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.requires
-	$(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.provides.build
-.PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.provides
-
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.provides.build: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o
-
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/flags.make
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o: source/BaseTecDriver/ModuleVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\ModuleVersionInfo.cpp.o -c S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver\ModuleVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles\BaseTecDriver.dir\ModuleVersionInfo.cpp.o -c C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver\ModuleVersionInfo.cpp
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.i"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver\ModuleVersionInfo.cpp > CMakeFiles\BaseTecDriver.dir\ModuleVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -E C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver\ModuleVersionInfo.cpp > CMakeFiles\BaseTecDriver.dir\ModuleVersionInfo.cpp.i
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.s"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver\ModuleVersionInfo.cpp -o CMakeFiles\BaseTecDriver.dir\ModuleVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && S:\tools\Linaro\gcc-linaro-arm-linux-gnueabihf-4.8-2013.09\bin\arm-linux-gnueabihf-g++.exe  $(CXX_DEFINES) $(CXX_FLAGS) -S C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver\ModuleVersionInfo.cpp -o CMakeFiles\BaseTecDriver.dir\ModuleVersionInfo.cpp.s
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o.requires:
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o.requires
@@ -244,8 +198,6 @@ BaseTecDriver_OBJECTS = \
 "CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o" \
 "CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o" \
 "CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o" \
-"CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o" \
-"CMakeFiles/BaseTecDriver.dir/src/median.cpp.o" \
 "CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o"
 
 # External object files for target BaseTecDriver
@@ -256,8 +208,6 @@ source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTe
 source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o
 source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o
 source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o
-source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o
-source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o
 source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o
 source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/build.make
 source/BaseTecDriver/libBaseTecDriver.so: source/PugiXML/libPugiXML.so
@@ -276,8 +226,8 @@ source/BaseTecDriver/libBaseTecDriver.so: S:/tools/boost/1.58.0/bin/Linux/armhf/
 source/BaseTecDriver/libBaseTecDriver.so: ../../../source/BeagleBoneResources/libs/pru_driver/lib/libprussdrv.so
 source/BaseTecDriver/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library libBaseTecDriver.so"
-	cd /d S:\work\AsymtecUnloader\source\BaseTecDriver && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/BaseTecDriver/ModuleVersionInfo.cpp
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BaseTecDriver.dir\link.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver && sh /cygdrive/S/Scripts/buildVersion.sh src/ModuleVersionInfo.template.cpp C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/BaseTecDriver/ModuleVersionInfo.cpp
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BaseTecDriver.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/build: source/BaseTecDriver/libBaseTecDriver.so
@@ -290,8 +240,6 @@ BaseTecDriver_OBJECTS = \
 "CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o" \
 "CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o" \
 "CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o" \
-"CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o" \
-"CMakeFiles/BaseTecDriver.dir/src/median.cpp.o" \
 "CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o"
 
 # External object files for target BaseTecDriver
@@ -302,8 +250,6 @@ source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/Base
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o
-source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o
-source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/build.make
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/PugiXML/libPugiXML.so
@@ -322,7 +268,7 @@ source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: S:/tools/bo
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: ../../../source/BeagleBoneResources/libs/pru_driver/lib/libprussdrv.so
 source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/relink.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library CMakeFiles\CMakeRelink.dir\libBaseTecDriver.so"
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BaseTecDriver.dir\relink.txt --verbose=$(VERBOSE)
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\BaseTecDriver.dir\relink.txt --verbose=$(VERBOSE)
 
 # Rule to relink during preinstall.
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/preinstall: source/BaseTecDriver/CMakeFiles/CMakeRelink.dir/libBaseTecDriver.so
@@ -333,16 +279,14 @@ source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires: source/BaseTecDriver
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o.requires
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o.requires
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o.requires
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o.requires
-source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o.requires
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o.requires
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/requires
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver && $(CMAKE_COMMAND) -P CMakeFiles\BaseTecDriver.dir\cmake_clean.cmake
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver && $(CMAKE_COMMAND) -P CMakeFiles\BaseTecDriver.dir\cmake_clean.cmake
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/clean
 
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/depend: source/BaseTecDriver/ModuleVersionInfo.cpp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" S:\work\AsymtecUnloader S:\work\AsymtecUnloader\source\BaseTecDriver S:\work\AsymtecUnloader\build\Linux-arm\Debug S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\BaseTecDriver C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/depend
 

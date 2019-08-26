@@ -10,19 +10,19 @@
  * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_LIBCONTAINER_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_LIBCONTAINER_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_LIBCONTAINER_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_LIBCONTAINER_H_
 
 // System header
 #include <string>
 #include <map>
 
-#include "ModuleInterface/LibInstance.h"
-#include "ModuleInterface/ModuleInstance.h"
 // external library header
 #include "pugixml.hpp"
 
 // library header
+#include "LibInstance.h"
+#include "ModuleInstance.h"
 
 namespace GaAppBaseLib {
 
@@ -138,4 +138,4 @@ namespace GaAppBaseLib {
 
 } /* namespace GaAppBaseLib */
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_LIBCONTAINER_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_LIBCONTAINER_H_ */

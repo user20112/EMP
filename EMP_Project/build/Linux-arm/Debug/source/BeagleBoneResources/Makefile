@@ -42,10 +42,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BeagleBoneResources\CMakeFiles\progress.marks
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BeagleBoneResources\CMakeFiles\progress.marks
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/clean
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/rule
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/rule
 
 # Convenience name for target.
@@ -153,17 +153,17 @@ BeagleBoneResources: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.d
 
 # fast build rule for target.
 BeagleBoneResources/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/build
 .PHONY : BeagleBoneResources/fast
 
 # Manual pre-install relink rule for target.
 BeagleBoneResources/preinstall:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/preinstall
 .PHONY : BeagleBoneResources/preinstall
 
 # Convenience name for target.
 source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/rule
 .PHONY : source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ docBeagleBoneResources: source/BeagleBoneResources/CMakeFiles/docBeagleBoneResou
 
 # fast build rule for target.
 docBeagleBoneResources/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\docBeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\docBeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/build
 .PHONY : docBeagleBoneResources/fast
 
 LibVersionInfo.o: LibVersionInfo.cpp.o
@@ -180,7 +180,7 @@ LibVersionInfo.o: LibVersionInfo.cpp.o
 
 # target to build an object file
 LibVersionInfo.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.o
 .PHONY : LibVersionInfo.cpp.o
 
 LibVersionInfo.i: LibVersionInfo.cpp.i
@@ -188,7 +188,7 @@ LibVersionInfo.i: LibVersionInfo.cpp.i
 
 # target to preprocess a source file
 LibVersionInfo.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.i
 .PHONY : LibVersionInfo.cpp.i
 
 LibVersionInfo.s: LibVersionInfo.cpp.s
@@ -196,7 +196,7 @@ LibVersionInfo.s: LibVersionInfo.cpp.s
 
 # target to generate assembly for a file
 LibVersionInfo.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/LibVersionInfo.cpp.s
 .PHONY : LibVersionInfo.cpp.s
 
 src/pru/PruDriver.o: src/pru/PruDriver.cpp.o
@@ -204,7 +204,7 @@ src/pru/PruDriver.o: src/pru/PruDriver.cpp.o
 
 # target to build an object file
 src/pru/PruDriver.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.o
 .PHONY : src/pru/PruDriver.cpp.o
 
 src/pru/PruDriver.i: src/pru/PruDriver.cpp.i
@@ -212,7 +212,7 @@ src/pru/PruDriver.i: src/pru/PruDriver.cpp.i
 
 # target to preprocess a source file
 src/pru/PruDriver.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.i
 .PHONY : src/pru/PruDriver.cpp.i
 
 src/pru/PruDriver.s: src/pru/PruDriver.cpp.s
@@ -220,7 +220,7 @@ src/pru/PruDriver.s: src/pru/PruDriver.cpp.s
 
 # target to generate assembly for a file
 src/pru/PruDriver.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruDriver.cpp.s
 .PHONY : src/pru/PruDriver.cpp.s
 
 src/pru/PruInterface.o: src/pru/PruInterface.cpp.o
@@ -228,7 +228,7 @@ src/pru/PruInterface.o: src/pru/PruInterface.cpp.o
 
 # target to build an object file
 src/pru/PruInterface.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.o
 .PHONY : src/pru/PruInterface.cpp.o
 
 src/pru/PruInterface.i: src/pru/PruInterface.cpp.i
@@ -236,7 +236,7 @@ src/pru/PruInterface.i: src/pru/PruInterface.cpp.i
 
 # target to preprocess a source file
 src/pru/PruInterface.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.i
 .PHONY : src/pru/PruInterface.cpp.i
 
 src/pru/PruInterface.s: src/pru/PruInterface.cpp.s
@@ -244,7 +244,7 @@ src/pru/PruInterface.s: src/pru/PruInterface.cpp.s
 
 # target to generate assembly for a file
 src/pru/PruInterface.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/src/pru/PruInterface.cpp.s
 .PHONY : src/pru/PruInterface.cpp.s
 
 # Help Target
@@ -281,6 +281,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

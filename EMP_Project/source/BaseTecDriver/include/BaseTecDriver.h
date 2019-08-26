@@ -19,8 +19,8 @@
 // System header
 #include <string>
 
-#include "GaAppBaseLib.h"
 // external library header
+#include "GaAppBaseLib.h"
 #include "GaGCppAPI.h"
 #include "BeagleBoneResources.h"
 
@@ -29,7 +29,6 @@
 #include "DigitalInputs.h"
 #include "DigitalOutputs.h"
 #include "AnalogInputs.h"
-#include "TemperatureInputs.h"
 
 namespace BaseTecDriver {
 
@@ -244,7 +243,9 @@ namespace BaseTecDriver {
             DigitalInputs* digIn;
             DigitalOutputs* digOut;
             AnalogInputs* anaIn;
-            TemperatureInputs* temperatureIn;
+            /*
+             TemperatureInputs temperatureIn;
+             */
 
             volatile tPruData* ptRawData;
 

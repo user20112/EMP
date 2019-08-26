@@ -39,10 +39,7 @@ set(SOURCES src/BaseTecDriver.cpp
             src/HardwareCtrl.cpp
             src/DigitalInputs.cpp
             src/DigitalOutputs.cpp
-            src/AnalogInputs.cpp
-            src/TemperatureInputs.cpp
-            src/median.cpp)
-            
+            src/AnalogInputs.cpp)
                    
 # build an executable file
 add_library(${PROJECT_NAME} SHARED

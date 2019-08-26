@@ -61,7 +61,6 @@ main(int argc,
      char* argv[],
      char* envp[])
 {
-
     int retVal = 0;
     AppControl moduleCtrl;
 
@@ -69,7 +68,6 @@ main(int argc,
     // *** Prepare logging system
     // ****************************************************************************************************************************************************************************
     START_EASYLOGGINGPP(argc, argv);
-    el::Loggers::addFlag(el::LoggingFlag::DisableApplicationAbortOnFatalLog);
 
     el::Configurations logConfig("./../config/defaultLog.conf");
     el::Loggers::setDefaultConfigurations(logConfig, true);
@@ -81,22 +79,22 @@ main(int argc,
     // ****************************************************************************************************************************************************************************
     CLOG(TRACE, "GaApp")<< "check program and library version";
     AppVersionInfo& info = AppVersionInfo::getInstance();
-    info.printInfo(4);
+    info.printInfo(2);
 
     // ****************************************************************************************************************************************************************************
     // *** Check library versions
     // ****************************************************************************************************************************************************************************
     GaAppBaseLib::LibVersionInfo& baseLibInfoInfo = GaAppBaseLib::LibVersionInfo::getInstance();
-    baseLibInfoInfo.printInfo(4);
-    CLOG(INFO, "GaApp")<< " used library " << baseLibInfoInfo.getName() << " (version " << baseLibInfoInfo.getVersionText() << ")";
+    baseLibInfoInfo.printInfo();
+    CLOG(INFO, "GaApp") << " used library " << baseLibInfoInfo.getName() << " (version " << baseLibInfoInfo.getVersionText() << ")";
     if ((baseLibInfoInfo.getVersion() < 0x01000000ul) || (baseLibInfoInfo.getVersion() >= 0x02000000ul)) {
         CLOG(ERROR, "GaApp")<< "unsupported basic library " << baseLibInfoInfo.getName() << " in version " << baseLibInfoInfo.getVersionText();
         return (-1);
     }
 
     GaGCppAPI::LibVersionInfo& gammaInfo = GaGCppAPI::LibVersionInfo::getInstance();
-    gammaInfo.printInfo(4);
-    CLOG(INFO, "GaApp")<< " used library " << gammaInfo.getName() << " (version " << gammaInfo.getVersionText() << ")";
+    gammaInfo.printInfo();
+    CLOG(INFO, "GaApp") << " used library " << gammaInfo.getName() << " (version " << gammaInfo.getVersionText() << ")";
     if ((gammaInfo.getVersion() < 0x01000000ul) || (gammaInfo.getVersion() >= 0x02000000ul)) {
         CLOG(ERROR, "GaApp")<< "unsupported gamma interface " << gammaInfo.getName() << " in version " << gammaInfo.getVersionText();
         return (-2);
@@ -107,7 +105,7 @@ main(int argc,
     // *** Attach to gamma service
     // ****************************************************************************************************************************************************************************
     if (retVal == 0) {
-        CLOG(INFO, "GaApp")<< "Attach application to gamma service.";
+        CLOG(INFO, "GaApp") << "Attach application to gamma service.";
 
         try {
             gammaSerive.setTaskName(info.getName());
@@ -139,7 +137,7 @@ main(int argc,
             moduleCtrl.prepareStart();
         }
         catch (GaAppBaseLib::ExceptionBase &e) {
-            CLOG(ERROR, "GaApp")<< e.what();
+            CLOG(ERROR, "GaApp") << e.what();
             retVal = -20;
         }
         catch (std::exception &e) {
@@ -156,7 +154,8 @@ main(int argc,
             gammaSerive.startSchedulerAll();
         }
         catch (GaAppBaseLib::ExceptionBase &e) {
-            CLOG(ERROR, "GaApp")<< e.what();
+            std::cout << e.what() << std::endl;
+            CLOG(ERROR, "GaApp") << e.what();
             retVal = -20;
         }
         catch (std::exception &e) {
@@ -174,10 +173,10 @@ main(int argc,
         std::getline(std::cin, commandLine);
 
         if (commandLine.length() == 0) {
-            usleep(1000);
+            usleep (1000);
             continue;
         }
-        CLOG(DEBUG, "GaApp")<< "execute terminal command \"" << commandLine << "\"";
+        CLOG(DEBUG, "GaApp") << "execute terminal command \"" << commandLine << "\"";
 
         // extract given command
         std::string cmd = commandLine.substr(0, commandLine.find(' '));
@@ -189,7 +188,7 @@ main(int argc,
         // command: "bye"  => quit application
         // -------------------------------------------------------------------------------------------------------
         if (cmd == "bye") {
-            CLOG(WARNING, "GaApp")<< "application stopped by user command.";
+            CLOG(WARNING, "GaApp") << "application stopped by user command.";
             break;
         }
         // -------------------------------------------------------------------------------------------------------
@@ -198,7 +197,6 @@ main(int argc,
         else if (cmd == "info") {
             CLOG(TRACE, "GaApp") << "    get version information";
             info.printInfo(2);
-
             baseLibInfoInfo.printInfo();
             gammaInfo.printInfo();
         }
@@ -239,7 +237,7 @@ main(int argc,
     // *** clean up application
     // ****************************************************************************************************************************************************************************
     try {
-        CLOG(INFO, "GaApp")<< "run application clean up.";
+        CLOG(INFO, "GaApp") << "run application clean up.";
         gammaSerive.stopSchedulerAll();
         moduleCtrl.cleanUp();
     }
@@ -252,7 +250,7 @@ main(int argc,
         retVal = -30;
     }
 
-    CLOG(INFO, "GaApp")<< "stop application (result: " << retVal << ").";
+    CLOG(INFO, "GaApp") << "stop application (result: " << retVal << ").";
     return (retVal);
 }
 

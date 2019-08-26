@@ -19,8 +19,8 @@
 #include <iostream>
 #include <iomanip>
 
-#include "GaAppBaseLibVersionInfo.h"
 // library header
+#include "GaAppBaseLibVersionInfo.h"
 #include "Config.h"
 
 // ******************************************************************************************************************
@@ -96,7 +96,7 @@ namespace GaAppBaseLib {
         mVersionTweak = VERSION_TWEAK;
 
         if ((mMajorVersion > 0xff) || (mMinorVersion > 0xfff) || (mVersionPatch > 0xfff)) {
-            std::cout << "current version information exceeds limit" << std::endl;
+            std::cerr << "current version information exceeds limit" << std::endl;
             mInternalVersionInfo = 0;
         }
         else {

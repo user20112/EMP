@@ -12,14 +12,13 @@
  */
 
 // System header
-#include "ModuleInterface/ModuleInstance.h"
-
 #include <iostream>
 
 // external library header
 
 // local library header
 #include "exceptions/ExceptionsMacros.h"
+#include "ModuleInterface/ModuleInstance.h"
 
 namespace GaAppBaseLib {
 

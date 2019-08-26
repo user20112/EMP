@@ -34,10 +34,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 # Utility rule file for docGaGCppAPI.
 
@@ -45,7 +45,7 @@ CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
 include source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/progress.make
 
 source/GaGCppAPI/CMakeFiles/docGaGCppAPI:
-	cd /d S:\work\AsymtecUnloader\source\GaGCppAPI\documentation && sh /cygdrive/S/Scripts/buildDocumentation.sh S:/work/AsymtecUnloader/source/GaGCppAPI/documentation/GaGCppAPI.doxyfile S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/GaGCppAPI/doc S:/work/AsymtecUnloader/install/Linux-arm/Debug/doc/GaGCppAPI
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaGCppAPI\documentation && sh /cygdrive/S/Scripts/buildDocumentation.sh C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/GaGCppAPI/documentation/GaGCppAPI.doxyfile C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/GaGCppAPI/doc C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/Install/Linux-arm/Debug/doc/GaGCppAPI
 
 docGaGCppAPI: source/GaGCppAPI/CMakeFiles/docGaGCppAPI
 docGaGCppAPI: source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/build.make
@@ -56,10 +56,10 @@ source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/build: docGaGCppAPI
 .PHONY : source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/build
 
 source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaGCppAPI && $(CMAKE_COMMAND) -P CMakeFiles\docGaGCppAPI.dir\cmake_clean.cmake
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaGCppAPI && $(CMAKE_COMMAND) -P CMakeFiles\docGaGCppAPI.dir\cmake_clean.cmake
 .PHONY : source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/clean
 
 source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" S:\work\AsymtecUnloader S:\work\AsymtecUnloader\source\GaGCppAPI S:\work\AsymtecUnloader\build\Linux-arm\Debug S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaGCppAPI S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaGCppAPI\CMakeFiles\docGaGCppAPI.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\source\GaGCppAPI C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaGCppAPI C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaGCppAPI\CMakeFiles\docGaGCppAPI.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/depend
 

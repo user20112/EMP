@@ -10,8 +10,8 @@
  * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_LIBINSTANCE_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_LIBINSTANCE_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_LIBINSTANCE_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_LIBINSTANCE_H_
 
 // System header
 #include <memory>
@@ -92,7 +92,6 @@ namespace GaAppBaseLib {
 
         private:
             std::string mLibName;                   ///< @short library name
-            std::string mLoggerName;
 
             void* mHandle;                          ///< @short handle to library instance
             tFctPtCreateModule mPtCreateFkt;        ///< @short function pointer to imported function createModule
@@ -108,4 +107,4 @@ namespace GaAppBaseLib {
 
 } /* namespace GaAppBaseLib */
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_MODULEINTERFACE_LIBINSTANCE_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_MODULEINTERFACE_LIBINSTANCE_H_ */

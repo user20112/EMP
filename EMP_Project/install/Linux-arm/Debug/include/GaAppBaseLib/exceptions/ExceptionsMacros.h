@@ -10,17 +10,17 @@
  * $Date: 2014-11-20 11:46:22 +0100 (Do, 20 Nov 2014) $
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_
 
 // System header
 
 // external library header
 
 // local library header
-#include "exceptions/ArgumentFaultException.h"
-#include "exceptions/LogicFaultException.h"
-#include "exceptions/SystemCallException.h"
+#include "ArgumentFaultException.h"
+#include "LogicFaultException.h"
+#include "SystemCallException.h"
 
 /**
  * @short check given pointer for \c nullptr and throw exception GaAppBaseLib::ArgumentFaultException when true
@@ -74,4 +74,4 @@
 #define THROW_SYSTEM_FAULT() \
             throw GaAppBaseLib::SystemCallException(__FILE__, __FUNCTION__, __LINE__, errno)
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_ */

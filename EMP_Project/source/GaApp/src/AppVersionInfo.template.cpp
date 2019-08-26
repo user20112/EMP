@@ -94,7 +94,7 @@ AppVersionInfo::AppVersionInfo()
     mVersionTweak = VERSION_TWEAK;
 
     if ((mMajorVersion > 0xff) || (mMinorVersion > 0xfff) || (mVersionPatch > 0xfff)) {
-        std::cout << "current version information exceeds limit" << std::endl;
+        std::cerr << "current version information exceeds limit" << std::endl;
         mInternalVersionInfo = 0;
     }
     else {

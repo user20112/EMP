@@ -11,7 +11,6 @@
 
 #include <gacommon/misc.h>
 
-#include "log/Logger.h"
 #include "exceptions/ExceptionsMacros.h"
 
 #include "common/GaService.h"
@@ -74,7 +73,7 @@ namespace GaGCppAPI {
             gc_ErrorID result;
             result = ga_pv_close(&mPV);
             if (result != gc_ERROR_SUCCESS.errorID) {
-                CLOG(ERROR, "RawPV") << "error during clean up! Error code: " << result;
+                std::cerr << "error during clean up! (File: " << __FILE__ << "; Line " << __LINE__ - 2 << ")" << " Error code: " << result << std::endl;
             }
         }
     }
@@ -135,7 +134,7 @@ namespace GaGCppAPI {
         if (!mIsConnected) {
             result = ga_pv_close(&mPV);
             if (result != gc_ERROR_SUCCESS.errorID) {
-                CLOG(ERROR, "RawPV") << "error during clean up! Error code: " << result;
+                std::cerr << "error during clean up! (File: " << __FILE__ << "; Line " << __LINE__ - 2 << ")" << " Error code: " << result << std::endl;
             }
         }
 
@@ -692,22 +691,22 @@ namespace GaGCppAPI {
 
             result = gc_Value_free(&propertyValue);
             if (result != gc_ERROR_SUCCESS.errorID) {
-                CLOG(ERROR, "RawPV") << "error during clean up! Error code: " << result;
+                std::cerr << "error during clean up! (File: " << __FILE__ << "; Line " << __LINE__ - 2 << ")" << " Error code: " << result << std::endl;
             }
             result = gc_freeMemory(textualPropertyValue);
             if (result != gc_ERROR_SUCCESS.errorID) {
-                CLOG(ERROR, "RawPV") << "error during clean up! Error code: " << result;
+                std::cerr << "error during clean up! (File: " << __FILE__ << "; Line " << __LINE__ - 2 << ")" << " Error code: " << result << std::endl;
             }
             result = gc_freeMemory(propertyNames[i]);
             if (result != gc_ERROR_SUCCESS.errorID) {
-                CLOG(ERROR, "RawPV") << "error during clean up! Error code: " << result;
+                std::cerr << "error during clean up! (File: " << __FILE__ << "; Line " << __LINE__ - 2 << ")" << " Error code: " << result << std::endl;
             }
         }
 
         if (propertyNameCount != 0) {
             result = gc_freeMemory(propertyNames);
             if (result != gc_ERROR_SUCCESS.errorID) {
-                CLOG(ERROR, "RawPV") << "error during clean up! Error code: " << result;
+                std::cerr << "error during clean up! (File: " << __FILE__ << "; Line " << __LINE__ - 2 << ")" << " Error code: " << result << std::endl;
             }
         }
     }

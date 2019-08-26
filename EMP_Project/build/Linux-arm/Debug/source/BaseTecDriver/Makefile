@@ -42,10 +42,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\BaseTecDriver\CMakeFiles\progress.marks
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\BaseTecDriver\CMakeFiles\progress.marks
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/clean
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/rule
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/rule
 
 # Convenience name for target.
@@ -153,17 +153,17 @@ BaseTecDriver: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/rule
 
 # fast build rule for target.
 BaseTecDriver/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/build
 .PHONY : BaseTecDriver/fast
 
 # Manual pre-install relink rule for target.
 BaseTecDriver/preinstall:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/preinstall
 .PHONY : BaseTecDriver/preinstall
 
 # Convenience name for target.
 source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/rule
 .PHONY : source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ docBaseTecDriver: source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/rule
 
 # fast build rule for target.
 docBaseTecDriver/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\docBaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\docBaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/build
 .PHONY : docBaseTecDriver/fast
 
 ModuleVersionInfo.o: ModuleVersionInfo.cpp.o
@@ -180,7 +180,7 @@ ModuleVersionInfo.o: ModuleVersionInfo.cpp.o
 
 # target to build an object file
 ModuleVersionInfo.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.o
 .PHONY : ModuleVersionInfo.cpp.o
 
 ModuleVersionInfo.i: ModuleVersionInfo.cpp.i
@@ -188,7 +188,7 @@ ModuleVersionInfo.i: ModuleVersionInfo.cpp.i
 
 # target to preprocess a source file
 ModuleVersionInfo.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.i
 .PHONY : ModuleVersionInfo.cpp.i
 
 ModuleVersionInfo.s: ModuleVersionInfo.cpp.s
@@ -196,7 +196,7 @@ ModuleVersionInfo.s: ModuleVersionInfo.cpp.s
 
 # target to generate assembly for a file
 ModuleVersionInfo.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/ModuleVersionInfo.cpp.s
 .PHONY : ModuleVersionInfo.cpp.s
 
 src/AnalogInputs.o: src/AnalogInputs.cpp.o
@@ -204,7 +204,7 @@ src/AnalogInputs.o: src/AnalogInputs.cpp.o
 
 # target to build an object file
 src/AnalogInputs.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.o
 .PHONY : src/AnalogInputs.cpp.o
 
 src/AnalogInputs.i: src/AnalogInputs.cpp.i
@@ -212,7 +212,7 @@ src/AnalogInputs.i: src/AnalogInputs.cpp.i
 
 # target to preprocess a source file
 src/AnalogInputs.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.i
 .PHONY : src/AnalogInputs.cpp.i
 
 src/AnalogInputs.s: src/AnalogInputs.cpp.s
@@ -220,7 +220,7 @@ src/AnalogInputs.s: src/AnalogInputs.cpp.s
 
 # target to generate assembly for a file
 src/AnalogInputs.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/AnalogInputs.cpp.s
 .PHONY : src/AnalogInputs.cpp.s
 
 src/BaseTecDriver.o: src/BaseTecDriver.cpp.o
@@ -228,7 +228,7 @@ src/BaseTecDriver.o: src/BaseTecDriver.cpp.o
 
 # target to build an object file
 src/BaseTecDriver.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.o
 .PHONY : src/BaseTecDriver.cpp.o
 
 src/BaseTecDriver.i: src/BaseTecDriver.cpp.i
@@ -236,7 +236,7 @@ src/BaseTecDriver.i: src/BaseTecDriver.cpp.i
 
 # target to preprocess a source file
 src/BaseTecDriver.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.i
 .PHONY : src/BaseTecDriver.cpp.i
 
 src/BaseTecDriver.s: src/BaseTecDriver.cpp.s
@@ -244,7 +244,7 @@ src/BaseTecDriver.s: src/BaseTecDriver.cpp.s
 
 # target to generate assembly for a file
 src/BaseTecDriver.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/BaseTecDriver.cpp.s
 .PHONY : src/BaseTecDriver.cpp.s
 
 src/DigitalInputs.o: src/DigitalInputs.cpp.o
@@ -252,7 +252,7 @@ src/DigitalInputs.o: src/DigitalInputs.cpp.o
 
 # target to build an object file
 src/DigitalInputs.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.o
 .PHONY : src/DigitalInputs.cpp.o
 
 src/DigitalInputs.i: src/DigitalInputs.cpp.i
@@ -260,7 +260,7 @@ src/DigitalInputs.i: src/DigitalInputs.cpp.i
 
 # target to preprocess a source file
 src/DigitalInputs.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.i
 .PHONY : src/DigitalInputs.cpp.i
 
 src/DigitalInputs.s: src/DigitalInputs.cpp.s
@@ -268,7 +268,7 @@ src/DigitalInputs.s: src/DigitalInputs.cpp.s
 
 # target to generate assembly for a file
 src/DigitalInputs.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalInputs.cpp.s
 .PHONY : src/DigitalInputs.cpp.s
 
 src/DigitalOutputs.o: src/DigitalOutputs.cpp.o
@@ -276,7 +276,7 @@ src/DigitalOutputs.o: src/DigitalOutputs.cpp.o
 
 # target to build an object file
 src/DigitalOutputs.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.o
 .PHONY : src/DigitalOutputs.cpp.o
 
 src/DigitalOutputs.i: src/DigitalOutputs.cpp.i
@@ -284,7 +284,7 @@ src/DigitalOutputs.i: src/DigitalOutputs.cpp.i
 
 # target to preprocess a source file
 src/DigitalOutputs.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.i
 .PHONY : src/DigitalOutputs.cpp.i
 
 src/DigitalOutputs.s: src/DigitalOutputs.cpp.s
@@ -292,7 +292,7 @@ src/DigitalOutputs.s: src/DigitalOutputs.cpp.s
 
 # target to generate assembly for a file
 src/DigitalOutputs.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/DigitalOutputs.cpp.s
 .PHONY : src/DigitalOutputs.cpp.s
 
 src/HardwareCtrl.o: src/HardwareCtrl.cpp.o
@@ -300,7 +300,7 @@ src/HardwareCtrl.o: src/HardwareCtrl.cpp.o
 
 # target to build an object file
 src/HardwareCtrl.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.o
 .PHONY : src/HardwareCtrl.cpp.o
 
 src/HardwareCtrl.i: src/HardwareCtrl.cpp.i
@@ -308,7 +308,7 @@ src/HardwareCtrl.i: src/HardwareCtrl.cpp.i
 
 # target to preprocess a source file
 src/HardwareCtrl.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.i
 .PHONY : src/HardwareCtrl.cpp.i
 
 src/HardwareCtrl.s: src/HardwareCtrl.cpp.s
@@ -316,56 +316,8 @@ src/HardwareCtrl.s: src/HardwareCtrl.cpp.s
 
 # target to generate assembly for a file
 src/HardwareCtrl.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/HardwareCtrl.cpp.s
 .PHONY : src/HardwareCtrl.cpp.s
-
-src/TemperatureInputs.o: src/TemperatureInputs.cpp.o
-.PHONY : src/TemperatureInputs.o
-
-# target to build an object file
-src/TemperatureInputs.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.o
-.PHONY : src/TemperatureInputs.cpp.o
-
-src/TemperatureInputs.i: src/TemperatureInputs.cpp.i
-.PHONY : src/TemperatureInputs.i
-
-# target to preprocess a source file
-src/TemperatureInputs.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.i
-.PHONY : src/TemperatureInputs.cpp.i
-
-src/TemperatureInputs.s: src/TemperatureInputs.cpp.s
-.PHONY : src/TemperatureInputs.s
-
-# target to generate assembly for a file
-src/TemperatureInputs.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/TemperatureInputs.cpp.s
-.PHONY : src/TemperatureInputs.cpp.s
-
-src/median.o: src/median.cpp.o
-.PHONY : src/median.o
-
-# target to build an object file
-src/median.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.o
-.PHONY : src/median.cpp.o
-
-src/median.i: src/median.cpp.i
-.PHONY : src/median.i
-
-# target to preprocess a source file
-src/median.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.i
-.PHONY : src/median.cpp.i
-
-src/median.s: src/median.cpp.s
-.PHONY : src/median.s
-
-# target to generate assembly for a file
-src/median.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/src/median.cpp.s
-.PHONY : src/median.cpp.s
 
 # Help Target
 help:
@@ -399,12 +351,6 @@ help:
 	@echo ... src/HardwareCtrl.o
 	@echo ... src/HardwareCtrl.i
 	@echo ... src/HardwareCtrl.s
-	@echo ... src/TemperatureInputs.o
-	@echo ... src/TemperatureInputs.i
-	@echo ... src/TemperatureInputs.s
-	@echo ... src/median.o
-	@echo ... src/median.i
-	@echo ... src/median.s
 .PHONY : help
 
 
@@ -416,6 +362,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

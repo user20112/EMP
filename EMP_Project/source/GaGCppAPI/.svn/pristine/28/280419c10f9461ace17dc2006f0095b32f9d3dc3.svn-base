@@ -1,0 +1,72 @@
+/*
+ * ExeptionMacros.h
+ *
+ *  Created on: 21.01.2015
+ *      Author: s.hegemann
+ */
+
+#ifndef SOURCE_GAGCPPAPI_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_
+#define SOURCE_GAGCPPAPI_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_
+
+#ifdef UNLOAD_MACROS
+
+#undef VALIDATE_ARGUMENT_NO_NULL_PT
+#undef VALIDATE_ARGUMENT_RANGE_INCLUDE
+#undef VALIDATE_ARGUMENT_RANGE_EXCLUDE
+#undef VALIDATE_ARGUMENT_EQUAL
+#undef VALIDATE_ARGUMENT_NOT_EQUAL
+
+#undef THROW_LOGIC_FAULT
+
+#undef UNLOAD_MACROS
+#else // UNLOAD_MACROS
+
+/**
+ * @short check given pointer for \c nullptr and throw exception GaGCppAPI::ArgumentFaultException when true
+ */
+#define VALIDATE_ARGUMENT_NO_NULL_PT(_arg) \
+            if ((_arg) == nullptr) { \
+                throw GaGCppAPI::ArgumentFaultException(__FILE__, __FUNCTION__, __LINE__, #_arg) << "unexpected null pointer"; \
+            }
+
+/**
+ * @short throws a GaGCppAPI::ArgumentFaultException when value \c _arg is less than \c _min or greater \c _max is
+ */
+#define VALIDATE_ARGUMENT_RANGE_INCLUDE(_arg, _min, _max) \
+            if (((_arg) < (_min)) || ((_arg) > (_max))) { \
+                throw GaGCppAPI::ArgumentFaultException(__FILE__, __FUNCTION__, __LINE__, #_arg) << "value out of range: (" << #_min << ": " << (_min) << ") <= " << (_arg) << " <= (" << #_max << ": " << (_max) << ")"; \
+            }
+
+/**
+ * @short throws a GaGCppAPI::ArgumentFaultException when value \c _arg is less than or equal to \c _min or greater than or equal to \c _max is
+ */
+#define VALIDATE_ARGUMENT_RANGE_EXCLUDE(_arg, _min, _max) \
+            if (((_arg) <= (_min)) || ((_arg) >= (_max))) { \
+                throw GaGCppAPI::ArgumentFaultException(__FILE__, __FUNCTION__, __LINE__, #_arg) << "value out of range: (" << #_min << ": " << (_min) << ") < " << (_arg) << " < (" << #_max << ": " << (_max) << ")"; \
+            }
+
+/**
+ * @short throws a GaGCppAPI::ArgumentFaultException when value \c _arg is not equal to \c _value
+ */
+#define VALIDATE_ARGUMENT_EQUAL(_arg, _value) \
+            if ((_arg) != (_value)) { \
+                throw GaGCppAPI::ArgumentFaultException(__FILE__, __FUNCTION__, __LINE__, #_arg) << "value is \"" << (_arg) << "\", but \"" << #_value << "\" (" << (_value) << ") was expected"; \
+            }
+
+/**
+ * @short throws a GaGCppAPI::ArgumentFaultException when value \c _arg is equal to \c _value
+ */
+#define VALIDATE_ARGUMENT_NOT_EQUAL(_arg, _value) \
+            if ((_arg) == (_value)) { \
+                throw GaGCppAPI::ArgumentFaultException(__FILE__, __FUNCTION__, __LINE__, #_arg) << "value has invalid value: \"" << (_arg) << "\" (" << #_value << ")"; \
+            }
+
+/**
+ * @short throws an exception, when a logical error occurs.
+ */
+#define THROW_LOGIC_FAULT() \
+            throw GaGCppAPI::LogicFaultException(__FILE__, __FUNCTION__, __LINE__)
+
+#endif // UNLOAD_MACROS
+
+#endif /* SOURCE_GAGCPPAPI_INCLUDE_EXCEPTIONS_EXCEPTIONSMACROS_H_ */

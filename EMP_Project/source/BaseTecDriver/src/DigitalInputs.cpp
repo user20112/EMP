@@ -5,8 +5,9 @@
  *      Author: s.hegemann
  */
 
-#include "DigitalInputs.h"
 #include "GaAppBaseLib.h"
+
+#include "DigitalInputs.h"
 
 namespace BaseTecDriver {
 
@@ -106,7 +107,7 @@ namespace BaseTecDriver {
                 edgeCounter.at(i)->put((float) (ptRawData->edgeCounter[i] * counterScaleFactor.at(i)));
             }
             else {
-                CLOG(DEBUG, mLoggerName.c_str()) << "restore counter value for channel " << i+1 << " to " << rawCounter.at(i)->get();
+                std::cout << "restore counter value for channel " << i+1 << " to " << rawCounter.at(i)->get() << std::endl;
                 ptRawData->edgeCounter[i] = rawCounter.at(i)->get();
                 edgeCounter.at(i)->put((float) (ptRawData->edgeCounter[i] * counterScaleFactor.at(i)));
             }

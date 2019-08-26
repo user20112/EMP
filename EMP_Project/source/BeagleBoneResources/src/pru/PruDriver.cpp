@@ -13,12 +13,13 @@
 
 #include "boost/format.hpp"
 
+#include "exceptions/ExceptionsMacros.h"
+#include "log/logger.h"
+
 #include "prussdrv.h"
 #include "pruss_intc_mapping.h"
 
 #include "pru/PruDriver.h"
-#include "exceptions/ExceptionsMacros.h"
-#include "log/logger.h"
 
 namespace BeagleBoneResources {
 

@@ -11,8 +11,6 @@
  *
  */
 // System header
-#include "network/UDPConnection.h"
-
 #include <arpa/inet.h>
 #include <cstring>
 #include <unistd.h>
@@ -22,8 +20,8 @@
 
 // local library header
 #include "exceptions/ExceptionsMacros.h"
-#include "log/logger.h"
 #include "network/NetworkHelper.h"
+#include "network/UDPConnection.h"
 
 namespace GaAppBaseLib {
 
@@ -37,8 +35,6 @@ namespace GaAppBaseLib {
 
         mComThread = nullptr;
         mStopThread = false;
-
-        mLoggerName = "UDP";
     }
 
     UDPConnection::~UDPConnection()
@@ -86,9 +82,6 @@ namespace GaAppBaseLib {
             THROW_SYSTEM_FAULT() << "unable to open UDP port " << mLocalPort << ").";
         }
 
-        mLoggerName = "UDP [" + _hostName +":" + std::to_string(_hostPort) + "]";
-        CLOG(INFO, mLoggerName.c_str()) <<  "connection is established";
-
         mStopThread = false;
         mComThread = new boost::thread(boost::bind(&UDPConnection::comThread, this));
     }
@@ -96,8 +89,7 @@ namespace GaAppBaseLib {
     void
     UDPConnection::closeConnection()
     {
-        CLOG(INFO, mLoggerName.c_str()) <<  "close connection";
-       if (mComThread != nullptr) {
+        if (mComThread != nullptr) {
             mStopThread = true;
             mComThread->join();
             delete mComThread;
@@ -107,13 +99,6 @@ namespace GaAppBaseLib {
             close(mSocketID);
             mSocketID = -2;
         }
-        mLoggerName = "UDP";
-    }
-
-    bool
-    UDPConnection::isConnected()
-    {
-      return (mSocketID >= 0);
     }
 
     void
@@ -155,7 +140,7 @@ namespace GaAppBaseLib {
         struct sockaddr_in sender;
         unsigned int senderLen = sizeof(sender);
 
-        CLOG(INFO, mLoggerName.c_str()) <<  "UDP communication thread started!";
+        std::cout << mIP << ":" << mHostPort <<  ": UDP communication thread started!" << std::endl;
         while (!mStopThread) {
             // check for new input data
             // send data
@@ -166,6 +151,7 @@ namespace GaAppBaseLib {
                         THROW_SYSTEM_FAULT() << "unable to send data to " << mIP << ":" << mHostPort;
                     }
                 }
+                /* std::cout << mIP << ":" << mHostPort <<  ": send data \"" << sendString.substr(0, retVal) << "\"" << std::endl; */
                 sendString.erase(0, retVal);
             }
 
@@ -182,7 +168,7 @@ namespace GaAppBaseLib {
 
             usleep(1000);
         }
-        CLOG(INFO, mLoggerName.c_str()) <<  "UDP communication thread stopped!";
+        std::cout << mIP << ":" << mHostPort <<  ": UDP communication thread stopped!" << std::endl;
     }
 
 } /* namespace GaAppBaseLib */

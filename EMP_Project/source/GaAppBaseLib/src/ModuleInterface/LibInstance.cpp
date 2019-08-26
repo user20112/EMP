@@ -12,8 +12,6 @@
  */
 
 // System header
-#include "ModuleInterface/LibInstance.h"
-
 #include <iostream>
 #include <dlfcn.h>
 
@@ -21,6 +19,7 @@
 
 // local library header
 #include "exceptions/ExceptionsMacros.h"
+#include "ModuleInterface/LibInstance.h"
 
 namespace GaAppBaseLib {
 
@@ -29,31 +28,27 @@ namespace GaAppBaseLib {
     // **************************************************************************************************
     LibInstance::LibInstance(std::string _libName)
     {
-        mLoggerName = "LibInstance.";
-        mLoggerName.append(_libName);
-        el::Loggers::getLogger(mLoggerName);
-
         char* lastError = dlerror();
 
         std::string fileName = "lib" + _libName + ".so";
-        CLOG(INFO, mLoggerName.c_str()) << "LibInstance: load library " << _libName << " (search for file: " << fileName << ")";
+        std::cout << "LibInstance: load library " << _libName << " (search for file: " << fileName << ")" << std::endl;
 
         mHandle = dlopen(fileName.c_str(), RTLD_NOW);
         lastError = dlerror();
         if (!mHandle)
         {
-            CLOG(ERROR, mLoggerName.c_str()) << "unable to load file " << fileName << ": " << lastError;
+            std::cerr << "unable to load file " << fileName << ": " << lastError << std::endl;
             THROW_LOGIC_FAULT()<< "unable to load file " << fileName << ": " << lastError;
         }
 
         mPtCreateFkt = (tFctPtCreateModule)dlsym(mHandle, "createModule");
         lastError = dlerror();
         if (lastError != nullptr) {
-            CLOG(ERROR, mLoggerName.c_str()) << "unable to resolve function createModule: " << lastError;
+            std::cerr << "unable to resolve function createModule: " << lastError << std::endl;
             THROW_LOGIC_FAULT()<< "unable to resolve function createModule: " << lastError;
         }
         if (mPtCreateFkt == nullptr) {
-            std::cout << "unable to resolve function createModule: function not found" << std::endl;
+            std::cerr << "unable to resolve function createModule: function not found" << std::endl;
             THROW_LOGIC_FAULT()<< "unable to resolve function createModule: function not found";
         }
 
@@ -61,11 +56,11 @@ namespace GaAppBaseLib {
         mPtDeleteFkt = (tFctPtDeleteModule)dlsym(mHandle, "deleteModule");
         lastError = dlerror();
         if (lastError != nullptr) {
-            CLOG(ERROR, mLoggerName.c_str()) << "unable to resolve function deleteModule: " << lastError;
+            std::cerr << "unable to resolve function deleteModule: " << lastError << std::endl;
             THROW_LOGIC_FAULT()<< "unable to resolve function deleteModule: " << lastError;
         }
         if (mPtDeleteFkt == nullptr) {
-            CLOG(ERROR, mLoggerName.c_str()) << "unable to resolve function deleteModule: function not found";
+            std::cerr << "unable to resolve function deleteModule: function not found" << std::endl;
             THROW_LOGIC_FAULT()<< "unable to resolve function deleteModule: function not found";
         }
 
@@ -78,9 +73,9 @@ namespace GaAppBaseLib {
     // **************************************************************************************************
     LibInstance::~LibInstance()
     {
-        CLOG(INFO, mLoggerName.c_str()) << "LibInstance: unload library " << mLibName;
+        std::cout << "LibInstance: unload library " << mLibName << std::endl;
         if (mInstanceCounter > 0) {
-            CLOG(ERROR, mLoggerName.c_str()) << "module library " << mLibName << ": not all module instance are deleted, when library is unloaded!";
+            std::cerr << "module library " << mLibName << ": not all module instance are deleted, when library is unloaded!" << std::endl;
         }
         dlclose(mHandle);
     }

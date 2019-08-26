@@ -10,7 +10,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o"
   "CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o"
   "CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o"
-  "CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o"
   "CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o"
   "libGaAppBaseLib.pdb"
   "libGaAppBaseLib.so"

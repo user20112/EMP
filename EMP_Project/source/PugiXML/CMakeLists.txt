@@ -45,5 +45,5 @@ install(TARGETS ${PROJECT_NAME}
          
 install(DIRECTORY src/
         DESTINATION include/${PROJECT_NAME}
-        FILES_MATCHING PATTERN "*.hpp")
+        FILES_MATCHING PATTERN "*.h")
         

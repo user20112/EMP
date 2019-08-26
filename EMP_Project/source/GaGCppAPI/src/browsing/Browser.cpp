@@ -9,9 +9,7 @@
 
 #include <gaapi/api.h>
 
-#include "log/Logger.h"
 #include "exceptions/ExceptionsMacros.h"
-
 
 #include "browsing/Browser.h"
 #include "exceptions/GammaFaultException.h"
@@ -30,22 +28,22 @@ namespace GaGCppAPI {
     std::vector<SharedPV>
     Browser::findPVs(BrowserFilter& _filter)
     {
-        el::Loggers::getLogger("Browser");
-
         std::vector<SharedPV> resutlList;
         gc_Level6Address addr;
 
-        CLOG(INFO, "Browser") << "start browsing:";
+#ifdef DEBUG_OUTPUT
+        std::cout << "start browsing:" << std::endl;
 
-        CLOG(DEBUG, "Browser") << "used filter settings:";
-        CLOG(DEBUG, "Browser") << "  filter System                    ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::System);
-        CLOG(DEBUG, "Browser") << "  filter Node                      ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::Node);
-        CLOG(DEBUG, "Browser") << "  filter Memory                    ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::Memory);
-        CLOG(DEBUG, "Browser") << "  filter Group                     ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::Group);
-        CLOG(DEBUG, "Browser") << "  filter PV_Name                   ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::PV_Name);
-        CLOG(DEBUG, "Browser") << "  filter Property_Type             ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::Property_Type);
-        CLOG(DEBUG, "Browser") << "  filter Property_Name             ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::Property_Name);
-        CLOG(DEBUG, "Browser") << "  filter Property_Name_And_Value   ==> " << _filter.getFilterExpression(BrowserFilter::FilterType::Property_Name_And_Value);
+        std::cout << "used filter settings:" << std::endl;
+        std::cout << "  filter System                    ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::System) << std::endl;
+        std::cout << "  filter Node                      ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::Node) << std::endl;
+        std::cout << "  filter Memory                    ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::Memory) << std::endl;
+        std::cout << "  filter Group                     ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::Group) << std::endl;
+        std::cout << "  filter PV_Name                   ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::PV_Name) << std::endl;
+        std::cout << "  filter Property_Type             ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::Property_Type) << std::endl;
+        std::cout << "  filter Property_Name             ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::Property_Name) << std::endl;
+        std::cout << "  filter Property_Name_And_Value   ==> " << _filter.GetFilterExpression(BrowserFilter::FilterType::Property_Name_And_Value) << std::endl;
+#endif
 
 
         std::vector<gc_BrowserInfo> systemList = browseInfo(gc_BROWSING_TYPE_SYSTEM, addr);
@@ -121,7 +119,9 @@ namespace GaGCppAPI {
 
                                 resutlList.push_back(PV);
 
-                                CLOG(TRACE, "Browser") << " --> add PV " << PV.getName();
+#ifdef DEBUG_OUTPUT
+                                std::cout << " --> add PV " << PV.getName() << std::endl;
+#endif
                             } // for (size_t pvIndex
                         } // for (vector<gc_BrowserInfo>::iterator pvArrayInfo
                     } // for (vector<gc_BrowserInfo>::iterator

@@ -1,0 +1,25 @@
+/*
+ * GaGCppAPI.h
+ *
+ *  Created on: 01.12.2014
+ *      Author: s.hegemann
+ */
+
+#ifndef SOURCES_LIBS_GAGCPPAPI_INCLUDE_GAGCPPAPI_H_
+#define SOURCES_LIBS_GAGCPPAPI_INCLUDE_GAGCPPAPI_H_
+
+#include "./LibVersionInfo.h"
+
+#include "./exceptions/GammaFaultException.h"
+#include "./exceptions/LogicFaultException.h"
+#include "./exceptions/ArgumentFaultException.h"
+
+#include "./common/EventHandler.h"
+#include "./common/GaService.h"
+
+#include "./pv/RawPV.h"
+#include "./pv/TypedPV.h"
+
+#include "./scheduler/GaTask.h"
+
+#endif /* SOURCES_LIBS_GAGCPPAPI_INCLUDE_GAGCPPAPI_H_ */

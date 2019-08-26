@@ -11,8 +11,6 @@
  *
  */
 // System header
-#include "network/NetworkHelper.h"
-
 #include <iostream>
 #include <cstring>
 #include <netdb.h>
@@ -23,7 +21,7 @@
 
 // local library header
 #include "exceptions/ExceptionsMacros.h"
-#include "log/logger.h"
+#include "network/NetworkHelper.h"
 
 
 namespace GaAppBaseLib {
@@ -84,7 +82,7 @@ namespace GaAppBaseLib {
             fit = boost::regex_match(_IP, boost::regex(ipfilter));
         }
         catch (std::runtime_error& e) {
-            CLOG(INFO, "NetworkHelper") << "isIpValid: regular expression failed: " << e.what();
+            std::cerr << "isIpValid: regular expression failed: " << e.what() << std::endl;
             fit = false;
         }
         return (fit);

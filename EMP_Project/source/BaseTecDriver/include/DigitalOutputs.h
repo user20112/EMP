@@ -5,8 +5,8 @@
  *      Author: s.hegemann
  */
 
-#ifndef CHUCKCOOLING_SOURCE_BASETECDRIVER_INCLUDE_DIGITALOUTPUTS_H_
-#define CHUCKCOOLING_SOURCE_BASETECDRIVER_INCLUDE_DIGITALOUTPUTS_H_
+#ifndef SOURCE_BASETECDRIVER_INCLUDE_DIGITALOUTPUTS_H_
+#define SOURCE_BASETECDRIVER_INCLUDE_DIGITALOUTPUTS_H_
 
 #include <stdint.h>
 #include <string>
@@ -14,85 +14,72 @@
 
 #include "GaGCppAPI.h"
 
-#define DRIVER1_DIAG_LIMPHOME       0x0020
-#define DRIVER1_DIAG_STANDBY        0x0010
-
-#define DRIVER2_DIAG_LIMPHOME       0x2000
-#define DRIVER2_DIAG_STANDBY        0x1000
-
-#define DRIVER_RESET_DELAY          10
-
-
 namespace BaseTecDriver {
 
-  class DigitalOutputs
-  {
-    public:
+    class DigitalOutputs
+    {
+        public:
 
-      struct tDataChannel {
-        uint16_t reqState;
-        uint16_t curState;
-        uint16_t standardDiagnosticInfo;
-        uint16_t nextResultOffset;
-        uint16_t lastBufferRead;
-        uint8_t _reserved01[6];
+            struct tDataChannel {
+                uint16_t reqState;
+                uint16_t curState;
+                uint16_t standardDiagnosticInfo;
+                uint16_t nextResultOffset;
+                uint16_t lastBufferRead;
+                uint8_t _reserved01[6];
 
-        uint16_t readOffset;
-        uint16_t writeOffset;
-        uint16_t diagOverflowCounter;
-        uint8_t _reserved02[2];
-        uint32_t debug[2];
+                uint16_t readOffset;
+                uint16_t writeOffset;
+                uint16_t diagOverflowCounter;
+                uint8_t _reserved02[2];
+                uint32_t debug[2];
 
-        struct {
-            uint16_t cmd;
-            uint16_t response;
-        } cmdFifo[8];
+                struct {
+                        uint16_t cmd;
+                        uint16_t response;
+                } cmdFifo[8];
 
-      };
+            };
 
-    public:
-      DigitalOutputs(volatile void* ptMemoryBase,
-          std::string _dataBaseNode,
-          std::string _loggerName);
-      virtual ~DigitalOutputs();
+        public:
+            DigitalOutputs(volatile void* ptMemoryBase,
+                           std::string _dataBaseNode,
+                           std::string _loggerName);
+            virtual ~DigitalOutputs();
 
-      int32_t
-      taskRun(gs_Task taskHandle,
-          const uint32_t* frameNumber) noexcept;
+            int32_t
+            taskRun(gs_Task taskHandle,
+                    const uint32_t* frameNumber) noexcept;
 
-      void
-      getStatus ();
+            void
+            getStatus ();
 
-      uint16_t
-      sendCommand (uint16_t cmdvalue);
+            uint16_t
+            sendCommand (uint16_t cmdvalue);
 
-      bool
-      isCommandDone (uint16_t index);
+            bool
+            isCommandDone (uint16_t index);
 
-      uint16_t
-      getCommandResult (uint16_t index);
+            uint16_t
+            getCommandResult (uint16_t index);
 
-      void
-      resetHardware();
+            void
+            resetHardware();
 
-    private:
-      std::string dataBaseNode;
-      volatile tDataChannel* ptRawData;
-      std::string mLoggerName;
+        private:
+            std::string dataBaseNode;
+            volatile tDataChannel* ptRawData;
+            std::string mLoggerName;
 
-      std::vector<GaGCppAPI::TypedPV<uint8_t>*> reqState;
-      std::vector<GaGCppAPI::TypedPV<uint8_t>*> curState;
+            std::vector<GaGCppAPI::TypedPV<uint8_t>*> reqState;
+            std::vector<GaGCppAPI::TypedPV<uint8_t>*> curState;
 
-      GaGCppAPI::TypedPV<uint16_t> standardDiag;
+            GaGCppAPI::TypedPV<uint16_t> standardDiag;
 
-      bool firstRunDone;
-      uint16_t requestCommandIndex;
-
-      bool driverInLimpHome[2];           // flag if output driver ic is in limp home mode
-      bool driverInStandBy[2];            // flag if output driver ic is in standby mode
-      unsigned int standbyDelayCnt;       // delay counter in standby mode before reset is initiated
-  };
+            bool firstRunDone;
+            uint16_t requestCommandIndex;
+    };
 
 } /* namespace BaseTecDriver */
 
-#endif /* CHUCKCOOLING_SOURCE_BASETECDRIVER_INCLUDE_DIGITALOUTPUTS_H_ */
+#endif /* SOURCE_BASETECDRIVER_INCLUDE_DIGITALOUTPUTS_H_ */

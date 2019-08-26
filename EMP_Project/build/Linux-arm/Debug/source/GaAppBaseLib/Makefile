@@ -42,10 +42,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -113,14 +113,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles S:\work\AsymtecUnloader\build\Linux-arm\Debug\source\GaAppBaseLib\CMakeFiles\progress.marks
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\source\GaAppBaseLib\CMakeFiles\progress.marks
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/clean
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/clean
 .PHONY : clean
 
 # The main clean target
@@ -129,22 +129,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/rule
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/rule
 
 # Convenience name for target.
@@ -153,17 +153,17 @@ GaAppBaseLib: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/rule
 
 # fast build rule for target.
 GaAppBaseLib/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/build
 .PHONY : GaAppBaseLib/fast
 
 # Manual pre-install relink rule for target.
 GaAppBaseLib/preinstall:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/preinstall
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/preinstall
 .PHONY : GaAppBaseLib/preinstall
 
 # Convenience name for target.
 source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/rule:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/rule
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/rule
 .PHONY : source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ docGaAppBaseLib: source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/rule
 
 # fast build rule for target.
 docGaAppBaseLib/fast:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\docGaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/build
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\docGaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/build
 .PHONY : docGaAppBaseLib/fast
 
 LibVersionInfo.o: LibVersionInfo.cpp.o
@@ -180,7 +180,7 @@ LibVersionInfo.o: LibVersionInfo.cpp.o
 
 # target to build an object file
 LibVersionInfo.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.o
 .PHONY : LibVersionInfo.cpp.o
 
 LibVersionInfo.i: LibVersionInfo.cpp.i
@@ -188,7 +188,7 @@ LibVersionInfo.i: LibVersionInfo.cpp.i
 
 # target to preprocess a source file
 LibVersionInfo.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.i
 .PHONY : LibVersionInfo.cpp.i
 
 LibVersionInfo.s: LibVersionInfo.cpp.s
@@ -196,7 +196,7 @@ LibVersionInfo.s: LibVersionInfo.cpp.s
 
 # target to generate assembly for a file
 LibVersionInfo.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/LibVersionInfo.cpp.s
 .PHONY : LibVersionInfo.cpp.s
 
 src/ModuleInterface/LibContainer.o: src/ModuleInterface/LibContainer.cpp.o
@@ -204,7 +204,7 @@ src/ModuleInterface/LibContainer.o: src/ModuleInterface/LibContainer.cpp.o
 
 # target to build an object file
 src/ModuleInterface/LibContainer.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.o
 .PHONY : src/ModuleInterface/LibContainer.cpp.o
 
 src/ModuleInterface/LibContainer.i: src/ModuleInterface/LibContainer.cpp.i
@@ -212,7 +212,7 @@ src/ModuleInterface/LibContainer.i: src/ModuleInterface/LibContainer.cpp.i
 
 # target to preprocess a source file
 src/ModuleInterface/LibContainer.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.i
 .PHONY : src/ModuleInterface/LibContainer.cpp.i
 
 src/ModuleInterface/LibContainer.s: src/ModuleInterface/LibContainer.cpp.s
@@ -220,7 +220,7 @@ src/ModuleInterface/LibContainer.s: src/ModuleInterface/LibContainer.cpp.s
 
 # target to generate assembly for a file
 src/ModuleInterface/LibContainer.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibContainer.cpp.s
 .PHONY : src/ModuleInterface/LibContainer.cpp.s
 
 src/ModuleInterface/LibInstance.o: src/ModuleInterface/LibInstance.cpp.o
@@ -228,7 +228,7 @@ src/ModuleInterface/LibInstance.o: src/ModuleInterface/LibInstance.cpp.o
 
 # target to build an object file
 src/ModuleInterface/LibInstance.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.o
 .PHONY : src/ModuleInterface/LibInstance.cpp.o
 
 src/ModuleInterface/LibInstance.i: src/ModuleInterface/LibInstance.cpp.i
@@ -236,7 +236,7 @@ src/ModuleInterface/LibInstance.i: src/ModuleInterface/LibInstance.cpp.i
 
 # target to preprocess a source file
 src/ModuleInterface/LibInstance.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.i
 .PHONY : src/ModuleInterface/LibInstance.cpp.i
 
 src/ModuleInterface/LibInstance.s: src/ModuleInterface/LibInstance.cpp.s
@@ -244,7 +244,7 @@ src/ModuleInterface/LibInstance.s: src/ModuleInterface/LibInstance.cpp.s
 
 # target to generate assembly for a file
 src/ModuleInterface/LibInstance.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/LibInstance.cpp.s
 .PHONY : src/ModuleInterface/LibInstance.cpp.s
 
 src/ModuleInterface/ModuleInstance.o: src/ModuleInterface/ModuleInstance.cpp.o
@@ -252,7 +252,7 @@ src/ModuleInterface/ModuleInstance.o: src/ModuleInterface/ModuleInstance.cpp.o
 
 # target to build an object file
 src/ModuleInterface/ModuleInstance.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.o
 .PHONY : src/ModuleInterface/ModuleInstance.cpp.o
 
 src/ModuleInterface/ModuleInstance.i: src/ModuleInterface/ModuleInstance.cpp.i
@@ -260,7 +260,7 @@ src/ModuleInterface/ModuleInstance.i: src/ModuleInterface/ModuleInstance.cpp.i
 
 # target to preprocess a source file
 src/ModuleInterface/ModuleInstance.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.i
 .PHONY : src/ModuleInterface/ModuleInstance.cpp.i
 
 src/ModuleInterface/ModuleInstance.s: src/ModuleInterface/ModuleInstance.cpp.s
@@ -268,7 +268,7 @@ src/ModuleInterface/ModuleInstance.s: src/ModuleInterface/ModuleInstance.cpp.s
 
 # target to generate assembly for a file
 src/ModuleInterface/ModuleInstance.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInstance.cpp.s
 .PHONY : src/ModuleInterface/ModuleInstance.cpp.s
 
 src/ModuleInterface/ModuleInterface.o: src/ModuleInterface/ModuleInterface.cpp.o
@@ -276,7 +276,7 @@ src/ModuleInterface/ModuleInterface.o: src/ModuleInterface/ModuleInterface.cpp.o
 
 # target to build an object file
 src/ModuleInterface/ModuleInterface.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.o
 .PHONY : src/ModuleInterface/ModuleInterface.cpp.o
 
 src/ModuleInterface/ModuleInterface.i: src/ModuleInterface/ModuleInterface.cpp.i
@@ -284,7 +284,7 @@ src/ModuleInterface/ModuleInterface.i: src/ModuleInterface/ModuleInterface.cpp.i
 
 # target to preprocess a source file
 src/ModuleInterface/ModuleInterface.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.i
 .PHONY : src/ModuleInterface/ModuleInterface.cpp.i
 
 src/ModuleInterface/ModuleInterface.s: src/ModuleInterface/ModuleInterface.cpp.s
@@ -292,7 +292,7 @@ src/ModuleInterface/ModuleInterface.s: src/ModuleInterface/ModuleInterface.cpp.s
 
 # target to generate assembly for a file
 src/ModuleInterface/ModuleInterface.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/ModuleInterface/ModuleInterface.cpp.s
 .PHONY : src/ModuleInterface/ModuleInterface.cpp.s
 
 src/exceptions/ArgumentFaultException.o: src/exceptions/ArgumentFaultException.cpp.o
@@ -300,7 +300,7 @@ src/exceptions/ArgumentFaultException.o: src/exceptions/ArgumentFaultException.c
 
 # target to build an object file
 src/exceptions/ArgumentFaultException.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.o
 .PHONY : src/exceptions/ArgumentFaultException.cpp.o
 
 src/exceptions/ArgumentFaultException.i: src/exceptions/ArgumentFaultException.cpp.i
@@ -308,7 +308,7 @@ src/exceptions/ArgumentFaultException.i: src/exceptions/ArgumentFaultException.c
 
 # target to preprocess a source file
 src/exceptions/ArgumentFaultException.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.i
 .PHONY : src/exceptions/ArgumentFaultException.cpp.i
 
 src/exceptions/ArgumentFaultException.s: src/exceptions/ArgumentFaultException.cpp.s
@@ -316,7 +316,7 @@ src/exceptions/ArgumentFaultException.s: src/exceptions/ArgumentFaultException.c
 
 # target to generate assembly for a file
 src/exceptions/ArgumentFaultException.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ArgumentFaultException.cpp.s
 .PHONY : src/exceptions/ArgumentFaultException.cpp.s
 
 src/exceptions/ExceptionBase.o: src/exceptions/ExceptionBase.cpp.o
@@ -324,7 +324,7 @@ src/exceptions/ExceptionBase.o: src/exceptions/ExceptionBase.cpp.o
 
 # target to build an object file
 src/exceptions/ExceptionBase.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.o
 .PHONY : src/exceptions/ExceptionBase.cpp.o
 
 src/exceptions/ExceptionBase.i: src/exceptions/ExceptionBase.cpp.i
@@ -332,7 +332,7 @@ src/exceptions/ExceptionBase.i: src/exceptions/ExceptionBase.cpp.i
 
 # target to preprocess a source file
 src/exceptions/ExceptionBase.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.i
 .PHONY : src/exceptions/ExceptionBase.cpp.i
 
 src/exceptions/ExceptionBase.s: src/exceptions/ExceptionBase.cpp.s
@@ -340,7 +340,7 @@ src/exceptions/ExceptionBase.s: src/exceptions/ExceptionBase.cpp.s
 
 # target to generate assembly for a file
 src/exceptions/ExceptionBase.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/ExceptionBase.cpp.s
 .PHONY : src/exceptions/ExceptionBase.cpp.s
 
 src/exceptions/LogicFaultException.o: src/exceptions/LogicFaultException.cpp.o
@@ -348,7 +348,7 @@ src/exceptions/LogicFaultException.o: src/exceptions/LogicFaultException.cpp.o
 
 # target to build an object file
 src/exceptions/LogicFaultException.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.o
 .PHONY : src/exceptions/LogicFaultException.cpp.o
 
 src/exceptions/LogicFaultException.i: src/exceptions/LogicFaultException.cpp.i
@@ -356,7 +356,7 @@ src/exceptions/LogicFaultException.i: src/exceptions/LogicFaultException.cpp.i
 
 # target to preprocess a source file
 src/exceptions/LogicFaultException.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.i
 .PHONY : src/exceptions/LogicFaultException.cpp.i
 
 src/exceptions/LogicFaultException.s: src/exceptions/LogicFaultException.cpp.s
@@ -364,7 +364,7 @@ src/exceptions/LogicFaultException.s: src/exceptions/LogicFaultException.cpp.s
 
 # target to generate assembly for a file
 src/exceptions/LogicFaultException.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/LogicFaultException.cpp.s
 .PHONY : src/exceptions/LogicFaultException.cpp.s
 
 src/exceptions/SystemCallException.o: src/exceptions/SystemCallException.cpp.o
@@ -372,7 +372,7 @@ src/exceptions/SystemCallException.o: src/exceptions/SystemCallException.cpp.o
 
 # target to build an object file
 src/exceptions/SystemCallException.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.o
 .PHONY : src/exceptions/SystemCallException.cpp.o
 
 src/exceptions/SystemCallException.i: src/exceptions/SystemCallException.cpp.i
@@ -380,7 +380,7 @@ src/exceptions/SystemCallException.i: src/exceptions/SystemCallException.cpp.i
 
 # target to preprocess a source file
 src/exceptions/SystemCallException.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.i
 .PHONY : src/exceptions/SystemCallException.cpp.i
 
 src/exceptions/SystemCallException.s: src/exceptions/SystemCallException.cpp.s
@@ -388,7 +388,7 @@ src/exceptions/SystemCallException.s: src/exceptions/SystemCallException.cpp.s
 
 # target to generate assembly for a file
 src/exceptions/SystemCallException.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/exceptions/SystemCallException.cpp.s
 .PHONY : src/exceptions/SystemCallException.cpp.s
 
 src/network/NetworkHelper.o: src/network/NetworkHelper.cpp.o
@@ -396,7 +396,7 @@ src/network/NetworkHelper.o: src/network/NetworkHelper.cpp.o
 
 # target to build an object file
 src/network/NetworkHelper.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.o
 .PHONY : src/network/NetworkHelper.cpp.o
 
 src/network/NetworkHelper.i: src/network/NetworkHelper.cpp.i
@@ -404,7 +404,7 @@ src/network/NetworkHelper.i: src/network/NetworkHelper.cpp.i
 
 # target to preprocess a source file
 src/network/NetworkHelper.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.i
 .PHONY : src/network/NetworkHelper.cpp.i
 
 src/network/NetworkHelper.s: src/network/NetworkHelper.cpp.s
@@ -412,39 +412,15 @@ src/network/NetworkHelper.s: src/network/NetworkHelper.cpp.s
 
 # target to generate assembly for a file
 src/network/NetworkHelper.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/NetworkHelper.cpp.s
 .PHONY : src/network/NetworkHelper.cpp.s
-
-src/network/TCPClientConnection.o: src/network/TCPClientConnection.cpp.o
-.PHONY : src/network/TCPClientConnection.o
-
-# target to build an object file
-src/network/TCPClientConnection.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.o
-.PHONY : src/network/TCPClientConnection.cpp.o
-
-src/network/TCPClientConnection.i: src/network/TCPClientConnection.cpp.i
-.PHONY : src/network/TCPClientConnection.i
-
-# target to preprocess a source file
-src/network/TCPClientConnection.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.i
-.PHONY : src/network/TCPClientConnection.cpp.i
-
-src/network/TCPClientConnection.s: src/network/TCPClientConnection.cpp.s
-.PHONY : src/network/TCPClientConnection.s
-
-# target to generate assembly for a file
-src/network/TCPClientConnection.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/TCPClientConnection.cpp.s
-.PHONY : src/network/TCPClientConnection.cpp.s
 
 src/network/UDPConnection.o: src/network/UDPConnection.cpp.o
 .PHONY : src/network/UDPConnection.o
 
 # target to build an object file
 src/network/UDPConnection.cpp.o:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.o
 .PHONY : src/network/UDPConnection.cpp.o
 
 src/network/UDPConnection.i: src/network/UDPConnection.cpp.i
@@ -452,7 +428,7 @@ src/network/UDPConnection.i: src/network/UDPConnection.cpp.i
 
 # target to preprocess a source file
 src/network/UDPConnection.cpp.i:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.i
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.i
 .PHONY : src/network/UDPConnection.cpp.i
 
 src/network/UDPConnection.s: src/network/UDPConnection.cpp.s
@@ -460,7 +436,7 @@ src/network/UDPConnection.s: src/network/UDPConnection.cpp.s
 
 # target to generate assembly for a file
 src/network/UDPConnection.cpp.s:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.s
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/src/network/UDPConnection.cpp.s
 .PHONY : src/network/UDPConnection.cpp.s
 
 # Help Target
@@ -507,9 +483,6 @@ help:
 	@echo ... src/network/NetworkHelper.o
 	@echo ... src/network/NetworkHelper.i
 	@echo ... src/network/NetworkHelper.s
-	@echo ... src/network/TCPClientConnection.o
-	@echo ... src/network/TCPClientConnection.i
-	@echo ... src/network/TCPClientConnection.s
 	@echo ... src/network/UDPConnection.o
 	@echo ... src/network/UDPConnection.i
 	@echo ... src/network/UDPConnection.s
@@ -524,6 +497,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d S:\work\AsymtecUnloader\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

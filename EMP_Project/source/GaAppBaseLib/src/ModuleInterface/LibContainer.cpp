@@ -12,13 +12,12 @@
  */
 
 // System header
-#include "ModuleInterface/LibContainer.h"
-
 #include <iostream>
 
 // external library header
 
 // application header
+#include "ModuleInterface/LibContainer.h"
 #include "ModuleInterface/ModuleInstance.h"
 #include "ModuleInterface/ModuleInterface.h"
 
@@ -36,6 +35,9 @@ namespace GaAppBaseLib {
     // **************************************************************************************************
     LibContainer::~LibContainer()
     {
+        for (auto module = mModuleList.begin(); module != mModuleList.end(); module++) {
+            removeModuleInstance(module->first);
+        }
         mModuleList.clear();
         mLibraryList.clear();
     }

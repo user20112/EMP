@@ -12,13 +12,12 @@
  */
 
 // System header
-#include "exceptions/SystemCallException.h"
-
 #include <cstring>
 
 // external library header
 
 // local library header
+#include "exceptions/SystemCallException.h"
 
 namespace GaAppBaseLib {
 

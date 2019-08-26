@@ -24,8 +24,7 @@ set (PROJECT_VERSION_TWEAK   0)
 # additional include directories.
 include_directories(AFTER
                     ./include
-                    ${PROJECT_BINARY_DIR}
-                    ${PHAO_INCLUDES})
+                    ${PROJECT_BINARY_DIR})
 
 # build config.h and add copy building informations to source
 configure_file (
@@ -44,8 +43,6 @@ add_executable(${PROJECT_NAME} ${SOURCES}
 target_link_libraries(${PROJECT_NAME} PugiXML)
 target_link_libraries(${PROJECT_NAME} GaAppBaseLib)
 target_link_libraries(${PROJECT_NAME} GaGCppAPI)
-target_link_libraries(${PROJECT_NAME} ${PHAO_MQT_3A})
-target_link_libraries(${PROJECT_NAME} ${PHAO_MQT_3C})
 
 
 # add a version information to the project
@@ -76,7 +73,4 @@ install(FILES run.sh
 install(DIRECTORY config/
         DESTINATION config
         FILES_MATCHING REGEX "(.+\.xml$)|(.+\.conf$)")
-        
-install(DIRECTORY service/
-        DESTINATION service)
         

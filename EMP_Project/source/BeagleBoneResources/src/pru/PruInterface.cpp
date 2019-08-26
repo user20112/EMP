@@ -15,12 +15,13 @@
 
 #include "boost/format.hpp"
 
+#include "exceptions/ExceptionsMacros.h"
+#include "log/logger.h"
+
 #include "prussdrv.h"
 
 #include "pru/PruDriver.h"
 #include "pru/PruInterface.h"
-#include "exceptions/ExceptionsMacros.h"
-#include "log/logger.h"
 
 namespace BeagleBoneResources {
 
@@ -114,7 +115,9 @@ namespace BeagleBoneResources {
             cmdCount++;
             code.push_back(hexdump);
         }
-        CLOG(DEBUG, mLoggerName.c_str())<< "get " << cmdCount << " commands from file " << _filePath << ".";
+        CLOG(DEBUG, mLoggerName.c_str())<< "get " << cmdCount << " commands";
+        std::cout << "read " << std::dec << cmdCount << " commands from file " << _filePath << "." << std::endl;
+
         loadProgram(code);
     }
 

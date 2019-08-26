@@ -1,0 +1,60 @@
+/*
+ * ArgumentFaultException.cpp
+ *
+ *  Created on: 05.12.2014
+ *      Author: s.hegemann
+ */
+
+#include "exceptions/ArgumentFaultException.h"
+
+namespace GaGCppAPI {
+
+    // ******************************************************************************************************************
+    // ***  ArgumentFaultException
+    // ******************************************************************************************************************
+    ArgumentFaultException::ArgumentFaultException(const char* _file,
+                                                   const char* _function,
+                                                   uint32_t _line,
+                                                   const char* const _argName,
+                                                   const std::string& _message) noexcept:
+                                                           ExceptionBase (_file, _function, _line, _message),
+                                                           mArgumentName (_argName)
+    {
+
+    }
+
+    // ******************************************************************************************************************
+    // ***  ~ArgumentFaultException
+    // ******************************************************************************************************************
+    ArgumentFaultException::~ArgumentFaultException() noexcept
+    {
+    }
+
+    // ******************************************************************************************************************
+    // ***  getMessage
+    // ******************************************************************************************************************
+    const std::string
+    ArgumentFaultException::getMessage() const
+    {
+        std::stringstream message;
+        std::string fileName;
+
+        uint32_t fileStartPos = mFile.find_last_of("/\\");
+        if (fileStartPos == std::string::npos)
+        {
+            fileName = mFile;
+        }
+        else
+        {
+            fileName = mFile.substr(fileStartPos + 1);
+        }
+
+        message << "===============================================================================================================================================\n"
+                << "Invalid Argument in " << fileName << " at line " << mLine << "; function " << mFunction << "\n"
+                << "                 argument: " << mArgumentName << "\n"
+                << "                 message: " << mMessage << "\n"
+                << "===============================================================================================================================================" << std::endl;
+
+        return (message.str());
+    }
+} /* namespace GaGCppAPI */

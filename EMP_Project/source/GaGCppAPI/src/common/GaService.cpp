@@ -11,7 +11,6 @@
 #include "gaapi/api.h"
 #include "gasched/sched.h"
 
-#include "log/Logger.h"
 #include "exceptions/ExceptionsMacros.h"
 
 #include "common/GaService.h"
@@ -136,7 +135,7 @@ namespace GaGCppAPI {
         if (mIsAttached) {
             result = gc_detachFromService();
             if (result != gc_ERROR_SUCCESS.errorID) {
-                CLOG(ERROR, "GaService") << "detach from gamma service failed: " << result << " => " << gc_getErrorDescription(result);
+                std::cerr << "detach from gamma service failed: " << result << " => " << gc_getErrorDescription(result) << std::endl;
             }
         }
         mIsAttached = false;
@@ -259,7 +258,7 @@ namespace GaGCppAPI {
                     retryTime = 2;
                 }
                 else {
-                    CLOG(ERROR, "GaService") << "connection to gamma service is shut down.";
+                    std::cerr << "connection to gamma service is shut down." << std::endl;
                     mOnConnectionLost.fire(0);
                     detach(true); // clean up internal data
                 }
@@ -267,7 +266,7 @@ namespace GaGCppAPI {
             else {
                 try {
                     attach(false);
-                    CLOG(INFO, "GaService") << "gamma service becomes alive again";
+                    std::cout << "gamma service becomes alive again" << std::endl;
                 }
                 catch (...) {
                     retryTime = 5;
@@ -284,7 +283,7 @@ namespace GaGCppAPI {
         } while (!mWatchDocAbbort);
 
         detach();
-        CLOG(INFO, "GaService") << "monitoring of gamma service connection stopped. Application is detached from service!";
+        std::cout << "monitoring of gamma service connection stopped. Application is detached from service!" << std::endl;
     }
 
     // **************************************************************************************************

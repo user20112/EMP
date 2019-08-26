@@ -5,8 +5,8 @@
  *      Author: s.hegemann
  */
 
-#ifndef CHUCKCOOLING_SOURCE_BASETECDRIVER_INCLUDE_ANALOGINPUTS_H_
-#define CHUCKCOOLING_SOURCE_BASETECDRIVER_INCLUDE_ANALOGINPUTS_H_
+#ifndef SOURCE_BASETECDRIVER_INCLUDE_ANALOGINPUTS_H_
+#define SOURCE_BASETECDRIVER_INCLUDE_ANALOGINPUTS_H_
 
 #include <stdint.h>
 #include <string>
@@ -19,7 +19,7 @@ namespace BaseTecDriver {
     class AnalogInputs
     {
         public:
-            static const uint32_t dataBufferSize = 5888;
+            static constexpr uint32_t dataBufferSize = 5888;
 
             struct tAnalogData
             {
@@ -36,16 +36,14 @@ namespace BaseTecDriver {
             struct tChanelData
             {
                     float lastValue;
-                    int32_t sampleCount;
+                    int32_t sampleRate;
                     float sumValues;
-                    float sampleRate;
             };
 
         public:
             AnalogInputs(volatile void* ptMemoryBase,
                          std::string _dataBaseNode,
-                         std::string _loggerName,
-                         uint32_t _taskCycleTime);
+                         std::string _loggerName);
             virtual ~AnalogInputs();
 
             int32_t
@@ -60,8 +58,6 @@ namespace BaseTecDriver {
             tChanelData chn[7];
             std::string mLoggerName;
 
-            uint32_t taskCycleTime;
-
             uint16_t    lastReadPos;
             uint16_t    lastWritePos;
             uint32_t    lastChannelId;
@@ -74,4 +70,4 @@ namespace BaseTecDriver {
 
 } /* namespace BaseTecDriver */
 
-#endif /* CHUCKCOOLING_SOURCE_BASETECDRIVER_INCLUDE_ANALOGINPUTS_H_ */
+#endif /* SOURCE_BASETECDRIVER_INCLUDE_ANALOGINPUTS_H_ */

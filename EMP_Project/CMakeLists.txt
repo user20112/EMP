@@ -176,6 +176,6 @@ endif (BUILD_BASIC_APPLICATION)
 add_subdirectory(source/BaseTecDriver)
  
 # build application modules
-add_subdirectory(source/EMP)
+add_subdirectory(source/HwAccessDemo)
 add_subdirectory(source/KleberMqtt)
 

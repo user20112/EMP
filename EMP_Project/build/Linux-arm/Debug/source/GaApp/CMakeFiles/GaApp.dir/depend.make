@@ -12,6 +12,7 @@ source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBase
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/LibInstance.h
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInstance.h
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInterface.h
+source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ArgumentFaultException.h
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionBase.h
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
@@ -23,6 +24,7 @@ source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBase
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaAppBaseLib/include/network/UDPConnection.h
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/PugiXML/src/pugiconfig.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/PugiXML/src/pugixml.hpp
+source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaApp/src/AppConfig.cpp
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: S:/tools/boost/1.58.0/boost/align/align.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: S:/tools/boost/1.58.0/boost/align/detail/address.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: S:/tools/boost/1.58.0/boost/align/detail/align.hpp
@@ -1145,7 +1147,6 @@ source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: S:/tools/boost/1.58.0/boo
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: S:/tools/boost/1.58.0/boost/utility/swap.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: S:/tools/boost/1.58.0/boost/version.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: S:/tools/boost/1.58.0/boost/visit_each.hpp
-source/GaApp/CMakeFiles/GaApp.dir/src/AppConfig.cpp.o: ../../../source/GaApp/src/AppConfig.cpp
 
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaApp/./include/AppConfig.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaApp/./include/AppVersionInfo.h
@@ -1155,6 +1156,7 @@ source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/i
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/LibInstance.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInstance.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInterface.h
+source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ArgumentFaultException.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionBase.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
@@ -1180,6 +1182,7 @@ source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaGCppAPI/incl
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaGCppAPI/include/scheduler/GaTask.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/PugiXML/src/pugiconfig.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/PugiXML/src/pugixml.hpp
+source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaApp/src/main.cpp
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: S:/tools/boost/1.58.0/boost/align/align.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: S:/tools/boost/1.58.0/boost/align/detail/address.hpp
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: S:/tools/boost/1.58.0/boost/align/detail/align.hpp
@@ -2314,5 +2317,4 @@ source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: S:/tools/gamma/include/gacommo
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: S:/tools/gamma/include/gasched/dataTypes.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: S:/tools/gamma/include/gasched/platformDependencies.h
 source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: S:/tools/gamma/include/gasched/task.h
-source/GaApp/CMakeFiles/GaApp.dir/src/main.cpp.o: ../../../source/GaApp/src/main.cpp
 

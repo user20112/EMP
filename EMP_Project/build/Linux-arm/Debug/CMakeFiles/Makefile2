@@ -46,10 +46,10 @@ RM = S:\tools\CMake\bin\cmake.exe -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = S:\work\AsymtecUnloader
+CMAKE_SOURCE_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
+CMAKE_BINARY_DIR = C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/documentation.dir
@@ -58,21 +58,21 @@ CMAKE_BINARY_DIR = S:\work\AsymtecUnloader\build\Linux-arm\Debug
 CMakeFiles/documentation.dir/all: source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/all
 CMakeFiles/documentation.dir/all: source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/all
 CMakeFiles/documentation.dir/all: source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/all
-CMakeFiles/documentation.dir/all: source/GaApp/CMakeFiles/docGaApp.dir/all
 CMakeFiles/documentation.dir/all: source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/all
-CMakeFiles/documentation.dir/all: source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/all
+CMakeFiles/documentation.dir/all: source/GaApp/CMakeFiles/docGaApp.dir/all
+CMakeFiles/documentation.dir/all: source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/all
 CMakeFiles/documentation.dir/all: source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/all
 	$(MAKE) -f CMakeFiles\documentation.dir\build.make CMakeFiles/documentation.dir/depend
 	$(MAKE) -f CMakeFiles\documentation.dir\build.make CMakeFiles/documentation.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
 	@echo Built target documentation
 .PHONY : CMakeFiles/documentation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/documentation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/documentation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : CMakeFiles/documentation.dir/rule
 
 # Convenience name for target.
@@ -110,7 +110,7 @@ source/PugiXML/preinstall:
 source/PugiXML/CMakeFiles/PugiXML.dir/all:
 	$(MAKE) -f source\PugiXML\CMakeFiles\PugiXML.dir\build.make source/PugiXML/CMakeFiles/PugiXML.dir/depend
 	$(MAKE) -f source\PugiXML\CMakeFiles\PugiXML.dir\build.make source/PugiXML/CMakeFiles/PugiXML.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  53
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  47
 	@echo Built target PugiXML
 .PHONY : source/PugiXML/CMakeFiles/PugiXML.dir/all
 
@@ -120,9 +120,9 @@ all: source/PugiXML/CMakeFiles/PugiXML.dir/all
 
 # Build rule for subdir invocation for target.
 source/PugiXML/CMakeFiles/PugiXML.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 1
 	$(MAKE) -f CMakeFiles\Makefile2 source/PugiXML/CMakeFiles/PugiXML.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/PugiXML/CMakeFiles/PugiXML.dir/rule
 
 # Convenience name for target.
@@ -161,7 +161,7 @@ source/GaAppBaseLib/preinstall: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all:
 	$(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/depend
 	$(MAKE) -f source\GaAppBaseLib\CMakeFiles\GaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  24 25 26 27 28 29 30 31 32 33 34 35 36
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  16 17 18 19 20 21 22 23 24 25 26 27
 	@echo Built target GaAppBaseLib
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all
 
@@ -171,9 +171,9 @@ all: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all
 
 # Build rule for subdir invocation for target.
 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 12
 	$(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/rule
 
 # Convenience name for target.
@@ -205,15 +205,15 @@ clean: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/clean
 source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/all:
 	$(MAKE) -f source\GaAppBaseLib\CMakeFiles\docGaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/depend
 	$(MAKE) -f source\GaAppBaseLib\CMakeFiles\docGaAppBaseLib.dir\build.make source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
 	@echo Built target docGaAppBaseLib
 .PHONY : source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/all
 
 # Build rule for subdir invocation for target.
 source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/GaAppBaseLib/CMakeFiles/docGaAppBaseLib.dir/rule
 
 # Convenience name for target.
@@ -252,7 +252,7 @@ source/GaGCppAPI/preinstall: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/preinstal
 source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all
 	$(MAKE) -f source\GaGCppAPI\CMakeFiles\GaGCppAPI.dir\build.make source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/depend
 	$(MAKE) -f source\GaGCppAPI\CMakeFiles\GaGCppAPI.dir\build.make source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  37 38 39 40 41 42 43 44 45 46 47 48 49
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  28 29 30 31 32 33 34 35 36 37 38 39 40
 	@echo Built target GaGCppAPI
 .PHONY : source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
 
@@ -262,9 +262,9 @@ all: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
 
 # Build rule for subdir invocation for target.
 source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 25
 	$(MAKE) -f CMakeFiles\Makefile2 source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/rule
 
 # Convenience name for target.
@@ -296,15 +296,15 @@ clean: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/clean
 source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/all:
 	$(MAKE) -f source\GaGCppAPI\CMakeFiles\docGaGCppAPI.dir\build.make source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/depend
 	$(MAKE) -f source\GaGCppAPI\CMakeFiles\docGaGCppAPI.dir\build.make source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
 	@echo Built target docGaGCppAPI
 .PHONY : source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/all
 
 # Build rule for subdir invocation for target.
 source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/GaGCppAPI/CMakeFiles/docGaGCppAPI.dir/rule
 
 # Convenience name for target.
@@ -343,7 +343,7 @@ source/BeagleBoneResources/preinstall: source/BeagleBoneResources/CMakeFiles/Bea
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/all: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all
 	$(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/depend
 	$(MAKE) -f source\BeagleBoneResources\CMakeFiles\BeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  16 17 18 19
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  8 9 10 11
 	@echo Built target BeagleBoneResources
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/all
 
@@ -353,9 +353,9 @@ all: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/all
 
 # Build rule for subdir invocation for target.
 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 16
 	$(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/rule
 
 # Convenience name for target.
@@ -387,15 +387,15 @@ clean: source/BeagleBoneResources/CMakeFiles/BeagleBoneResources.dir/clean
 source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/all:
 	$(MAKE) -f source\BeagleBoneResources\CMakeFiles\docBeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/depend
 	$(MAKE) -f source\BeagleBoneResources\CMakeFiles\docBeagleBoneResources.dir\build.make source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
 	@echo Built target docBeagleBoneResources
 .PHONY : source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/all
 
 # Build rule for subdir invocation for target.
 source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/BeagleBoneResources/CMakeFiles/docBeagleBoneResources.dir/rule
 
 # Convenience name for target.
@@ -436,7 +436,7 @@ source/GaApp/CMakeFiles/GaApp.dir/all: source/GaAppBaseLib/CMakeFiles/GaAppBaseL
 source/GaApp/CMakeFiles/GaApp.dir/all: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
 	$(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/depend
 	$(MAKE) -f source\GaApp\CMakeFiles\GaApp.dir\build.make source/GaApp/CMakeFiles/GaApp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  20 21 22 23
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  12 13 14 15
 	@echo Built target GaApp
 .PHONY : source/GaApp/CMakeFiles/GaApp.dir/all
 
@@ -446,9 +446,9 @@ all: source/GaApp/CMakeFiles/GaApp.dir/all
 
 # Build rule for subdir invocation for target.
 source/GaApp/CMakeFiles/GaApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 31
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 30
 	$(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/GaApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/GaApp/CMakeFiles/GaApp.dir/rule
 
 # Convenience name for target.
@@ -480,15 +480,15 @@ clean: source/GaApp/CMakeFiles/GaApp.dir/clean
 source/GaApp/CMakeFiles/docGaApp.dir/all:
 	$(MAKE) -f source\GaApp\CMakeFiles\docGaApp.dir\build.make source/GaApp/CMakeFiles/docGaApp.dir/depend
 	$(MAKE) -f source\GaApp\CMakeFiles\docGaApp.dir\build.make source/GaApp/CMakeFiles/docGaApp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
 	@echo Built target docGaApp
 .PHONY : source/GaApp/CMakeFiles/docGaApp.dir/all
 
 # Build rule for subdir invocation for target.
 source/GaApp/CMakeFiles/docGaApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 source/GaApp/CMakeFiles/docGaApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/GaApp/CMakeFiles/docGaApp.dir/rule
 
 # Convenience name for target.
@@ -530,7 +530,7 @@ source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/all: source/BeagleBoneResource
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/all: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
 	$(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/depend
 	$(MAKE) -f source\BaseTecDriver\CMakeFiles\BaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  7 8 9 10 11 12 13 14 15
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  1 2 3 4 5 6 7
 	@echo Built target BaseTecDriver
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/all
 
@@ -540,9 +540,9 @@ all: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/all
 
 # Build rule for subdir invocation for target.
 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 40
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 37
 	$(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/rule
 
 # Convenience name for target.
@@ -574,15 +574,15 @@ clean: source/BaseTecDriver/CMakeFiles/BaseTecDriver.dir/clean
 source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/all:
 	$(MAKE) -f source\BaseTecDriver\CMakeFiles\docBaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/depend
 	$(MAKE) -f source\BaseTecDriver\CMakeFiles\docBaseTecDriver.dir\build.make source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
 	@echo Built target docBaseTecDriver
 .PHONY : source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/all
 
 # Build rule for subdir invocation for target.
 source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/rule
 
 # Convenience name for target.
@@ -599,96 +599,96 @@ clean: source/BaseTecDriver/CMakeFiles/docBaseTecDriver.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory source/AsymtecUnloader
+# Directory level rules for directory source/HwAccessDemo
 
 # Convenience name for "all" pass in the directory.
-source/AsymtecUnloader/all: source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/all
-.PHONY : source/AsymtecUnloader/all
+source/HwAccessDemo/all: source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/all
+.PHONY : source/HwAccessDemo/all
 
 # Convenience name for "clean" pass in the directory.
-source/AsymtecUnloader/clean: source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/clean
-source/AsymtecUnloader/clean: source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/clean
-.PHONY : source/AsymtecUnloader/clean
+source/HwAccessDemo/clean: source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/clean
+source/HwAccessDemo/clean: source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/clean
+.PHONY : source/HwAccessDemo/clean
 
 # Convenience name for "preinstall" pass in the directory.
-source/AsymtecUnloader/preinstall: source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/preinstall
-.PHONY : source/AsymtecUnloader/preinstall
+source/HwAccessDemo/preinstall: source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/preinstall
+.PHONY : source/HwAccessDemo/preinstall
 
 #=============================================================================
-# Target rules for target source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir
+# Target rules for target source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir
 
 # All Build rule for target.
-source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/all: source/PugiXML/CMakeFiles/PugiXML.dir/all
-source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/all: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all
-source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/all: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\AsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/depend
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\AsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  1 2 3 4 5 6
-	@echo Built target AsymtecUnloader
-.PHONY : source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/all
+source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/all: source/PugiXML/CMakeFiles/PugiXML.dir/all
+source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/all: source/GaAppBaseLib/CMakeFiles/GaAppBaseLib.dir/all
+source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/all: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\HwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/depend
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\HwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  41 42 43
+	@echo Built target HwAccessDemo
+.PHONY : source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/all
 
 # Include target in all.
-all: source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/all
+all: source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 33
-	$(MAKE) -f CMakeFiles\Makefile2 source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
-.PHONY : source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/rule
+source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 29
+	$(MAKE) -f CMakeFiles\Makefile2 source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
+.PHONY : source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/rule
 
 # Convenience name for target.
-AsymtecUnloader: source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/rule
-.PHONY : AsymtecUnloader
+HwAccessDemo: source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/rule
+.PHONY : HwAccessDemo
 
 # Pre-install relink rule for target.
-source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/preinstall:
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\AsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/preinstall
-.PHONY : source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/preinstall
+source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/preinstall:
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\HwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/preinstall
+.PHONY : source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/preinstall
 
 # Prepare target for install.
-preinstall: source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/preinstall
+preinstall: source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/preinstall
 .PHONY : preinstall
 
 # clean rule for target.
-source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/clean:
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\AsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/clean
-.PHONY : source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/clean
+source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/clean:
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\HwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/clean
+.PHONY : source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/clean
 
 # clean rule for target.
-clean: source/AsymtecUnloader/CMakeFiles/AsymtecUnloader.dir/clean
+clean: source/HwAccessDemo/CMakeFiles/HwAccessDemo.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir
+# Target rules for target source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir
 
 # All Build rule for target.
-source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/all:
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\docAsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/depend
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\docAsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
-	@echo Built target docAsymtecUnloader
-.PHONY : source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/all
+source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/all:
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\docHwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/depend
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\docHwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
+	@echo Built target docHwAccessDemo
+.PHONY : source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/all
 
 # Build rule for subdir invocation for target.
-source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
-	$(MAKE) -f CMakeFiles\Makefile2 source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
-.PHONY : source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/rule
+source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
+	$(MAKE) -f CMakeFiles\Makefile2 source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
+.PHONY : source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/rule
 
 # Convenience name for target.
-docAsymtecUnloader: source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/rule
-.PHONY : docAsymtecUnloader
+docHwAccessDemo: source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/rule
+.PHONY : docHwAccessDemo
 
 # clean rule for target.
-source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/clean:
-	$(MAKE) -f source\AsymtecUnloader\CMakeFiles\docAsymtecUnloader.dir\build.make source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/clean
-.PHONY : source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/clean
+source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/clean:
+	$(MAKE) -f source\HwAccessDemo\CMakeFiles\docHwAccessDemo.dir\build.make source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/clean
+.PHONY : source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/clean
 
 # clean rule for target.
-clean: source/AsymtecUnloader/CMakeFiles/docAsymtecUnloader.dir/clean
+clean: source/HwAccessDemo/CMakeFiles/docHwAccessDemo.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -716,7 +716,7 @@ source/KleberMqtt/CMakeFiles/KleberMqtt.dir/all: source/GaAppBaseLib/CMakeFiles/
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/all: source/GaGCppAPI/CMakeFiles/GaGCppAPI.dir/all
 	$(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/depend
 	$(MAKE) -f source\KleberMqtt\CMakeFiles\KleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/KleberMqtt.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles  50 51 52
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles  44 45 46
 	@echo Built target KleberMqtt
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/all
 
@@ -726,9 +726,9 @@ all: source/KleberMqtt/CMakeFiles/KleberMqtt.dir/all
 
 # Build rule for subdir invocation for target.
 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 29
 	$(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/KleberMqtt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/KleberMqtt/CMakeFiles/KleberMqtt.dir/rule
 
 # Convenience name for target.
@@ -760,15 +760,15 @@ clean: source/KleberMqtt/CMakeFiles/KleberMqtt.dir/clean
 source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/all:
 	$(MAKE) -f source\KleberMqtt\CMakeFiles\docKleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/depend
 	$(MAKE) -f source\KleberMqtt\CMakeFiles\docKleberMqtt.dir\build.make source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 
 	@echo Built target docKleberMqtt
 .PHONY : source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/all
 
 # Build rule for subdir invocation for target.
 source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 	$(MAKE) -f CMakeFiles\Makefile2 source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start S:\work\AsymtecUnloader\build\Linux-arm\Debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\d.paddock\Documents\GitHub\EMP\EMP_Project\build\Linux-arm\Debug\CMakeFiles 0
 .PHONY : source/KleberMqtt/CMakeFiles/docKleberMqtt.dir/rule
 
 # Convenience name for target.

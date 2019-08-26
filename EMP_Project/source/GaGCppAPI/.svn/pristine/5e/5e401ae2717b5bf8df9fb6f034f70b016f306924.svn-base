@@ -1,0 +1,356 @@
+/*
+ * RawPV.cpp
+ *
+ *  Created on: 05.12.2014
+ *      Author: s.hegemann
+ */
+
+#include <gacommon/misc.h>
+
+#include "pv/RawPV.h"
+#include "common/GaService.h"
+#include "../../include/exceptions/ExceptionsMacros.h"
+
+namespace GaGCppAPI {
+
+    RawPV::RawPV(const char* const _alias,
+                 gc_Flags32Bit _pvProperty)
+    {
+        VALIDATE_ARGUMENT_NO_NULL_PT(_alias);
+
+        prepareOpen();
+        gc_ErrorID result;
+        result = ga_pv_open(&mPV, _alias, _pvProperty);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result);
+        }
+        finalizeOpen(_pvProperty);
+   }
+
+    RawPV::RawPV(const char* const _alias,
+                 uint32_t _index,
+                 gc_Flags32Bit _pvProperty)
+    {
+        VALIDATE_ARGUMENT_NO_NULL_PT(_alias);
+
+        prepareOpen();
+        gc_ErrorID result;
+        result = ga_pv_openByIndex(&mPV, _alias, _index, _pvProperty);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result);
+        }
+        finalizeOpen(_pvProperty);
+    }
+
+    RawPV::RawPV(const gc_Level6Address* _address,
+                 gc_Flags32Bit _pvProperty)
+    {
+        VALIDATE_ARGUMENT_NO_NULL_PT(_address);
+
+        prepareOpen();
+        gc_ErrorID result;
+        result = ga_pv_openByAddress(&mPV, _address, _pvProperty);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result);
+        }
+        finalizeOpen(_pvProperty);
+    }
+
+    RawPV::~RawPV()
+    {
+        gc_ErrorID result;
+        result = ga_pv_close(&mPV);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            // TODO: hier braucht es noch was schlaues! Aber keine Exception bitte!!!
+        }
+    }
+
+
+    void
+    RawPV::reconnect ()
+    {
+        gc_ErrorID result;
+
+        // first try to disconnect
+        if (!mIsConnected) {
+            result = ga_pv_close(&mPV);
+            if (result != gc_ERROR_SUCCESS.errorID) {
+                // TODO: hier braucht es noch was schlaues! Aber keine Exception bitte!!!
+            }
+        }
+
+        // reset internal data
+        prepareOpen();
+
+        // create new connection
+        result = ga_pv_open(&mPV, mPvName.c_str(), mPvProperty);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result);
+        }
+        finalizeOpen(mPvProperty, false);
+    }
+
+    gc_DataType
+    RawPV::getDataType() const
+    {
+        return (mDataType);
+    }
+
+    bool
+    RawPV::isNumericValue () const
+    {
+        return (mIsNumericValue);
+    }
+
+    bool
+    RawPV::isBinaryData () const
+    {
+        return (!mIsNumericValue);
+    }
+
+    bool
+    RawPV::isFifo () const
+    {
+        return (mIsFifo);
+    }
+
+    size_t
+    RawPV::getBinarySize() const
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsNumericValue, false);
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        size_t size;
+
+        gc_ErrorID result;
+        result =  ga_pv_getLength(mPV, nullptr, &size);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+            THROW_GAMMA_FAULT(result);
+        }
+
+        return (size);
+    }
+
+    size_t
+    RawPV::getUsedBuffer() const
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsNumericValue, false);
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        size_t size;
+
+        gc_ErrorID result;
+        result =  ga_pv_getLength(mPV, &size, nullptr);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+            THROW_GAMMA_FAULT(result);
+        }
+
+        return (size);
+    }
+
+    gc_Level6Address
+    RawPV::getAddress () const
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        gc_Level6Address numericAddress;
+
+        gc_ErrorID result;
+        result =  ga_pv_getAddress(mPV, nullptr, nullptr, &numericAddress);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+            THROW_GAMMA_FAULT(result);
+        }
+
+        return (std::move(numericAddress));
+    }
+
+    gc_Level6Address
+    RawPV::getAddress (std::string& conformAddress) const
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        gc_Level6Address numericAddress;
+        const char* conformAddressPt;
+
+        gc_ErrorID result;
+        result =  ga_pv_getAddress(mPV, nullptr, &conformAddressPt, &numericAddress);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+            THROW_GAMMA_FAULT(result);
+        }
+
+        conformAddress = conformAddressPt;
+        return (std::move(numericAddress));
+    }
+
+
+    gc_NumericValue
+    RawPV::getNumericValue() const
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        VALIDATE_ARGUMENT_EQUAL(mIsNumericValue, true);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        gc_NumericValue value;
+
+        gc_ErrorID result;
+        result = ga_pv_getValue(mPV, &value);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+           THROW_GAMMA_FAULT(result);
+        }
+
+        return (value);
+    }
+
+    std::vector<uint8_t>
+    RawPV::getBinaryValue() const
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        VALIDATE_ARGUMENT_EQUAL(mIsNumericValue, false);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        std::vector<uint8_t> dataContainer;
+
+        gc_ErrorID result;
+        uint8_t* pt;
+        size_t len = 0;
+        result =  ga_pv_getBinaryValue(mPV, &pt, 0, &len);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+           THROW_GAMMA_FAULT(result);
+        }
+
+        for (size_t i = 0; i < len; i++) {
+            dataContainer.push_back(pt[i]);
+        }
+
+        result =  gc_freeMemory (pt);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+           THROW_GAMMA_FAULT(result);
+        }
+
+        return (std::move(dataContainer));
+    }
+
+    void
+    RawPV::putNumericValue(const gc_NumericValue& _value)
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        VALIDATE_ARGUMENT_EQUAL(mIsNumericValue, true);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        gc_ErrorID result;
+        result = ga_pv_putValue(mPV, &_value);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+           THROW_GAMMA_FAULT(result);
+        }
+    }
+
+
+    void
+    RawPV::putBinaryValue(const std::vector<uint8_t>& _value)
+    {
+        VALIDATE_ARGUMENT_EQUAL(mIsConnected, true);
+        VALIDATE_ARGUMENT_EQUAL(mIsNumericValue, false);
+        if (!mIsConnected) {
+            THROW_LOGIC_FAULT() << "connection to gamma service lost.";
+        }
+
+        gc_ErrorID result;
+
+        result = ga_pv_putBinaryValue(mPV, _value.data(), (size_t)_value.size());
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            mIsConnected = false;
+           THROW_GAMMA_FAULT(result);
+        }
+    }
+
+    void
+    RawPV::callBack(uint32_t _arg1, uint32_t _arg2)
+    {
+        eventType t = (eventType)_arg1;
+        switch (t)
+        {
+        case eventType::SERVICE_ATTACHED:
+            reconnect();
+            break;
+        case eventType::SERVICE_DETACHED:
+            mIsConnected = false;
+            break;
+        case eventType::SERVICE_LOST:
+            mIsConnected = false;
+            break;
+        }
+    }
+
+    void
+    RawPV::prepareOpen ()
+    {
+        mPV = nullptr;
+        mIsConnected = false;
+        mIsNumericValue = false;
+        mIsFifo = false;
+        mDataType = gc_DATA_TYPE_INVALID;
+
+        GaService& con = GaService::getInstance();
+        if (!con.isAttached()) {
+            THROW_LOGIC_FAULT() << "unable to open PV when application is not attached to Gamma service";
+        }
+    }
+
+    void
+    RawPV::finalizeOpen(gc_Flags32Bit _pvProperty, bool _attachEvents /* = true */)
+    {
+        gc_ErrorID result;
+
+        result = ga_pv_getDataType(mPV, &mDataType);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result);
+        }
+        result = ga_pv_getPVType (mPV, &mPVType);
+        if (result != gc_ERROR_SUCCESS.errorID) {
+            THROW_GAMMA_FAULT(result);
+        }
+
+        mIsConnected = true;
+
+        mPvAddress = std::move(getAddress(mPvName));
+        mPvProperty = _pvProperty;
+
+        mIsNumericValue = ((mDataType >= gc_DATA_TYPE_SINT_8) && (mDataType <= gc_DATA_TYPE_IEEE_64));
+        mIsFifo = (mPVType == ga_PV_TYPE_FIFO);
+
+        if (_attachEvents) {
+            GaService& gaService = GaService::getInstance();
+
+            attachToEvent(gaService.onAttach(), (uint32_t)eventType::SERVICE_ATTACHED);
+            attachToEvent(gaService.onDetach(), (uint32_t)eventType::SERVICE_DETACHED);
+            attachToEvent(gaService.onConnectionLost(), (uint32_t)eventType::SERVICE_LOST);
+        }
+    }
+
+} /* namespace GaGCppAPI */

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <AppConfig>
 	<ModuleList>
-		<Module library="BaseTecDriver" name="HW">
-			<RealtimeSetup cycleTime="1000" priority="99" />
-			<GammaConnection PVNode="HardwareResources.BaseTecDriver"
-				SchedulerSlot=":BaseTecDriver.IOSync" />
+		<Module library="BaseTecDriver" name="HW" >
+			<RealtimeSetup cycleTime="1000" priority="99"/>
+			<GammaConnection PVNode="HardwareResources.BaseTecDriver" SchedulerSlot=":BaseTecDriver.IOSync" />
 		</Module>
-		<Module library="EMP" name="EMP">
+		<Module library="HwAccessDemo" name="HwAccessModule" >
+			<GammaConnection PVNode="EnMonExport.DeviceSettings" SchedulerSlot=":BaseTecDriver.Logic" />
 		</Module>
+		<Module library="HwAccessDemo" name="HwAccessModule2" >
+			<GammaConnection PVNode="EnMonExport.DeviceSettings" SchedulerSlot=":BaseTecDriver.Logic" />
+		</Module>
+		<!-- 
+		<Module library="EnMonExport" name="EnMon" >
+			
+		</Module>
+		<Module library="DataStorage" name="Storage" >
+			<GammaConnection PVNode="DataStorage.DeviceSettings" SchedulerSlot=":EnMonTask.SafeData" />
+		</Module>
+		 -->
 	</ModuleList>
 </AppConfig>

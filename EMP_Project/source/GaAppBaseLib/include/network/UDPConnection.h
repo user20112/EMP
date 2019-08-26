@@ -10,8 +10,8 @@
  * $Date$
  *
  */
-#ifndef SOURCE_GaAppBaseLib_INCLUDE_NETWORK_UDPCONNECTION_H_
-#define SOURCE_GaAppBaseLib_INCLUDE_NETWORK_UDPCONNECTION_H_
+#ifndef SOURCE_GAAPPBASELIB_INCLUDE_NETWORK_UDPCONNECTION_H_
+#define SOURCE_GAAPPBASELIB_INCLUDE_NETWORK_UDPCONNECTION_H_
 
 // System header
 #include <string>
@@ -56,9 +56,6 @@ namespace GaAppBaseLib {
             void
             closeConnection();
 
-            bool
-            isConnected();
-
             void
             putString (std::string _str);
 
@@ -91,12 +88,10 @@ namespace GaAppBaseLib {
             std::string sendString;         ///< @short Telegram data to send
             std::string receiveString;      ///< @short
 
-            std::string mLoggerName;
-
             boost::thread* mComThread;      ///< @short thread to handle communication
             bool mStopThread;               ///< @short signal stop to communication thread
     };
 
 } /* namespace GaAppBaseLib */
 
-#endif /* SOURCE_GaAppBaseLib_INCLUDE_NETWORK_UDPCONNECTION_H_ */
+#endif /* SOURCE_GAAPPBASELIB_INCLUDE_NETWORK_UDPCONNECTION_H_ */

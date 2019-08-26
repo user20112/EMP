@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-S:/work/AsymtecUnloader/source/PugiXML/src/pugiconfig.hpp
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/PugiXML/src/pugiconfig.hpp
 
-S:/work/AsymtecUnloader/source/PugiXML/src/pugixml.cpp
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/PugiXML/src/pugixml.cpp
 pugixml.hpp
-S:/work/AsymtecUnloader/source/PugiXML/src/pugixml.hpp
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/PugiXML/src/pugixml.hpp
 stdlib.h
 -
 stdio.h
@@ -38,9 +38,9 @@ new
 stdint.h
 -
 
-S:/work/AsymtecUnloader/source/PugiXML/src/pugixml.hpp
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/PugiXML/src/pugixml.hpp
 pugiconfig.hpp
-S:/work/AsymtecUnloader/source/PugiXML/src/pugiconfig.hpp
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/PugiXML/src/pugiconfig.hpp
 stddef.h
 -
 exception

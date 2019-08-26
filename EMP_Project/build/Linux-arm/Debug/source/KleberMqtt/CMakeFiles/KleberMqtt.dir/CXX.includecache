@@ -7,12 +7,12 @@
 #IncludeRegexTransform: 
 
 ../../../source/GaAppBaseLib/include/GaAppBaseLib.h
-exceptions/ExceptionsMacros.h
-../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
 GaAppBaseLibVersionInfo.h
 ../../../source/GaAppBaseLib/include/GaAppBaseLibVersionInfo.h
 log/logger.h
 ../../../source/GaAppBaseLib/include/log/logger.h
+exceptions/ExceptionsMacros.h
+../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
 ModuleInterface/LibContainer.h
 ../../../source/GaAppBaseLib/include/ModuleInterface/LibContainer.h
 ModuleInterface/ModuleInterface.h
@@ -31,12 +31,12 @@ string
 -
 map
 -
-ModuleInterface/LibInstance.h
-../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInterface/LibInstance.h
-ModuleInterface/ModuleInstance.h
-../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInterface/ModuleInstance.h
 pugixml.hpp
 ../../../source/GaAppBaseLib/include/ModuleInterface/pugixml.hpp
+LibInstance.h
+../../../source/GaAppBaseLib/include/ModuleInterface/LibInstance.h
+ModuleInstance.h
+../../../source/GaAppBaseLib/include/ModuleInterface/ModuleInstance.h
 
 ../../../source/GaAppBaseLib/include/ModuleInterface/LibInstance.h
 memory
@@ -58,9 +58,17 @@ pugixml.hpp
 log/logger.h
 ../../../source/GaAppBaseLib/include/ModuleInterface/log/logger.h
 
+../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
+exception
+-
+string
+-
+sstream
+-
+
 ../../../source/GaAppBaseLib/include/exceptions/ArgumentFaultException.h
-exceptions/ExceptionBase.h
-../../../source/GaAppBaseLib/include/exceptions/exceptions/ExceptionBase.h
+./ExceptionBase.h
+../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
 
 ../../../source/GaAppBaseLib/include/exceptions/ExceptionBase.h
 exception
@@ -71,20 +79,20 @@ sstream
 -
 
 ../../../source/GaAppBaseLib/include/exceptions/ExceptionsMacros.h
-exceptions/ArgumentFaultException.h
-../../../source/GaAppBaseLib/include/exceptions/exceptions/ArgumentFaultException.h
-exceptions/LogicFaultException.h
-../../../source/GaAppBaseLib/include/exceptions/exceptions/LogicFaultException.h
-exceptions/SystemCallException.h
-../../../source/GaAppBaseLib/include/exceptions/exceptions/SystemCallException.h
+ArgumentFaultException.h
+../../../source/GaAppBaseLib/include/exceptions/ArgumentFaultException.h
+LogicFaultException.h
+../../../source/GaAppBaseLib/include/exceptions/LogicFaultException.h
+SystemCallException.h
+../../../source/GaAppBaseLib/include/exceptions/SystemCallException.h
 
 ../../../source/GaAppBaseLib/include/exceptions/LogicFaultException.h
-exceptions/ExceptionBase.h
-../../../source/GaAppBaseLib/include/exceptions/exceptions/ExceptionBase.h
+./ExceptionBase.h
+../../../source/GaAppBaseLib/include/exceptions/./ExceptionBase.h
 
 ../../../source/GaAppBaseLib/include/exceptions/SystemCallException.h
-exceptions/ExceptionBase.h
-../../../source/GaAppBaseLib/include/exceptions/exceptions/ExceptionBase.h
+ExceptionBase.h
+../../../source/GaAppBaseLib/include/exceptions/ExceptionBase.h
 
 ../../../source/GaAppBaseLib/include/log/easylogging++.h
 syslog.h
@@ -223,12 +231,10 @@ wx/vector.h
 -
 
 ../../../source/GaAppBaseLib/include/log/logger.h
-log/easylogging++.h
-../../../source/GaAppBaseLib/include/log/log/easylogging++.h
+easylogging++.h
+../../../source/GaAppBaseLib/include/log/easylogging++.h
 
 ../../../source/GaAppBaseLib/include/network/NetworkHelper.h
-string
--
 
 ../../../source/GaAppBaseLib/include/network/UDPConnection.h
 string
@@ -379,6 +385,58 @@ iosfwd
 -
 string
 -
+
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/KleberMqtt/Config.h
+
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/KleberMqtt/ModuleVersionInfo.cpp
+sstream
+-
+iostream
+-
+iomanip
+-
+../include/KleberMqttVersionInfo.h
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/include/KleberMqttVersionInfo.h
+Config.h
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/build/Linux-arm/Debug/source/KleberMqtt/Config.h
+
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/KleberMqtt/include/KleberMqtt.h
+string
+-
+stdio.h
+-
+signal.h
+-
+unistd.h
+-
+sys/mman.h
+-
+ncurses.h
+-
+jansson.h
+-
+MQTTClient.h
+-
+native/task.h
+-
+native/timer.h
+-
+GaGCppAPI.h
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/KleberMqtt/include/GaGCppAPI.h
+GaAppBaseLib.h
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/KleberMqtt/include/GaAppBaseLib.h
+
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/KleberMqtt/include/KleberMqttVersionInfo.h
+string
+-
+
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/KleberMqtt/src/KleberMqtt.cpp
+../include/KleberMqtt.h
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/KleberMqtt/include/KleberMqtt.h
+iostream
+-
+../include/KleberMqttVersionInfo.h
+C:/Users/d.paddock/Documents/GitHub/EMP/EMP_Project/source/KleberMqtt/include/KleberMqttVersionInfo.h
 
 S:/tools/boost/1.58.0/boost/align/align.hpp
 boost/config.hpp
@@ -13953,58 +14011,6 @@ nucleus/types.h
 -
 
 S:/tools/xenomai/include/xeno_config.h
-
-S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/KleberMqtt/Config.h
-
-S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/KleberMqtt/ModuleVersionInfo.cpp
-sstream
--
-iostream
--
-iomanip
--
-../include/KleberMqttVersionInfo.h
-S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/include/KleberMqttVersionInfo.h
-Config.h
-S:/work/AsymtecUnloader/build/Linux-arm/Debug/source/KleberMqtt/Config.h
-
-S:/work/AsymtecUnloader/source/KleberMqtt/include/KleberMqtt.h
-string
--
-stdio.h
--
-signal.h
--
-unistd.h
--
-sys/mman.h
--
-ncurses.h
--
-jansson.h
--
-MQTTClient.h
--
-native/task.h
--
-native/timer.h
--
-GaGCppAPI.h
-S:/work/AsymtecUnloader/source/KleberMqtt/include/GaGCppAPI.h
-GaAppBaseLib.h
-S:/work/AsymtecUnloader/source/KleberMqtt/include/GaAppBaseLib.h
-
-S:/work/AsymtecUnloader/source/KleberMqtt/include/KleberMqttVersionInfo.h
-string
--
-
-S:/work/AsymtecUnloader/source/KleberMqtt/src/KleberMqtt.cpp
-../include/KleberMqtt.h
-S:/work/AsymtecUnloader/source/KleberMqtt/include/KleberMqtt.h
-iostream
--
-../include/KleberMqttVersionInfo.h
-S:/work/AsymtecUnloader/source/KleberMqtt/include/KleberMqttVersionInfo.h
 
 s:/tools/paho/include/MQTTClient.h
 stdio.h

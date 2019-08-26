@@ -1,0 +1,44 @@
+/*
+ * ExceptionBase.cpp
+ *
+ *  Created on: 05.12.2014
+ *      Author: s.hegemann
+ */
+
+#include "exceptions/ExceptionBase.h"
+
+namespace GaGCppAPI {
+
+    // ******************************************************************************************************************
+    // ***  ExceptionBase
+    // ******************************************************************************************************************
+    ExceptionBase::ExceptionBase(const char* _file,
+                                 const char* _function,
+                                 uint32_t _line,
+                                 const std::string& _message) noexcept:
+                                         std::exception (),
+                                         mFile (_file),
+                                         mFunction (_function),
+                                         mLine (_line) ,
+                                         mMessage(_message)
+    {
+
+    }
+
+    // ******************************************************************************************************************
+    // ***  ~ExceptionBase
+    // ******************************************************************************************************************
+    ExceptionBase::~ExceptionBase() noexcept
+    {
+    }
+
+    // ******************************************************************************************************************
+    // ***  what
+    // ******************************************************************************************************************
+    const char*
+    ExceptionBase::what() const noexcept
+    {
+        return (getMessage().c_str());
+    }
+
+} /* namespace GaGCppAPI */
